@@ -5,12 +5,14 @@ import starterMobile from '../images/mobiili/14.png'
 import halli2022 from '../images/halli_2022.png'
 import olli from '../images/olli.png'
 import niko from '../images/Niko.jpg'
+import leevi from '../images/leevi.jpeg'
 
 import VuodenAlgolaiset from '../components/vuodenAlgolaiset.jsx'
 import Perustajat from '../components/perustajat.jsx'
 import useDevice from '../hooks/useDevice.jsx'
 
 const vuodenAlgolaiset = [
+  { year: 2025, name: 'Leevi Kopakkala', image: leevi},
   { year: 2024, name: 'Olli Terävä', image: olli },
   { year: 2023, name: 'Niko Iljin', image: niko },
 ]
@@ -48,6 +50,15 @@ const KunniagalleriaPage = () => {
         <ul className="kunniajasenet">
           <li>
             Jari Haapasaari <i>(Nimetty 2023)</i>
+          </li>
+          <li>
+            Eemil Hukkanen <i>(Nimetty 2025)</i>
+          </li>
+          <li>
+            Minea Nupponen <i>(Nimetty 2025)</i>
+          </li>
+          <li>
+            Lassi Laitinen <i>(Nimetty 2025)</i>
           </li>
         </ul>
         <h2>Vuoden Algolainen - palkinnon voittajat</h2>

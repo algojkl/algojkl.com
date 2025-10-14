@@ -1006,6 +1006,7 @@ body.modal-open {
 .vuoden-algolainen {
   display: flex;
   gap: 15px;
+  padding-bottom: 20px;
 }
 
 .vuoden-algolainen ul .kunnia-container li,
@@ -1715,7 +1716,8 @@ p {
   .kerhotoiminta-container p,
   .hakijalle-container p,
   .aktiivi-container p,
-  .aktiivi-consent p {
+  .aktiivi-consent p,
+  .event-container p {
     font-size: small;
     line-height: 25px;
   }
