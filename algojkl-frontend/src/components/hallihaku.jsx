@@ -34,7 +34,7 @@ const HallitusHaku = () => {
           )}
           <div className="haku-info">
             <h3>Nimi: {haku.nimi}</h3>
-            <p>Haettava pesti: <strong>{haku.pesti}</strong></p>
+            <p>Haettava(t) pesti(t): <strong>{haku.pesti}</strong></p>
             <p>Hakuteksti: {haku.hakuteksti}</p>
           </div>
         </div>
