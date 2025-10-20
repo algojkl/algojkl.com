@@ -595,7 +595,7 @@ body.modal-open {
   width: 100%;
 }
 
-.Freshman-container h2 {
+.Freshman-container h2, .hallihaku-container h2 {
   font-size: medium;
   background-color: #fbbebd;
   width: fit-content;
@@ -811,7 +811,7 @@ body.modal-open {
   line-height: 25px;
 }
 
-.tutor-container img {
+.tutor-container img{
   width: 250px;
   height: auto;
   padding-top: 20px;
@@ -819,6 +819,54 @@ body.modal-open {
 
 .tutor-name {
   margin: 0 0 10px 0;
+}
+
+.haku-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.haku-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #dcd8d8;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 1.2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.haku-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.haku-image {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.haku-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.haku-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.haku-info p {
+  margin: 0.3rem 0;
+  line-height: 1.4;
 }
 
 /*----------------------------------------------------------*/
@@ -963,7 +1011,8 @@ body.modal-open {
 .periaate-container,
 .yhteydenotto-container,
 .kansainvalisyys-container,
-.rekryt-container {
+.rekryt-container,
+.hallihaku-container {
   width: 70%;
   margin: 0 auto;
 }
@@ -1050,7 +1099,8 @@ body.modal-open {
 .saannot-container p,
 .seloste-container p,
 .yhteydenotto-container p,
-.kansainvalisyys-container p {
+.kansainvalisyys-container p,
+.hallihaku-container p {
   line-height: 30px;
   font-size: 0.9rem;
   border-radius: 2px;
@@ -1083,7 +1133,8 @@ body.modal-open {
 .kansainvalisyys-container h1,
 .yhteydenotto-container h1,
 .hakijalle-container h2,
-.rekryt-container h1 {
+.rekryt-container h1,
+.hallihaku-container h1 {
   text-align: center;
   font-size: 1.5rem;
   padding: 10px;
@@ -1351,6 +1402,42 @@ p {
   line-height: 1.5;
 }
 
+.notfound-container {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.notfound-container h1 {
+  font-size: 5rem;
+  color: #d9534f;
+  margin-bottom: 0.5rem;
+}
+
+.notfound-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.notfound-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.notfound-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.notfound-link:hover {
+  background-color: #0056b3;
+}
+
 /*----------------------------------------------------------*/
 
 @media (min-width: 2300px) {
@@ -1607,7 +1694,8 @@ p {
   .aktiivi-container,
   .aktiivi-consent,
   .prev-hallitus,
-  .event-container {
+  .event-container,
+  .hallihaku-container {
     width: 95% !important;
   }
 
@@ -1640,11 +1728,27 @@ p {
   .yhteydenotto-container h1,
   .kansainvalisyys-container h1,
   .kerhotoiminta-container h1,
-  .rekryt-container h1 {
+  .rekryt-container h1,
+  .hallihaku-container h1 {
     width: fit-content;
     font-size: large;
     margin: 0 auto;
     padding: 10px 10px 10px 10px;
+  }
+
+  .haku-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .haku-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .haku-info {
+    align-items: center;
   }
 
   .aktiivi-start h2 {
@@ -1717,12 +1821,13 @@ p {
   .hakijalle-container p,
   .aktiivi-container p,
   .aktiivi-consent p,
-  .event-container p {
+  .event-container p,
+  .hallihaku-container p {
     font-size: small;
     line-height: 25px;
   }
 
-  .vuju-container h2, .periaate-container h3, .aktiivi-container h2, .aktiivi-consent h2, .aktiivi-container-merkit h2{
+  .vuju-container h2, .periaate-container h3, .aktiivi-container h2, .aktiivi-consent h2, .aktiivi-container-merkit h2, .hallihaku-container h3{
     font-size: medium;
   }
 
@@ -1731,7 +1836,8 @@ p {
   }
 
   .OverAll-container h2,
-  .kerhotoiminta-container h3 {
+  .kerhotoiminta-container h3,
+  .hallihaku-container h2 {
     font-size: medium;
     padding: 10px;
   }

@@ -11,6 +11,7 @@ const fetchContentfulData = async () => {
     pytkirjatRes,
     jasenedutRes,
     hiringRes,
+    hallitushakuRes,
   ] = await Promise.all([
     client.getEntries({ content_type: 'events' }),
     client.getEntries({ content_type: 'collabs' }),
@@ -20,6 +21,8 @@ const fetchContentfulData = async () => {
     client.getEntries({ content_type: 'pytkirjat' }),
     client.getEntries({ content_type: 'jedut' }),
     client.getEntries({ content_type: 'hiring' }),
+    client.getEntries({ content_type: 'hallitushaku'}),
+
   ])
 
   return {
@@ -73,6 +76,13 @@ const fetchContentfulData = async () => {
       rekryKuva: item.fields.rekryKuva?.fields?.file?.url || null,
       rekrytiedosto: item.fields.rekrytiedosto?.fields?.file?.url || null,
     })),
+    hallitushaku: hallitushakuRes.items.map((item) => ({
+      hakuId: item.fields.hakuId,
+      nimi: item.fields.nimi,
+      pesti: item.fields.pesti,
+      hakuteksti: item.fields.hakuteksti,
+      hakuKuva: item.fields.hakuKuva
+    }))
   }
 }
 
