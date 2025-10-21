@@ -84,7 +84,7 @@ function Footer() {
                 <Link to="/kansainvalisyys">KANSAINVÄLISYYS</Link>
               </li>
               <li>
-                <Link to="/kahvi">KATTILAN KAHVIKAMERA</Link>
+                <Link to="https://kattila.linkkijkl.fi/">KATTILAN KAHVIKAMERA</Link>
               </li>
               <li>
                 <Link to="/salaisuudet">SALAISUUDET</Link>
