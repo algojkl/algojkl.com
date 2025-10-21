@@ -25,4 +25,3 @@ jobs:
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
         run: |
            ssh -T -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "cd \"$DEPLOY_PATH\" && ./deploy_frontend.sh"
-           EOF
