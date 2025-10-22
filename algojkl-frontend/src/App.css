@@ -1517,6 +1517,22 @@ p {
   .footer-content {
     gap: 1%;
   }
+
+  .haku-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .haku-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .haku-info {
+    align-items: center;
+  }
+
 }
 
 @media (max-width: 1100px) {
@@ -1669,6 +1685,22 @@ p {
     font-weight: normal;
     font-size: smaller;
   }
+
+  .haku-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .haku-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .haku-info {
+    align-items: center;
+  }
+  
 }
 @media (max-width: 780px) {
 
