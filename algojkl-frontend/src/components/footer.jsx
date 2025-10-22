@@ -90,6 +90,9 @@ function Footer() {
               <li>
                 <Link to="/salaisuudet">SALAISUUDET</Link>
               </li>
+              <li>
+                <Link to="https://ritmi.algojkl.com/">LAULUKIRJA</Link>
+              </li>
             </div>
           </ul>
         </nav>
