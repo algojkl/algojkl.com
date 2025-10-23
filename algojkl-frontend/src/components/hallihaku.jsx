@@ -34,7 +34,9 @@ const HallitusHaku = () => {
           <div className="haku-info">
             <h3>Nimi: {haku.nimi}</h3>
             <p>Haettava(t) pesti(t): <strong>{haku.pesti}</strong></p>
-            <p>Hakuteksti: {haku.hakuteksti}</p>
+            <p style={{ whiteSpace: 'pre-wrap' }}>
+            {haku.hakuteksti}
+            </p>
           </div>
         </div>
       ))}
