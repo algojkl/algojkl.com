@@ -11,15 +11,15 @@ const HallihakuPage = () => {
   return (
     <div>
       <img src={starterImage} alt="starter_image_rekryt" className="starter" />
-      <div className="hallihaku-container">
+      <div className="hallihaku-container-start">
         <h1>Hallitushaku 2026</h1>
         <p>
           Hallitushaku vuodelle 2026 on alkanut! Täältä pääset tutustumaan
           hakijoihin. Ohjeistus hallitukseen hakemiseen löytyy Algon
           ilmoituskanavalta.
         </p>
-        <HallitusHaku />
       </div>
+        <HallitusHaku />
     </div>
   )
 }
