@@ -9,17 +9,16 @@ const HallitusHaku = () => {
 
   const hallitushaku = data?.hallitushaku || []
 
-  const puheenjohtajisto = hallitushaku.filter(
-    (haku) =>
-      haku.pesti?.toLowerCase() === 'puheenjohtaja' ||
-      haku.pesti?.toLowerCase() === 'varapuheenjohtaja'
-  )
+  const puheenjohtajisto = hallitushaku.filter((haku) =>
+    haku.pesti?.toLowerCase().includes('puheenjohtaja') ||
+    haku.pesti?.toLowerCase().includes('varapuheenjohtaja')
+    )
 
-  const muutPestit = hallitushaku.filter(
-    (haku) =>
-      haku.pesti?.toLowerCase() !== 'puheenjohtaja' &&
-      haku.pesti?.toLowerCase() !== 'varapuheenjohtaja'
-  )
+  const muutPestit = hallitushaku.filter((haku) =>
+   !(
+    haku.pesti?.toLowerCase().includes('puheenjohtaja') ||
+    haku.pesti?.toLowerCase().includes('varapuheenjohtaja')
+    ))
 
   const renderHakemukset = (list) => (
     <div className="haku-grid">
