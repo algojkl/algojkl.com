@@ -1801,6 +1801,15 @@ p {
     align-items: center;
   }
 
+  .hallihaku-container p {
+    white-space: pre-wrap;
+    word-break: break-word;
+    text-align: left;
+    font-size: small;
+    line-height: 25px;
+  
+  }
+
   .aktiivi-start h2 {
     padding-top: 10px !important;
     margin: 0 auto !important;
@@ -1872,7 +1881,7 @@ p {
   .aktiivi-container p,
   .aktiivi-consent p,
   .event-container p,
-  .hallihaku-container p {
+  .hallihaku-container-start p {
     font-size: small;
     line-height: 25px;
   }
