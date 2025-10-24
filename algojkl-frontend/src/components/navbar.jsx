@@ -86,7 +86,7 @@ function NavBar() {
                       path: 'https://kattila.linkkijkl.fi/',
                     },
                     { label: 'SALAISUUDET', path: '/salaisuudet' },
-                    { label: 'LAULUKIRJA', path:'https://ritmi.algojkl.com/'},
+                    { label: 'LAULUKIRJA', path: 'https://ritmi.algojkl.com/' },
                   ],
                 },
               ]}
@@ -153,7 +153,7 @@ function NavBar() {
                       path: 'https://kattila.linkkijkl.fi/',
                     },
                     { label: 'SALAISUUDET', path: '/salaisuudet' },
-                    { label: 'LAULUKIRJA', path:'https://ritmi.algojkl.com/'},
+                    { label: 'LAULUKIRJA', path: 'https://ritmi.algojkl.com/' },
                   ],
                 },
               ]}

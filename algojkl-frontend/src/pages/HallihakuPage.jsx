@@ -19,7 +19,7 @@ const HallihakuPage = () => {
           ilmoituskanavalta.
         </p>
       </div>
-        <HallitusHaku />
+      <HallitusHaku />
     </div>
   )
 }

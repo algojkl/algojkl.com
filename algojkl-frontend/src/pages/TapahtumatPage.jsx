@@ -13,7 +13,12 @@ const Events = () => {
       <img src={starterImage} alt="page_stater_events" className="starter" />
       <div className="event-container">
         <h2>Tulevat tapahtumat</h2>
-        <p>Tapahtumien ilmoittautumiset ja tarkemmat tiedot löytyvät Algo ry:n ilmoituskanavalta Telegramista. Algon Telegramin viestintäkanaviin liittyminen onnistuu sähköpostista löytyvistä jäsenkirjeistä tai kysymällä hallituslaisilta</p>
+        <p>
+          Tapahtumien ilmoittautumiset ja tarkemmat tiedot löytyvät Algo ry:n
+          ilmoituskanavalta Telegramista. Algon Telegramin viestintäkanaviin
+          liittyminen onnistuu sähköpostista löytyvistä jäsenkirjeistä tai
+          kysymällä hallituslaisilta
+        </p>
         <iframe
           title="Google calendar"
           src={Calendar_key}

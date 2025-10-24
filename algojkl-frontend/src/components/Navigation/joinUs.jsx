@@ -1,7 +1,6 @@
 import Rive from '@rive-app/react-canvas'
 import React from 'react'
-import liityjaseneksi from '../liityjaseneksinappi.riv'
-import '../App.css'
+import liityjaseneksi from '../../liityjaseneksinappi.riv'
 
 export default function Join() {
   const openLink = (url) => {

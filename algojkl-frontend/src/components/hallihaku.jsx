@@ -9,16 +9,19 @@ const HallitusHaku = () => {
 
   const hallitushaku = data?.hallitushaku || []
 
-  const puheenjohtajisto = hallitushaku.filter((haku) =>
-    haku.pesti?.toLowerCase().includes('puheenjohtaja') ||
-    haku.pesti?.toLowerCase().includes('varapuheenjohtaja')
-    )
+  const puheenjohtajisto = hallitushaku.filter(
+    (haku) =>
+      haku.pesti?.toLowerCase().includes('puheenjohtaja') ||
+      haku.pesti?.toLowerCase().includes('varapuheenjohtaja')
+  )
 
-  const muutPestit = hallitushaku.filter((haku) =>
-   !(
-    haku.pesti?.toLowerCase().includes('puheenjohtaja') ||
-    haku.pesti?.toLowerCase().includes('varapuheenjohtaja')
-    ))
+  const muutPestit = hallitushaku.filter(
+    (haku) =>
+      !(
+        haku.pesti?.toLowerCase().includes('puheenjohtaja') ||
+        haku.pesti?.toLowerCase().includes('varapuheenjohtaja')
+      )
+  )
 
   const renderHakemukset = (list) => (
     <div className="haku-grid">
@@ -33,10 +36,10 @@ const HallitusHaku = () => {
           )}
           <div className="haku-info">
             <h3>Nimi: {haku.nimi}</h3>
-            <p>Haettava(t) pesti(t): <strong>{haku.pesti}</strong></p>
-            <p style={{ whiteSpace: 'pre-wrap' }}>
-            {haku.hakuteksti}
+            <p>
+              Haettava(t) pesti(t): <strong>{haku.pesti}</strong>
             </p>
+            <p style={{ whiteSpace: 'pre-wrap' }}>{haku.hakuteksti}</p>
           </div>
         </div>
       ))}
@@ -46,15 +49,19 @@ const HallitusHaku = () => {
   return (
     <div className="hallihaku-container">
       <h2>Puheenjohtajisto</h2>
-      {puheenjohtajisto.length > 0
-        ? renderHakemukset(puheenjohtajisto)
-        : <p>Ei vielä hakemuksia puheenjohtajistoon.</p>}
+      {puheenjohtajisto.length > 0 ? (
+        renderHakemukset(puheenjohtajisto)
+      ) : (
+        <p>Ei vielä hakemuksia puheenjohtajistoon.</p>
+      )}
       <br />
       <h2>Muut hallituspestit</h2>
-      {muutPestit.length > 0
-        ? renderHakemukset(muutPestit)
-        : <p>Ei vielä hakemuksia muihin hallituspesteihin.</p>}
-    <br />
+      {muutPestit.length > 0 ? (
+        renderHakemukset(muutPestit)
+      ) : (
+        <p>Ei vielä hakemuksia muihin hallituspesteihin.</p>
+      )}
+      <br />
     </div>
   )
 }

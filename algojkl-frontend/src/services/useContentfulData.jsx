@@ -21,8 +21,7 @@ const fetchContentfulData = async () => {
     client.getEntries({ content_type: 'pytkirjat' }),
     client.getEntries({ content_type: 'jedut' }),
     client.getEntries({ content_type: 'hiring' }),
-    client.getEntries({ content_type: 'hallitushaku'}),
-
+    client.getEntries({ content_type: 'hallitushaku' }),
   ])
 
   return {
@@ -81,8 +80,8 @@ const fetchContentfulData = async () => {
       nimi: item.fields.nimi,
       pesti: item.fields.pesti,
       hakuteksti: item.fields.hakuteksti,
-      hakuKuva: item.fields.hakuKuva
-    }))
+      hakuKuva: item.fields.hakuKuva,
+    })),
   }
 }
 

@@ -10,8 +10,8 @@ const VuodenAlgolaiset = ({ people }) => {
             {person.image && (
               <img src={person.image} alt={person.name} width={300} />
             )}
-            <div className='name-container'>
-            <strong>{person.year}:</strong> {person.name}
+            <div className="name-container">
+              <strong>{person.year}:</strong> {person.name}
             </div>
           </li>
         ))}

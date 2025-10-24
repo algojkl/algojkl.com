@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 /**
  * FooterNavSection
- * 
+ *
  * Tämä komponentti vastaa yksittäistä osioita footerin navigaatiossa.
  * Se sisältää otsikon (title) ja listan linkkejä (links).
- * 
+ *
  * Props:
  * - title: osion otsikko (esim. "NAVIGAATIO", "JÄSENILLE")
  * - links: taulukko linkki-olioita, joissa on 'to' ja 'label'
@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom'
 const FooterNavSection = ({ title, links }) => (
   <li className="footer-nav">
     <ul>
-    <h2>{title}</h2>
+      <h2>{title}</h2>
       {links.map((link, index) => (
         <li key={index}>
           {link.to.startsWith('http') ? (

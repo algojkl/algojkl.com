@@ -1,20 +1,20 @@
 import React from 'react'
 import FooterNavSection from './FooterNavSection'
-/** 
+/**
  * FooterNav
- * 
+ *
  * Tämä komponentti vastaa footerin navigaatiosta.
- * Se renderöi useita FooterNavSection-komponentteja, 
+ * Se renderöi useita FooterNavSection-komponentteja,
  * jotka sisältävät otsikon ja linkit eri osioille.
- * 
+ *
  * Footerin osiot:
  * 1. NAVIGAATIO – pääsivujen linkit
  * 2. TOIMIHENKILÖT – hallitus ja aktiiviset jäsenet
  * 3. VIRALLISET DOKUMENTIT – säännöt ja ohjesäännöt
  * 4. JÄSENILLE – jäsenetuun ja kerhotoimintaan liittyvät linkit
- * 
+ *
  * Mikäli halutaan lisätä linkkejä, niin lisää vain uusia to ja label osioita samaan tyyliin oikean titlen alle.
- * 
+ *
  */
 const FooterNav = () => (
   <nav className="footer-nav">
@@ -29,8 +29,8 @@ const FooterNav = () => (
           { to: '/hakijalle', label: 'HAKIJAT' },
         ]}
       />
-      </ul>
-      <ul>
+    </ul>
+    <ul>
       <FooterNavSection
         title="TOIMIHENKILÖT"
         links={[
@@ -38,8 +38,8 @@ const FooterNav = () => (
           { to: '/aktiivit', label: 'AKTIIVIT' },
         ]}
       />
-      </ul>
-      <ul>
+    </ul>
+    <ul>
       <FooterNavSection
         title="VIRALLISET DOKUMENTIT"
         links={[
@@ -51,8 +51,8 @@ const FooterNav = () => (
           { to: '/periaatteet', label: 'TOIMINNAN PERIAATTEET' },
         ]}
       />
-      </ul>
-      <ul>
+    </ul>
+    <ul>
       <FooterNavSection
         title="JÄSENILLE"
         links={[
@@ -61,7 +61,10 @@ const FooterNav = () => (
           { to: '/rekryt', label: 'REKRYT' },
           { to: '/lomakkeet', label: 'LOMAKKEET' },
           { to: '/kansainvalisyys', label: 'KANSAINVÄLISYYS' },
-          { to: 'https://kattila.linkkijkl.fi/', label: 'KATTILAN KAHVIKAMERA' },
+          {
+            to: 'https://kattila.linkkijkl.fi/',
+            label: 'KATTILAN KAHVIKAMERA',
+          },
           { to: '/salaisuudet', label: 'SALAISUUDET' },
           { to: 'https://ritmi.algojkl.com/', label: 'LAULUKIRJA' },
         ]}

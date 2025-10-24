@@ -12,7 +12,7 @@ import Perustajat from '../components/perustajat.jsx'
 import useDevice from '../hooks/useDevice.jsx'
 
 const vuodenAlgolaiset = [
-  { year: 2025, name: 'Leevi Kopakkala', image: leevi},
+  { year: 2025, name: 'Leevi Kopakkala', image: leevi },
   { year: 2024, name: 'Olli Terävä', image: olli },
   { year: 2023, name: 'Niko Iljin', image: niko },
 ]
@@ -74,7 +74,7 @@ const KunniagalleriaPage = () => {
       <Perustajat image={halli2022} members={perustajat2022} year={2022} />
       <div className="kunnia-container">
         <p>
-          Muut edelliset hallitukset näet {' '}
+          Muut edelliset hallitukset näet{' '}
           <a href="/entiset-hallitukset">täältä</a>
         </p>
       </div>
