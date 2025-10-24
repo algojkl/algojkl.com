@@ -7,7 +7,7 @@ import useDevice from '../hooks/useDevice'
 import { useContentfulData } from '../services/useContentfulData'
 
 import HallitusCard from '../components/HallitusCard'
-import PestitDescription from '../components/PestitDescription'
+import PestitDescription from '../components/Pestit/PestitDescription'
 import { hallitusOrder } from '../utils/hallitusOrder'
 
 const HallitusPage = () => {
