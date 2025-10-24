@@ -338,11 +338,7 @@ body {
 .footer-content {
   display: flex;
   margin-left: 2%;
-  gap: 15%;
-}
-
-.footer-info {
-  font-size: 0.8rem;
+  gap: 5%;
 }
 
 .footer-info p {
@@ -354,20 +350,17 @@ body {
 }
 
 .footer-nav {
+  display: flex;
   font-size: 0.8rem;
+  gap: 1rem;
 }
 
 .footer-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
+  display: flex;            
+  flex-direction: column;
   list-style: none;
-  padding: 0;
-  margin-top: 0;
-}
-
-.footer-nav li {
-  margin-bottom: 8px;
+  gap: 15px;
+  margin: 0;
 }
 
 .footer-nav a {
@@ -1459,83 +1452,99 @@ p {
 /*----------------------------------------------------------*/
 
 @media (min-width: 2300px) {
-  .footer-nav ul {
-    gap: 17rem;
+  .footer-content {
+    gap: 5%;
   }
-  .footer-nav,
-  .feedback-comms p {
-    font-size: medium;
+  .footer-nav {
+    gap: 220px;
+  }
+  .footer-info,.footer-nav,.feedback-comms p {
+    font-size: large;
+  }
+}
+@media (min-width: 2150px) and (max-width: 2299px) {
+  .footer-content {
+    gap: 4%;
+  }
+  .footer-nav {
+    gap: 130px;
+  }
+  .footer-info,.footer-nav,.feedback-comms p {
+    font-size: large;
   }
 }
 
-@media (min-width: 2000px) and (max-width: 2299px) {
-  .footer-nav ul {
-    gap: 13rem;
+@media (min-width: 2000px) and (max-width: 2149px) {
+  .footer-content {
+    gap: 3%;
   }
-  .footer-nav,
-  .feedback-comms p {
-    font-size: medium;
+  .footer-nav {
+    gap: 70px;
+  }
+  .footer-info,.footer-nav,.feedback-comms p {
+    font-size: large;
   }
 }
 
 @media (min-width: 1801px) and (max-width: 1999px) {
-  .footer-nav ul {
-    gap: 10rem;
+  .footer-content {
+    gap: 3%;
   }
-  .footer-nav,
-  .feedback-comms p {
+  .footer-nav {
+    gap: 70px;
+  }
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: medium;
   }
 }
 
 @media (min-width: 1701px) and (max-width: 1800px) {
-  .footer-nav ul {
-    gap: 9rem;
+  .footer-content {
+    gap: 2%;
+  }
+  .footer-nav {
+    gap: 50px;
+  }
+  .footer-info,.footer-nav,.feedback-comms p {
+    font-size: medium;
   }
 }
 
 @media (min-width: 1501px) and (max-width: 1700px) {
-  .footer-nav ul {
-    gap: 8rem;
+  .footer-content {
+    gap: 10px;
+  }
+  footer-info,.footer-nav,.feedback-comms p {
+    font-size: medium;
   }
 }
 
 @media (min-width: 1401px) and (max-width: 1500px) {
-  .footer-nav ul {
-    gap: 7rem;
-  }
-  .footer-content {
-    gap: 11%;
+  .footer-info,.footer-nav,.feedback-comms p {
+    font-size: small;
   }
 }
 
 @media (min-width: 1301px) and (max-width: 1400px) {
-  .footer-nav ul {
-    gap: 6rem;
-  }
-  .footer-content {
-    gap: 7%;
+  .footer-info, .footer-nav, .feedback-comms p {
+    font-size: small;
   }
 }
 
 @media (min-width: 1201px) and (max-width: 1300px) {
-  .footer-nav ul {
-    gap: 5rem;
-  }
-  .footer-content {
-    gap: 4%;
+  .footer-info,.footer-nav,.feedback-comms p {
+    font-size: small;
   }
 }
 
 @media (min-width: 1101px) and (max-width: 1200px) {
-  .footer-nav ul {
-    gap: 2rem;
-  }
-
   .footer-content {
-    gap: 1%;
+    gap: 10px;
+    margin-right: 25px;
   }
-
+  .footer-info,.footer-nav,.feedback-comms p {
+    font-size: small;
+  }
   .haku-card {
     flex-direction: column;
     align-items: center;
@@ -1610,9 +1619,13 @@ p {
     flex-direction: column;
   }
 
-  .footer-nav ul {
+  .footer-nav{
     flex-direction: column;
     gap: 1px;
+  }
+
+  .footer-nav ul {
+    padding: 0;
   }
 
   .feedback-comms {
