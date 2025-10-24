@@ -9,7 +9,7 @@ import Join from './joinUs'
  * Desktop-versio navigaatiosta:
  *  - DropdownMenu (KILTA)
  *  - Yksittäiset linkit
- *  - Join (jäseneksi liittyminen)
+ *  - Panun nappi (jäseneksi liittyminen)
  */
 const NavbarRight = ({ dropdownLinks }) => (
   <div className="right-section">
@@ -19,7 +19,7 @@ const NavbarRight = ({ dropdownLinks }) => (
         <Link to="/tapahtumat">TAPAHTUMAT</Link>
       </li>
       <li>
-        <Link to="/yhteistyot">YHTEISTYÖT</Link>
+        <Link to="/yhteistyot">YHTEISTYÖ</Link>
       </li>
       <li>
         <Link to="/fuksit">FUKSIT</Link>

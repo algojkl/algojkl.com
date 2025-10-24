@@ -2,7 +2,7 @@ import React from 'react'
 import starterDesktop from '../images/Page_starters/16.jpg'
 import starterMobile from '../images/mobiili/18.png'
 import useDevice from '../hooks/useDevice'
-import HallitusHaku from '../components/hallihaku.jsx'
+import HallitusHaku from '../components/Hallihaku/HallitusHaku.jsx'
 
 const HallihakuPage = () => {
   const isMobile = useDevice()

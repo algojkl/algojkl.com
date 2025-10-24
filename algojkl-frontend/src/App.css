@@ -356,7 +356,7 @@ body {
 }
 
 .footer-nav ul {
-  display: flex;
+  display: flex;            
   flex-direction: column;
   list-style: none;
   gap: 15px;
@@ -569,8 +569,7 @@ body.modal-open {
 
 /*-----------------------------------------------------FreshmanPage------------------------------------------------------------------------*/
 
-.fuksi-leveys,
-.Freshman-container {
+.fuksi-leveys, .Freshman-container {
   width: 70%;
   margin: 0 auto;
 }
@@ -589,8 +588,7 @@ body.modal-open {
   width: 100%;
 }
 
-.Freshman-container h2,
-.hallihaku-container h2 {
+.Freshman-container h2, .hallihaku-container h2 {
   font-size: medium;
   background-color: #fbbebd;
   width: fit-content;
@@ -806,7 +804,7 @@ body.modal-open {
   line-height: 25px;
 }
 
-.tutor-container img {
+.tutor-container img{
   width: 250px;
   height: auto;
   padding-top: 20px;
@@ -832,9 +830,7 @@ body.modal-open {
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   gap: 1.2rem;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .haku-card:hover {
@@ -1462,9 +1458,7 @@ p {
   .footer-nav {
     gap: 220px;
   }
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: large;
   }
 }
@@ -1475,9 +1469,7 @@ p {
   .footer-nav {
     gap: 130px;
   }
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: large;
   }
 }
@@ -1489,9 +1481,7 @@ p {
   .footer-nav {
     gap: 70px;
   }
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: large;
   }
 }
@@ -1503,9 +1493,7 @@ p {
   .footer-nav {
     gap: 70px;
   }
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: medium;
   }
 }
@@ -1517,9 +1505,7 @@ p {
   .footer-nav {
     gap: 50px;
   }
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: medium;
   }
 }
@@ -1528,33 +1514,26 @@ p {
   .footer-content {
     gap: 10px;
   }
-  footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  footer-info,.footer-nav,.feedback-comms p {
     font-size: medium;
   }
 }
 
 @media (min-width: 1401px) and (max-width: 1500px) {
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: small;
   }
 }
 
 @media (min-width: 1301px) and (max-width: 1400px) {
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info, .footer-nav, .feedback-comms p {
     font-size: small;
   }
+  
 }
 
 @media (min-width: 1201px) and (max-width: 1300px) {
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: small;
   }
   .footer-content {
@@ -1567,9 +1546,7 @@ p {
     gap: 10px;
     margin-right: 25px;
   }
-  .footer-info,
-  .footer-nav,
-  .feedback-comms p {
+  .footer-info,.footer-nav,.feedback-comms p {
     font-size: small;
   }
   .haku-card {
@@ -1586,6 +1563,7 @@ p {
   .haku-info {
     align-items: center;
   }
+
 }
 
 @media (max-width: 1100px) {
@@ -1645,7 +1623,7 @@ p {
     flex-direction: column;
   }
 
-  .footer-nav {
+  .footer-nav{
     flex-direction: column;
     gap: 1px;
   }
@@ -1757,8 +1735,10 @@ p {
   .haku-info {
     align-items: center;
   }
+  
 }
 @media (max-width: 780px) {
+
   .saannot-container,
   .Lakki-container,
   .OverAll-container,
@@ -1844,6 +1824,7 @@ p {
     text-align: left;
     font-size: small;
     line-height: 25px;
+  
   }
 
   .aktiivi-start h2 {
@@ -1922,12 +1903,7 @@ p {
     line-height: 25px;
   }
 
-  .vuju-container h2,
-  .periaate-container h3,
-  .aktiivi-container h2,
-  .aktiivi-consent h2,
-  .aktiivi-container-merkit h2,
-  .hallihaku-container h3 {
+  .vuju-container h2, .periaate-container h3, .aktiivi-container h2, .aktiivi-consent h2, .aktiivi-container-merkit h2, .hallihaku-container h3{
     font-size: medium;
   }
 
@@ -1948,8 +1924,7 @@ p {
     font-size: small;
   }
 
-  .kerhotoiminta-container ol,
-  .kerhotoiminta-container ul {
+  .kerhotoiminta-container ol, .kerhotoiminta-container ul {
     width: 90%;
     padding: 0;
     margin-right: 5px;
@@ -1966,7 +1941,7 @@ p {
   }
 
   .Freshman-container ul {
-    padding-left: 10%;
+    padding-left:10%;
   }
 
   .kerhotoiminta-container ol {
