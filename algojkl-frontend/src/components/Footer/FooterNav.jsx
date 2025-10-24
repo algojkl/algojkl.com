@@ -1,6 +1,21 @@
 import React from 'react'
 import FooterNavSection from './FooterNavSection'
-
+/** 
+ * FooterNav
+ * 
+ * Tämä komponentti vastaa footerin navigaatiosta.
+ * Se renderöi useita FooterNavSection-komponentteja, 
+ * jotka sisältävät otsikon ja linkit eri osioille.
+ * 
+ * Footerin osiot:
+ * 1. NAVIGAATIO – pääsivujen linkit
+ * 2. TOIMIHENKILÖT – hallitus ja aktiiviset jäsenet
+ * 3. VIRALLISET DOKUMENTIT – säännöt ja ohjesäännöt
+ * 4. JÄSENILLE – jäsenetuun ja kerhotoimintaan liittyvät linkit
+ * 
+ * Mikäli halutaan lisätä linkkejä, niin lisää vain uusia to ja label osioita samaan tyyliin oikean titlen alle.
+ * 
+ */
 const FooterNav = () => (
   <nav className="footer-nav">
     <ul>

@@ -1,5 +1,14 @@
 import React from 'react'
-
+/**
+ * FooterInfo
+ * 
+ * Tämä komponentti näyttää footerissa yhdistyksen perustiedot:
+ * - Nimi
+ * - Yhteystiedot (osoite, sähköposti)
+ * - Y-tunnus
+ * - Tekijänoikeustiedot
+ * 
+ */
 const FooterInfo = () => (
   <div className="footer-info">
     <h2>Algo ry</h2>

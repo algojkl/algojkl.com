@@ -1,5 +1,15 @@
 import React from 'react'
-
+/**
+ * FooterFeedback
+ * 
+ * Tämä komponentti vastaa footerin palautelomake-osaa.
+ * Se sisältää otsikon, kuvauksen ja linkin Google Forms -lomakkeeseen.
+ * Linkki avautuu uuteen välilehteen.
+ * 
+ * Luokat:
+ * - feedback-comms: koko palautekomponentin container
+ * - feedback: yksittäisen palautelomake-osan sisältö
+ */
 const FooterFeedback = () => {
   return (
     <div className="feedback-comms">
