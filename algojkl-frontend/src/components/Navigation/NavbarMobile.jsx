@@ -13,7 +13,7 @@ import NavbarJoinButton from './NavBarMobileJoin'
  *  - DropdownMenu
  *  - Yksittäiset sivulinkit
  *  - Liity jäseneksi -nappi
- *  - Panu-komponentti (esim. footer-tyylinen lisäosa)
+ *  - Panu-komponentti
  */
 const NavbarMobile = ({ menuOpen, setMenuOpen, dropdownLinks }) => {
   const handleClose = () => setMenuOpen(false)

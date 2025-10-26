@@ -6,7 +6,7 @@ import starterMobile from '../images/mobiili/8.png'
 import useDevice from '../hooks/useDevice'
 import { useContentfulData } from '../services/useContentfulData'
 
-import HallitusCard from '../components/HallitusCard'
+import HallitusCard from '../components/HallitusCard/HallitusCard'
 import PestitDescription from '../components/Pestit/PestitDescription'
 import { hallitusOrder } from '../utils/hallitusOrder'
 
