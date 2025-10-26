@@ -2,7 +2,7 @@ import { useContentfulData } from '../../services/useContentfulData'
 
 /**
  * useHallitusHaku
- * 
+ *
  * Hook hakee hallitushaku-dataa ja jakaa hakemukset kategorioihin:
  *  - puheenjohtajisto
  *  - muut hallituspestit

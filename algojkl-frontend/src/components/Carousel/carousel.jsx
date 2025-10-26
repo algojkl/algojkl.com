@@ -12,7 +12,7 @@ import mobile3 from '../../images/mobiili/ryhma_m.png'
 
 const Carousel = () => {
   const [photos, setPhotos] = useState([logo, ryhma, algo])
-  
+
   const { currentIndex, goToSlide } = useCarousel(photos.length, 5000)
 
   useEffect(() => {
@@ -39,7 +39,11 @@ const Carousel = () => {
           <CarouselSlide key={index} photo={photo} />
         ))}
       </div>
-      <CarouselDots photos={photos} currentIndex={currentIndex} goToSlide={goToSlide} />
+      <CarouselDots
+        photos={photos}
+        currentIndex={currentIndex}
+        goToSlide={goToSlide}
+      />
     </div>
   )
 }

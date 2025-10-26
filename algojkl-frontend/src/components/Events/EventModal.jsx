@@ -9,7 +9,9 @@ import ReactMarkdown from 'react-markdown'
 const EventModal = ({ event, onClose }) => (
   <div className="modal-overlay" onClick={onClose}>
     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-      <span className="close" onClick={onClose}>&times;</span>
+      <span className="close" onClick={onClose}>
+        &times;
+      </span>
       <h2>{event.title}</h2>
       <ReactMarkdown>{event.description}</ReactMarkdown>
       {event.url && (

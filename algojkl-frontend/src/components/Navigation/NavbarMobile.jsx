@@ -26,7 +26,11 @@ const NavbarMobile = ({ menuOpen, setMenuOpen, dropdownLinks }) => {
       onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
     >
       <ul>
-        <DropdownMenu title="KILTA" links={dropdownLinks} onItemClick={handleClose} />
+        <DropdownMenu
+          title="KILTA"
+          links={dropdownLinks}
+          onItemClick={handleClose}
+        />
         <NavbarMobileLinks onClick={handleClose} />
         <NavbarJoinButton onClick={handleClose} />
         <p>/* -------------------- */</p>

@@ -14,9 +14,10 @@ const EventCards = () => {
     document.body.classList.toggle('modal-open', !!selectedEvent)
   }, [selectedEvent])
 
-  const sortedEvents = data && data.events
-    ? [...data.events].sort((a, b) => new Date(a.date) - new Date(b.date))
-    : []
+  const sortedEvents =
+    data && data.events
+      ? [...data.events].sort((a, b) => new Date(a.date) - new Date(b.date))
+      : []
 
   const { visibleEvents, showAll, toggleVisibleCount } = useVisibleEvents(
     sortedEvents,
@@ -31,7 +32,10 @@ const EventCards = () => {
       <div className="event-cards-container">
         <EventList events={visibleEvents} onEventClick={setSelectedEvent} />
         {selectedEvent && (
-          <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
+          <EventModal
+            event={selectedEvent}
+            onClose={() => setSelectedEvent(null)}
+          />
         )}
       </div>
 

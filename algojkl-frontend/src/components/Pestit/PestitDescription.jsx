@@ -13,7 +13,8 @@ const PestitDescription = () => (
         </span>
       ))}
       <i>
-        ps: Hallituksessa tehdään yhteistyössä muitakin kuin vain oman vastuualueen tehtäviä.
+        ps: Hallituksessa tehdään yhteistyössä muitakin kuin vain oman
+        vastuualueen tehtäviä.
       </i>
     </p>
 

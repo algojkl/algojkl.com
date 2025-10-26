@@ -11,10 +11,17 @@ const HallitusHaku = () => {
   return (
     <div className="hallihaku-container">
       <h2>Puheenjohtajisto</h2>
-      <HakuList list={puheenjohtajisto} emptyMessage="Ei vielä hakemuksia puheenjohtajistoon." /> <br />
-
+      <HakuList
+        list={puheenjohtajisto}
+        emptyMessage="Ei vielä hakemuksia puheenjohtajistoon."
+      />{' '}
+      <br />
       <h2>Muut hallituspestit</h2>
-      <HakuList list={muutPestit} emptyMessage="Ei vielä hakemuksia muihin hallituspesteihin." /> <br />
+      <HakuList
+        list={muutPestit}
+        emptyMessage="Ei vielä hakemuksia muihin hallituspesteihin."
+      />{' '}
+      <br />
     </div>
   )
 }

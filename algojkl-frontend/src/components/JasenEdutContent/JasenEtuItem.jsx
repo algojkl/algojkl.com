@@ -5,7 +5,9 @@ const JasenEtuItem = ({ etu }) => (
   <div className="jasenedut-item">
     {etu.kuvaUrl && (
       <img
-        src={etu.kuvaUrl.startsWith('//') ? 'https:' + etu.kuvaUrl : etu.kuvaUrl}
+        src={
+          etu.kuvaUrl.startsWith('//') ? 'https:' + etu.kuvaUrl : etu.kuvaUrl
+        }
         alt={etu.otsikkofirma}
         className="jasenedut-image"
       />
