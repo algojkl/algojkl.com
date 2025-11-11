@@ -1,12 +1,10 @@
 import React from 'react'
 import starterDesktop from '../images/Page_starters/16.jpg'
 import starterMobile from '../images/mobiili/18.png'
-import useDevice from '../hooks/useDevice'
 import { useContentfulData } from '../services/useContentfulData'
+import StarterImage from '../common/StarterImage'
 
 const RekrytPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
   const { data, isLoading, error } = useContentfulData()
 
   if (isLoading) return <p>Ladataan rekryjä...</p>
@@ -14,8 +12,11 @@ const RekrytPage = () => {
 
   return (
     <div>
-      <img src={starterImage} alt="starter_image_rekryt" className="starter" />
-
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Seloste"
+      />
       <div className="rekryt-container">
         <h1>Täällä julkaistaan avoimia rekryilmotuksia!</h1>
         {data?.hiring && data.hiring.length > 0 ? (

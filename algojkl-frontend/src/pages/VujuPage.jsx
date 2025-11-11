@@ -1,15 +1,16 @@
-import useDevice from '../hooks/useDevice'
-
+import StarterImage from '../common/StarterImage'
 import starterDesktop from '../images/Page_starters/vujut.jpg'
 import starterMobile from '../images/mobiili/vujut_m.jpg'
 
 const Vujut = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
 
   return (
     <div>
-      <img src={starterImage} alt="starter_img_documents" className="starter" />
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Events"
+      />
       <div className="vuju-container">
         <h1>Vuosijuhlaetiketti</h1>
         <p>

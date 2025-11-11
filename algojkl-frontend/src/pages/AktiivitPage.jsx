@@ -1,21 +1,43 @@
 import React from 'react'
-import useDevice from '../hooks/useDevice'
+import StarterImage from '../common/StarterImage'
+import {
+  starterImages,
+  tiimit,
+  muutAktiivit,
+  aktiivimerkit,
+} from '../PageData/aktiivitData'
 
-import starterDesktop from '../images/Page_starters/7.jpg'
-import starterMobile from '../images/mobiili/9.png'
-
-import aktiivi_s from '../images/aktiivit_s.png'
-import aktiivi_1 from '../images/aktiivit_1.png'
-import aktiivi_2 from '../images/aktiivit-2.png'
-import aktiivi_3 from '../images/aktiivi_3.png'
-
+/**
+ * AktiiviPage-komponentti
+ * Tämä komponentti esittelee Algon killan aktiivien toiminnan ja tehtävät.
+ * Se sisältää seuraavat osiot:
+ * 1. Aloituskuva (StarterImage) eri laitteille
+ * 2. Johdantoaktiiveihin
+ * 3. Aktiivien pestit ja tehtävät
+ * 4. Hakeutumiskutsu aktiiviksi
+ * 5. Aktiivimerkit
+ *
+ * Käytetyt luokat:
+ * - aktiivi: koko sivun container
+ * - aktiivi-container: pääsisältöalue
+ * - aktiivi-start: johdantoaktiivit-osio
+ * - aktiivi-pestit: aktiivien pestit-osio
+ * - aktiivi-consent: hakeutumiskutsu-osio
+ * - aktiivi-container-merkit: aktiivimerkkejä esittelevä osio
+ * 
+ * Data tuodaan PageData/aktiivitData.js -tiedostosta.
+ * Jos tarvitsee muokata esim. tiimien tietoja tai aktiivimerkkejä,
+ * se onnistuu muokkaamalla kyseistä tiedostoa.
+ */
 const AktiiviPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
 
   return (
     <div className="aktiivi">
-      <img src={starterImage} alt="starter_img_aktiivit" className="starter" />
+      <StarterImage
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
+        alt="Aktiivit"
+      /> 
       <div className="aktiivi-container">
         <div className="aktiivi-start">
           <h2>MIKÄ IHMEEN AKTIIVI???</h2>
@@ -25,103 +47,66 @@ const AktiiviPage = () => {
             jäseniä matalalla kynnyksellä.
           </p>
         </div>
+
         <div className="aktiivi-pestit">
           <h2>AKTIIVIEN PESTIT</h2>
           <ul>
-            <li>
-              <strong>Tapahtumatiimi</strong>
-            </li>
-            <ul>
-              <li>Tapahtumien suunnittelu ja järjestäminen</li>
-              <ul>
-                <li>
-                  Sisältää esimerkiksi tapahtumapaikan varaamista ja
-                  järjestelemistä sekä yleistä tapahtuman suunnittelua
-                </li>
-              </ul>
-              <li>Tapahtumamerkkien suunnittelu</li>
-              <li>Liikuntavastaava</li>
-              <ul>
-                <li>Liikuntatapahtumien järjestäminen</li>
-              </ul>
-              <li>
-                Tapahtumatiimiä ylläpitää{' '}
-                <a href="/hallitus">tapahtumavastaava(t)</a>
-              </li>
-            </ul>
-            <li>
-              <strong>Yritysyhteistyötiimi</strong>
-            </li>
-            <ul>
-              <li>Yritysyhteistöiden kontaktointi ja hankinta</li>
-              <ul>
-                <li>
-                  Myös esimerkiksi pienten kertaluontoisten sponsoreiden
-                  hankinta
-                </li>
-              </ul>
-              <li>
-                Yritysyhteistyötiimiä ylläpitää{' '}
-                <a href="/hallitus">yrityssuhdevastaava</a>
-              </li>
-            </ul>
-            <li>
-              <strong>Some- ja viestintätiimi</strong>
-            </li>
-            <ul>
-              <li>Somekanavien ylläpito</li>
-              <ul>
-                <li>Instagram & TikTok</li>
-              </ul>
-              <li>Tapahtumien kuvaaminen</li>
-              <li>Killan mainostaminen</li>
-              <li>Killan jäsenviestintä sähköpostitse </li>
-              <li>
-                Sometiimiä ylläpitää:
+            {tiimit.map((tiimi, idx) => (
+              <li key={idx}>
+                <strong>{tiimi.title}</strong>
                 <ul>
-                  <li>Venla @thevempula</li>
-                  <li>Viola @ViolaMaunuksela</li>
+                  {tiimi.tasks.map((task, i) => (
+                    <li key={i}>
+                      {task.title}
+                      {task.subTasks && (
+                        <ul>
+                          {task.subTasks.map((st, j) => (
+                            <li key={j}>{st}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                  {tiimi.responsibles?.map((v, k) => (
+                    <li key={k}>
+                      {v.href ? <a href={v.href}>{v.nimi}</a> : v.nimi}
+                    </li>
+                  ))}
                 </ul>
               </li>
-            </ul>
-            <li>
-              <strong>Muut mahdolliset aktiivit/tiimit</strong>
-            </li>
-            <ul>
-              <li>Yhdenvertaisuus-vastaava tapahtumissa</li>
-              <li>Juhlatiimi</li>
-              <ul>
-                <li>Vapun ja vuosijuhlien järjesteminen</li>
-              </ul>
-              <li>Nettimestari</li>
-              <ul>
-                <li>Nettisivujen päivitys ja ylläpito</li>
-                <li>Alidomainien sovellusten ylläpito</li>
-              </ul>
-              <li>
-                Lisätietoja tai ehdotuksia muista aktiivipesteistä voi kysyä
-                keneltä tahansa hallituksen jäseneltä
+            ))}
+
+            {muutAktiivit.map((m, idx) => (
+              <li key={idx}>
+                <strong>{m.title}</strong>
+                {m.subTasks && (
+                  <ul>
+                    {m.subTasks.map((st, i) => (
+                      <li key={i}>{st}</li>
+                    ))}
+                  </ul>
+                )}
               </li>
-            </ul>
+            ))}
           </ul>
         </div>
         <br />
-      </div>
-      <div className="aktiivi-consent">
-        <h2>Kiinnostuitko?</h2>
-        <p>Hae aktiiviksi täyttämällä alla olevan lomakkeen!</p>
-        <button className="aktiivit-button">
-          <a href="https://forms.gle/iwLcCpC3bscAhbhN8">Hae Aktiiviksi</a>
-        </button>
-      </div>
 
-      <div className="aktiivi-container-merkit">
-        <h2>Aktiivimerkit</h2>
-        <div className="aktiivit-container-merkit-background">
-          <img src={aktiivi_3} alt="aktiivi_3" />
-          <img src={aktiivi_2} alt="aktiivi_3" />
-          <img src={aktiivi_1} alt="aktiivi_3" />
-          <img src={aktiivi_s} alt="aktiivi_3" />
+        <div className="aktiivi-consent">
+          <h3>Kiinnostuitko?</h3>
+          <p>Hae aktiiviksi täyttämällä alla olevan lomakkeen!</p>
+          <button className="aktiivit-button">
+            <a href="https://forms.gle/iwLcCpC3bscAhbhN8">Hae Aktiiviksi</a>
+          </button>
+        </div>
+
+        <div className="aktiivi-container-merkit">
+          <h2>Aktiivimerkit</h2>
+          <div className="aktiivit-container-merkit-background">
+            {aktiivimerkit.map((src, idx) => (
+              <img key={idx} src={src} alt={`aktiivi_${idx}`} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

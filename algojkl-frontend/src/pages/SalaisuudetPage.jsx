@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import starterDesktop from '../images/Page_starters/21.jpg'
 import starterMobile from '../images/mobiili/21.png'
-import useDevice from '../hooks/useDevice'
+import StarterImage from '../common/StarterImage'
+
 
 const SalaisuudetPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
 
   const [password, setPassword] = useState('')
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -40,7 +39,11 @@ const SalaisuudetPage = () => {
   if (!isAuthenticated) {
     return (
       <div>
-        <img src={starterImage} alt="starter_image_rules" className="starter" />
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Seloste"
+      />
         <div className="login-container">
           <h2>Syötä salasana päästäksesi sisältöön:</h2>
           <form onSubmit={handleSubmit}>
@@ -62,7 +65,11 @@ const SalaisuudetPage = () => {
 
   return (
     <div>
-      <img src={starterImage} alt="starter_image_rules" className="starter" />
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Seloste"
+      />
       <div className="salaisuudet-page-content">
         {content.secretText.split('\n').map((line, index) => (
           <p key={index}>{line}</p>

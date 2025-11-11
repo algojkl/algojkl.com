@@ -1,132 +1,63 @@
 import React from 'react'
-import useDevice from '../hooks/useDevice'
+import StarterImage from '../common/StarterImage'
+import { starterImages, tutkinnot } from '../PageData/hakijatData'
 
-import starterDesktop from '../images/Page_starters/5.jpg'
-import starterMobile from '../images/mobiili/7.png'
-
+/**
+ * HakijatPage-komponentti
+ * Tämä komponentti esittää Hakijat-sivun, joka sisältää:
+ * 1. StarterImage-komponentin, joka näyttää sivun yläosan kuvan
+ *    (desktop- ja mobiiliversiot propsien kautta).
+ * 2. Johdantotekstin uusille hakijoille Jyväskylän yliopistoon ja IT-opintoihin.
+ * 3. Tutkinto-osio, joka käy läpi:
+ *    - Diplomi-insinööri tutkinnot IT-opiskelijoille
+ *    - Jokaisen tutkinnon ohjelmat ja niiden opinnot listamuodossa
+ *    - Linkin lisätietoihin Jyväskylän yliopiston sivuilla
+ * 4. Lyhyt kuvaus Algo ry:stä, joka kertoo killan toiminnasta ja jäsenyydestä.
+ *
+ * Data tutkinto-ohjelmista on tuotu erillisestä hakijatData-tiedostosta.
+ * Datan muokkaus on helppoa ja selkeää, jotta uusia tutkintoja tai ohjelmia
+ * voidaan lisätä tarvittaessa hakijatData.js-tiedostoon. 
+ */
 const HakijatPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
 
   return (
     <div>
-      <img src={starterImage} alt="starter_image_rules" className="starter" />
+      <StarterImage
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
+        alt="Hakijat"
+      /> 
       <div className="hakijalle-container">
         <p>
           Hienoa, että olet kiinnostunut opiskelusta Jyväskylän Yliopistossa!
           Jyväskylän yliopisto tarjoaa kahta eri Diplomi-insinööri tutkintoa
-          IT-opiskelijoille:{' '}
-          <strong>
-            {' '}
-            Tieto- ja ohjelmistotekniikka tai Teknologiajohtaminen.
-          </strong>
+          IT-opiskelijoille: <strong>Tieto- ja ohjelmistotekniikka tai Teknologiajohtaminen.</strong>
         </p>
-        <h3>Tieto- ja ohjelmistotekniikka</h3>
-        <ul>
-          <li>
-            <strong>
-              Tieto- ja ohjelmistotekniikka <i>(Tekniikan kandidaatti 180op)</i>
-            </strong>
+
+        {tutkinnot.map((tutkinto, idx) => (
+          <div key={idx}>
+            <h3>{tutkinto.title}</h3>
             <ul>
-              <li>
-                Tieto- ja ohjelmistotekniikan perus- ja aineopinnot 80 op (sis.
-                kandidaatintutkielman)
-              </li>
-              <li>Tekniikan alan matemaattiset perusopinnot 35 op</li>
-              <li>
-                Toinen opintokokonaisuus (vähintään 25op){' '}
-                <i>
-                  {' '}
-                  Sivuaine yhdistää tietotekniikan itse valittavaan alaan
-                  Jyväskylän yliopiston lukuisista vaihtoehdoista. Voit valita
-                  esimerkiksi ihmistieteitä kuten psykologiaa, liikunta- ja
-                  terveystieteitä, kulttuuria ja taidetta tai pedagogiikkaa.
-                  Vaihtoehtoisesti voit keskittyä vaikkapa matematiikkaan tai
-                  luonnontieteisiin.{' '}
-                </i>
-              </li>
-              <li>Viestintä- ja kieliopintoja vähintään 10 op</li>
-              <li>
-                Vapaasti valittavia opintokokonaisuuksia ja moduuleja sekä muita
-                opintoja
-              </li>
+              {tutkinto.ohjelmat.map((ohjelma, j) => (
+                <li key={j}>
+                  <strong>
+                    {tutkinto.title} <i>({ohjelma.name})</i>
+                  </strong>
+                  <ul>
+                    {ohjelma.opinnot.map((opinto, k) => (
+                      <li key={k}>{opinto}</li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
             </ul>
-          </li>
-          <li>
-            <strong>
-              Tieto- ja ohjelmistotekniikka <i>(Diplomi-insinööri 120op)</i>
-            </strong>
-            <ul>
-              <li>
-                Tieto- ja ohjelmistotekniikan syventävät opinnot 80 op (sis.
-                diplomityön)
-              </li>
-              <li>
-                Toinen opintokokonaisuus (vähintään 25op){' '}
-                <i>
-                  {' '}
-                  Sivuaine yhdistää tietotekniikan itse valittavaan alaan
-                  Jyväskylän yliopiston lukuisista vaihtoehdoista. Voit valita
-                  esimerkiksi ihmistieteitä kuten psykologiaa, liikunta- ja
-                  terveystieteitä, kulttuuria ja taidetta tai pedagogiikkaa.
-                  Vaihtoehtoisesti voit keskittyä vaikkapa matematiikkaan tai
-                  luonnontieteisiin.{' '}
-                </i>
-              </li>
-              <li>Viestintä- ja kieliopintoja</li>
-              <li>
-                Vapaasti valittavia opintokokonaisuuksia ja moduuleja sekä muita
-                opintoja
-              </li>
-            </ul>
-          </li>
-          <p>
-            Lisätietoja tieto- ja ohjelmistotekniikan tutkinto-ohjelmasta löydät{' '}
-            <a href="https://www.jyu.fi/fi/tule-opiskelemaan/tutustu-aloihimme/tekniikka/tieto-ja-ohjelmistotekniikan-opinnot">
-              Jyväskylän yliopiston sivuilta.
-            </a>
-          </p>
-          <h3>Teknologiajohtaminen</h3>
-          <li>
-            <strong>
-              Teknologiajohtaminen <i>(Tekniikan kandidaatti 180op)</i>
-            </strong>
-            <ul>
-              <li>
-                Tieto- ja ohjelmistotekniikan perus- ja aineopinnot 65 op (sis.
-                kandidaatintutkielman)
-              </li>
-              <li>Teknologiajohtamisen opintokokonaisuus 40 op</li>
-              <li>Tekniikan alan matemaattiset perusopinnot 35 op</li>
-              <li>Viestintä- ja kieliopintoja 10 op</li>
-              <li>
-                Vapaasti valittavia opintokokonaisuuksia ja moduuleja sekä muita
-                opintoja
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>
-              Teknologiajohtaminen <i>(Diplomi-insinööri 120op)</i>
-            </strong>
-            <ul>
-              <li>
-                Teknologiajohtamisen syventävät opinnot 80 op (sis. Diplomityön)
-              </li>
-              <li>Teknologian kaupallistamisen opintoja 25 op</li>
-              <li>Viestintä- ja kieliopintoja</li>
-              <li>
-                Vapaasti valittavia opintoja ja moduuleja sekä muita opintoja
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <p>
-          Lisätietoja teknologiajohtamisen tutkinto-ohjelmasta löydät{' '}
-          <a href="https://www.jyu.fi/fi/tule-opiskelemaan/tutustu-aloihimme/tekniikka/teknologiajohtamisen-opinnot">
-            Jyväskylän yliopiston sivuilta.
-          </a>
-        </p>
+            <p>
+              Lisätietoja {tutkinto.title.toLowerCase()} tutkinto-ohjelmasta löydät{' '}
+              <a href={tutkinto.link}>Jyväskylän yliopiston sivuilta.</a>
+            </p>
+          </div>
+        ))}
+
         <h3>Mikä ihmeen Algo ry?</h3>
         <p>
           Algo ry on Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä

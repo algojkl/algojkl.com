@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import PropTypes from 'prop-types'
 
-import '../App.css'
-
 const DropdownMenu = ({ title, links = [], onItemClick }) => {
   const [isOpen, setIsOpen] = useState(false)
 

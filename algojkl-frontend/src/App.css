@@ -338,11 +338,7 @@ body {
 .footer-content {
   display: flex;
   margin-left: 2%;
-  gap: 15%;
-}
-
-.footer-info {
-  font-size: 0.8rem;
+  gap: 5%;
 }
 
 .footer-info p {
@@ -354,20 +350,17 @@ body {
 }
 
 .footer-nav {
+  display: flex;
   font-size: 0.8rem;
+  gap: 1rem;
 }
 
 .footer-nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
+  flex-direction: column;
   list-style: none;
-  padding: 0;
-  margin-top: 0;
-}
-
-.footer-nav li {
-  margin-bottom: 8px;
+  gap: 15px;
+  margin: 0;
 }
 
 .footer-nav a {
@@ -576,7 +569,8 @@ body.modal-open {
 
 /*-----------------------------------------------------FreshmanPage------------------------------------------------------------------------*/
 
-.fuksi-leveys, .Freshman-container {
+.fuksi-leveys,
+.Freshman-container {
   width: 70%;
   margin: 0 auto;
 }
@@ -595,7 +589,8 @@ body.modal-open {
   width: 100%;
 }
 
-.Freshman-container h2, .hallihaku-container h2 {
+.Freshman-container h2,
+.hallihaku-container h2 {
   font-size: medium;
   background-color: #fbbebd;
   width: fit-content;
@@ -811,7 +806,7 @@ body.modal-open {
   line-height: 25px;
 }
 
-.tutor-container img{
+.tutor-container img {
   width: 250px;
   height: auto;
   padding-top: 20px;
@@ -837,7 +832,9 @@ body.modal-open {
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   gap: 1.2rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .haku-card:hover {
@@ -1220,7 +1217,7 @@ aktiivi-pestit ul {
   width: fit-content;
   border-radius: 10px;
   padding: 10px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   margin-bottom: 10px;
 }
 
@@ -1459,29 +1456,54 @@ p {
 /*----------------------------------------------------------*/
 
 @media (min-width: 2300px) {
-  .footer-nav ul {
-    gap: 17rem;
+  .footer-content {
+    gap: 5%;
   }
+  .footer-nav {
+    gap: 220px;
+  }
+  .footer-info,
   .footer-nav,
   .feedback-comms p {
-    font-size: medium;
+    font-size: large;
+  }
+}
+@media (min-width: 2150px) and (max-width: 2299px) {
+  .footer-content {
+    gap: 4%;
+  }
+  .footer-nav {
+    gap: 130px;
+  }
+  .footer-info,
+  .footer-nav,
+  .feedback-comms p {
+    font-size: large;
   }
 }
 
-@media (min-width: 2000px) and (max-width: 2299px) {
-  .footer-nav ul {
-    gap: 13rem;
+@media (min-width: 2000px) and (max-width: 2149px) {
+  .footer-content {
+    gap: 3%;
   }
+  .footer-nav {
+    gap: 70px;
+  }
+  .footer-info,
   .footer-nav,
   .feedback-comms p {
-    font-size: medium;
+    font-size: large;
   }
 }
 
 @media (min-width: 1801px) and (max-width: 1999px) {
-  .footer-nav ul {
-    gap: 10rem;
+  .footer-content {
+    gap: 3%;
   }
+  .footer-nav {
+    gap: 70px;
+  }
+  .footer-info,
   .footer-nav,
   .feedback-comms p {
     font-size: medium;
@@ -1489,53 +1511,67 @@ p {
 }
 
 @media (min-width: 1701px) and (max-width: 1800px) {
-  .footer-nav ul {
-    gap: 9rem;
+  .footer-content {
+    gap: 2%;
+  }
+  .footer-nav {
+    gap: 50px;
+  }
+  .footer-info,
+  .footer-nav,
+  .feedback-comms p {
+    font-size: medium;
   }
 }
 
 @media (min-width: 1501px) and (max-width: 1700px) {
-  .footer-nav ul {
-    gap: 8rem;
+  .footer-content {
+    gap: 10px;
+  }
+  footer-info,
+  .footer-nav,
+  .feedback-comms p {
+    font-size: medium;
   }
 }
 
 @media (min-width: 1401px) and (max-width: 1500px) {
-  .footer-nav ul {
-    gap: 7rem;
-  }
-  .footer-content {
-    gap: 11%;
+  .footer-info,
+  .footer-nav,
+  .feedback-comms p {
+    font-size: small;
   }
 }
 
 @media (min-width: 1301px) and (max-width: 1400px) {
-  .footer-nav ul {
-    gap: 6rem;
-  }
-  .footer-content {
-    gap: 7%;
+  .footer-info,
+  .footer-nav,
+  .feedback-comms p {
+    font-size: small;
   }
 }
 
 @media (min-width: 1201px) and (max-width: 1300px) {
-  .footer-nav ul {
-    gap: 5rem;
+  .footer-info,
+  .footer-nav,
+  .feedback-comms p {
+    font-size: small;
   }
   .footer-content {
-    gap: 4%;
+    gap: 10px;
   }
 }
 
 @media (min-width: 1101px) and (max-width: 1200px) {
-  .footer-nav ul {
-    gap: 2rem;
-  }
-
   .footer-content {
-    gap: 1%;
+    gap: 10px;
+    margin-right: 25px;
   }
-
+  .footer-info,
+  .footer-nav,
+  .feedback-comms p {
+    font-size: small;
+  }
   .haku-card {
     flex-direction: column;
     align-items: center;
@@ -1550,7 +1586,6 @@ p {
   .haku-info {
     align-items: center;
   }
-
 }
 
 @media (max-width: 1100px) {
@@ -1610,9 +1645,13 @@ p {
     flex-direction: column;
   }
 
-  .footer-nav ul {
+  .footer-nav {
     flex-direction: column;
     gap: 1px;
+  }
+
+  .footer-nav ul {
+    padding: 0;
   }
 
   .feedback-comms {
@@ -1718,10 +1757,8 @@ p {
   .haku-info {
     align-items: center;
   }
-  
 }
 @media (max-width: 780px) {
-
   .saannot-container,
   .Lakki-container,
   .OverAll-container,
@@ -1807,7 +1844,6 @@ p {
     text-align: left;
     font-size: small;
     line-height: 25px;
-  
   }
 
   .aktiivi-start h2 {
@@ -1886,7 +1922,12 @@ p {
     line-height: 25px;
   }
 
-  .vuju-container h2, .periaate-container h3, .aktiivi-container h2, .aktiivi-consent h2, .aktiivi-container-merkit h2, .hallihaku-container h3{
+  .vuju-container h2,
+  .periaate-container h3,
+  .aktiivi-container h2,
+  .aktiivi-consent h2,
+  .aktiivi-container-merkit h2,
+  .hallihaku-container h3 {
     font-size: medium;
   }
 
@@ -1907,7 +1948,8 @@ p {
     font-size: small;
   }
 
-  .kerhotoiminta-container ol, .kerhotoiminta-container ul {
+  .kerhotoiminta-container ol,
+  .kerhotoiminta-container ul {
     width: 90%;
     padding: 0;
     margin-right: 5px;
@@ -1924,7 +1966,7 @@ p {
   }
 
   .Freshman-container ul {
-    padding-left:10%;
+    padding-left: 10%;
   }
 
   .kerhotoiminta-container ol {

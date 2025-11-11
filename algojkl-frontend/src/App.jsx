@@ -21,7 +21,6 @@ import {
   HakijatPage,
   PrevHalli,
   VujuPage,
-  HallihakuPage,
   NotFound,
 } from './pages'
 import { NavBar, Footer } from './components'
@@ -57,7 +56,6 @@ function App() {
         <Route path="/kerhotoiminta" element={<KerhotoimintaPage />} />
         <Route path="/hakijalle" element={<HakijatPage />} />
         <Route path="/entiset-hallitukset" element={<PrevHalli />} />
-        <Route path="/hallihaku" element={<HallihakuPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
