@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterNavSection from './FooterNavSection'
+import FooterNavSection from './footerNavSection'
 /**
  * FooterNav
  *
@@ -25,7 +25,7 @@ const FooterNav = () => (
           { to: '/', label: 'ETUSIVU' },
           { to: '/tapahtumat', label: 'TAPAHTUMAT' },
           { to: '/yhteistyot', label: 'YHTEISTYÖT' },
-          { to: '/fuksit', label: 'UUDET OPISKELIJAT' },
+          { to: '/fuksit', label: 'FUKSIT' },
           { to: '/hakijalle', label: 'HAKIJAT' },
         ]}
       />
