@@ -6,6 +6,16 @@ import ToimintaInfo from '../periaatteet/ToimintaInfo'
 import TurvallisemmanTilanPeriaatteet from '../periaatteet/TTPeriaatteet'
 import Yhdenvertaisuus from '../periaatteet/Yhdenvertaisuus'
 
+/**
+ * PeriaatteetPage-komponentti
+ * Tämä komponentti renderöi Algon periaatteet -sivun sisällön, joka sisältää:
+ * 1. StarterImage-komponentin pääbannerin kuvan renderöintiin (desktop ja mobile).
+ * 2. Kolme alikomponenttia periaatteiden esittämiseen:
+ *    - ToimintaInfo: tietoa Algon toiminnasta ja ohjeistuksista.
+ *    - TurvallisemmanTilanPeriaatteet: säännöt turvallisen ja inklusiivisen ympäristön ylläpitämiseksi.
+ *    - Yhdenvertaisuus: ohjeistukset yhdenvertaisuuden ja syrjimättömyyden edistämiseksi.
+ */
+
 const PeriaatteetPage = () => {
   return (
     <div>
