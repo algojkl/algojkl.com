@@ -1,2 +1,2 @@
 export { default as NavBar } from './Navigation/NavBar.jsx'
-export { default as Footer } from './Footer/footer.jsx'
+export { default as Footer } from './Footer/Footer1.jsx'
