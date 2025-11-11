@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterNavSection from './footerNavSection'
+import FooterNavSection from './FooterNavSection1'
 /**
  * FooterNav
  *
