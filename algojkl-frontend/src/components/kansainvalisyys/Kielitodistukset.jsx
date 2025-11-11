@@ -1,5 +1,5 @@
-import React from "react";
-import Section from "../common/Section";
+import React from "react"
+import Section from "../../common/Section"
 
 const Kielitodistukset = () => (
   <Section title="Kielitodistukset">
@@ -7,6 +7,6 @@ const Kielitodistukset = () => (
       Monet vaihtokohteet saattavat vaatia kielitodistuksen. Kielitodistuksia voi hankkia Movilta. Lisätietoja saa ottamalla yhteyttä Niina Ormashawiin.
     </p>
   </Section>
-);
+)
 
-export default Kielitodistukset;
+export default Kielitodistukset

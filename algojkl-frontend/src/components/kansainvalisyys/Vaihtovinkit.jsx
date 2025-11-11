@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../common/Section";
+import Section from "../../common/Section";
 
 const Vaihtovinkit = () => (
   <Section title="Vaihtovinkit">

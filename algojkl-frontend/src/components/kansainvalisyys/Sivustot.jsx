@@ -1,5 +1,5 @@
-import React from "react";
-import Section from "../common/Section";
+import React from "react"
+import Section from "../../common/Section"
 
 const Sivustot = () => (
   <Section title="Sivustot">
@@ -30,6 +30,6 @@ const Sivustot = () => (
       </li>
     </ul>
   </Section>
-);
+)
 
-export default Sivustot;
+export default Sivustot

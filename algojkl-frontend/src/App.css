@@ -1110,9 +1110,24 @@ body.modal-open {
   margin-bottom: 20px;
   text-align: center;
 }
+.seloste-container-items, .saannot-container-items {
+  border-radius: 2px;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin:10px
+}
 
-.saannot-container p,
-.seloste-container p,
+.seloste-container-items p,
+.saannot-container-items p,ul  {
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.seloste-container h2, .saannot-container h2 {
+  font-size: 1.2rem;
+}
+
 .yhteydenotto-container p,
 .kansainvalisyys-container p,
 .hallihaku-container p {
@@ -1896,7 +1911,7 @@ p {
     width: 100%;
   }
 
-  .saannot-container p,
+  .saannot-container-items p,
   .Lakki-container p,
   .OverAll-container p,
   .seloste-container p,
@@ -1927,7 +1942,9 @@ p {
   .aktiivi-container h2,
   .aktiivi-consent h2,
   .aktiivi-container-merkit h2,
-  .hallihaku-container h3 {
+  .hallihaku-container h3,
+  .seloste-container h2,
+  .saannot-container h2 {
     font-size: medium;
   }
 
@@ -1940,6 +1957,11 @@ p {
   .hallihaku-container h2 {
     font-size: medium;
     padding: 10px;
+  }
+
+  .saannot-container-items ul{
+    font-size: small;
+    padding-left: 20px;
   }
 
   .OverAll-container ul {

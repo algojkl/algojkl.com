@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+/**
+ *  Palauttaa 404 Not Found -sivun, jos etsitään sivua, jota ei ole olemassa.
+ */
 const NotFound = () => {
   return (
     <div className="notfound-container">
