@@ -1,14 +1,15 @@
 import React from 'react'
 import starterDesktop from '../images/Page_starters/17.jpg'
 import starterMobile from '../images/mobiili/19.png'
-import useDevice from '../hooks/useDevice'
-
+import StarterImage from '../common/StarterImage'
 const YhteydenottoPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
   return (
     <div>
-      <img src={starterImage} alt="starter_image_rules" className="starter" />
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Yhteydenotto"
+      />
       <div className="yhteydenotto-container">
         <h1>Kurssipalaute</h1>
         <p>

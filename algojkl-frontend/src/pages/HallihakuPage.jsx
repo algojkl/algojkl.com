@@ -1,16 +1,25 @@
 import React from 'react'
 import starterDesktop from '../images/Page_starters/16.jpg'
 import starterMobile from '../images/mobiili/18.png'
-import useDevice from '../hooks/useDevice'
+import StarterImage from '../common/StarterImage'
 import HallitusHaku from '../components/Hallihaku/HallitusHaku.jsx'
 
+/**
+ * HallihakuPage-komponentti
+ * Tämä komponentti esittää Hallitushaku-sivun, joka sisältää:
+ * 1. StarterImage-komponentin sivun yläosan kuvalle (desktop ja mobiili).
+ * 2. Johdantotekstin hallitushakuprosessista vuodelle 2026.
+ * 3. HallitusHaku-komponentin, joka näyttää hakijat ja hallitukseen liittyvän sisällön (Contentfulista data).
+ */
 const HallihakuPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
 
   return (
     <div>
-      <img src={starterImage} alt="starter_image_rekryt" className="starter" />
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Hallihaku"
+      />
       <div className="hallihaku-container-start">
         <h1>Hallitushaku 2026</h1>
         <p>

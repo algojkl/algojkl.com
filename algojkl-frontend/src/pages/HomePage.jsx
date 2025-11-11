@@ -4,6 +4,16 @@ import EventCards from '../components/Events/EventCards.jsx'
 import DiamondLogos from '../components/diamondLogos.jsx'
 import { IoDiamondSharp } from 'react-icons/io5'
 
+/**
+ * HomePage-komponentti
+ * Tämä komponentti renderöi etusivun sisällön, joka sisältää:
+ * 1. Carousel-komponentin pääbannerin ja kuvien selaamiseen.
+ * 2. Lyhyen esittelytekstin Algo ry:stä.
+ * 3. Tapahtumat-osio, jossa renderöidään tulevat tapahtumat EventCards-komponentilla.
+ * 4. Timanttikumppanit-osio, joka sisältää:
+ *    - IoDiamondSharp-ikonit otsikon molemmin puolin.
+ *    - DiamondLogos-komponentin, joka renderöi timanttikumppaneiden logot.
+ */
 const HomePage = () => {
   return (
     <div className="container">

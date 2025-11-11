@@ -9,7 +9,7 @@ import leevi from '../images/leevi.jpeg'
 
 import VuodenAlgolaiset from '../components/vuodenAlgolaiset.jsx'
 import Perustajat from '../components/perustajat.jsx'
-import useDevice from '../hooks/useDevice.jsx'
+import StarterImage from '../common/StarterImage'
 
 const vuodenAlgolaiset = [
   { year: 2025, name: 'Leevi Kopakkala', image: leevi },
@@ -34,11 +34,13 @@ const perustajat2022 = [
 ]
 
 const KunniagalleriaPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
   return (
     <div>
-      <img src={starterImage} alt="starter_image_rules" className="starter" />
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Kerhotoiminta"
+      />
       <div className="kunnia-container">
         <h2>Algo ry:n kunniajäsenet</h2>
         <p>

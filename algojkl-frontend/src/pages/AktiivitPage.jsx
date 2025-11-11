@@ -1,5 +1,5 @@
 import React from 'react'
-import useDevice from '../hooks/useDevice'
+import StarterImage from '../common/StarterImage'
 import {
   starterImages,
   tiimit,
@@ -7,14 +7,37 @@ import {
   aktiivimerkit,
 } from '../PageData/aktiivitData'
 
+/**
+ * AktiiviPage-komponentti
+ * Tämä komponentti esittelee Algon killan aktiivien toiminnan ja tehtävät.
+ * Se sisältää seuraavat osiot:
+ * 1. Aloituskuva (StarterImage) eri laitteille
+ * 2. Johdantoaktiiveihin
+ * 3. Aktiivien pestit ja tehtävät
+ * 4. Hakeutumiskutsu aktiiviksi
+ * 5. Aktiivimerkit
+ *
+ * Käytetyt luokat:
+ * - aktiivi: koko sivun container
+ * - aktiivi-container: pääsisältöalue
+ * - aktiivi-start: johdantoaktiivit-osio
+ * - aktiivi-pestit: aktiivien pestit-osio
+ * - aktiivi-consent: hakeutumiskutsu-osio
+ * - aktiivi-container-merkit: aktiivimerkkejä esittelevä osio
+ * 
+ * Data tuodaan PageData/aktiivitData.js -tiedostosta.
+ * Jos tarvitsee muokata esim. tiimien tietoja tai aktiivimerkkejä,
+ * se onnistuu muokkaamalla kyseistä tiedostoa.
+ */
 const AktiiviPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterImages.mobile : starterImages.desktop
 
   return (
     <div className="aktiivi">
-      <img src={starterImage} alt="starter_img_aktiivit" className="starter" />
-
+      <StarterImage
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
+        alt="Aktiivit"
+      /> 
       <div className="aktiivi-container">
         <div className="aktiivi-start">
           <h2>MIKÄ IHMEEN AKTIIVI???</h2>

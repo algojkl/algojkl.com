@@ -1,14 +1,16 @@
 import React from 'react'
 import starterDesktop from '../images/Page_starters/8.jpg'
 import starterMobile from '../images/mobiili/10.png'
-import useDevice from '../hooks/useDevice'
+import StarterImage from '../common/StarterImage'
 
 const RulePage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
   return (
     <div>
-      <img src={starterImage} alt="starter_image_rules" className="starter" />
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Seloste"
+      />
       <div className="saannot-container">
         <h1>Algo ry:n säännöt</h1>
         <p>

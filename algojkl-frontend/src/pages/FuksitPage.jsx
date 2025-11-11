@@ -1,5 +1,5 @@
 import React from 'react'
-import useDevice from '../hooks/useDevice'
+import StarterImage from '../common/StarterImage'
 import Panu from '../components/simple'
 import TutorList from '../components/Tutorlist'
 import { useContentfulData } from '../services/useContentfulData'
@@ -12,9 +12,25 @@ import {
   jasenyys 
 } from '../PageData/fuksitData'
 
+/**
+ * Fuksit-komponentti
+ * Tämä komponentti esittää fuksisivun, joka sisältää:
+ * 1. StarterImage-komponentin, joka näyttää sivun yläosan kuvan
+ *    (desktop- ja mobiiliversiot propsien kautta).
+ * 2. Panu-komponentin, joka voi toimia visuaalisena elementtinä tai lisäinformaationa.
+ * 3. Tietosisällön eri osiot, jotka on jaettu:
+ *    - Ennen opiskeluiden alkua (ennenOpiskelua)
+ *    - Opintojen alku (opintojenAlku)
+ *    - Kiltatoiminta (kiltatoiminta)
+ *    - Jäsenyys (jasenyys)
+ *    Jokainen osio renderöidään joko listana tai kappaleina.
+ * 4. (Valinnainen) TutorList-komponentti, joka listaa tutorit Contentful-datan perusteella
+ *    – tämä osa on kommentoitu pois, mutta voidaan ottaa käyttöön tarvittaessa.
+ * 5. Data haetaan Contentful-palvelusta useContentfulData-hookin avulla,
+ *    ja lataustila ja virhetilanteet käsitellään erikseen.
+ */
+
 const Fuksit = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterImages.mobile : starterImages.desktop
   const { data, isLoading, error } = useContentfulData()
 
   if (isLoading) return <p>Ladataan...</p>
@@ -22,8 +38,11 @@ const Fuksit = () => {
 
   return (
     <div>
-      <img src={starterImage} alt="freshman_starter_img" className="starter" />
-
+      <StarterImage
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
+        alt="Fuksit"
+      /> 
       <div className="Freshman-container">
         <div className="fuksi-leveys">
           <div className="header">

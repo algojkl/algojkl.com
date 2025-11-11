@@ -7,15 +7,17 @@ import collab_icon from '../images/collab_icon.png'
 import event_icon from '../images/event_icon.png'
 import ulkosuhteet_icon from '../images/people_icon.png'
 import lamppu_icon from '../images/lamppu.png'
+import StarterImage from '../common/StarterImage'
 
-import useDevice from '../hooks/useDevice'
 
 const Collab = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterMobile : starterDesktop
   return (
     <div>
-      <img src={starterImage} alt="starter_collab_img" className="starter" />
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt="Yhteistyö"
+      />
       <div className="collab-container">
         <h1 className="collab-h1">Hei! Kiinnostaako yhteistyö?</h1>
         <p>

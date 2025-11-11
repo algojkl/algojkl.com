@@ -1,15 +1,32 @@
 import React from 'react'
-import useDevice from '../hooks/useDevice'
+import StarterImage from '../common/StarterImage'
 import { starterImages, tutkinnot } from '../PageData/hakijatData'
 
+/**
+ * HakijatPage-komponentti
+ * Tämä komponentti esittää Hakijat-sivun, joka sisältää:
+ * 1. StarterImage-komponentin, joka näyttää sivun yläosan kuvan
+ *    (desktop- ja mobiiliversiot propsien kautta).
+ * 2. Johdantotekstin uusille hakijoille Jyväskylän yliopistoon ja IT-opintoihin.
+ * 3. Tutkinto-osio, joka käy läpi:
+ *    - Diplomi-insinööri tutkinnot IT-opiskelijoille
+ *    - Jokaisen tutkinnon ohjelmat ja niiden opinnot listamuodossa
+ *    - Linkin lisätietoihin Jyväskylän yliopiston sivuilla
+ * 4. Lyhyt kuvaus Algo ry:stä, joka kertoo killan toiminnasta ja jäsenyydestä.
+ *
+ * Data tutkinto-ohjelmista on tuotu erillisestä hakijatData-tiedostosta.
+ * Datan muokkaus on helppoa ja selkeää, jotta uusia tutkintoja tai ohjelmia
+ * voidaan lisätä tarvittaessa hakijatData.js-tiedostoon. 
+ */
 const HakijatPage = () => {
-  const isMobile = useDevice()
-  const starterImage = isMobile ? starterImages.mobile : starterImages.desktop
 
   return (
     <div>
-      <img src={starterImage} alt="starter_image_rules" className="starter" />
-
+      <StarterImage
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
+        alt="Hakijat"
+      /> 
       <div className="hakijalle-container">
         <p>
           Hienoa, että olet kiinnostunut opiskelusta Jyväskylän Yliopistossa!
