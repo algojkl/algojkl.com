@@ -2,9 +2,9 @@ import React from 'react'
 import StarterImage from '../common/StarterImage'
 import starterDesktop from '../images/Page_starters/13.jpg'
 import starterMobile from '../images/mobiili/15.png'
-import ToimintaInfo from '../periaatteet/ToimintaInfo'
-import TurvallisemmanTilanPeriaatteet from '../periaatteet/TTPeriaatteet'
-import Yhdenvertaisuus from '../periaatteet/Yhdenvertaisuus'
+import ToimintaInfo from '../components/periaatteet/ToimintaInfo'
+import TurvallisemmanTilanPeriaatteet from '../components/periaatteet/TTPeriaatteet'
+import Yhdenvertaisuus from '../components/periaatteet/Yhdenvertaisuus'
 
 /**
  * PeriaatteetPage-komponentti

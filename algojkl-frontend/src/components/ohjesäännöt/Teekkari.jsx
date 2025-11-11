@@ -1,5 +1,5 @@
 import React from "react"
-import lakki from "../images/lakki.jpg"
+import lakki from "../../images/lakki.jpg"
 
 export const Teekkari = () => {
   return (
