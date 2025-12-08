@@ -12,6 +12,12 @@ export const kerhotoimintaData = {
       taitotasosta riippumatta.`,
       linkText: 'Kyykätään!',
       linkHref: 'https://t.me/+0nivuYqDLzUxYjNk'
+    },
+    {
+      name: 'Futiskerho',
+      description: `Algo FC tarjoaa mahdollisuuden pelata jalkapalloa rennossa ja yhteisöllisessä hengessä. Toiminta on avointa kaikille jäsenille taitotasosta riippumatta – mukaan voi tulla niin ensikertalainen kuin kokenutkin peluri. ⚽ `,
+      linkText: 'Pelaamaan!',
+      linkHref: 'https://t.me/+IhWC1RJ9ZGM0OGU0'
     }
   ],
   newClub: {

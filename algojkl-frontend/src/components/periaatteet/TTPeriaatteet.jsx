@@ -9,13 +9,13 @@ const TurvallisemmanTilanPeriaatteet = () => {
         </strong>
       </h3>
       <ul>
-        <li>Kaikki ihmiset ovat samanarvoisia...</li>
+        <li>Kaikki ihmiset ovat samanarvoisia riippumatta heidän sukupuolestaan, iästään, etnisestä tai kansallisesta alkuperästään, kansalaisuudestaan, kielestään, uskonnostaan, seksuaalisesta suuntautumisestaan tai muusta henkilöön liittyvästä syystä</li>
         <li>Ei painostateta päihteiden käyttöön.</li>
-        <li>Noudatetaan hyviä käytöstapoja...</li>
+        <li>Noudatetaan hyviä käytöstapoja ja käyttäydytään asiallisesti.</li>
         <li>Ymmärretään ja kunnioitetaan erilaisia näkökulmia.</li>
-        <li>Ylläpidetään tervettä teekkarihenkeä.</li>
-        <li>Jokainen nauttii opiskeluajastaan omilla ehdoillaan.</li>
-        <li>Noudatetaan turvallisemman tilan periaatteita (listattu alla).</li>
+        <li>Ylläpidetään, luodaan ja kehitetään tervettä Teekkarihenkeä.</li>
+        <li>Jokainen nauttii opiskeluajastansa omilla ehdoillaan sekä edellä mainittujen periaatteiden ja Suomen lakien mukaisesti.</li>
+        <li>Noudatetaan turvallisen tilan periaatteita (alla).</li>
       </ul>
 
       <h3><strong>Algo ry:n turvallisemman tilan periaatteet:</strong></h3>

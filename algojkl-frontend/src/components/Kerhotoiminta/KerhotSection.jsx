@@ -13,9 +13,9 @@ import React from 'react'
 
 const KerhotSection = ({ kerhot }) => (
   <div>
+    <h3>Algon kerho(t)</h3>
     {kerhot.map((k, idx) => (
       <div key={idx}>
-        <h3>Algon kerho(t)</h3>
         <p>
           <strong>{k.name}</strong>
           <br />

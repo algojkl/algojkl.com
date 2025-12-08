@@ -9,7 +9,14 @@ import ulkosuhteet_icon from '../images/people_icon.png'
 import lamppu_icon from '../images/lamppu.png'
 import StarterImage from '../common/StarterImage'
 
-
+/**
+ *  Collab-sivu
+ * Tämä komponentti renderöi Yhteistyö-sivun sisällön.
+ * Sivulla näytetään:
+ * 1. Starter-kuva (desktop ja mobiili)
+ * 2. Yhteistyöosio, jossa on yhteystiedot eri yhteistyömahdollisuuksista
+ * 3. CollabCards-komponentti, joka esittelee yhteistyökumppaneiden logot
+ */
 const Collab = () => {
   return (
     <div>
