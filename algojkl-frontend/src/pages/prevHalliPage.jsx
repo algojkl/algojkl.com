@@ -14,10 +14,10 @@ const PrevHalli = () => {
       {hallitukset.map((hallitus) => (
         <div key={hallitus.year}>
           <h3>Hallitus {hallitus.year}</h3>
-          <HallitusCard 
-            year={hallitus.year} 
-            image={hallitus.image} 
-            members={hallitus.members} 
+          <HallitusCard
+            year={hallitus.year}
+            image={hallitus.image}
+            members={hallitus.members}
           />
         </div>
       ))}

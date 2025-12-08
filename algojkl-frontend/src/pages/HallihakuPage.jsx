@@ -12,7 +12,6 @@ import HallitusHaku from '../components/Hallihaku/HallitusHaku.jsx'
  * 3. HallitusHaku-komponentin, joka näyttää hakijat ja hallitukseen liittyvän sisällön (Contentfulista data).
  */
 const HallihakuPage = () => {
-
   return (
     <div>
       <StarterImage

@@ -9,12 +9,12 @@ const Calendar_key = import.meta.env.VITE_CALENDAR_API
  *  TapahtumatPage-komponentti
  * Tämä komponentti renderöi Tapahtumat-sivun, joka sisältää:
  * 1. StarterImage-komponentin pääbannerin kuvan renderöintiin (desktop ja mobile).
- * 2. Tapahtumatiedot ja upotetun Google-kalenterin, josta käyttäjät voivat tarkastella tulevia tapahtumia. 
+ * 2. Tapahtumatiedot ja upotetun Google-kalenterin, josta käyttäjät voivat tarkastella tulevia tapahtumia.
  */
 const Events = () => {
   return (
     <div>
-     <StarterImage
+      <StarterImage
         desktopImage={starterDesktop}
         mobileImage={starterMobile}
         alt="Events"

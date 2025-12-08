@@ -11,7 +11,6 @@ import PytKirja from '../components/pytKirjaFetch'
  * dokumenttien hakemisesta ja esittämisestä.
  */
 const Documents = () => {
-
   return (
     <div>
       <StarterImage

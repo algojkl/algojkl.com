@@ -16,22 +16,24 @@ import { starterImages, tutkinnot } from '../PageData/hakijatData'
  *
  * Data tutkinto-ohjelmista on tuotu erillisestä hakijatData-tiedostosta.
  * Datan muokkaus on helppoa ja selkeää, jotta uusia tutkintoja tai ohjelmia
- * voidaan lisätä tarvittaessa hakijatData.js-tiedostoon. 
+ * voidaan lisätä tarvittaessa hakijatData.js-tiedostoon.
  */
 const HakijatPage = () => {
-
   return (
     <div>
       <StarterImage
         desktopImage={starterImages.desktop}
         mobileImage={starterImages.mobile}
         alt="Hakijat"
-      /> 
+      />
       <div className="hakijalle-container">
         <p>
           Hienoa, että olet kiinnostunut opiskelusta Jyväskylän Yliopistossa!
           Jyväskylän yliopisto tarjoaa kahta eri Diplomi-insinööri tutkintoa
-          IT-opiskelijoille: <strong>Tieto- ja ohjelmistotekniikka tai Teknologiajohtaminen.</strong>
+          IT-opiskelijoille:{' '}
+          <strong>
+            Tieto- ja ohjelmistotekniikka tai Teknologiajohtaminen.
+          </strong>
         </p>
 
         {tutkinnot.map((tutkinto, idx) => (
@@ -52,8 +54,8 @@ const HakijatPage = () => {
               ))}
             </ul>
             <p>
-              Lisätietoja {tutkinto.title.toLowerCase()} tutkinto-ohjelmasta löydät{' '}
-              <a href={tutkinto.link}>Jyväskylän yliopiston sivuilta.</a>
+              Lisätietoja {tutkinto.title.toLowerCase()} tutkinto-ohjelmasta
+              löydät <a href={tutkinto.link}>Jyväskylän yliopiston sivuilta.</a>
             </p>
           </div>
         ))}

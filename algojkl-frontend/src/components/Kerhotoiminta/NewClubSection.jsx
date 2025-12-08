@@ -1,7 +1,7 @@
 import React from 'react'
 /**
  * NewClubSection
- * 
+ *
  * Tämä komponentti renderöi ohjeet uuden kerhon perustamiseen.
  * Propsit:
  * - newClub: objekti, jossa:
@@ -21,7 +21,9 @@ const NewClubSection = ({ newClub }) => (
           <strong>{step.title}</strong>
           {step.points && (
             <ul>
-              {step.points.map((p, i) => <li key={i}>{p}</li>)}
+              {step.points.map((p, i) => (
+                <li key={i}>{p}</li>
+              ))}
             </ul>
           )}
         </li>

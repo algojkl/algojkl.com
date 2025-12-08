@@ -1,12 +1,15 @@
-import React from "react";
-import Section from "../../common/Section"
+import React from 'react'
+import Section from '../../common/Section'
 
 const VaihtoOhjelmat = () => (
   <Section title="Vaihto-ohjelmat">
     <ul>
       <li>
         <strong>Erasmus (Eurooppa)</strong>
-        <p>Erasmus tarjoaa 1–2 lukukauden vaihdon EU- ja ETA-maissa sekä Turkissa.</p>
+        <p>
+          Erasmus tarjoaa 1–2 lukukauden vaihdon EU- ja ETA-maissa sekä
+          Turkissa.
+        </p>
         <ul>
           <li>
             <a href="https://www.jyu.fi/fi/opiskelijalle/.../erasmus">
@@ -29,10 +32,12 @@ const VaihtoOhjelmat = () => (
       </li>
       <li>
         <strong>FORTHEM</strong>
-        <p>Tarjoaa lyhytliikkuvuuksia ja Erasmus-vaihtoja allianssin sisällä.</p>
+        <p>
+          Tarjoaa lyhytliikkuvuuksia ja Erasmus-vaihtoja allianssin sisällä.
+        </p>
       </li>
     </ul>
   </Section>
-);
+)
 
-export default VaihtoOhjelmat;
+export default VaihtoOhjelmat

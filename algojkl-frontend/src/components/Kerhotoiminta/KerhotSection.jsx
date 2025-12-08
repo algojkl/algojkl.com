@@ -1,8 +1,8 @@
 import React from 'react'
 /**
  * KerhotSection
- * 
- * Tämä komponentti renderöi listan kerhoista. 
+ *
+ * Tämä komponentti renderöi listan kerhoista.
  * Propsit:
  * - kerhot: array, jossa jokainen kerho sisältää:
  *   - name: kerhon nimi
@@ -20,9 +20,13 @@ const KerhotSection = ({ kerhot }) => (
           <strong>{k.name}</strong>
           <br />
           {k.description}
-          <br /><br />
-          Lisätietoja kerhosta sekä peliaikatauluista saat liittymällä kerhon Telegram-ryhmään:
-          <a href={k.linkHref} target="_blank" rel="noopener noreferrer">{k.linkText}</a>
+          <br />
+          <br />
+          Lisätietoja kerhosta sekä peliaikatauluista saat liittymällä kerhon
+          Telegram-ryhmään:
+          <a href={k.linkHref} target="_blank" rel="noopener noreferrer">
+            {k.linkText}
+          </a>
         </p>
       </div>
     ))}

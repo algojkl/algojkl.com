@@ -1108,21 +1108,24 @@ body.modal-open {
   margin-bottom: 20px;
   text-align: center;
 }
-.seloste-container-items, .saannot-container-items {
+.seloste-container-items,
+.saannot-container-items {
   border-radius: 2px;
   border: 2px solid #000;
   box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin:10px
+  margin: 10px;
 }
 
 .seloste-container-items p,
-.saannot-container-items p,ul  {
+.saannot-container-items p,
+ul {
   line-height: 30px;
   font-size: 0.9rem;
 }
 
-.seloste-container h2, .saannot-container h2 {
+.seloste-container h2,
+.saannot-container h2 {
   font-size: 1.2rem;
 }
 
@@ -1957,7 +1960,7 @@ p {
     padding: 10px;
   }
 
-  .saannot-container-items ul{
+  .saannot-container-items ul {
     font-size: small;
     padding-left: 20px;
   }

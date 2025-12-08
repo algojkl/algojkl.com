@@ -4,12 +4,12 @@ import Panu from '../components/simple'
 import TutorList from '../components/Tutorlist'
 import { useContentfulData } from '../services/useContentfulData'
 
-import { 
-  starterImages, 
-  ennenOpiskelua, 
-  opintojenAlku, 
-  kiltatoiminta, 
-  jasenyys 
+import {
+  starterImages,
+  ennenOpiskelua,
+  opintojenAlku,
+  kiltatoiminta,
+  jasenyys,
 } from '../PageData/fuksitData'
 
 /**
@@ -42,7 +42,7 @@ const Fuksit = () => {
         desktopImage={starterImages.desktop}
         mobileImage={starterImages.mobile}
         alt="Fuksit"
-      /> 
+      />
       <div className="Freshman-container">
         <div className="fuksi-leveys">
           <div className="header">
@@ -55,36 +55,47 @@ const Fuksit = () => {
             <Panu />
           </div>
 
-          <p><i>Koko opiskeluajan tärkein asia: Seuraa sähköpostia!</i></p>
+          <p>
+            <i>Koko opiskeluajan tärkein asia: Seuraa sähköpostia!</i>
+          </p>
           <br />
 
           <h2>Ennen opiskeluiden alkua:</h2>
           <ul>
             {ennenOpiskelua.map((item, idx) => (
               <li key={idx}>
-                <strong>{idx + 1}. {item.title}</strong>
+                <strong>
+                  {idx + 1}. {item.title}
+                </strong>
                 <br />
                 {item.description}
                 {item.link && <a href={item.link.href}> {item.link.text}</a>}
-                {item.links && item.links.map((l, i) => (
-                  <span key={i}>
-                    {' '}
-                    <a href={l.href}>{l.text}</a>
-                    {i < item.links.length - 1 ? ', ' : ''}
-                  </span>
-                ))}
+                {item.links &&
+                  item.links.map((l, i) => (
+                    <span key={i}>
+                      {' '}
+                      <a href={l.href}>{l.text}</a>
+                      {i < item.links.length - 1 ? ', ' : ''}
+                    </span>
+                  ))}
               </li>
             ))}
           </ul>
 
           <h2>Opintojen alku</h2>
-          {opintojenAlku.map((text, idx) => <p key={idx}>{text}</p>)}
+          {opintojenAlku.map((text, idx) => (
+            <p key={idx}>{text}</p>
+          ))}
 
           <h2>Kiltatoiminta</h2>
-          {kiltatoiminta.map((text, idx) => <p key={idx}>{text}</p>)}
+          {kiltatoiminta.map((text, idx) => (
+            <p key={idx}>{text}</p>
+          ))}
 
           <h2>Jäsenyys</h2>
-          {jasenyys.map((text, idx) => <p key={idx}>{text}</p>)}
+          {jasenyys.map((text, idx) => (
+            <p key={idx}>{text}</p>
+          ))}
 
           {/*
           <h2>Tutorit 2025 esittäytyvät:</h2>

@@ -1,7 +1,7 @@
 import React from 'react'
 /**
  * SupportSection
- * 
+ *
  * Tämä komponentti renderöi tiedot kerhojen saaman tuen muodosta.
  * Propsit:
  * - support: objekti, jossa:
@@ -15,7 +15,9 @@ const SupportSection = ({ support }) => (
     <h3>{support.title}</h3>
     <p>{support.description}</p>
     <ul>
-      {support.points.map((p, i) => <li key={i}>{p}</li>)}
+      {support.points.map((p, i) => (
+        <li key={i}>{p}</li>
+      ))}
     </ul>
   </div>
 )

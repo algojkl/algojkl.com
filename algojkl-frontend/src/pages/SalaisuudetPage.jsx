@@ -8,10 +8,9 @@ import StarterImage from '../common/StarterImage'
  * Tämä komponentti renderöi salaisuudet-sivun, joka sisältää:
  * 1. StarterImage-komponentin pääbannerin kuvan renderöintiin (desktop ja mobile).
  * 2. Salasanasuojatun sisällön, johon pääsee käsiksi syöttämällä oikean salasanan.
- * 3. Lomakkeen salasanan syöttämistä varten ja virheilmoitukset väärästä salasanasta tai palvelinvirheistä. 
+ * 3. Lomakkeen salasanan syöttämistä varten ja virheilmoitukset väärästä salasanasta tai palvelinvirheistä.
  */
 const SalaisuudetPage = () => {
-
   const [password, setPassword] = useState('')
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [error, setError] = useState('')
@@ -45,11 +44,11 @@ const SalaisuudetPage = () => {
   if (!isAuthenticated) {
     return (
       <div>
-      <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
-        alt="Seloste"
-      />
+        <StarterImage
+          desktopImage={starterDesktop}
+          mobileImage={starterMobile}
+          alt="Seloste"
+        />
         <div className="login-container">
           <h2>Syötä salasana päästäksesi sisältöön:</h2>
           <form onSubmit={handleSubmit}>

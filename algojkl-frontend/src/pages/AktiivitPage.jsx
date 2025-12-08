@@ -24,20 +24,19 @@ import {
  * - aktiivi-pestit: aktiivien pestit-osio
  * - aktiivi-consent: hakeutumiskutsu-osio
  * - aktiivi-container-merkit: aktiivimerkkejä esittelevä osio
- * 
+ *
  * Data tuodaan PageData/aktiivitData.js -tiedostosta.
  * Jos tarvitsee muokata esim. tiimien tietoja tai aktiivimerkkejä,
  * se onnistuu muokkaamalla kyseistä tiedostoa.
  */
 const AktiiviPage = () => {
-
   return (
     <div className="aktiivi">
       <StarterImage
         desktopImage={starterImages.desktop}
         mobileImage={starterImages.mobile}
         alt="Aktiivit"
-      /> 
+      />
       <div className="aktiivi-container">
         <div className="aktiivi-start">
           <h2>MIKÄ IHMEEN AKTIIVI???</h2>
