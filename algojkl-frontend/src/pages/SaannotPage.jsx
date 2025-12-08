@@ -6,8 +6,7 @@ import Section from "../components/Saannot/Section"
 import { saannotSections } from "../PageData/saannotData.jsx"
 
 /**
- * RulePage
- *
+ * SäännötPage-komponentti
  * Renderöi Algo ry:n säännöt käyttäen dataa ja Section-komponenttia.
  */
 const RulePage = () => {

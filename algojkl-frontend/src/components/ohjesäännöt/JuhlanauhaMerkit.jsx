@@ -48,7 +48,7 @@ const JuhlanauhaMerkit = () => {
             6§ Hallitusmerkki myönnetään yhdistyksen istuvan hallituksen
             jäsenille. Hallitusmerkki voidaan myöntää myös yhdistyksen
             hallituksen entiselle jäsenelle. Hallitusmerkki on väriltään
-            hopeinen ja kooltaan xx mm.
+            hopeinen ja kooltaan 16 mm.
             <br />
             <br />
             7§ Vuoden algolainen -merkki myönnetään Algo ry:n jäsenelle, joka on

@@ -3,7 +3,13 @@ import starterDesktop from '../images/Page_starters/21.jpg'
 import starterMobile from '../images/mobiili/21.png'
 import StarterImage from '../common/StarterImage'
 
-
+/**
+ * SalaisuudetPage-komponentti
+ * Tämä komponentti renderöi salaisuudet-sivun, joka sisältää:
+ * 1. StarterImage-komponentin pääbannerin kuvan renderöintiin (desktop ja mobile).
+ * 2. Salasanasuojatun sisällön, johon pääsee käsiksi syöttämällä oikean salasanan.
+ * 3. Lomakkeen salasanan syöttämistä varten ja virheilmoitukset väärästä salasanasta tai palvelinvirheistä. 
+ */
 const SalaisuudetPage = () => {
 
   const [password, setPassword] = useState('')

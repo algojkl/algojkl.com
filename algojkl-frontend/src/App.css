@@ -1065,9 +1065,7 @@ body.modal-open {
   padding: 8px 0 8px 0;
 }
 
-.kerhotoiminta-container,
-.kerhotoiminta-container ol,
-.kerhotoiminta-container ul {
+.kerhotoiminta-container {
   width: 70%;
   margin: 0 auto;
 }

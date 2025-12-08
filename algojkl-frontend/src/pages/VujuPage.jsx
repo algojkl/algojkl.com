@@ -2,6 +2,14 @@ import StarterImage from '../common/StarterImage'
 import starterDesktop from '../images/Page_starters/vujut.jpg'
 import starterMobile from '../images/mobiili/vujut_m.jpg'
 
+/**
+ *  Vujut-sivu
+ * Tämä komponentti renderöi Vujut-sivun sisällön.
+ * Sivulla näytetään:
+ * 1. Starter-kuva (desktop ja mobiili)
+ * 2. Vuosijuhlaetiketti-osio, joka kertoo vuosijuhlien käytänteistä, pukeutumisesta,
+ *    arvokkaasta juhlakäyttäytymisestä, juhlan kulusta sekä akateemisesta silliaamiaisesta.
+ */
 const Vujut = () => {
 
   return (

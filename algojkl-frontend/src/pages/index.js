@@ -1,3 +1,7 @@
+/**
+ * Exporttaa kaikki sivukomponentit yhdestä paikasta.
+ * Jos haluat lisätä uuden sivun, lisää se tähän tiedostoon. -> muista myös päivittää reititys App.jsx:ssä!
+ */
 export { default as HomePage } from './HomePage.jsx'
 export { default as CollabPage } from './YhteistyöPage.jsx'
 export { default as Ohjesaannot } from './ohjesaannotPage.jsx'

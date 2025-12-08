@@ -5,6 +5,12 @@ import StarterImage from '../common/StarterImage'
 
 const Calendar_key = import.meta.env.VITE_CALENDAR_API
 
+/**
+ *  TapahtumatPage-komponentti
+ * Tämä komponentti renderöi Tapahtumat-sivun, joka sisältää:
+ * 1. StarterImage-komponentin pääbannerin kuvan renderöintiin (desktop ja mobile).
+ * 2. Tapahtumatiedot ja upotetun Google-kalenterin, josta käyttäjät voivat tarkastella tulevia tapahtumia. 
+ */
 const Events = () => {
   return (
     <div>
@@ -19,7 +25,7 @@ const Events = () => {
           Tapahtumien ilmoittautumiset ja tarkemmat tiedot löytyvät Algo ry:n
           ilmoituskanavalta Telegramista. Algon Telegramin viestintäkanaviin
           liittyminen onnistuu sähköpostista löytyvistä jäsenkirjeistä tai
-          kysymällä hallituslaisilta
+          kysymällä hallituslaisilta.
         </p>
         <iframe
           title="Google calendar"

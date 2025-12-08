@@ -4,6 +4,13 @@ import starterMobile from '../images/mobiili/18.png'
 import { useContentfulData } from '../services/useContentfulData'
 import StarterImage from '../common/StarterImage'
 
+/**
+ * RekrytPage-komponentti
+ * Tämä komponentti renderöi Rekryt-sivun, joka sisältää:
+ * 1. StarterImage-komponentin sivun yläosan kuvalle (desktop ja mobiili).
+ * 2. Johdantotekstin avoimista rekryilmoituksista.
+ * 3. Dynaamisen listan avoimista rekryilmoituksista, jotka haetaan Contentfulista. 
+ */
 const RekrytPage = () => {
   const { data, isLoading, error } = useContentfulData()
 
@@ -63,7 +70,7 @@ const RekrytPage = () => {
             )
           })
         ) : (
-          <p>Ei aktiivisia rekryjä tällä hetkellä.</p>
+          <p>Tällä hetkellä ei ole aktiivisia rekrytointeja.</p>
         )}
       </div>
     </div>
