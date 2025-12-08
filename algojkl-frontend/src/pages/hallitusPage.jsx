@@ -24,7 +24,6 @@ import { hallitusOrder } from '../utils/hallitusOrder'
  */
 
 const HallitusPage = () => {
-
   const { data, isLoading, error } = useContentfulData()
 
   if (isLoading) return <p>Ladataan...</p>

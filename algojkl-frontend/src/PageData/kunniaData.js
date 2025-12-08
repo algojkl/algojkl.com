@@ -15,12 +15,18 @@ export const kunniajasenet = [
   { name: 'Lassi Laitinen', year: 2025 },
 ]
 
-export const perustajat2022 = [ 
-    { name: 'Eemil Hukkanen', role: 'Puheenjohtaja' }, 
-    { name: 'Annarella Manninen', role: 'Varapuheenjohtaja & Kopo' }, 
-    { name: 'Topias Liljegren', role: 'Sihteeri' }, 
-    { name: 'Anna-Sofia Paavonen', role: 'Rahastonhoitaja' }, 
-    { name: 'Juuso Vuorela', role: 'Yrityssuhdevastaava' }, 
-    { name: 'Minea Nupponen & Jesse Haimi', role: 'Tapahtuma- ja somevastaava(t)', }, 
-    { name: 'Lassi Laitinen', role: 'Fuksivastaava ja sosiaalipoliittinen vastaava', }, 
+export const perustajat2022 = [
+  { name: 'Eemil Hukkanen', role: 'Puheenjohtaja' },
+  { name: 'Annarella Manninen', role: 'Varapuheenjohtaja & Kopo' },
+  { name: 'Topias Liljegren', role: 'Sihteeri' },
+  { name: 'Anna-Sofia Paavonen', role: 'Rahastonhoitaja' },
+  { name: 'Juuso Vuorela', role: 'Yrityssuhdevastaava' },
+  {
+    name: 'Minea Nupponen & Jesse Haimi',
+    role: 'Tapahtuma- ja somevastaava(t)',
+  },
+  {
+    name: 'Lassi Laitinen',
+    role: 'Fuksivastaava ja sosiaalipoliittinen vastaava',
+  },
 ]

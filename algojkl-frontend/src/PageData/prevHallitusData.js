@@ -25,7 +25,10 @@ export const hallitukset = [
       { role: 'Koulutuspoliittinen vastaava', name: 'Olli Terävä' },
       { role: 'Sosiaalipoliittinen vastaava', name: 'Sofia Palola' },
       { role: 'Projektivastaava(t)', name: 'Minea Nupponen & Emilia Rantonen' },
-      { role: 'Tapahtumavastaava(t)', name: 'Venla Veijalainen & Reetta Manninen' },
+      {
+        role: 'Tapahtumavastaava(t)',
+        name: 'Venla Veijalainen & Reetta Manninen',
+      },
       { role: 'Ulkosuhdevastaava', name: 'Veeti Eloranta' },
       { role: 'Viestintävastaava', name: 'Essi Pakkala' },
     ],
@@ -40,7 +43,10 @@ export const hallitukset = [
       { role: 'Rahastonhoitaja', name: 'Anna-Sofia Paavonen' },
       { role: 'Yrityssuhdevastaava', name: 'Juuso Vuorela' },
       { role: 'Hyvinvointivastaava ja Sopo', name: 'Lassi Laitinen' },
-      { role: 'Tapahtumavastaava(t) ja somevastaava(t)', name: 'Minea Nupponen & Emilia Rantonen' },
+      {
+        role: 'Tapahtumavastaava(t) ja somevastaava(t)',
+        name: 'Minea Nupponen & Emilia Rantonen',
+      },
       { role: 'Tiedottaja', name: 'Niko Iljin' },
       { role: 'Excursiovastaava', name: 'Lassi Karjalainen' },
     ],
@@ -55,7 +61,10 @@ export const hallitukset = [
       { role: 'Rahastonhoitaja', name: 'Anna-Sofia Paavonen' },
       { role: 'Yrityssuhdevastaava', name: 'Juuso Vuorela' },
       { role: 'Fuksivastaava & Sopo', name: 'Lassi Laitinen' },
-      { role: 'Tapahtuma- ja somevastaava(t)', name: 'Minea Nupponen & Jesse Haimi' },
+      {
+        role: 'Tapahtuma- ja somevastaava(t)',
+        name: 'Minea Nupponen & Jesse Haimi',
+      },
     ],
   },
 ]

@@ -11,14 +11,14 @@ export const kerhotoimintaData = {
       yhteisöllisessä hengessä. Toiminta on avointa kaikille jäsenille
       taitotasosta riippumatta.`,
       linkText: 'Kyykätään!',
-      linkHref: 'https://t.me/+0nivuYqDLzUxYjNk'
+      linkHref: 'https://t.me/+0nivuYqDLzUxYjNk',
     },
     {
       name: 'Futiskerho',
       description: `Algo FC tarjoaa mahdollisuuden pelata jalkapalloa rennossa ja yhteisöllisessä hengessä. Toiminta on avointa kaikille jäsenille taitotasosta riippumatta – mukaan voi tulla niin ensikertalainen kuin kokenutkin peluri. ⚽ `,
       linkText: 'Pelaamaan!',
-      linkHref: 'https://t.me/+IhWC1RJ9ZGM0OGU0'
-    }
+      linkHref: 'https://t.me/+IhWC1RJ9ZGM0OGU0',
+    },
   ],
   newClub: {
     title: 'Haluatko perustaa uuden kerhon?',
@@ -30,27 +30,30 @@ export const kerhotoimintaData = {
           'Mihin aiheeseen tai tekemiseen kerho liittyy',
           'Kerhon tarkoitus ja kohderyhmä',
           'Millaisia tapahtumia, tapaamisia tai muuta toimintaa on suunnitteilla',
-          'Millaisia hyötyjä kerho tuo jäsenistölle ja mitä tavoitteita sillä on'
-        ]
+          'Millaisia hyötyjä kerho tuo jäsenistölle ja mitä tavoitteita sillä on',
+        ],
       },
       {
-        title: 'Ota yhteyttä hallituksen puheenjohtajaan ja sovi tapaaminen, jossa ideoita voidaan yhdessä tarkastella ja kehittää.'
+        title:
+          'Ota yhteyttä hallituksen puheenjohtajaan ja sovi tapaaminen, jossa ideoita voidaan yhdessä tarkastella ja kehittää.',
       },
       {
-        title: 'Jos kerholle nähdään selkeä tarve ja potentiaalia, valmistele täydennetty toimintasuunnitelma hallituksen kokousta varten.'
+        title:
+          'Jos kerholle nähdään selkeä tarve ja potentiaalia, valmistele täydennetty toimintasuunnitelma hallituksen kokousta varten.',
       },
       {
-        title: 'Hallitus tekee päätöksen kerhon perustamisesta kokouksessaan.'
-      }
-    ]
+        title: 'Hallitus tekee päätöksen kerhon perustamisesta kokouksessaan.',
+      },
+    ],
   },
   support: {
     title: 'Mitä tukea kerhot saavat?',
-    description: 'Hyväksytyt kerhot toimivat virallisesti yhdistyksen alaisuudessa ja voivat saada tukea esimerkiksi seuraavilla tavoilla:',
+    description:
+      'Hyväksytyt kerhot toimivat virallisesti yhdistyksen alaisuudessa ja voivat saada tukea esimerkiksi seuraavilla tavoilla:',
     points: [
       'Toimintaan liittyvien kustannusten korvaaminen',
       'Algon viestintäkanavien käyttö (esim. telegram ja uutiskirjeet)',
-      'Mahdollisuus pyytää muuta tukea tilanteen mukaan – ole rohkeasti yhteydessä kerhovastaavaan!'
-    ]
-  }
+      'Mahdollisuus pyytää muuta tukea tilanteen mukaan – ole rohkeasti yhteydessä kerhovastaavaan!',
+    ],
+  },
 }

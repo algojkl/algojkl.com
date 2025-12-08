@@ -1,5 +1,5 @@
-import React from "react"
-import Section from "../../common/Section"
+import React from 'react'
+import Section from '../../common/Section'
 
 const Sivustot = () => (
   <Section title="Sivustot">
@@ -11,19 +11,19 @@ const Sivustot = () => (
         </a>
       </li>
       <li>
-        <strong>Ohjeita hakuvaiheeseen:</strong>{" "}
+        <strong>Ohjeita hakuvaiheeseen:</strong>{' '}
         <a href="https://www.jyu.fi/fi/opiskelijalle/.../vaihtoon-hakeminen">
           Step by step -hakuohjeet
         </a>
       </li>
       <li>
-        <strong>Valmistautuminen vaihtoon:</strong>{" "}
+        <strong>Valmistautuminen vaihtoon:</strong>{' '}
         <a href="https://www.jyu.fi/fi/opiskelijalle/.../ennen-vaihtoa">
           Valmistautumisohjeet
         </a>
       </li>
       <li>
-        <strong>Vaihdon rahoitus:</strong>{" "}
+        <strong>Vaihdon rahoitus:</strong>{' '}
         <a href="https://www.jyu.fi/fi/opiskelijalle/.../opiskelijavaihdon-rahoitus">
           Vaihdon rahoitus
         </a>

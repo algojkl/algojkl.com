@@ -6,7 +6,11 @@ import PersonCard from '../components/PersonCard.jsx'
 import Perustajat from '../components/perustajat.jsx'
 import VuodenAlgolaiset from '../components/vuodenAlgolaiset.jsx'
 
-import { vuodenAlgolaiset, kunniajasenet, perustajat2022 } from '../PageData/kunniaData'
+import {
+  vuodenAlgolaiset,
+  kunniajasenet,
+  perustajat2022,
+} from '../PageData/kunniaData'
 
 import starterDesktop from '../images/Page_starters/12.jpg'
 import starterMobile from '../images/mobiili/14.png'
@@ -35,10 +39,10 @@ const KunniagalleriaPage = () => {
           </i>
         </p>
         <div className="kunniajasenet">
-        {kunniajasenet.map((p, idx) => (
-          <PersonCard key={idx} name={p.name} year={p.year} list />
-        ))}
-      </div>
+          {kunniajasenet.map((p, idx) => (
+            <PersonCard key={idx} name={p.name} year={p.year} list />
+          ))}
+        </div>
       </div>
 
       <div className="kunnia-container">
@@ -46,16 +50,17 @@ const KunniagalleriaPage = () => {
         <p>
           <i>
             Vuoden algolainen on jäsenten äänestyksessä päättämä, joka on
-            osoittanut merkittävää kiinnostusta yhdistyksen toimintaa kohtaan
-            ja edistänyt jäsenten välistä yhteishenkeä.
+            osoittanut merkittävää kiinnostusta yhdistyksen toimintaa kohtaan ja
+            edistänyt jäsenten välistä yhteishenkeä.
           </i>
         </p>
-          <VuodenAlgolaiset people={vuodenAlgolaiset} />
+        <VuodenAlgolaiset people={vuodenAlgolaiset} />
       </div>
       <Perustajat image={halli2022} members={perustajat2022} year={2022} />
       <div className="kunnia-container">
         <p>
-          Muut edelliset hallitukset näet <a href="/entiset-hallitukset">täältä</a>
+          Muut edelliset hallitukset näet{' '}
+          <a href="/entiset-hallitukset">täältä</a>
         </p>
       </div>
     </div>

@@ -1,12 +1,12 @@
-import React from "react"
-import StarterImage from "../common/StarterImage"
-import Vaihtovuosi from "../components/kansainvalisyys/Vaihtovuosi"
-import Vaihtovinkit from "../components/kansainvalisyys/Vaihtovinkit"
-import VaihtoOhjelmat from "../components/kansainvalisyys/VaihtoOhjelmat"
-import Sivustot from "../components/kansainvalisyys/Sivustot"
-import Kielitodistukset from "../components/kansainvalisyys/Kielitodistukset"
-import starterDesktop from "../images/Page_starters/18.jpg"
-import starterMobile from "../images/mobiili/20.png"
+import React from 'react'
+import StarterImage from '../common/StarterImage'
+import Vaihtovuosi from '../components/kansainvalisyys/Vaihtovuosi'
+import Vaihtovinkit from '../components/kansainvalisyys/Vaihtovinkit'
+import VaihtoOhjelmat from '../components/kansainvalisyys/VaihtoOhjelmat'
+import Sivustot from '../components/kansainvalisyys/Sivustot'
+import Kielitodistukset from '../components/kansainvalisyys/Kielitodistukset'
+import starterDesktop from '../images/Page_starters/18.jpg'
+import starterMobile from '../images/mobiili/20.png'
 
 /**
  * KansainvalisyysPage-komponentti
@@ -23,19 +23,19 @@ import starterMobile from "../images/mobiili/20.png"
 const KansainvalisyysPage = () => {
   return (
     <div>
-    <StarterImage
+      <StarterImage
         desktopImage={starterDesktop}
         mobileImage={starterMobile}
         alt="Kansainvälisyys"
       />
-    <div className="kansainvalisyys-container">
-      <h1>Algolaisen vaihtovinkit ja linkit</h1>
-      <Vaihtovuosi />
-      <Vaihtovinkit />
-      <VaihtoOhjelmat />
-      <Sivustot />
-      <Kielitodistukset />
-    </div>
+      <div className="kansainvalisyys-container">
+        <h1>Algolaisen vaihtovinkit ja linkit</h1>
+        <Vaihtovuosi />
+        <Vaihtovinkit />
+        <VaihtoOhjelmat />
+        <Sivustot />
+        <Kielitodistukset />
+      </div>
     </div>
   )
 }

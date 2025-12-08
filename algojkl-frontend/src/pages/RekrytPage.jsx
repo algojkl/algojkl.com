@@ -9,7 +9,7 @@ import StarterImage from '../common/StarterImage'
  * Tämä komponentti renderöi Rekryt-sivun, joka sisältää:
  * 1. StarterImage-komponentin sivun yläosan kuvalle (desktop ja mobiili).
  * 2. Johdantotekstin avoimista rekryilmoituksista.
- * 3. Dynaamisen listan avoimista rekryilmoituksista, jotka haetaan Contentfulista. 
+ * 3. Dynaamisen listan avoimista rekryilmoituksista, jotka haetaan Contentfulista.
  */
 const RekrytPage = () => {
   const { data, isLoading, error } = useContentfulData()

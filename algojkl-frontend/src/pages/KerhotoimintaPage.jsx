@@ -10,7 +10,7 @@ import SupportSection from '../components/Kerhotoiminta/SupportSection'
 
 /**
  * KerhotoimintaPage
- * 
+ *
  * Pääkomponentti, joka kokoaa kerhotoimintaa koskevan sisällön.
  * Renderöi:
  * - StarterImage ylhäällä
