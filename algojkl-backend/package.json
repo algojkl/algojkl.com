@@ -15,7 +15,7 @@
     "contentful-management": "^11.52.1",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
-    "express": "^5.1.0",
+    "express": "^5.2.1",
     "mongoose": "^8.18.1"
   },
   "description": ""
