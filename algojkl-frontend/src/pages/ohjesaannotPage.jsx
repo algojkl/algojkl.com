@@ -27,8 +27,8 @@ const Merkit = () => {
       />
       <div className="Lakki-container">
         <JuhlanauhaMerkit />
-        <Haalarietiketti />
         <Teekkari />
+        <Haalarietiketti />
       </div>
     </div>
   )
