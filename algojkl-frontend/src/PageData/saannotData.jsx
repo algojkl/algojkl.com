@@ -1,5 +1,3 @@
-// src/PageData/saannotData.jsx
-
 /**
  * Yhdistyksen säännöt
  *
@@ -196,8 +194,8 @@ export const saannotSections = [
     content: (
       <>
         <p>
-          Yhdistyksen nimen kirjoittaa hallituksen puheenjohtaja,
-          varapuheenjohtaja tai yritysvastaava kukin yksin.
+          Yhdistyksen nimen kirjoittavat hallituksen puheenjohtaja ja varapuheenjohtaja kaksin, tai
+          yritysvastaava yhdessä puheenjohtajan tai varapuheenjohtajan kanssa.
         </p>
       </>
     ),
