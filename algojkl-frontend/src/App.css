@@ -42,7 +42,6 @@ h3 {
 .kerhotoiminta-container,
 .aktiivi-container,
 .aktiivi-container-merkit,
-.aktiivi-consent,
 .jasenedut-container,
 .salaisuudet-page-content,
 .saannot-container,
@@ -1257,6 +1256,7 @@ aktiivi-pestit ul {
   margin-bottom: 30px;
   color: #faf6ed;
   box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .aktiivi-consent button {
@@ -1797,7 +1797,6 @@ p {
   .fuksi-leveys,
   .hakijalle-container,
   .aktiivi-container,
-  .aktiivi-consent,
   .prev-hallitus,
   .event-container,
   .hallihaku-container {
