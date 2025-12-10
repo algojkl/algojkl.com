@@ -12,7 +12,73 @@ body {
   width: 100% !important;
 }
 
-/* -------------------------------------------Carousel --------------------------------------------------------*/
+
+h1 {
+  
+}
+
+h2 {
+  
+}
+
+h3 {
+  
+}
+
+.vuju-container,
+.vuju-container-start,
+.Lakki-container,
+.ansiomerkit-container,
+.pyt-kirja-container,
+.hakijalle-container,
+.kerhotoiminta-container,
+.Freshman-container,
+.event-container,
+.fuksi-leveys,
+.collab-container-flex,
+.OverAll-container,
+.collab-container,
+.prev-hallitus,
+.kerhotoiminta-container,
+.aktiivi-container,
+.aktiivi-container-merkit,
+.aktiivi-consent,
+.jasenedut-container,
+.salaisuudet-page-content,
+.saannot-container,
+.kunnia-container,
+.seloste-container,
+.periaate-container,
+.yhteydenotto-container,
+.kansainvalisyys-container,
+.rekryt-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hallitus {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Lakki-container p,
+.vuju-section,
+.vuju-container-start p,
+.hakijalle-container p,
+.kerhotoiminta-container p,
+.Freshman-container p,
+.event-container p,
+.collab-container p {
+  line-height: 30px;
+  position: relative;
+  justify-content: center;
+  border-radius: 2px;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
 
 .carousel {
   position: relative;
@@ -55,8 +121,9 @@ body {
 .dot.active {
   background-color: #333;
 }
-
-/* -------------------------------------------- NavBar ---------------------------------------------------- */
+.vuju-section p {
+  line-height: 30px;
+}
 
 .navigation {
   background-color: #faf6ed;
@@ -221,7 +288,24 @@ body {
 }
 
 .container-info {
-  width: 90%;
+  width: 80%;
+  background-color: #322c2b;
+  color: white;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  font-size: smaller;
+}
+
+.terminal {
+  text-align: start;
+  margin-left:1rem;
+}
+
+.typewrite {
+  color:#989898;
+  text-align: start;
+  margin-left:1rem;
 }
 
 .container p {
@@ -258,8 +342,6 @@ body {
 }
 
 .collab-container-flex {
-  margin: 0 auto;
-  width: 70%;
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
@@ -546,6 +628,7 @@ body.modal-open {
 .ansiomerkit-container h1,
 .Lakki-container h1,
 .Vuju-container h1,
+.vuju-container-start h1,
 .Freshman-container h1,
 .kerhotoiminta-container h1,
 .rekryt-container h1,
@@ -563,17 +646,10 @@ body.modal-open {
 
 .event-container {
   padding: 0 0 10px 10px;
-  width: 70%;
-  margin: 0 auto;
 }
 
 /*-----------------------------------------------------FreshmanPage------------------------------------------------------------------------*/
 
-.fuksi-leveys,
-.Freshman-container {
-  width: 70%;
-  margin: 0 auto;
-}
 
 .header {
   display: flex;
@@ -633,30 +709,11 @@ body.modal-open {
 
 /* --------------------Overall-Page--------------------------------------------------------------------------- */
 
-/*-Vuju--*/
-
-.vuju-container {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.vuju-container h1 {
-  padding: 10px;
-  width: fit-content;
-  background-color: #fbbebd;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  margin: 0 auto;
-}
-
-/*-Vuju--*/
 
 .OverAll-container {
   border-radius: 2px;
   border: 2px solid #000;
   box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
-  width: 70%;
-  margin: 0 auto;
   padding: 20px;
 }
 
@@ -705,13 +762,9 @@ body.modal-open {
 
 /* -------------------------------LakkiC+ vuju-container--------------------------------------------------------------- */
 
-.Lakki-container {
-  width: 70%;
-  margin: 0 auto;
-}
-
 .Lakki-container p,
-.vuju-container p,
+.vuju-section,
+.vuju-container-start p,
 .hakijalle-container p,
 .kerhotoiminta-container p,
 .Freshman-container p,
@@ -727,24 +780,6 @@ body.modal-open {
   margin-top: 25px;
 }
 
-.collab-container {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.collab-container p {
-  line-height: 35px;
-  position: relative;
-  text-align: center;
-  width: 70%;
-  margin: 0 auto;
-  border-radius: 2px;
-  border: 2px solid #000;
-  box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
 
 .hakijalle-container li {
   list-style-type: disc;
@@ -783,8 +818,6 @@ body.modal-open {
 /* ------------------------------------------------------------------------------------------------ */
 
 .pyt-kirja-container {
-  margin: 0 auto;
-  width: 70%;
   text-align: center;
 }
 
@@ -871,8 +904,6 @@ body.modal-open {
 .hallitus {
   padding: 30px;
   text-align: center;
-  width: 70%;
-  margin: 0 auto;
 }
 
 .hallitus h1 {
@@ -963,11 +994,6 @@ body.modal-open {
   margin-bottom: 30px;
 }
 
-.hakijalle-container {
-  width: 70%;
-  margin: 0 auto;
-}
-
 .hakijalle-container h3,
 .kerhotoiminta-container h3 {
   background-color: #fbbebd;
@@ -978,11 +1004,6 @@ body.modal-open {
 }
 
 /*----------------------------------------------------------*/
-
-.prev-hallitus {
-  width: 70%;
-  margin: 0 auto;
-}
 
 .prev-hallitus h3 {
   margin-left: 20%;
@@ -1001,17 +1022,6 @@ body.modal-open {
 }
 
 /*----------------------------------------------------------*/
-
-.kunnia-container,
-.saannot-container,
-.seloste-container,
-.periaate-container,
-.yhteydenotto-container,
-.kansainvalisyys-container,
-.rekryt-container {
-  width: 70%;
-  margin: 0 auto;
-}
 
 .hallihaku-container {
   width: 90%;
@@ -1063,11 +1073,6 @@ body.modal-open {
 .periaate-container li,
 .aktiivi-pestit li {
   padding: 8px 0 8px 0;
-}
-
-.kerhotoiminta-container {
-  width: 70%;
-  margin: 0 auto;
 }
 
 .kerhotoiminta-container ol {
@@ -1129,7 +1134,7 @@ ul {
   font-size: 1.2rem;
 }
 
-.yhteydenotto-container p,
+.yhteydenottoSection,
 .kansainvalisyys-container p,
 .hallihaku-container p {
   line-height: 30px;
@@ -1138,6 +1143,15 @@ ul {
   border: 2px solid #000;
   box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
+}
+
+.yhteydenottoSection p {
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.yhteydenottoSection {
+  margin-bottom: 20px;
 }
 
 .periaate-container p {
@@ -1174,15 +1188,13 @@ ul {
   width: fit-content;
   margin: 0 auto;
 }
+
 .yhteydenotto-container h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 10px;
-  background-color: #fbbebd;
-  border-radius: 10px;
-  width: fit-content;
-  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
+
+
 
 aktiivi-pestit ul {
   padding-left: 20px;
@@ -1222,12 +1234,6 @@ aktiivi-pestit ul {
   font-size: 0.9rem;
 }
 
-.aktiivi-container,
-.aktiivi-container-merkit {
-  width: 70%;
-  margin: 0 auto;
-}
-
 .aktiivi-container-merkit h2 {
   background-color: #fbbebd;
   width: fit-content;
@@ -1242,8 +1248,6 @@ aktiivi-pestit ul {
 }
 
 .aktiivi-consent {
-  margin: 0 auto;
-  width: 70%;
   text-align: center;
   background-color: #322c2b;
   border: #000;
@@ -1329,8 +1333,6 @@ aktiivi-pestit ul {
 
 .jasenedut-container {
   padding: 1rem;
-  width: 70%;
-  margin: 0 auto;
 }
 
 .jasenedut-item {
@@ -1352,6 +1354,7 @@ aktiivi-pestit ul {
   flex: 1;
   margin-top: 10px;
   font-size: medium;
+  line-height: 30px;
   padding: 20px;
   border-radius: 2px;
   border: 2px solid #000;
@@ -1419,8 +1422,6 @@ aktiivi-pestit ul {
 }
 
 .salaisuudet-page-content {
-  width: 70%;
-  margin: 0 auto;
   padding: 20px;
   border-radius: 2px;
   border: 2px solid #000;
@@ -1787,6 +1788,7 @@ p {
   .collab-container,
   .rekryt-container,
   .vuju-container,
+  .vuju-container-start,
   .Lakki-container,
   .jasenedut-container,
   .kerhotoiminta-container,
@@ -1824,6 +1826,14 @@ p {
     font-size: medium;
   }
 
+  .container-info {
+    padding: 0.8rem;
+  }
+
+  .typewrite {
+    font-size: 0.9rem !important;
+    line-height: 24px;
+  }
   .hallitus h1,
   .saannot-container h1,
   .seloste-container h1,
@@ -1832,11 +1842,18 @@ p {
   .kansainvalisyys-container h1,
   .kerhotoiminta-container h1,
   .rekryt-container h1,
-  .hallihaku-container h1 {
+  .hallihaku-container h1,
+  .vuju-container h1,
+  .vuju-container-start h1{
     width: fit-content;
     font-size: large;
     margin: 0 auto;
     padding: 10px 10px 10px 10px;
+  }
+
+  .yhteydenotto-container h1 {
+    margin-bottom:10px;
+    margin-top:10px;
   }
 
   .haku-card {
@@ -1918,7 +1935,7 @@ p {
   .seloste-container p,
   .kunnia-container p,
   .periaate-container p,
-  .yhteydenotto-container p,
+  .yhteydenottoSection p,
   .kansainvalisyys-container p,
   .Freshman-container p,
   .collab-container p,
@@ -1927,6 +1944,7 @@ p {
   .kerhotoiminta-container,
   .aktiivi-start p,
   .vuju-container p,
+  .vuju-container-start p,
   .jasenedut-container p,
   .kerhotoiminta-container p,
   .hakijalle-container p,
@@ -1939,6 +1957,7 @@ p {
   }
 
   .vuju-container h2,
+  .vuju-container-start h2,
   .periaate-container h3,
   .aktiivi-container h2,
   .aktiivi-consent h2,
