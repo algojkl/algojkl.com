@@ -3,6 +3,7 @@ import Carousel from '../components/Carousel/carousel.jsx'
 import EventCards from '../components/Events/EventCards.jsx'
 import DiamondLogos from '../components/diamondLogos.jsx'
 import { IoDiamondSharp } from 'react-icons/io5'
+import Typewriter from '../components/Typewriter.jsx'
 
 /**
  * HomePage-komponentti
@@ -19,11 +20,10 @@ const HomePage = () => {
     <div className="container">
       <Carousel />
       <div className="container-info">
-        <p>
-          Algo ry on vuonna 2022 perustettu kilta, joka yhdistää Jyväskylän
-          yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen
-          opiskelijat.
-        </p>
+        <div>
+          <p className='terminal'>AlgoWeb$: cat Algo.ry </p>
+          <Typewriter text="Algo ry on vuonna 2022 perustettu kilta, joka yhdistää Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen opiskelijat." prefix="$ " />
+        </div>  
       </div>
       <div className="events">
         <h2>TULEVAT TAPAHTUMAT</h2>
@@ -39,5 +39,4 @@ const HomePage = () => {
     </div>
   )
 }
-
 export default HomePage
