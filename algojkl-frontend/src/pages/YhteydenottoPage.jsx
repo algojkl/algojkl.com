@@ -25,9 +25,9 @@ const YhteydenottoPage = () => {
         alt="Yhteydenotto"
       />
       <div className="yhteydenotto-container">
-        <Kurssipalaute  />
+        <Kurssipalaute />
         <SopoKopoLomake />
-        <YleinenPalaute />  
+        <YleinenPalaute />
       </div>
     </div>
   )

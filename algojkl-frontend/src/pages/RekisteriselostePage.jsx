@@ -31,8 +31,8 @@ const RekisteriselostePage = () => (
       alt="Seloste"
     />
     <div className="seloste-container">
+      <h1>Jäsenrekisteriseloste</h1>
       <div className="seloste-container-items">
-        <h1>Jäsenrekisteriseloste</h1>
         {rekisteriselosteSections.map((section, idx) => (
           <Section key={idx} title={section.title} content={section.content} />
         ))}

@@ -3,7 +3,6 @@ import React from 'react'
 const VuodenAlgolaiset = ({ people }) => {
   return (
     <div>
-      <h2>Vuoden Algolaiset</h2>
       <ul className="vuoden-algolainen-container">
         {people.map((person) => (
           <li key={person.year} className="vuoden-algolainen">

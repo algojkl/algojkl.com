@@ -8,7 +8,7 @@ const Typewriter = ({ text = '', speed = 45 }) => {
     let index = 0
     const interval = setInterval(() => {
       if (index < text.length) {
-        const nextChar = text[index] ?? '' 
+        const nextChar = text[index] ?? ''
         setDisplayedText((prev) => prev + nextChar)
         index++
       } else {
@@ -18,7 +18,7 @@ const Typewriter = ({ text = '', speed = 45 }) => {
     return () => clearInterval(interval)
   }, [text, speed])
 
-  return <p className='typewrite'>{displayedText}</p>
+  return <p className="typewrite">{displayedText}</p>
 }
 
 export default Typewriter

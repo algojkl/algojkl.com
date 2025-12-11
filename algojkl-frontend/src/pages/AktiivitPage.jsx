@@ -39,7 +39,7 @@ const AktiiviPage = () => {
       />
       <div className="aktiivi-container">
         <div className="aktiivi-start">
-          <h2>MIKÄ IHMEEN AKTIIVI???</h2>
+          <h1>MIKÄ IHMEEN AKTIIVI???</h1>
           <p>
             Aktiivit koostuvat kiltamme jäsenistä, jotka haluavat auttaa ja
             vaikuttaa kiltamme toimintaan. Aktiivit auttavat hallituksemme

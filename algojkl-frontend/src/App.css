@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #root {
   width: 100%;
 }
@@ -12,17 +13,71 @@ body {
   width: 100% !important;
 }
 
-
-h1 {
-  
+.ansiomerkit-container h1,
+.Lakki-container h1,
+.Vuju-container h1,
+.vuju-container-start h1,
+.Freshman-container h1,
+.kerhotoiminta-container h1,
+.rekryt-container h1,
+.event-container h2,
+.Freshman-container h1,
+.collab-container h1,
+.hallitus h1,
+.saannot-container h1,
+.seloste-container h1,
+.periaate-container h1,
+.kansainvalisyys-container h1,
+.yhteydenotto-container h1,
+.hakijalle-container h2,
+.hallihaku-container-start h1,
+.aktiivi-container h1 {
+  background-color: #fbbebd;
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+  color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-h2 {
-  
+.collab-container h2,
+.Freshman-container h2,
+.hallihaku-container h2,
+.kerhotoiminta-container h2,
+.Lakki-container h2,
+.vuju-container h2,
+.pyt-kirja-container h2,
+.kunnia-container h2,
+.aktiivi-container-merkit h2,
+.aktiivi-container h2,
+.jasenedut-container h2 {
+  background-color: #fbbebd;
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+  color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.vuju-container h2,
+.aktiivi-container h2 {
+  margin-top: 0;
+}
+
+.hallitus-card h2 {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  color: #333;
 }
 
 h3 {
-  
 }
 
 .vuju-container,
@@ -36,7 +91,6 @@ h3 {
 .event-container,
 .fuksi-leveys,
 .collab-container-flex,
-.OverAll-container,
 .collab-container,
 .prev-hallitus,
 .kerhotoiminta-container,
@@ -269,10 +323,6 @@ h3 {
   text-align: center;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
-
-/* -------------------------------------------- Etusivu ---------------------------------------------------- */
-
 .social img {
   width: 25px;
   height: 25px;
@@ -298,13 +348,26 @@ h3 {
 
 .terminal {
   text-align: start;
-  margin-left:1rem;
+  margin-left: 1rem;
 }
 
 .typewrite {
-  color:#989898;
+  color: #989898;
   text-align: start;
-  margin-left:1rem;
+  margin-left: 1rem;
+}
+
+.Freshman-container h1 {
+  margin-left: 0;
+}
+
+.Freshman-container .typewrite p {
+  font-size: medium;
+  margin-left: 0;
+  text-align: start;
+  padding: 0;
+  box-shadow: none !important;
+  border: 0 !important;
 }
 
 .container p {
@@ -327,17 +390,8 @@ h3 {
   min-height: 600px;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
-
-.collab-container h2 {
-  font-size: large;
-  text-align: center;
-  background-color: #fbbebd;
-  border-radius: 10px;
-  padding: 10px;
-  width: fit-content;
-  margin: 0 auto;
-  margin-top: 20px;
+.collab-container p {
+  width: 95%;
 }
 
 .collab-container-flex {
@@ -350,6 +404,7 @@ h3 {
   box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
   border-color: #000000;
   justify-content: center;
+  width: 95%;
 }
 
 .collab-logos-container {
@@ -377,7 +432,6 @@ h3 {
   box-shadow: 0 4px 10px rgba(218, 149, 149, 0.2);
 }
 
-/* -------------------------------------- Footer-Bar ---------------------------------------------------------- */
 
 .feedback-comms {
   display: flex;
@@ -453,9 +507,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
 
-/* -------------------------------------- Linkit ---------------------------------------------------------- */
 a {
   color: #000000;
   text-decoration: underline;
@@ -467,7 +519,6 @@ a {
 .bm-li a:hover {
   color: #fbbebd;
 }
-/* ------------------------------------------------------------------------------------------------ */
 .event-card-button button {
   background-color: #fbbebd;
   padding: 10px;
@@ -558,7 +609,6 @@ body.modal-open {
   font-size: 1rem;
 }
 
-/* -------------------------------------  DropDown- menu  ------------------------------------------------------------- */
 .arrow {
   position: relative;
   top: 4px;
@@ -622,56 +672,17 @@ body.modal-open {
   border-radius: 10px;
 }
 
-/* ----------------------------------------CollabPage------------------------------------------------------- */
-
-.ansiomerkit-container h1,
-.Lakki-container h1,
-.Vuju-container h1,
-.vuju-container-start h1,
-.Freshman-container h1,
-.kerhotoiminta-container h1,
-.rekryt-container h1,
-.event-container h2 {
-  background-color: #fbbebd;
-  width: fit-content;
-  position: relative;
-  margin: 0 auto;
-  color: #000000;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
 .event-container {
   padding: 0 0 10px 10px;
 }
 
-/*-----------------------------------------------------FreshmanPage------------------------------------------------------------------------*/
-
-
 .header {
   display: flex;
   align-items: center;
-  height: 400px;
 }
 
-.Freshman-container h1 {
-  padding: 11px 11px 11px 11px;
-  background-color: #fbbebd;
-  color: inherit;
-  font-size: 1.5rem;
+.fuksi-leveys {
   width: 100%;
-}
-
-.Freshman-container h2,
-.hallihaku-container h2 {
-  font-size: medium;
-  background-color: #fbbebd;
-  width: fit-content;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 0 auto;
 }
 
 .Freshman-container ul {
@@ -699,47 +710,9 @@ body.modal-open {
   display: inline-block;
 }
 
-/* ---------------------------------Ansiomerkit----------------------------------------------------------- */
-
 .ansiomerkit-container p {
   padding: 3%;
   font-size: 1.12rem;
-}
-
-/* --------------------Overall-Page--------------------------------------------------------------------------- */
-
-
-.OverAll-container {
-  border-radius: 2px;
-  border: 2px solid #000;
-  box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-}
-
-.OverAll-container h1 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 1.5rem;
-}
-
-.OverAll-container li {
-  list-style-type: circle;
-}
-
-.OverAll-container ul {
-  line-height: 30px;
-  position: relative;
-  justify-content: center;
-}
-
-.collab-h1 {
-  text-align: center;
-  background-color: #fbbebd;
-  padding: 10px;
-  width: fit-content;
-  font-size: larger;
-  border-radius: 10px;
-  margin: 0 auto;
 }
 
 .collabs-logos-h3 {
@@ -759,27 +732,6 @@ body.modal-open {
   height: fit-content;
 }
 
-/* -------------------------------LakkiC+ vuju-container--------------------------------------------------------------- */
-
-.Lakki-container p,
-.vuju-section,
-.vuju-container-start p,
-.hakijalle-container p,
-.kerhotoiminta-container p,
-.Freshman-container p,
-.event-container p {
-  line-height: 30px;
-  position: relative;
-  justify-content: center;
-  border-radius: 2px;
-  border: 2px solid #000;
-  box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-
 .hakijalle-container li {
   list-style-type: disc;
   padding-top: 10px;
@@ -792,16 +744,6 @@ body.modal-open {
   padding-top: 10px;
 }
 
-.Lakki-container h2,
-.vuju-container h2,
-.pyt-kirja-container h2 {
-  text-align: center;
-  background-color: #fbbebd;
-  width: fit-content;
-  margin: 0 auto;
-  border-radius: 10px;
-  padding: 10px;
-}
 .Lakki-container h3 {
   background-color: #fbbebd;
   width: fit-content;
@@ -814,7 +756,6 @@ body.modal-open {
   margin: 0 auto;
   display: block;
 }
-/* ------------------------------------------------------------------------------------------------ */
 
 .pyt-kirja-container {
   text-align: center;
@@ -898,23 +839,9 @@ body.modal-open {
   line-height: 1.4;
 }
 
-/*----------------------------------------------------------*/
-
 .hallitus {
   padding: 30px;
   text-align: center;
-}
-
-.hallitus h1 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #333;
-  background-color: #fbbebd;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 10px;
-  padding: 30px;
 }
 
 .hallitus-grid {
@@ -949,12 +876,6 @@ body.modal-open {
 
 .hallitus-card .rounded {
   border-radius: 50%;
-}
-
-.hallitus-card h2 {
-  font-size: 1.3rem;
-  margin: 15px 0;
-  color: #333;
 }
 
 .hallitus-card p {
@@ -1002,8 +923,6 @@ body.modal-open {
   margin: 0 auto;
 }
 
-/*----------------------------------------------------------*/
-
 .prev-hallitus h3 {
   margin-left: 20%;
 }
@@ -1019,8 +938,6 @@ body.modal-open {
   width: 400px;
   height: auto;
 }
-
-/*----------------------------------------------------------*/
 
 .hallihaku-container {
   width: 90%;
@@ -1044,16 +961,7 @@ body.modal-open {
   border: 2px solid #000;
   box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-}
-
-.kunnia-container h2 {
-  font-size: 1.5rem;
-  padding: 10px;
-  background-color: #fbbebd;
-  border-radius: 10px;
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .kunnia-container ul {
@@ -1171,29 +1079,10 @@ ul {
   padding: 20px;
 }
 
-.saannot-container h1,
-.seloste-container h1,
-.periaate-container h1,
-.kansainvalisyys-container h1,
-.yhteydenotto-container h1,
-.hakijalle-container h2,
-.rekryt-container h1,
-.hallihaku-container-start h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 10px;
-  background-color: #fbbebd;
-  border-radius: 10px;
-  width: fit-content;
-  margin: 0 auto;
-}
-
 .yhteydenotto-container h1 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-
-
 
 aktiivi-pestit ul {
   padding-left: 20px;
@@ -1231,15 +1120,6 @@ aktiivi-pestit ul {
 .kansainvalisyys-container li li {
   list-style: disc;
   font-size: 0.9rem;
-}
-
-.aktiivi-container-merkit h2 {
-  background-color: #fbbebd;
-  width: fit-content;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 0 auto !important;
-  margin-bottom: 10px;
 }
 
 .aktiivi-container-merkit img {
@@ -1285,12 +1165,6 @@ aktiivi-pestit ul {
   top: 55px;
 }
 
-.aktiivi-container h2 {
-  background-color: #fbbebd;
-  width: fit-content;
-  padding: 10px;
-  border-radius: 10px;
-}
 .aktiivi-start h2 {
   margin: 0 auto;
 }
@@ -1374,15 +1248,6 @@ aktiivi-pestit ul {
   font-size: small;
 }
 
-.jasenedut-container h2 {
-  font-size: larger;
-  background-color: #fbbebd;
-  width: fit-content;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
 .login-container {
   max-width: 400px;
   margin: 50px auto;
@@ -1430,10 +1295,6 @@ aktiivi-pestit ul {
   box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-p {
-  line-height: 1.5;
-}
-
 .notfound-container {
   text-align: center;
   padding: 4rem 2rem;
@@ -1441,7 +1302,7 @@ p {
 
 .notfound-container h1 {
   font-size: 5rem;
-  color: #d9534f;
+  color: #f35d58;
   margin-bottom: 0.5rem;
 }
 
@@ -1469,8 +1330,6 @@ p {
 .notfound-link:hover {
   background-color: #0056b3;
 }
-
-/*----------------------------------------------------------*/
 
 @media (min-width: 2300px) {
   .footer-content {
@@ -1778,7 +1637,6 @@ p {
 @media (max-width: 780px) {
   .saannot-container,
   .Lakki-container,
-  .OverAll-container,
   .seloste-container,
   .kunnia-container,
   .periaate-container,
@@ -1843,7 +1701,7 @@ p {
   .rekryt-container h1,
   .hallihaku-container h1,
   .vuju-container h1,
-  .vuju-container-start h1{
+  .vuju-container-start h1 {
     width: fit-content;
     font-size: large;
     margin: 0 auto;
@@ -1851,8 +1709,8 @@ p {
   }
 
   .yhteydenotto-container h1 {
-    margin-bottom:10px;
-    margin-top:10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .haku-card {
@@ -1930,7 +1788,6 @@ p {
 
   .saannot-container-items p,
   .Lakki-container p,
-  .OverAll-container p,
   .seloste-container p,
   .kunnia-container p,
   .periaate-container p,
@@ -1971,7 +1828,6 @@ p {
     font-size: large;
   }
 
-  .OverAll-container h2,
   .kerhotoiminta-container h3,
   .hallihaku-container h2 {
     font-size: medium;
@@ -1981,12 +1837,6 @@ p {
   .saannot-container-items ul {
     font-size: small;
     padding-left: 20px;
-  }
-
-  .OverAll-container ul {
-    left: 10px;
-    width: fit-content;
-    font-size: small;
   }
 
   .kerhotoiminta-container ol,

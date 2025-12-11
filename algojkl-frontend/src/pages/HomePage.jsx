@@ -21,9 +21,12 @@ const HomePage = () => {
       <Carousel />
       <div className="container-info">
         <div>
-          <p className='terminal'>AlgoWeb$: cat Algo.ry </p>
-          <Typewriter text="Algo ry on vuonna 2022 perustettu kilta, joka yhdistää Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen opiskelijat." prefix="$ " />
-        </div>  
+          <p className="terminal">AlgoWeb$: cat Algo.ry </p>
+          <Typewriter
+            text="Algo ry on vuonna 2022 perustettu kilta, joka yhdistää Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen opiskelijat."
+            prefix="$ "
+          />
+        </div>
       </div>
       <div className="events">
         <h2>TULEVAT TAPAHTUMAT</h2>
