@@ -1,7 +1,7 @@
 // vujuData.js
 export const starterImages = {
   desktop: '../images/Page_starters/vujut.jpg',
-  mobile: '../images/mobiili/vujut_m.jpg'
+  mobile: '../images/mobiili/vujut_m.jpg',
 }
 
 export const vujuContent = {
@@ -33,7 +33,7 @@ Pukeutumista voi täydentää akateemisilla ansiomerkeillä ja juhlanauhalla. Ju
 *Algo ry:n omissa tilaisuuksissa juhlanauhaa kannetaan ylimpänä, jos kantajalla on myös muiden organisaatioiden nauhoja. Muissa tilaisuuksissa noudatetaan soveltuvia ohjesääntöjä.*
 
 *Kunnia-, ansio- ja hallitusmerkkejä voi käyttää samanaikaisesti juhlanauhan kanssa, eikä niiden asettelulla ole väliä."*
-      `
+      `,
     },
     {
       heading: 'Arvokas juhlakäyttäytyminen',
@@ -45,7 +45,7 @@ Skoolatessa eli lasia kohotettaessa katsotaan ensin pöydän toisella puolella v
       
 Tauoille saa poistua vain ohjelmaan merkittyjen taukojen aikana. Jos omalta paikalta poistumiseen tulee kuitenkin pakottava tarve muulloin, on poistuminen tehtävä huomiota herättämättä ja pöytäseurueelle pahoitellen eikä missään nimessä puheiden tai esitysten aikana.
 
-Juhlasta ei ole soveliasta myöhästyä, joten saavuthan ajoissa juhlapaikalle.`
+Juhlasta ei ole soveliasta myöhästyä, joten saavuthan ajoissa juhlapaikalle.`,
     },
     {
       heading: 'Juhlan kulku',
@@ -57,11 +57,11 @@ Alkupuheiden jälkeen aloitetaan seurustelu ja laulaminen. Lauluja jacpuheenvuor
 
 Cocktail-tilaisuudessa ja pääjuhlassa on yleensä kuvaaja, joka ottaa kuvia niin kuvausseinän edessä kuin itse juhlassakin. Kuvat jaetaan vieraille jälkikäteen juhlien järjestäjien valitsemalla tavalla.
 
-Pääjuhlan loppuessa meno ei lannistu, vaan juhlimista jatketaan virallisilla jatkoilla. Vuosijuhlilla saattaa olla tarjolla drinkkilippuja ja narikka on yleensä etukäteen maksettu, mikä sujuvoittaa jatkoille siirtymistä. Keskiyöllä juhlaväki kokoontuu pimennettyyn tilaan laulamaan teekkarihymnin.`
+Pääjuhlan loppuessa meno ei lannistu, vaan juhlimista jatketaan virallisilla jatkoilla. Vuosijuhlilla saattaa olla tarjolla drinkkilippuja ja narikka on yleensä etukäteen maksettu, mikä sujuvoittaa jatkoille siirtymistä. Keskiyöllä juhlaväki kokoontuu pimennettyyn tilaan laulamaan teekkarihymnin.`,
     },
     {
       heading: 'Akateeminen silliaamiainen',
-      text: `Vuosijuhlista palautuminen tapahtuu silliaamiaisella eli silliksellä, joka järjestetään vuosijuhlien jälkeisenä päivänä. Se järjestetään jossain rennossa paikassa, kuten esimerkiksi Opinkiven saunalla. Silliksellä on yleensä tarjolla rasvaista ruokaa ja virvokkeita, ja pukukoodina toimivat haalarit.`
-    }
-  ]
+      text: `Vuosijuhlista palautuminen tapahtuu silliaamiaisella eli silliksellä, joka järjestetään vuosijuhlien jälkeisenä päivänä. Se järjestetään jossain rennossa paikassa, kuten esimerkiksi Opinkiven saunalla. Silliksellä on yleensä tarjolla rasvaista ruokaa ja virvokkeita, ja pukukoodina toimivat haalarit.`,
+    },
+  ],
 }

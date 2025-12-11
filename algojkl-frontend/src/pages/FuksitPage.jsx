@@ -2,6 +2,7 @@ import React from 'react'
 import StarterImage from '../common/StarterImage'
 import Panu from '../components/simple'
 import TutorList from '../components/Tutorlist'
+import Typewriter from '../components/Typewriter'
 import { useContentfulData } from '../services/useContentfulData'
 
 import {
@@ -46,19 +47,17 @@ const Fuksit = () => {
       <div className="Freshman-container">
         <div className="fuksi-leveys">
           <div className="header">
-            <div>
-              <h1>Heippa Fuksi* ~: cd /fuksisyksy</h1>
-              <p>
-                <i>*Fuksi on ensimmäisen vuoden opiskelija</i>
-              </p>
+            <div className="container-info">
+              <h1>Heippa teekkarifuksi* ~: cd /fuksisyksy</h1>
+              <div className="typewrite">
+                <Typewriter
+                  text="*Teekkarifuksi on ensimmäistä vuotta opiskeleva henkilö, joka Teekkarikasteen saatuaan voi kutsua itseään Teekkariksi."
+                  prefix="$ "
+                />
+              </div>
             </div>
             <Panu />
           </div>
-
-          <p>
-            <i>Koko opiskeluajan tärkein asia: Seuraa sähköpostia!</i>
-          </p>
-          <br />
 
           <h2>Ennen opiskeluiden alkua:</h2>
           <ul>
@@ -81,6 +80,10 @@ const Fuksit = () => {
               </li>
             ))}
           </ul>
+          <p>
+            <i>Koko opiskeluajan tärkein asia: Seuraa sähköpostia!</i>
+          </p>
+          <br />
 
           <h2>Opintojen alku</h2>
           {opintojenAlku.map((text, idx) => (

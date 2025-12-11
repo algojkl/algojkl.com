@@ -7,7 +7,7 @@ export const ennenOpiskelua = [
   {
     title: 'Ota opiskelupaikka vastaan',
     description:
-      'Opiskelupaikka tulee olla vastaanotettu viimeistään x klo 15.00. Opiskelupaikka vastaanotetaan Oma Opintopolku -palvelussa.',
+      'Opiskelupaikka tulee olla vastaanotettu viimeistään 9.7.2026 klo 15.00. Opiskelupaikka vastaanotetaan Oma Opintopolku -palvelussa.',
   },
   {
     title: 'Ilmoittaudu läsnäolevaksi ja maksa ylioppilaskunnan jäsenmaksu',
@@ -54,7 +54,7 @@ export const ennenOpiskelua = [
 ]
 
 export const opintojenAlku = [
-  'Orientaatioviikko tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen koulutusohjelmissa alkaa 25.8.2025 Jyväskylän yliopiston IT-tiedekunnassa Agoralla.',
+  'Orientaatioviikko tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen koulutusohjelmissa alkaa 24.8.2026 Jyväskylän yliopiston IT-tiedekunnassa Agoralla.',
 ]
 
 export const kiltatoiminta = [

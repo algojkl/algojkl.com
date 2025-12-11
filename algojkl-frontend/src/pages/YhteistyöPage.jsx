@@ -26,7 +26,7 @@ const Collab = () => {
         alt="Yhteistyö"
       />
       <div className="collab-container">
-        <h1 className="collab-h1">Hei! Kiinnostaako yhteistyö?</h1>
+        <h1>Hei! Kiinnostaako yhteistyö?</h1>
         <p>
           Algon kanssa voi tehdä yhteistyötä laidasta laitaan! Haluatko
           mainospaikan haalareista tai tukea tapahtumiamme? Vai kiinnostaisiko

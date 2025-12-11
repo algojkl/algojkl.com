@@ -14,7 +14,6 @@ import { vujuContent } from '../PageData/vujuData'
  * refraktorointi kesken
  */
 
-
 const Vujut = () => {
   return (
     <div>
@@ -27,9 +26,9 @@ const Vujut = () => {
         <h1>{vujuContent.title}</h1>
         <ReactMarkdown>{vujuContent.intro}</ReactMarkdown>
       </div>
-      <div className='vuju-container'>
+      <div className="vuju-container">
         {vujuContent.sections.map((section, idx) => (
-          <div key={idx} className='vuju-section'>
+          <div key={idx} className="vuju-section">
             <h2>{section.heading}</h2>
             <ReactMarkdown>{section.text}</ReactMarkdown>
           </div>
@@ -38,6 +37,5 @@ const Vujut = () => {
     </div>
   )
 }
-
 
 export default Vujut

@@ -194,8 +194,9 @@ export const saannotSections = [
     content: (
       <>
         <p>
-          Yhdistyksen nimen kirjoittavat hallituksen puheenjohtaja ja varapuheenjohtaja kaksin, tai
-          yritysvastaava yhdessä puheenjohtajan tai varapuheenjohtajan kanssa.
+          Yhdistyksen nimen kirjoittavat hallituksen puheenjohtaja ja
+          varapuheenjohtaja kaksin, tai yritysvastaava yhdessä puheenjohtajan
+          tai varapuheenjohtajan kanssa.
         </p>
       </>
     ),
