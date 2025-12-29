@@ -357,10 +357,6 @@ h3 {
   margin-left: 1rem;
 }
 
-.Freshman-container h1 {
-  margin-left: 0;
-}
-
 .Freshman-container .typewrite p {
   font-size: medium;
   margin-left: 0;
@@ -1574,10 +1570,6 @@ aktiivi-pestit ul {
     margin: 0 auto;
   }
 
-  .Freshman-container h1 {
-    font-size: 1.5rem;
-  }
-
   .aktiivi-kuva-container {
     flex-direction: column;
     gap: 50px;
@@ -1701,7 +1693,8 @@ aktiivi-pestit ul {
   .rekryt-container h1,
   .hallihaku-container h1,
   .vuju-container h1,
-  .vuju-container-start h1 {
+  .vuju-container-start h1,
+  .Freshman-container h1 {
     width: fit-content;
     font-size: large;
     margin: 0 auto;
@@ -1754,8 +1747,9 @@ aktiivi-pestit ul {
   }
 
   .header h1 {
-    font-size: large;
-    width: 100%;
+    font-size: small;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .header p {
@@ -1820,7 +1814,8 @@ aktiivi-pestit ul {
   .aktiivi-container-merkit h2,
   .hallihaku-container h3,
   .seloste-container h2,
-  .saannot-container h2 {
+  .saannot-container h2,
+  .Freshman-container h2 {
     font-size: medium;
   }
 
