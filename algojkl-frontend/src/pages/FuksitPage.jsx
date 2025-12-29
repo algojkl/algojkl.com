@@ -45,10 +45,11 @@ const Fuksit = () => {
         alt="Fuksit"
       />
       <div className="Freshman-container">
+        <h1>Heippa teekkarifuksi!</h1>
         <div className="fuksi-leveys">
           <div className="header">
             <div className="container-info">
-              <h1>Heippa teekkarifuksi* ~: cd /fuksisyksy</h1>
+              <h1>Teekkarifuksi* ~: cd /fuksisyksy</h1>
               <div className="typewrite">
                 <Typewriter
                   text="*Teekkarifuksi on ensimmäistä vuotta opiskeleva henkilö, joka Teekkarikasteen saatuaan voi kutsua itseään Teekkariksi."
