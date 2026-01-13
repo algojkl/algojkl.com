@@ -2,7 +2,7 @@ import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import DropdownMenu from './dropdown'
 import Panu from '../simple'
-import bursa from './assets/burger.png'
+import bursa from './assets/burger_v4.png'
 import NavbarMobileLinks from './NavbarMobileLinks'
 import NavbarJoinButton from './NavBarMobileJoin'
 
