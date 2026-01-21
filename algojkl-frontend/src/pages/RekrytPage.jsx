@@ -41,7 +41,7 @@ const RekrytPage = () => {
             return (
               <div key={item.id || index} className="rekry-card">
                 <h2>{item.otsikko}</h2>
-                <p>{item.rekryInfo}</p>
+                <p style={{ whiteSpace: 'pre-wrap' }}>{item.rekryInfo}</p>
 
                 {kuvaUrl && (
                   <img

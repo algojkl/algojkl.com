@@ -10,6 +10,7 @@ import HallitusCard from '../components/HallitusCard/HallitusCard'
 import PestitDescription from '../components/Pestit/PestitDescription'
 import { hallitusOrder } from '../utils/hallitusOrder'
 
+
 /**
  * HallitusPage-komponentti
  * Tämä komponentti renderöi Algo ry:n hallitus-sivun, joka sisältää:
@@ -25,7 +26,6 @@ import { hallitusOrder } from '../utils/hallitusOrder'
 
 const HallitusPage = () => {
   const { data, isLoading, error } = useContentfulData()
-
   if (isLoading) return <p>Ladataan...</p>
   if (error) return <p>Virhe ladattaessa tietoja.</p>
 
@@ -35,6 +35,8 @@ const HallitusPage = () => {
     return orderA - orderB
   })
 
+  const date = new Date().getFullYear()
+
   return (
     <div>
       <StarterImage
@@ -43,7 +45,7 @@ const HallitusPage = () => {
         alt="Hallitus"
       />
       <div className="hallitus">
-        <h1>Algo ry:n hallitus 2025</h1>
+        <h1>Algo ry:n hallitus {date}</h1>
         <div className="hallitus-grid">
           {sortedHallitus.map((member) => (
             <HallitusCard key={member.id} member={member} />

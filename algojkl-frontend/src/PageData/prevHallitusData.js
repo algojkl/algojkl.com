@@ -7,12 +7,30 @@
  * - image: hallituksen kuva
  * - members: lista rooleista ja jäsenistä
  */
-
+import halli2025 from '../images/halli_2025.jpg'
 import halli2024 from '../images/halli_2024.png'
 import halli2023 from '../images/halli_2023.png'
 import halli2022 from '../images/halli_2022.png'
 
 export const hallitukset = [
+  {
+    year: 2025,
+    image: halli2025,
+    members: [
+      { role: 'Puheenjohtaja', name: 'Rene Kangas' },
+      { role: 'Varapuheenjohtaja', name: 'Essi Pakkala' },
+      { role: 'Sihteeri', name: 'Eelis Kiiskinen' },
+      { role: 'Rahastonhoitaja', name: 'Jimi Kortelainen' },
+      { role: 'Yrityssuhdevastaava', name: 'Leevi Kopakkala' },
+      { role: 'Koulutuspoliittinen vastaava', name: 'Maiju Sipilä' },
+      { role: 'Sosiaalipoliittinen vastaava', name: 'Noora Pura' },
+      { role: 'Projektivastaava(t)', name: 'Anna Kärkkäinen & Kasper Pelkonen' },
+      {
+        role: 'Tapahtumavastaava(t)',
+        name: 'Sofia Palola & Sofia Teppo',
+      },
+    ],
+  },
   {
     year: 2024,
     image: halli2024,
