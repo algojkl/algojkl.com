@@ -51,7 +51,7 @@ const Roles = [
   {
     title: 'Viestintävastaava',
     description:
-      'ylläpitää killan sosiaalisen median tilejä ja tiedottaa jäsenille tapahtumista ja muista tärkeistä asioista. Viestintää hoitavat aktiivit: Venla Veijalainen (tg: @thevempula) ja Viola Maunuksela (tg: @violamaunuksela).',
+      'ylläpitää killan sosiaalisen median tilejä ja tiedottaa jäsenille tapahtumista ja muista tärkeistä asioista.',
   },
 ]
 
