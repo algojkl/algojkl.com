@@ -754,6 +754,7 @@ body.modal-open {
 
 .pyt-kirja-container {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .pytkirja-render {
