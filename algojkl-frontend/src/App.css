@@ -3,7 +3,6 @@ body {
   background-color: #ffffff;
   color: #000000;
   margin: 0;
-  padding: 0;
 }
 
 #root {
@@ -180,14 +179,16 @@ h3 {
 
 .navigation {
   background-color: #faf6ed;
-  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.navigation nav {
+.navigation-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  padding: calc(10px + env(safe-area-inset-top)) 10px 10px 10px;
 }
 
 .left-section {
@@ -333,6 +334,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .container-info {
