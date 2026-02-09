@@ -19,8 +19,8 @@ function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className="navigation">
-      <nav>
+    <nav className="navigation">
+      <div className="navigation-inner">
         <NavbarLeft />
         <NavbarMobile
           menuOpen={menuOpen}
@@ -28,8 +28,8 @@ function NavBar() {
           dropdownLinks={dropdownLinks}
         />
         <NavbarRight dropdownLinks={dropdownLinks} />
-      </nav>
-    </div>
+      </div>
+    </nav>
   )
 }
 
