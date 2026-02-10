@@ -52,7 +52,7 @@ const Fuksit = () => {
               <h1>Teekkarifuksi* ~: cd /fuksisyksy</h1>
               <div className="typewrite">
                 <Typewriter
-                  text="*Teekkarifuksi on ensimmäistä vuotta opiskeleva henkilö, joka Teekkarikasteen saatuaan voi kutsua itseään Teekkariksi."
+                  text="*Teekkarifuksi on ensimmäistä vuotta opiskeleva henkilö, joka teekkarikasteen suoritettuuan voi kutsua itseään teekkariksi."
                   prefix="$ "
                 />
               </div>

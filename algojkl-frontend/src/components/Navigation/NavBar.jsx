@@ -19,18 +19,22 @@ function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="navigation">
-      <div className="navigation-inner">
-        <NavbarLeft />
-        <NavbarMobile
-          menuOpen={menuOpen}
-          setMenuOpen={setMenuOpen}
-          dropdownLinks={dropdownLinks}
-        />
-        <NavbarRight dropdownLinks={dropdownLinks} />
-      </div>
-    </nav>
+    <>
+      <div className="nav-safe-area" />
+      <nav className="navigation">
+        <div className="navigation-inner">
+          <NavbarLeft />
+          <NavbarMobile
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+            dropdownLinks={dropdownLinks}
+          />
+          <NavbarRight dropdownLinks={dropdownLinks} />
+        </div>
+      </nav>
+    </>
   )
 }
+
 
 export default NavBar

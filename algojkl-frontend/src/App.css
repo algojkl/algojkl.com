@@ -3,6 +3,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   margin: 0;
+  padding: 0;
 }
 
 #root {
@@ -177,10 +178,13 @@ h3 {
   line-height: 30px;
 }
 
+.nav-safe-area {
+  height: env(safe-area-inset-top);
+  background-color: red;
+}
+
 .navigation {
   background-color: #faf6ed;
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -188,7 +192,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: calc(10px + env(safe-area-inset-top)) 10px 10px 10px;
+  padding: 10px;
 }
 
 .left-section {
@@ -293,7 +297,7 @@ h3 {
   padding-left: 10px;
   border-color: #000000;
   border-style: solid;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 .bm-item-list {
@@ -1481,7 +1485,7 @@ aktiivi-pestit ul {
 
   .dropdown-button {
     padding: 0;
-    font-weight: 100;
+    font-weight: bold;
   }
 
   .dropdown-content {

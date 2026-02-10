@@ -15,6 +15,8 @@ import Typewriter from '../components/Typewriter.jsx'
  *    - IoDiamondSharp-ikonit otsikon molemmin puolin.
  *    - DiamondLogos-komponentin, joka renderöi timanttikumppaneiden logot.
  */
+
+
 const HomePage = () => {
   return (
     <div className="container">
