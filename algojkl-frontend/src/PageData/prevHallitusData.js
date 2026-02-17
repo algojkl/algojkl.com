@@ -24,7 +24,10 @@ export const hallitukset = [
       { role: 'Yrityssuhdevastaava', name: 'Leevi Kopakkala' },
       { role: 'Koulutuspoliittinen vastaava', name: 'Maiju Sipilä' },
       { role: 'Sosiaalipoliittinen vastaava', name: 'Noora Pura' },
-      { role: 'Projektivastaava(t)', name: 'Anna Kärkkäinen & Kasper Pelkonen' },
+      {
+        role: 'Projektivastaava(t)',
+        name: 'Anna Kärkkäinen & Kasper Pelkonen',
+      },
       {
         role: 'Tapahtumavastaava(t)',
         name: 'Sofia Palola & Sofia Teppo',
