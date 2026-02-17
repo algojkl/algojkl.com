@@ -7,9 +7,9 @@ import StarterImage from '../common/StarterImage'
 import { useContentfulData } from '../services/useContentfulData'
 
 import HallitusCard from '../components/HallitusCard/HallitusCard'
+import Toimari from '../components/toimari/Toimari'
 import PestitDescription from '../components/Pestit/PestitDescription'
 import { hallitusOrder } from '../utils/hallitusOrder'
-
 
 /**
  * HallitusPage-komponentti
@@ -45,7 +45,7 @@ const HallitusPage = () => {
         alt="Hallitus"
       />
       <div className="hallitus">
-        <h1>Algo ry:n hallitus {date}</h1>
+        <h1>Hallitus {date}</h1>
         <div className="hallitus-grid">
           {sortedHallitus.map((member) => (
             <HallitusCard key={member.id} member={member} />
@@ -53,6 +53,14 @@ const HallitusPage = () => {
         </div>
       </div>
       <PestitDescription />
+      <div className="toimarit">
+        <h2>Toimihenkilöt {date}</h2>
+        <div className="toimarit-grid">
+          {data.toimarit.map((toimari) => (
+            <Toimari key={toimari.id} member={toimari} />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

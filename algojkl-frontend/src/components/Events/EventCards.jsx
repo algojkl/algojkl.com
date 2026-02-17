@@ -8,7 +8,7 @@ import { useVisibleEvents } from './UseVisibleEvents'
 const EventCards = () => {
   const { data, isLoading, error } = useContentfulData()
   const [selectedEvent, setSelectedEvent] = useState(null)
-  const initialVisibleCount = 5
+  const initialVisibleCount = 4
 
   useEffect(() => {
     document.body.classList.toggle('modal-open', !!selectedEvent)

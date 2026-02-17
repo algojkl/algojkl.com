@@ -12,6 +12,7 @@ const fetchContentfulData = async () => {
     jasenedutRes,
     hiringRes,
     hallitushakuRes,
+    toimaritRes,
   ] = await Promise.all([
     client.getEntries({ content_type: 'events' }),
     client.getEntries({ content_type: 'collabs' }),
@@ -22,6 +23,7 @@ const fetchContentfulData = async () => {
     client.getEntries({ content_type: 'jedut' }),
     client.getEntries({ content_type: 'hiring' }),
     client.getEntries({ content_type: 'hallitushaku' }),
+    client.getEntries({ content_type: 'toimarit' }),
   ])
 
   return {
@@ -60,7 +62,7 @@ const fetchContentfulData = async () => {
     pytkirjat: pytkirjatRes.items.map((item) => ({
       id: item.fields.kirjaId || null,
       pytkirjaTittle: item.fields.pytkirjaTittle || null,
-      pytkirja: `https:${item.fields.pytkirja.fields.file.url}` ,
+      pytkirja: `https:${item.fields.pytkirja.fields.file.url}`,
     })),
     jasenedut: jasenedutRes.items.map((item) => ({
       id: item.fields.jedutId || null,
@@ -77,10 +79,17 @@ const fetchContentfulData = async () => {
     })),
     hallitushaku: hallitushakuRes.items.map((item) => ({
       hakuId: item.fields.hakuId || null,
-      nimi: item.fields.nimi || null, 
+      nimi: item.fields.nimi || null,
       pesti: item.fields.pesti || null,
       hakuteksti: item.fields.hakuteksti || null,
       hakuKuva: item.fields.hakuKuva || null,
+    })),
+    toimarit: toimaritRes.items.map((item) => ({
+      id: item.fields.id || null,
+      nimi: item.fields.nimi || null,
+      pesti: item.fields.pesti || null,
+      telegram: item.fields.telegram || null,
+      kuva: item.fields.kuva?.fields?.file?.url || null,
     })),
   }
 }

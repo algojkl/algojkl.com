@@ -29,21 +29,21 @@ const PytKirja = () => {
   ].sort((a, b) => b - a)
 
   const handleDownload = async (url, title) => {
-  try {
-    const response = await fetch(url)
-    if (!response.ok) throw new Error('Lataus epäonnistui')
-    const blob = await response.blob()
-    const link = document.createElement('a')
-    link.href = window.URL.createObjectURL(blob)
-    link.download = `pkirja_${title}.pdf`
-    document.body.appendChild(link)
-    link.click()
-    link.remove()
-  } catch (err) {
-    console.error(err)
-    alert('Tiedoston lataus epäonnistui.')
+    try {
+      const response = await fetch(url)
+      if (!response.ok) throw new Error('Lataus epäonnistui')
+      const blob = await response.blob()
+      const link = document.createElement('a')
+      link.href = window.URL.createObjectURL(blob)
+      link.download = `pkirja_${title}.pdf`
+      document.body.appendChild(link)
+      link.click()
+      link.remove()
+    } catch (err) {
+      console.error(err)
+      alert('Tiedoston lataus epäonnistui.')
+    }
   }
-}
 
   return (
     <div className="pyt-kirja-container">
@@ -62,16 +62,16 @@ const PytKirja = () => {
         ))}
       </select>
 
-          {filteredData.map((item) => (
-            <div key={item.id} className="pytkirja-render">
-              <button
-                onClick={() => handleDownload(item.pytkirja, item.pytkirjaTittle)}
-                className="pytkirja-link"
-              >
-                {item.pytkirjaTittle?.trim() || 'Ilman otsikkoa'}
-              </button>
-            </div>
-          ))}
+      {filteredData.map((item) => (
+        <div key={item.id} className="pytkirja-render">
+          <button
+            onClick={() => handleDownload(item.pytkirja, item.pytkirjaTittle)}
+            className="pytkirja-link"
+          >
+            {item.pytkirjaTittle?.trim() || 'Ilman otsikkoa'}
+          </button>
+        </div>
+      ))}
 
       {filteredData.length === 0 && <p>Ei pöytäkirjoja valitulle vuodelle.</p>}
     </div>

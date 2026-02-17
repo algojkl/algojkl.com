@@ -16,31 +16,32 @@ import Typewriter from '../components/Typewriter.jsx'
  *    - DiamondLogos-komponentin, joka renderöi timanttikumppaneiden logot.
  */
 
-
 const HomePage = () => {
   return (
-    <div className="container">
+    <div>
       <Carousel />
-      <div className="container-info">
-        <div>
-          <p className="terminal">AlgoWeb$: cat Algo.ry </p>
-          <Typewriter
-            text="Algo ry on vuonna 2022 perustettu kilta, joka yhdistää Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen opiskelijat."
-            prefix="$ "
-          />
+      <div className="container">
+        <div className="container-info">
+          <div>
+            <p className="terminal">AlgoWeb$: cat Algo.ry </p>
+            <Typewriter
+              text="Algo ry on vuonna 2022 perustettu kilta, joka yhdistää Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen opiskelijat."
+              prefix="$ "
+            />
+          </div>
         </div>
-      </div>
-      <div className="events">
-        <h2>TULEVAT TAPAHTUMAT</h2>
-        <EventCards />
-      </div>
+        <div className="events">
+          <h2>TULEVAT TAPAHTUMAT</h2>
+          <EventCards />
+        </div>
 
-      <div className="diamond-partners">
-        <IoDiamondSharp />
-        <h2>TIMANTTIKUMPPANIT</h2>
-        <IoDiamondSharp />
+        <div className="diamond-partners">
+          <IoDiamondSharp />
+          <h2>TIMANTTIKUMPPANIT</h2>
+          <IoDiamondSharp />
+        </div>
+        <DiamondLogos />
       </div>
-      <DiamondLogos />
     </div>
   )
 }
