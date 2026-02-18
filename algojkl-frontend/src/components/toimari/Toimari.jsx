@@ -13,7 +13,7 @@ function Toimari({ member }) {
       <div className="toimari-info">
         <h3>{member.nimi}</h3>
         <p>{member.pesti}</p>
-        <p>{member.telegram}</p>
+        <p>Telegram: {member.telegram}</p>
       </div>
     </div>
   )
