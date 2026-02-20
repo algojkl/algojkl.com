@@ -54,7 +54,9 @@ body {
 .aktiivi-container-merkit h2,
 .aktiivi-container h2,
 .jasenedut-container h2,
-.toimarit h2 {
+.toimarit h2,
+.events h2,
+.diamond-partners h2 {
   background-color: #fbbebd;
   width: fit-content;
   position: relative;
@@ -71,6 +73,11 @@ body {
 .aktiivi-container h2 {
   margin-top: 0;
 }
+
+.events h2, .diamond-partners h2 {
+  margin-bottom: 20px;
+}
+
 
 .hallitus-card h2 {
   font-size: 1.3rem;
@@ -521,13 +528,24 @@ a {
 .bm-li a:hover {
   color: #fbbebd;
 }
+
 .event-card-button button {
   background-color: #fbbebd;
+  color: #000000;
   padding: 10px;
   font-size: larger;
   font-weight: bold;
   border-radius: 10px;
+  border: 1px solid #000000;
+  box-shadow: 3px 3px 5px #000000;
   margin-top: 20px;
+  margin-bottom: 3rem;
+}
+
+.event-card-button button:hover {
+  background-color: #cdd7ed;
+  box-shadow: 5px 5px 10px #000000;
+  transition: 0.3s ease-in-out;
 }
 
 .event-cards-container {
