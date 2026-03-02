@@ -131,7 +131,8 @@ h3 {
 .kerhotoiminta-container p,
 .Freshman-container p,
 .event-container p,
-.collab-container p {
+.collab-container p,
+.kerhotoiminta-container p {
   line-height: 30px;
   position: relative;
   justify-content: center;
@@ -1852,7 +1853,7 @@ aktiivi-pestit ul {
   .collab-container p,
   .rekryt-container p,
   .aktiivi-kuva-container p,
-  .kerhotoiminta-container,
+  .kerhotoiminta-container p,
   .aktiivi-start p,
   .vuju-container p,
   .vuju-container-start p,
@@ -1890,6 +1891,10 @@ aktiivi-pestit ul {
     padding: 10px;
   }
 
+  .kerhotoiminta-container h3 {
+    margin-top: 10px;
+  }
+
   .saannot-container-items ul {
     font-size: small;
     padding-left: 20px;
@@ -1899,7 +1904,7 @@ aktiivi-pestit ul {
   .kerhotoiminta-container ul {
     width: 90%;
     padding: 0;
-    margin-right: 5px;
+    margin: 0 auto;
   }
 
   .kerhotoiminta-container li {
