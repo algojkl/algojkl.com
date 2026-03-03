@@ -2001,6 +2001,10 @@ aktiivi-pestit ul {
     font-size: small;
   }
 
+  .container-info {
+    width: 95%;
+  }
+
   .jasenedut-item {
     flex-direction: column;
   }
