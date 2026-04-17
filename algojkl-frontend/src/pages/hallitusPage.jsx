@@ -51,6 +51,14 @@ const HallitusPage = () => {
             <HallitusCard key={member.id} member={member} />
           ))}
         </div>
+        <div className='hallitus-contact'>
+        <p>
+          Psst. mikäli haluat tavoittaa koko hallituksen yhdellä viestillä, voit lähettää sähköpostia osoitteeseen
+          <a href="mailto:hallitus@algojkl.com"> hallitus@algojkl.com</a>.
+          Yksittäisiin hallitusjäseniin saat yhteyden sähköpostitse osoitteilla
+          <a href="mailto:etunimi.sukunimi@algojkl.com"> etunimi.sukunimi@algojkl.com</a>.
+        </p>
+        </div>
       </div>
       <PestitDescription />
       <div className="toimarit">
