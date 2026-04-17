@@ -132,7 +132,8 @@ h3 {
 .Freshman-container p,
 .event-container p,
 .collab-container p,
-.kerhotoiminta-container p {
+.kerhotoiminta-container p,
+.hallitus-contact p {
   line-height: 30px;
   position: relative;
   justify-content: center;
@@ -1863,7 +1864,8 @@ aktiivi-pestit ul {
   .aktiivi-container p,
   .aktiivi-consent p,
   .event-container p,
-  .hallihaku-container-start p {
+  .hallihaku-container-start p,
+  .hallitus-contact p {
     font-size: small;
     line-height: 25px;
   }
@@ -1981,7 +1983,7 @@ aktiivi-pestit ul {
 
   .hallitus-grid,
   .toimarit-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(170px, 2fr));
   }
 
   .hallitus-card h2 {
