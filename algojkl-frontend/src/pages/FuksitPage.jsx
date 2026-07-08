@@ -100,11 +100,9 @@ const Fuksit = () => {
           {jasenyys.map((text, idx) => (
             <p key={idx}>{text}</p>
           ))}
-
-          {/*
-          <h2>Tutorit 2025 esittäytyvät:</h2>
+          <h2>Tutorit 2026 esittäytyvät:</h2>
+          <br />
           <TutorList tutorit={data?.tutorit} />
-          */}
         </div>
       </div>
     </div>

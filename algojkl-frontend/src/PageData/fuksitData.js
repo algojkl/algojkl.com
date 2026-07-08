@@ -44,7 +44,7 @@ export const ennenOpiskelua = [
   {
     title: 'Tilaa opiskelijakortti',
     description:
-      'Opiskelijakortilla saat merkittäviä alennuksia jokapäiväisistä asioista. Esimerkiksi opiskeijaruokailun hinta on opiskelijakortilla 2.95€ (normaalisti 8,40€). Tällä hetkellä ylioppilaskunnan opiskelijakortteina toimivat Slice ja Frank. Slicen käyttöönotto onnistuu osoitteessa slice.fi/jyy, ja Frankin osoitteessa frank.fi/opiskelijakortti. Lisätietoa opiskelijakorteista löytyy JYY:n sivuilta.',
+      'Opiskelijakortilla saat merkittäviä alennuksia jokapäiväisistä asioista. Esimerkiksi opiskeijaruokailun hinta on opiskelijakortilla 3.10€ (normaalisti 9,00€). Tällä hetkellä ylioppilaskunnan opiskelijakortteina toimivat Slice ja Frank. Slicen käyttöönotto onnistuu osoitteessa slice.fi/jyy, ja Frankin osoitteessa frank.fi/opiskelijakortti. Lisätietoa opiskelijakorteista löytyy JYY:n sivuilta.',
     links: [
       { href: 'https://slice.fi/jyy', text: 'Slice' },
       { href: 'https://frank.fi/opiskelijakortti', text: 'Frank' },

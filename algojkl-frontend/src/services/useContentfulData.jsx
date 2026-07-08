@@ -58,6 +58,7 @@ const fetchContentfulData = async () => {
       tutorKuva: item.fields.tutorKuva.fields.file.url || null,
       nimi: item.fields.nimi || null,
       esittelyteksti: item.fields.esittelyteksti || null,
+      kieli: item.fields.kieli || null,
     })),
     pytkirjat: pytkirjatRes.items.map((item) => ({
       id: item.fields.kirjaId || null,
