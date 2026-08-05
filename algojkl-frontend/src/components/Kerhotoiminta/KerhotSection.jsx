@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 /**
  * KerhotSection
  *
@@ -11,26 +12,29 @@ import React from 'react'
  *   - linkText: linkin teksti
  */
 
-const KerhotSection = ({ kerhot }) => (
-  <div>
-    <h3>Algon kerhot</h3>
-    {kerhot.map((k, idx) => (
-      <div key={idx}>
-        <p>
-          <strong>{k.name}</strong>
-          <br />
-          {k.description}
-          <br />
-          <br />
-          Lisätietoja kerhosta sekä peliaikatauluista saat liittymällä kerhon
-          Telegram-ryhmään:
-          <a href={k.linkHref} target="_blank" rel="noopener noreferrer">
-            {k.linkText}
-          </a>
-        </p>
-      </div>
-    ))}
-  </div>
-)
+const KerhotSection = ({ kerhot }) => {
+  const { t } = useTranslation('common')
+
+  return (
+    <div>
+      <h3>{t('pages.kerhotoiminta.sectionTitle')}</h3>
+      {kerhot.map((k, idx) => (
+        <div key={idx}>
+          <p>
+            <strong>{k.name}</strong>
+            <br />
+            {k.description}
+            <br />
+            <br />
+            {t('pages.kerhotoiminta.infoPrefix')}{' '}
+            <a href={k.linkHref} target="_blank" rel="noopener noreferrer">
+              {k.linkText}
+            </a>
+          </p>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 export default KerhotSection

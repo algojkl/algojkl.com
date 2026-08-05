@@ -1,25 +1,27 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { useHallitusHaku } from './useHallitusHaku'
 import HakuList from './HakuList'
 
 const HallitusHaku = () => {
+  const { t } = useTranslation('common')
   const { isLoading, error, puheenjohtajisto, muutPestit } = useHallitusHaku()
 
-  if (isLoading) return <p>Ladataan hakemuksia...</p>
-  if (error) return <p>Virhe ladatessa hakemuksia</p>
+  if (isLoading) return <p>{t('pages.hallihaku.loading')}</p>
+  if (error) return <p>{t('pages.hallihaku.error')}</p>
 
   return (
     <div className="hallihaku-container">
-      <h2>Puheenjohtajisto</h2>
+      <h2>{t('pages.hallihaku.chair')}</h2>
       <HakuList
         list={puheenjohtajisto}
-        emptyMessage="Ei vielä hakemuksia puheenjohtajistoon."
+        emptyMessage={t('pages.hallihaku.emptyChair')}
       />{' '}
       <br />
-      <h2>Muut hallituspestit</h2>
+      <h2>{t('pages.hallihaku.other')}</h2>
       <HakuList
         list={muutPestit}
-        emptyMessage="Ei vielä hakemuksia muihin hallituspesteihin."
+        emptyMessage={t('pages.hallihaku.emptyOther')}
       />{' '}
       <br />
     </div>

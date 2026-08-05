@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import DropdownMenu from './dropdown'
 import Join from './joinUs'
+import LanguageToggle from './LanguageToggle'
 
 /**
  * NavbarRight
@@ -11,25 +13,30 @@ import Join from './joinUs'
  *  - Yksittäiset linkit
  *  - Panun nappi (jäseneksi liittyminen)
  */
-const NavbarRight = ({ dropdownLinks }) => (
-  <div className="right-section">
-    <ul className="desktop-menu">
-      <DropdownMenu title="KILTA" links={dropdownLinks} />
-      <li>
-        <Link to="/tapahtumat">TAPAHTUMAT</Link>
-      </li>
-      <li>
-        <Link to="/yhteistyot">YHTEISTYÖ</Link>
-      </li>
-      <li>
-        <Link to="/fuksit">FUKSIT</Link>
-      </li>
-      <li>
-        <Link to="/hakijalle">HAKIJAT</Link>
-      </li>
-    </ul>
-    <Join />
-  </div>
-)
+const NavbarRight = ({ dropdownLinks }) => {
+  const { t } = useTranslation('common')
+
+  return (
+    <div className="right-section">
+      <ul className="desktop-menu">
+        <DropdownMenu title={t('nav.menu')} links={dropdownLinks} />
+        <li>
+          <Link to="/tapahtumat">{t('nav.events')}</Link>
+        </li>
+        <li>
+          <Link to="/yhteistyot">{t('nav.collaboration')}</Link>
+        </li>
+        <li>
+          <Link to="/fuksit">{t('nav.fuksit')}</Link>
+        </li>
+        <li>
+          <Link to="/hakijalle">{t('nav.applicants')}</Link>
+        </li>
+      </ul>
+      <LanguageToggle />
+      <Join />
+    </div>
+  )
+}
 
 export default NavbarRight

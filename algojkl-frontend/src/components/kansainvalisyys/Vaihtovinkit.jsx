@@ -1,37 +1,36 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Section from '../../common/Section'
 
-const Vaihtovinkit = () => (
-  <Section title="Vaihtovinkit">
-    <ul>
-      <li>
-        <strong>Opintopistevaatimukset:</strong> Suorita yleensä vähintään 20 op
-        per lukukausi.
-      </li>
-      <li>
-        <strong>Kurssisuunnitelma:</strong> Tee Learning Agreement ja hyväksytä
-        se molemmissa yliopistoissa.
-        <ul>
-          <li>Suunnitelma on alustava ja sitä voi muuttaa vaihdon aikana.</li>
-          <li>Kurssit voivat muuttua ilmoittautumisen yhteydessä.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Opintotasojen huomioiminen:</strong>
-        <ul>
-          <li>Valitse kurssitaso (kandi/maisteri) tavoitteidesi mukaan.</li>
-          <li>
-            Kandikurssit usein paikallisella kielellä, maisterikurssit
-            englanniksi.
-          </li>
-          <li>
-            Joissain tapauksissa tarvitaan todistus oikeudesta suorittaa
-            maisteritason opintoja.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </Section>
-)
+const Vaihtovinkit = () => {
+  const { t } = useTranslation('common')
+
+  return (
+    <Section title={t('pages.kansainvalisyys.tips.title')}>
+      <ul>
+        <li>
+          <strong>{t('pages.kansainvalisyys.tips.creditsLabel')}</strong>{' '}
+          {t('pages.kansainvalisyys.tips.creditsText')}
+        </li>
+        <li>
+          <strong>{t('pages.kansainvalisyys.tips.studyPlanLabel')}</strong>{' '}
+          {t('pages.kansainvalisyys.tips.studyPlanText')}
+          <ul>
+            <li>{t('pages.kansainvalisyys.tips.studyPlanPoint1')}</li>
+            <li>{t('pages.kansainvalisyys.tips.studyPlanPoint2')}</li>
+          </ul>
+        </li>
+        <li>
+          <strong>{t('pages.kansainvalisyys.tips.levelLabel')}</strong>
+          <ul>
+            <li>{t('pages.kansainvalisyys.tips.levelPoint1')}</li>
+            <li>{t('pages.kansainvalisyys.tips.levelPoint2')}</li>
+            <li>{t('pages.kansainvalisyys.tips.levelPoint3')}</li>
+          </ul>
+        </li>
+      </ul>
+    </Section>
+  )
+}
 
 export default Vaihtovinkit

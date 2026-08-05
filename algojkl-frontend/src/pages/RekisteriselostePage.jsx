@@ -1,8 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
 import starterDesktop from '../images/Page_starters/10.jpg'
 import starterMobile from '../images/mobiili/12.png'
-import { rekisteriselosteSections } from '../PageData/rekisteriselosteData.jsx'
 
 /**
  * Yksittäinen osio rekisteriselosteesta
@@ -13,7 +13,7 @@ import { rekisteriselosteSections } from '../PageData/rekisteriselosteData.jsx'
 const Section = ({ title, content }) => (
   <div className="rekisteri-section">
     <h2>{title}</h2>
-    {content}
+    <p>{content}</p>
   </div>
 )
 
@@ -21,24 +21,29 @@ const Section = ({ title, content }) => (
  * RekisteriselostePage-komponentti
  * Tämä komponentti renderöi jäsenrekisteriseloste-sivun, joka sisältää:
  * 1. StarterImage-komponentin pääbannerin kuvan renderöintiin (desktop ja mobile).
- * 2. Jäsenrekisteriselosteen eri osiot, jotka on määritelty rekisteriselosteData.js-tiedostossa.
+ * 2. Jäsenrekisteriselosteen eri osiot, jotka on määritelty lokalisaatiotiedostossa.
  */
-const RekisteriselostePage = () => (
-  <div>
-    <StarterImage
-      desktopImage={starterDesktop}
-      mobileImage={starterMobile}
-      alt="Seloste"
-    />
-    <div className="seloste-container">
-      <h1>Jäsenrekisteriseloste</h1>
-      <div className="seloste-container-items">
-        {rekisteriselosteSections.map((section, idx) => (
-          <Section key={idx} title={section.title} content={section.content} />
-        ))}
+const RekisteriselostePage = () => {
+  const { t } = useTranslation('common')
+  const sections = t('pages.rekisteriseloste.sections', { returnObjects: true })
+
+  return (
+    <div>
+      <StarterImage
+        desktopImage={starterDesktop}
+        mobileImage={starterMobile}
+        alt={t('pages.rekisteriseloste.title')}
+      />
+      <div className="seloste-container">
+        <h1>{t('pages.rekisteriseloste.title')}</h1>
+        <div className="seloste-container-items">
+          {sections.map((section, idx) => (
+            <Section key={idx} title={section.title} content={section.content} />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default RekisteriselostePage

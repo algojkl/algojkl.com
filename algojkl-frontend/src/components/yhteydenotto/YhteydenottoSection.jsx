@@ -1,4 +1,6 @@
-const YhteydenottoSection = ({ title, children }) => {
+const YhteydenottoSection = ({ title, children, headingLevel = 'h2' }) => {
+  const HeadingTag = headingLevel
+
   return (
     <section className="yhteydenotto-container">
       <h1>{title}</h1>

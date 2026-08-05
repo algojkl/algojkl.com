@@ -4,7 +4,6 @@ import aktiivi_s from '../images/aktiivit_s.png'
 import aktiivi_1 from '../images/aktiivit_1.png'
 import aktiivi_2 from '../images/aktiivit-2.png'
 import aktiivi_3 from '../images/aktiivi_3.png'
-import { href } from 'react-router-dom'
 
 export const starterImages = { desktop: starterDesktop, mobile: starterMobile }
 

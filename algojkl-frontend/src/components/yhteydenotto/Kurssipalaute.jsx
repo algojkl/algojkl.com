@@ -1,29 +1,26 @@
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 import YhteydenottoSection from './YhteydenottoSection'
 
-const Kurssipalaute = () => (
-  <YhteydenottoSection title="Kurssipalaute">
-    <p>
-      Algo ry:n yksi tärkeimpiä tehtäviä on edunvalvonta ja kilta pyrkii
-      vaikuttamaan opetuksen kehittämiseen. Tällä lomakkeella voit antaa
-      palautetta tietystä kurssista liittyen opetukseen, arviointiin tai mihin
-      vaan.{' '}
-      <strong>
-        Tämä palaute ei korvaa yliopiston virallista tai opettajan antamaa
-        kurssipalautelomaketta!
-      </strong>
-    </p>
+const Kurssipalaute = () => {
+  const { t } = useTranslation('common')
 
-    <p>
-      Tätä palautetta kerää ja käyttää Algon kopo ja puheenjohtaja. Tämän
-      palautteen voit antaa täysin anonyymisti tai antaa yhteystietosi jos
-      haluat että sinuun ollaan yhteydessä. Palautteet viedään kuitenkin
-      eteenpäin täysin anonyymeinä.
-    </p>
-    <p>
-      Linkki lomakkeeseen:{' '}
-      <a href="https://forms.gle/eXQokL9ukeJNgKoAA">Kurssipalautelomake</a>
-    </p>
-  </YhteydenottoSection>
-)
+  return (
+    <YhteydenottoSection title={t('pages.yhteydenotto.course.title')}>
+      <p>
+        {t('pages.yhteydenotto.course.description')}{' '}
+        <strong>{t('pages.yhteydenotto.course.warning')}</strong>
+      </p>
+
+      <p>{t('pages.yhteydenotto.course.description2')}</p>
+      <p>
+        {t('pages.yhteydenotto.course.linkPrefix')}{' '}
+        <a href="https://forms.gle/eXQokL9ukeJNgKoAA">
+          {t('pages.yhteydenotto.course.linkLabel')}
+        </a>
+      </p>
+    </YhteydenottoSection>
+  )
+}
 
 export default Kurssipalaute

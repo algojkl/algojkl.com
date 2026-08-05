@@ -1,30 +1,32 @@
 import React from 'react'
-import Roles from './Pestit'
+import { useTranslation } from 'react-i18next'
 
-const PestitDescription = () => (
-  <div className="hallitus-pesti-info">
-    <h3>Lyhyet kuvaukset hallituspesteistä</h3>
-    <p>
-      {Roles.map((role, i) => (
-        <span key={i}>
-          <strong>{role.title}</strong> {role.description}
-          <br />
-          <br />
-        </span>
-      ))}
-      <i>
-        ps: Hallituksessa tehdään yhteistyössä muitakin kuin vain oman
-        vastuualueen tehtäviä.
-      </i>
-    </p>
+const PestitDescription = () => {
+  const { t } = useTranslation('common')
+  const roles = t('pages.pestit.roles', { returnObjects: true })
 
-    <p>
-      Aiemmat hallitukset näet{' '}
-      <a href="/entiset-hallitukset">
-        <strong>täältä</strong>
-      </a>
-    </p>
-  </div>
-)
+  return (
+    <div className="hallitus-pesti-info">
+      <h3>{t('pages.pestit.title')}</h3>
+      <p>
+        {roles.map((role, i) => (
+          <span key={i}>
+            <strong>{role.title}</strong> {role.description}
+            <br />
+            <br />
+          </span>
+        ))}
+        <i>{t('pages.pestit.ps')}</i>
+      </p>
+
+      <p>
+        {t('pages.pestit.previous')}{' '}
+        <a href="/entiset-hallitukset">
+          <strong>{t('pages.pestit.here')}</strong>
+        </a>
+      </p>
+    </div>
+  )
+}
 
 export default PestitDescription

@@ -1,30 +1,24 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import lakki from '../../images/lakki.jpg'
 
 export const Teekkari = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div>
       <img
         src={lakki}
-        alt="Jyväskylän 8-kulmainen teekkarilakki"
+        alt={t('pages.ohjesaannot.teekkari.imageAlt')}
         className="lakki"
       />
-      <h1>Teekkarilakki</h1>
+      <h1>{t('pages.ohjesaannot.teekkari.title')}</h1>
       <p>
-        Jyväskylän teekkarilakki on kahdeksankulmainen, Jyväskylän kävelykadun
-        Kompassin muodon mukaan. Lakin sisäpuoli on Jyväskylän yliopiston värien
-        mukainen sini-oranssi. Lakin kokardissa yhdistyy Jyväskylä sekä
-        tekniikka, kun kokardista löytyy JYY:n soihtu, jota ympäröi tekniikan
-        ratas.
+        {t('pages.ohjesaannot.teekkari.description')}
         <br />
         <br />
-        Ensimmäisen vuoden diplomi-insinööriopiskelijoista eli fukseista tulee
-        teekkareita vappuna, jolloin kasteen jälkeen lakin saa painaa päähänsä.
-        Lakin kantoaika alkaa siis vapun kasteesta ja päättyy syyskuun
-        viimeisenä päivänä pidettäviin lakinlaskijaisiin.
-        <br />
-        <br />
-        <a href="https://jytyjkl.fi/">Jyväskylän teekkariyhdistys</a> hallinnoi Jyväskylässä teekkarilakkia koskevia lakinkäyttösääntöjä. Jyväskylän teekkariyhdistyksen kautta voidaan hakea <a href="https://jytyjkl.fi/lakkiohjesaanto">lakinkäyttölupaa</a> lakinkantoajan ulkopuolella.
+        <a href="https://jytyjkl.fi/">{t('pages.ohjesaannot.teekkari.linkText')}</a>{' '}
+        {t('pages.ohjesaannot.teekkari.linkText2')}
       </p>
     </div>
   )

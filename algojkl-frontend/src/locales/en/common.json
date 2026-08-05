@@ -1,0 +1,914 @@
+{
+  "nav": {
+    "brand": "Algo ry",
+    "menu": "GUILD",
+    "events": "EVENTS",
+    "collaboration": "COLLABORATION",
+    "fuksit": "FUKSIT",
+    "applicants": "APPLICANTS",
+    "sections": {
+      "staff": "STAFF MEMBERS",
+      "officialDocuments": "OFFICIAL DOCUMENTS",
+      "members": "FOR MEMBERS"
+    },
+    "links": {
+      "board": "BOARD",
+      "active": "ACTIVE MEMBERS",
+      "rules": "RULES",
+      "guidelines": "GUIDELINES & ETIQUETTE",
+      "vuju": "ANNUAL FESTIVITIES",
+      "privacy": "PRIVACY NOTICE",
+      "honours": "HALL OF FAME",
+      "principles": "OPERATING PRINCIPLES",
+      "benefits": "MEMBER BENEFITS",
+      "clubs": "CLUBS",
+      "recruitment": "RECRUITMENT",
+      "forms": "CONTACT FORMS",
+      "international": "INTERNATIONAL",
+      "kattila": "KATTILA COFFEE CAMERA",
+      "secrets": "SECRETS",
+      "songbook": "SONGBOOK",
+      "home": "HOME",
+      "documents": "DOCUMENTS",
+      "formsShort": "FORMS"
+    },
+    "language": {
+      "fi": "FI",
+      "en": "EN",
+      "toggle": "Choose language"
+    },
+    "joinButton": "JOIN AS A MEMBER"
+  },
+  "pages": {
+    "kansainvalisyys": {
+      "title": "Algo member exchange tips and links",
+      "alt": "International",
+      "yearClockTitle": "Exchange application timeline",
+      "months": {
+        "january": {
+          "title": "January",
+          "intro": "Information sessions are usually organised after mid-January, giving you a comprehensive overview of exchange programmes and opportunities.",
+          "searches": "Applications opening in January:",
+          "search1": "22 Jan – 5 Feb: Application period for European exchange destinations (Erasmus, Nordplus, Nordlys).",
+          "search2": "22 Jan – 5 Feb: Supplementary application period for destinations outside Europe."
+        },
+        "febMarch": {
+          "title": "February and March",
+          "body": "There are no main application periods during these months, but you can use the time to prepare your application and plan your destination."
+        },
+        "april": {
+          "title": "April",
+          "body": "1 Apr – 31 May: Supplementary application period for Erasmus student exchange. Applications are processed continuously throughout the application period."
+        },
+        "september": {
+          "title": "September",
+          "body": "2 Sept – 30 Sept: Supplementary application period for Erasmus and Nordplus exchanges for the spring term 2025."
+        },
+        "october": {
+          "title": "October",
+          "body": "1 Oct – 1 Nov: Application period for exchange destinations outside Europe, including ISEP exchange."
+        },
+        "mayDecember": {
+          "title": "May and December",
+          "body": "Apply for a travel grant if you have found an internship placement abroad. Application periods vary each year."
+        },
+        "allYear": {
+          "title": "Year-round",
+          "body": "The Erasmus internship grant can be applied for throughout the year. Please still note processing times."
+        }
+      },
+      "tips": {
+        "title": "Exchange tips",
+        "creditsLabel": "Credit requirements:",
+        "creditsText": "You should generally complete at least 20 ECTS credits per semester.",
+        "studyPlanLabel": "Course plan:",
+        "studyPlanText": "Prepare a Learning Agreement and have it approved by both universities.",
+        "studyPlanPoint1": "The plan is preliminary and can be changed during the exchange.",
+        "studyPlanPoint2": "Courses can change during enrolment.",
+        "levelLabel": "Considering course levels:",
+        "levelPoint1": "Choose course level (bachelor/master) according to your goals.",
+        "levelPoint2": "Bachelor-level courses are often in the local language, while master-level courses are often in English.",
+        "levelPoint3": "In some cases, you may need proof of your right to complete master's-level studies."
+      },
+      "sites": {
+        "title": "Useful sites",
+        "mobilityLabel": "Application process in the Mobility Online portal:",
+        "mobilityLink": "Mobility Online portal",
+        "applicationLabel": "Guidance for the application phase:",
+        "applicationLink": "Step-by-step application guide",
+        "preparationLabel": "Preparing for exchange:",
+        "preparationLink": "Preparation instructions",
+        "fundingLabel": "Exchange funding:",
+        "fundingLink": "Exchange funding"
+      },
+      "languageCertificates": {
+        "title": "Language certificates",
+        "body": "Many exchange destinations may require a language certificate. Certificates can be obtained from Movi. For more information, contact Niina Ormashawi."
+      }
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you requested does not exist. Check the address or return to the home page.",
+      "backHome": "Back to home"
+    },
+    "sopokopo": {
+      "title": "Sopo-Kopo contact form",
+      "description": "Use this form to reach out if you have experienced inappropriate conduct, misconduct in teaching, or simply want to report an issue. If you wish, you may leave your contact details so that Algo's wellbeing contact person / sopo-kopo can get back to you about the matter. Otherwise, the responses to this form are handled confidentially and anonymously. Even if you leave your contact information, your case will still be handled anonymously. Only the sopo-kopo will see your contact details.",
+      "formLinkLabel": "Form link:",
+      "formLinkText": "SopoKopo form"
+    },
+    "perustajat": {
+      "title": "Founding members & board {{year}}"
+    },
+    "personCard": {
+      "named": "Named {{year}}"
+    },
+    "eventCards": {
+      "showLess": "SHOW LESS",
+      "showLessAria": "Show fewer events",
+      "showMore": "SHOW MORE EVENTS",
+      "showMoreAria": "Show more events"
+    },
+    "eventModal": {
+      "tickets": "Tickets",
+      "dateLabel": "Date"
+    },
+    "fuksit": {
+      "alt": "Freshmen",
+      "title": "Hi there, new teekkari freshman!",
+      "subtitle": "Teekkari freshman* ~: cd /fuksisyksy",
+      "typewriter": "*A teekkari freshman is a person in their first year of studies, who after completing the teekkari initiation can call themselves a teekkari.",
+      "loading": "Loading...",
+      "error": "Error loading data!",
+      "beforeStudiesTitle": "Before studies start:",
+      "important": "The most important thing throughout your studies: keep an eye on your email!",
+      "studyStartTitle": "The start of studies",
+      "guildActivityTitle": "Guild activities",
+      "membershipTitle": "Membership",
+      "tutorTitle": "Tutors 2026 introduce themselves:",
+      "tutorNote": "Finnish-speaking tutors will introduce themselves in Finnish, and English-speaking tutors in English.",
+      "beforeStudies": [
+        {
+          "title": "Accept your study place",
+          "description": "Your study place must be accepted no later than 9.7.2026 at 15:00. You accept it through the Oma Opintopolku service."
+        },
+        {
+          "title": "Register as present and pay the student union membership fee",
+          "description": "Registration for the academic year as present takes place in the OILI registration service. At the same time, the student union membership fee is paid.",
+          "link": {
+            "href": "https://oili.csc.fi/",
+            "text": "OILI registration service"
+          }
+        },
+        {
+          "title": "Student health care fee",
+          "description": "Remember to pay the student health care fee. This fee is mandatory for every student, regardless of whether they use health care services or not.",
+          "link": {
+            "href": "https://www.kela.fi/korkeakouluopiskelijan-terveydenhoitomaksu",
+            "text": "More information"
+          }
+        },
+        {
+          "title": "Apply for housing",
+          "description": "Soihtu and Koas offer affordable student housing. It's worth applying broadly so that you can get housing more quickly. You can find more detailed instructions on the JYY website.",
+          "links": [
+            { "href": "https://soihtu.fi/", "text": "Soihtu" },
+            { "href": "https://www.koas.fi/fi/", "text": "Koas" }
+          ]
+        },
+        {
+          "title": "Apply for benefits from Kela",
+          "description": "Remember to apply for student and housing benefits from Kela.",
+          "link": {
+            "href": "https://www.kela.fi/opiskelijat-pikaopas",
+            "text": "Kela quick guide"
+          }
+        },
+        {
+          "title": "Order a student card",
+          "description": "With a student card, you get significant discounts on everyday services. For example, the price of student meals is 3.10€ with a student card (normally 9.00€). At the moment, Slice and Frank act as the student union's student cards. You can start using Slice at slice.fi/jyy and Frank at frank.fi/opiskelijakortti. More information about student cards is available on the JYY website.",
+          "links": [
+            { "href": "https://slice.fi/jyy", "text": "Slice" },
+            { "href": "https://frank.fi/opiskelijakortti", "text": "Frank" },
+            { "href": "https://jyy.fi/opiskelijalle/opiskelijakortti", "text": "JYY" }
+          ]
+        }
+      ],
+      "studyStart": [
+        "The orientation week for the information and software engineering and technology management programmes begins on 24 August 2026 at the University of Jyväskylä's Faculty of Information Technology in Agora."
+      ],
+      "guildActivity": [
+        "Algo ry is the guild for students of information and software engineering and technology management at the University of Jyväskylä. The guild's role is to protect the interests of its members, organise diverse events and cooperate with companies in the field. Above all, Algo is a community for its members throughout their studies."
+      ],
+      "membership": [
+        "Buy your Algo membership by pressing the \"Join as a Member\" button. Follow Algo on Instagram and TikTok. Join the Algo Discord too. Enjoy the benefits of Algo and have fun at upcoming events. Connecting to the Algo Telegram communication channels is possible through member newsletters sent by email or by asking board members."
+      ]
+    },
+    "hakijat": {
+      "alt": "Applicants",
+      "intro": "Great that you're interested in studying at the University of Jyväskylä! The University of Jyväskylä offers two different programmes for IT students:",
+      "degreeProgrammes": "Information and Software Engineering or Technology Management.",
+      "moreInfoIntro": "More information about the {{degree}} programme can be found on",
+      "moreInfoLink": "the University of Jyväskylä website.",
+      "aboutTitle": "What on earth is Algo ry?",
+      "aboutDescription": "Algo ry is the guild for students of information and software engineering and technology management at the University of Jyväskylä. The guild's role is to protect the interests of its members, organise diverse events and cooperate with companies in the field. Above all, Algo is a community for its members throughout their studies.",
+      "tutkinnot": [
+        {
+          "title": "Information and Software Engineering",
+          "ohjelmat": [
+            {
+              "name": "Bachelor of Engineering 180 ECTS",
+              "opinnot": [
+                "Basic and intermediate studies in information and software engineering 80 ECTS (incl. bachelor's thesis)",
+                "Basic mathematical studies in engineering 35 ECTS",
+                "A second study package (at least 25 ECTS) – the minor combines information technology with a field of your choice from the many options at the University of Jyväskylä. You can choose, for example, humanities such as psychology, sports and health sciences, culture and arts, or pedagogy. Alternatively, you can focus on mathematics or natural sciences.",
+                "Communication and language studies at least 10 ECTS",
+                "Freely selectable study packages, modules and other studies"
+              ]
+            },
+            {
+              "name": "Master of Science in Technology 120 ECTS",
+              "opinnot": [
+                "Advanced studies in information and software engineering 80 ECTS (incl. master's thesis)",
+                "A second study package (at least 25 ECTS) – the minor combines information technology with a field of your choice from the many options at the University of Jyväskylä. You can choose, for example, humanities such as psychology, sports and health sciences, culture and arts, or pedagogy. Alternatively, you can focus on mathematics or natural sciences.",
+                "Communication and language studies",
+                "Freely selectable study packages, modules and other studies"
+              ]
+            }
+          ],
+          "link": "https://www.jyu.fi/fi/tule-opiskelemaan/tutustu-aloihimme/tekniikka/tieto-ja-ohjelmistotekniikan-opinnot"
+        },
+        {
+          "title": "Technology Management",
+          "ohjelmat": [
+            {
+              "name": "Bachelor of Engineering 180 ECTS",
+              "opinnot": [
+                "Basic and intermediate studies in information and software engineering 65 ECTS (incl. bachelor's thesis)",
+                "Technology management study package 40 ECTS",
+                "Basic mathematical studies in engineering 35 ECTS",
+                "Communication and language studies 10 ECTS",
+                "Freely selectable study packages, modules and other studies"
+              ]
+            },
+            {
+              "name": "Master of Science in Technology 120 ECTS",
+              "opinnot": [
+                "Advanced studies in technology management 80 ECTS (incl. master's thesis)",
+                "Studies in technology commercialisation 25 ECTS",
+                "Communication and language studies",
+                "Freely selectable studies and modules as well as other studies"
+              ]
+            }
+          ],
+          "link": "https://www.jyu.fi/fi/tule-opiskelemaan/tutustu-aloihimme/tekniikka/teknologiajohtamisen-opinnot"
+        }
+      ]
+    },
+    "hallihaku": {
+      "alt": "Board recruitment",
+      "title": "Board recruitment 2027",
+      "description": "Board recruitment for 2027 has started! Here you can get to know the applicants. Instructions for applying to the board can be found in Algo's announcement channel.",
+      "loading": "Loading applications...",
+      "error": "Error loading applications",
+      "chair": "Board chair",
+      "other": "Other board roles",
+      "emptyChair": "No applications for the board chair yet.",
+      "emptyOther": "No applications for other board roles yet."
+    },
+    "hallitus": {
+      "loading": "Loading...",
+      "error": "Error loading data.",
+      "title": "Board {{year}}",
+      "alt": "Board",
+      "telegram": "Telegram:",
+      "noImage": "No image",
+      "contactIntro": "Psst. if you want to reach the whole board in one message, you can send an email to",
+      "contactMembers": "You can contact individual board members by email at",
+      "staffTitle": "Staff {{year}}"
+    },
+    "jasenedut": {
+      "title": "Member benefits",
+      "intro": "Algo offers its members great benefits! Check below to see which benefits your membership entitles you to. Membership is proven by showing the membership in the KideApp app. ",
+      "passwords": "If a discount code is needed, you can find it on Algo's",
+      "secretsLink": "secrets page",
+      "ask": "You can ask a board member for the password page.",
+      "empty": "More member benefits will be added soon!"
+    },
+    "international": {
+      "title": "Exchange programmes",
+      "erasmusName": "Erasmus (Europe)",
+      "erasmusDescription": "Erasmus offers a 1–2 semester exchange in EU and EEA countries as well as Turkey.",
+      "erasmusLink": "Erasmus programme",
+      "bilateralName": "Bilateral destinations",
+      "bilateralDescription": "Exchanges outside Europe such as America and Asia.",
+      "isepName": "ISEP",
+      "isepDescription": "One application for multiple universities around the world.",
+      "northName": "Nordplus",
+      "northDescription": "Enables exchange to the Nordics and Baltics.",
+      "forthemName": "FORTHEM",
+      "forthemDescription": "Offers short mobilities and Erasmus exchanges within the alliance."
+    },
+    "events": {
+      "empty": "More events coming soon!"
+    },
+    "home": {
+      "introText": "Algo ry is a guild founded in 2022 that brings together students of information and software engineering as well as technology management at the University of Jyväskylä.",
+      "upcomingEvents": "UPCOMING EVENTS",
+      "diamondPartners": "DIAMOND PARTNERS"
+    },
+    "saannot": {
+      "title": "Algo ry rules",
+      "alt": "Rules",
+      "sections": [
+        {
+          "title": "1. Association name and registered office",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The association's name is Algo ry and its registered office is Jyväskylä."
+            }
+          ]
+        },
+        {
+          "title": "2. Purpose and nature of operations",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The purpose of the association is to act as a connecting link for students of information and software engineering and technology management at the University of Jyväskylä, promote their studies, hobbies and common interests, and safeguard the rights of its members as students."
+            },
+            {
+              "type": "heading",
+              "text": "To carry out its purpose, the association may:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "organize courses, exercises and teaching events and other similar activities",
+                "organize competitions, exhibitions, excursions, camps and other events",
+                "organize celebrations, concerts, exhibitions and other occasions",
+                "maintain the association's electronic communication channels",
+                "publish the association's notices and other communications in different communication channels",
+                "advise and guide its members",
+                "collect and share information and carry out research activities",
+                "bring members together in shared activities and maintain contacts with other associations in the field",
+                "maintain a performing group composed of its members",
+                "organize trips related to the association's purpose for its members",
+                "participate in the direct competition costs of members",
+                "acquire the necessary materials and equipment for the association's use",
+                "seek to arrange premises for the use of the association's members",
+                "make proposals and initiatives to increase hobby opportunities",
+                "cooperate with authorities, organizations, companies and private individuals"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "To support its operations, the association may, where necessary and with the required permission:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "organize fundraising and lotteries",
+                "organize fairs, flea markets and other events",
+                "organize paid events",
+                "receive grants, donations and bequests",
+                "own movable and immovable property necessary for its operations",
+                "carry out café operations",
+                "carry out serving activities in conjunction with events it organizes",
+                "do voluntary work",
+                "sell advertising space",
+                "conclude sponsorship agreements"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "3. Members",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "A natural person who is studying basic or postgraduate studies in information and software engineering or technology management at the University of Jyväskylä, or a person otherwise approved by the board of the association as a member, can be accepted as a regular member. A private person or a competent legal entity that wishes to support the purpose and activities of the association can be accepted as a supporting member. Regular members and supporting members are accepted on application by the association's board. The members are kept in a member register. A member is obliged to notify the board of any changes to their contact information. The association may, upon the proposal of the board, invite a person who has supported the association's activities in an outstanding manner to become an honorary member, provided that the person consents. Honorary membership is lifelong. Acquired membership rights remain."
+            },
+            {
+              "type": "paragraph",
+              "text": "The membership fee for regular members is paid every eight (8) years. A member must resign, or may be expelled by the decision of the board, when their studies in the faculty of IT end. A member may be considered to have resigned if they have not paid their membership fee within one month of the start of a new membership fee period. A member may be removed from membership if the member has failed to pay the membership fee, if the member no longer meets the criteria for membership, or if the member, through their conduct, has caused significant harm to the association or its reputation. The association's board decides on expulsion by a majority vote. A member has the right to resign from the association by notifying the board in writing or by informing the chairperson or by recording the resignation in the minutes of an association meeting."
+            }
+          ]
+        },
+        {
+          "title": "4. Admission and membership fee",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The amount of the admission fee and annual membership fee payable by regular members and supporting members is decided separately for each member category at the spring meeting. Honorary members do not pay membership fees."
+            },
+            {
+              "type": "paragraph",
+              "text": "The collection period for the admission fee and membership fee is 1 September–31 August."
+            }
+          ]
+        },
+        {
+          "title": "5. Board",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The association's affairs are managed by the board, which consists of the chairperson, vice chairperson, secretary, treasurer and up to twenty (20) other regular members elected at the autumn meeting. The chairperson, vice chairperson, secretary, treasurer and any other board members are elected by an absolute majority of votes. If more than two candidates are running for the same position and no one receives more than half of the votes in the first round, a second round is held between the two candidates with the most votes from the first round. In the final vote, a tie is broken by drawing lots."
+            },
+            {
+              "type": "paragraph",
+              "text": "The board's term of office is the calendar year. The board meets at the invitation of the chairperson or, if they are prevented from attending, the vice chairperson, whenever they consider there is reason to do so or when at least half of the board members demand it. The board is quorate when at least half of its members, including the chairperson or vice chairperson, are present. Votes are resolved by an absolute majority. If the votes are tied, the chairperson of the meeting decides, except in elections where lots are drawn."
+            },
+            {
+              "type": "paragraph",
+              "text": "If a member of the board resigns during their term of office, a new member may be elected to replace the resigned member. The new member's term of office lasts until the end of the resigned member's term."
+            },
+            {
+              "type": "paragraph",
+              "text": "All members have the right to attend board meetings without the right to vote."
+            }
+          ]
+        },
+        {
+          "title": "6. Signing the association's name",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The association's name is signed by the chairperson and vice chairperson of the board jointly, or by the corporate relations officer together with the chairperson or vice chairperson."
+            }
+          ]
+        },
+        {
+          "title": "7. Financial year",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The association's financial year is the calendar year. The annual accounts, together with the necessary documents and the board's annual report, must be submitted to the auditor no later than three weeks before the spring meeting. The auditor must provide their written statement to the board no later than one week before the spring meeting."
+            }
+          ]
+        },
+        {
+          "title": "8. Association meetings",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The association holds two regular meetings a year. The spring meeting is held in January–May and the autumn meeting in September–December on a date determined by the board. In association meetings, every regular member has one vote. Supporting members and honorary members have the right to attend and speak at meetings."
+            },
+            {
+              "type": "paragraph",
+              "text": "Unless otherwise specified in the rules, a decision of the association meeting is the opinion supported by more than half of the votes cast. If the votes are tied, the chairperson's vote decides, except in elections where lots are drawn. A meeting is quorate when it has been lawfully convened. Association meetings may be attended by post, telecommunication or another technical means during the meeting or before it, if the board or the association meeting decides so."
+            }
+          ]
+        },
+        {
+          "title": "9. Calling association meetings",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The board must convene association meetings at least seven days before the meeting by email to the address provided by the member and via a social media channel intended for members."
+            }
+          ]
+        },
+        {
+          "title": "10. Regular meetings",
+          "content": [
+            {
+              "type": "heading",
+              "text": "The following matters are handled at the association's spring meeting:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "the financial statements and auditors' report are presented",
+                "the financial statements are approved and discharge is granted to the board and other responsible persons",
+                "the amounts of membership and admission fees for the next collection period are approved (defined in section 4. 'Admission and membership fee')"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "The following matters are handled at the association's autumn meeting:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "the action plan and income and expenditure budget are approved",
+                "the chairperson and other members of the board are elected",
+                "one or two auditors and a deputy auditor are elected"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "If a member of the association wants a matter to be processed at a spring or autumn meeting, they must notify the board in writing well in advance so that the matter can be included in the meeting notice."
+            }
+          ]
+        },
+        {
+          "title": "11. Changing the rules and dissolving the association",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "A decision to amend the rules or dissolve the association must be made at an association meeting by at least a three-fourths (3/4) majority of the votes cast. The meeting notice must state that the rules will be amended or the association dissolved. If the association is dissolved, its assets shall be given to a charity or other public-benefit purpose chosen by the meeting. If the association is dissolved, its assets are used for the same purpose."
+            }
+          ]
+        }
+      ]
+    },
+    "vuju": {
+      "title": "Annual celebration etiquette",
+      "alt": "Annual celebrations",
+      "intro": "Algo officially turns a year older on 4 July, but its annual celebration is traditionally celebrated in the autumn. The annual celebration is our guild's most valuable academic event, and it is attended accordingly. The celebrations are open to both Algo members, invited guests and avecs. This etiquette introduces the guests to the practices of the annual celebrations so that there is no need to worry about practical matters during the celebration itself.",
+      "sections": [
+        {
+          "heading": "Dress code",
+          "text": "At the annual celebration, one dresses either in a tailcoat, a dark suit or an evening gown.\n\n**Tailcoat** consists of a black tailcoat and trousers, a white waistcoat, a white shirt with pearl buttons, and a white bow tie. With a tailcoat, black socks and black patent leather shoes are worn. A wristwatch is not recommended with a tailcoat. A tuxedo or other variations are not an appropriate choice for a tailcoat.\n\n**Dark suit** means a dark grey, dark blue or black suit. The suit can be plain or subtly striped, but not a pinstripe. A white or pale pink shirt (other light colours also work well), a festive tie or bow tie, black shoes and dark, long socks are worn with the dark suit.\n\n**Evening gown** is a formal ankle- or floor-length dress made of formal material. The evening gown may be open, closed, strapless or long-sleeved. With an evening gown, one may also wear a shawl, elbow-length gloves or a strapless bag. During the meal it is not appropriate to place the bag on the table or keep gloves on the hands.\n\nAcademic insignia and a celebration ribbon can complement the attire. According to section 10 of the feast ribbon and badge regulations:\n\n*“The feast ribbon as well as the honour, merit and board badges are used only in formal academic occasions. The feast ribbon is worn so that it runs from the right shoulder across the chest to the left hip, with the light pink colour above. The feast ribbon is worn under the waistcoat in a tailcoat and over the waistcoat and tie in a dark suit. With a dress, the feast ribbon may be carried folded as a rose on the left side of the chest, with the light pink colour on top, or as in a tailcoat. The feast ribbon must not touch bare skin.”*\n\n*At Algo ry's own events, the feast ribbon is worn highest if the bearer also has ribbons from other organisations. In other events, the applicable regulations are followed.*\n\n*Honour, merit and board badges may be worn simultaneously with the feast ribbon, and their arrangement does not matter.*"
+        },
+        {
+          "heading": "Noble celebration behaviour",
+          "text": "The annual celebration is above all an academic table celebration, where proper table manners are a requirement. A seating arrangement has been made, and everyone's place is marked with a name card. If there are people at your table whom you do not know, it is polite to introduce yourself first and keep the conversation going with others besides familiar faces throughout the event.\n\nThe ceremony masters are responsible for the flow of the celebration; they should be listened to. During speeches, songs and other programme, one must remain quiet and not eat. Plenty of time is reserved for socializing, so there is time to talk. Tribute to speeches and other programme is expressed by clapping hands.\n\nWhen toasting, i.e. when raising a glass, one first looks at the person sitting to the left on the other side of the table, then the person sitting to the right on the other side of the table, and finally the person sitting directly opposite. When raising the glass, glasses must not touch each other; the clinking is replaced by a small nod.\n\nYou may leave for breaks only during the breaks marked in the programme. If there is an unavoidable need to leave your place at another time, it should be done quietly and apologetically to the table company, and under no circumstances during speeches or performances.\n\nIt is not appropriate to be late for the celebration; therefore, arrive in good time."
+        },
+        {
+          "heading": "The course of the celebration",
+          "text": "The celebration traditionally begins with a cocktail reception, i.e. a cocktail party. Only invited guests are invited to this event, meaning guests who have received a separate invitation to the celebration. Such guests include, for example, honorary members of the guild, teachers and representatives of other guilds or student organizations. At the cocktail reception, invited guests take turns giving congratulatory speeches to Algo on its birthday and presenting gifts. Usually sparkling wine and small snacks are served. The event is usually a standing event and lasts about two hours.\n\nFrom the cocktail reception, one moves directly to the main celebration. Everyone who has bought a ticket to the annual celebration is invited to the main celebration. The celebration begins when the flag party brings the Finnish flag into the celebration hall. At this point, the guests rise and wait in silence for the flag to be placed, after which the song Finlandia is sung together. At this stage, the ceremony masters introduce themselves and give general instructions. After that, Helan Går is sung, and the opening shot is enjoyed. After the songs, welcome speeches are heard and the celebration can begin.\n\nAfter the opening speeches, socializing and singing begin. Songs and speech requests can be made by clinking your own glass. Usually the songs are requested from the songbook distributed at your seating place. For the main course, a meal break is declared, during which songs may still be requested, but eating during songs is allowed as an exception. However, it is not appropriate to sing with food in your mouth. Before and after the meal, there is all kinds of programme: speeches, awards, performances and singing. In the latter part of the celebration, dessert is eaten and coffee is usually enjoyed with an avec. In this context, avec can mean something like cognac or liqueur. During dessert, the Jallu shot is raised and the song Jallutähden alla is sung. The celebration ends with the chairperson's words and the carrying out of the Finnish flag.\n\nAt the cocktail reception and the main celebration, there is usually a photographer who takes pictures in front of the photo wall as well as during the celebration itself. The pictures are delivered to the guests afterwards in the way chosen by the event organizers.\n\nWhen the main celebration ends, the fun does not diminish; rather, the celebration continues at the official afterparties. At the annual celebration, there may be drink tickets available and the cloakroom is usually paid in advance, which makes the move to the after-parties smoother. At midnight, the celebration crowd gathers in a dimmed room to sing the teekkari hymn."
+        },
+        {
+          "heading": "Academic silliaamiainen",
+          "text": "Recovery after the annual celebrations takes place at the silliaamiainen, i.e. the post-celebration breakfast, which is held the day after the annual celebration. It is held in a relaxed place, such as the sauna at Opinkivi. The silliaamiainen usually offers greasy food and refreshments, and the dress code is overalls."
+        }
+      ]
+    },
+    "kunniagalleria": {
+      "alt": "Hall of fame",
+      "honoraryTitle": "Algo ry honorary members",
+      "honoraryDescription": "An honorary member is a person who has supported the guild's activities in an especially meritorious way. Honorary membership is Algo's highest honour.",
+      "yearlyTitle": "Winners of the Year Algolainen award",
+      "yearlyDescription": "Year Algolainen is chosen by vote among the members and is a person who has shown significant interest in the association's activities and promoted cohesion among members.",
+      "previousBoards": "You can see previous boards",
+      "here": "here"
+    },
+    "aktiivit": {
+      "alt": "Active members",
+      "title": "WHAT ON EARTH IS AN ACTIVE???",
+      "description": "Active members are members of our guild who want to help and influence the activities of our guild. Active members support our board members with a low threshold.",
+      "rolesTitle": "ACTIVE ROLES",
+      "interestedTitle": "Interested?",
+      "interestedDescription": "Apply to become an active by filling in the form below!",
+      "applyButton": "Apply as an Active",
+      "badgesTitle": "Active badges",
+      "teams": [
+        {
+          "title": "Events team",
+          "tasks": [
+            {
+              "title": "Planning and organizing events",
+              "subTasks": [
+                "Includes arranging and organizing the event venue and general event planning"
+              ]
+            },
+            { "title": "Designing event badges" },
+            { "title": "Organizing sports events" },
+            { "title": "Maintains the events team" }
+          ],
+          "responsibles": [
+            { "nimi": "Event coordinator(s)", "href": "/hallitus" }
+          ]
+        },
+        {
+          "title": "Corporate collaboration team",
+          "tasks": [
+            {
+              "title": "Contacting and acquiring companies",
+              "subTasks": [
+                "Also includes obtaining small one-off sponsors"
+              ]
+            },
+            { "title": "Maintains the corporate collaboration team" }
+          ],
+          "responsibles": [
+            { "nimi": "Corporate relations officer", "href": "/hallitus" }
+          ]
+        },
+        {
+          "title": "Social media and communication team",
+          "tasks": [
+            {
+              "title": "Maintaining social media channels",
+              "subTasks": ["Instagram & TikTok"]
+            },
+            { "title": "Capturing events" },
+            { "title": "Promoting the guild" },
+            { "title": "Guild member communication by email" },
+            { "title": "Maintains the social media and communication team" }
+          ],
+          "responsibles": [
+            { "nimi": "Communications officer", "href": "/hallitus" }
+          ]
+        }
+      ],
+      "other": [
+        { "title": "Equality representative at events" },
+        {
+          "title": "Festival team",
+          "subTasks": ["Organizing Vappu and annual celebrations"]
+        },
+        {
+          "title": "Webmaster",
+          "subTasks": [
+            "Updating and maintaining the website",
+            "Maintaining subdomain applications",
+            "Maintaining the server"
+          ]
+        },
+        {
+          "title": "More information about various active tasks can be asked from a board member"
+        }
+      ]
+    },
+    "kerhotoiminta": {
+      "title": "Club activities",
+      "intro": "Club activities are self-organized by members and can relate to hobbies, community building, or study support. All members can participate in clubs or help start one.",
+      "sectionTitle": "Algo's clubs",
+      "infoPrefix": "For more details about the club and schedules, join the club's Telegram group:",
+      "kerhot": {
+        "kyykkä": {
+          "name": "Kyykkä club",
+          "description": "The Kyykkä club offers a fun and community-oriented way to try Kyykkä. The activity is open to all members regardless of skill level.",
+          "linkText": "Let's Kyykkä!",
+          "linkHref": "https://t.me/+0nivuYqDLzUxYjNk"
+        },
+        "futis": {
+          "name": "Football club",
+          "description": "Algo FC offers a chance to play football in a relaxed and community-oriented atmosphere. The activity is open to all members regardless of skill level – newcomers and experienced players are both welcome. ⚽",
+          "linkText": "Let's play!",
+          "linkHref": "https://t.me/+IhWC1RJ9ZGM0OGU0"
+        }
+      },
+      "newClub": {
+        "title": "Want to start a new club?",
+        "description": "Starting a new club can be done with the following steps:",
+        "steps": [
+          {
+            "title": "Draft an initial action plan",
+            "points": [
+              "What topic or activity the club relates to",
+              "The purpose and target group of the club",
+              "What events, meetings or other activities are planned",
+              "What benefits the club brings to the members and what goals it has"
+            ]
+          },
+          {
+            "title": "Contact the chairperson of the board and arrange a meeting where ideas can be discussed and developed together."
+          },
+          {
+            "title": "If the club is seen to have a clear need and potential, prepare a more detailed action plan for the board meeting."
+          },
+          {
+            "title": "The board makes the decision on establishing the club at its meeting."
+          }
+        ]
+      },
+      "support": {
+        "title": "What support do clubs receive?",
+        "description": "Approved clubs operate officially under the association and may receive support in the following ways:",
+        "points": [
+          "Coverage of activity-related costs",
+          "Use of Algo's communication channels (e.g. Telegram and newsletters)",
+          "Ability to request further support as needed – feel free to contact the club representative!"
+        ]
+      }
+    },
+    "ohjesaannot": {
+      "intro": "From this page you can find information about the teekkari rulebook, the overalls etiquette, and the feast ribbon and badge regulations.",
+      "title": "Feast ribbon and badge regulations",
+      "rules": [
+        "1§ Algo ry has the honour, merit, board, and yearly Algo member badge as well as a feast ribbon, which are described below. The model copies of the badges are kept in the association archive, and a list is maintained of all awarded and distributed badges, their award criteria, and dates.",
+        "2§ The board decides on granting badges. The board may grant more badges than the maximum allowed under this regulation if the board decides on it unanimously. If the proposal is not approved, no entry is made in the minutes.",
+        "3§ On the proposal of the board, the association may invite a person who has supported the association's activities in an outstanding manner to become a honorary member, provided that the person consents. The honorary member is awarded a certificate signed by the current chairperson and is invited to the association's annual celebrations every year, if such events are held. Honorary membership is lifelong.",
+        "4§ A badge of honour can be awarded to a person who has significantly contributed to the activities of the association through long-term activity or an exceptionally significant deed. The badge of honour is also awarded to every honorary member either when they are granted honorary membership or retroactively. Up to three (3) badges of honour may be awarded annually. The badge of honour is golden and measures xx mm.",
+        "5§ A merit badge can be awarded to a person who has promoted the association's activities in an outstanding manner over the last year. Up to five (5) merit badges may be awarded annually. The merit badge is silver and measures xx mm.",
+        "6§ The board badge is awarded to current members of the board. The board badge may also be awarded to former members of the board. The board badge is silver and measures 16 mm.",
+        "7§ The yearly Algo member badge is awarded to a member of Algo ry who has shown significant interest in the association's activities and promoted cohesion among members. The member is selected annually through a vote in which every member of Algo ry is entitled to vote. Members are informed via the association's official communication channels no later than 2 weeks before the badge presentation event. An individual may only receive the badge once. The yearly Algo member badge is a patch with a diameter of 80 mm and a purple color with a yellow rosette.",
+        "8§ Awards and certificates granted are presented to recipients at the association's annual celebrations, annual celebration gala or another worthy event deemed suitable by the board. The right to use all badges granted by Algo ry is lifelong.",
+        "9§ The feast ribbon is 35 mm wide and light pink and white in color. Every regular member of the association is entitled to use the ribbon, and it can be purchased directly from the association. The feast ribbon is granted free of charge alongside the merit badge if the deserving person does not already have one. The right to use the feast ribbon remains after leaving the association.",
+        "10§ The feast ribbon as well as the honour, merit, and board badges are used only in formal academic occasions.",
+        "11§ This regulation was approved by the association's meeting on 26.5.2023. It is valid indefinitely. Changes to this regulation are decided by the association's meeting by an absolute majority vote."
+      ],
+      "haalarietiketti": {
+        "title": "Overall etiquette",
+        "paragraphs": [
+          "Overalls are recommended to be worn up, fully worn. They are used at all student events unless otherwise stated in the dress code. When overalls are worn at the waist, the back part is folded so that the association logo is visible. Overalls can and should be customized to one's liking.",
+          "Overalls patches should be sewn by hand. They should not be glued or sewn with a sewing machine. In addition, patches should not be sewn over sponsors' logos when space is available.",
+          "Overalls should not be washed in a washing machine or in any similar way. Overalls are washed by being inside you, for example in a lake or shower."
+        ]
+      },
+      "teekkari": {
+        "title": "Teekkari cap",
+        "imageAlt": "Eight-sided Jyväskylä teekkari cap",
+        "description": "The Jyväskylä teekkari cap is eight-sided, following the shape of the Kompass building on Jyväskylä's walking street. The inside of the cap is blue-orange matching the colors of the University of Jyväskylä. The rosette of the cap combines Jyväskylä and technology, as the rosette features the JYY torch surrounded by the technology ring. First-year engineering students, i.e. freshmen, become teekkaris in spring when, after the baptism, they may wear the cap. The wearing period begins with the spring baptism and ends on the last day of September at the cap-lowering event.",
+        "linkText": "Jyväskylä teekkari association",
+        "linkText2": "cap use permit"
+      }
+    },
+    "periaatteet": {
+      "title": "About the activity",
+      "intro": "Within Algo, help can be sought from the social policy / education policy contacts (sopo@algojkl.com & kopo@algojkl.com) or anonymously via the form you can find",
+      "formLink": "here",
+      "support": "Responses to the form are only visible to the social policy / education policy contacts.",
+      "summaryTitle": "About the activity:",
+      "summary": "Algo does not tolerate any discrimination or harassment in its own operations and we strive to build a supportive atmosphere. If you encounter misconduct, harassment, discrimination, or feel unsafe, speak up and ask for help. Support and help are always available if you need it.",
+      "valuesTitle": "Algo and its members are committed to the following values:",
+      "values": [
+        "All people are equal regardless of gender, age, ethnic or national origin, citizenship, language, religion, sexual orientation or any other personal reason",
+        "No pressure is applied to use intoxicants.",
+        "Good manners are followed and conduct is professional.",
+        "Different perspectives are understood and respected.",
+        "A healthy teekkari spirit is maintained, created and developed.",
+        "Everyone enjoys their study period on their own terms and in accordance with the principles above and Finnish law.",
+        "The principles of a safe space are followed (below)."
+      ],
+      "safetyTitle": "Algo ry's safe space principles:",
+      "safety": [
+        "Stop disruptive behaviour immediately and apologize right away.",
+        "Make sure everyone can participate and feel heard when they want to.",
+        "Do not disturb anyone verbally, physically, or by staring.",
+        "Everyone can participate and share as much as they want.",
+        "Give space and handle sensitive matters respectfully.",
+        "Do not make assumptions about people's outward characteristics.",
+        "Avoid discriminatory stereotypes in your speech and actions.",
+        "Respect personal space and boundaries.",
+        "We intervene in inappropriate and disruptive behaviour."
+      ],
+      "equalityTitle": "Equality:",
+      "equality": "Algo strives to create the safest, most reliable, and most equal environment possible for every member. The Universities Act states that universities must provide a safe study environment where everyone has the right to study without experiencing harassment, bullying, or discrimination (Universities Act 41§). Algo ry does not tolerate bullying, discrimination, harassment, or any other improper behaviour at its events in any form. We want to promote a safe and pleasant higher education community for everyone. It is not always possible to avoid bullying or harassment. Therefore, it is absolutely essential to react to bullying situations. At the University of Jyväskylä, you can seek help from Hyvikset, for example, who provide discussion support and guide you forward if needed. Help is also available from JYY's harassment contact persons or from the social policy contact. All information shared is confidential and will not be discussed with anyone without the individual's permission."
+    },
+    "pestit": {
+      "title": "Short descriptions of board roles",
+      "ps": "ps: The board works together on more than just its own responsibilities.",
+      "previous": "You can see previous boards",
+      "here": "here",
+      "roles": [
+        {
+          "title": "Chairperson",
+          "description": "is responsible for the board's operations, leads board meetings and represents the association in general."
+        },
+        {
+          "title": "Vice chairperson",
+          "description": "substitutes for the chairperson when needed and works closely with the chairperson."
+        },
+        {
+          "title": "Secretary",
+          "description": "writes the minutes at meetings (official document of the matters discussed during meetings)."
+        },
+        {
+          "title": "Treasurer",
+          "description": "pays invoices, takes care of accounting and is responsible for the association's bank account."
+        },
+        {
+          "title": "Corporate relations officer",
+          "description": "establishes and maintains cooperation agreements with companies and is responsible for the business team."
+        },
+        {
+          "title": "Events officer",
+          "description": "plans and organizes events and is responsible for the event team."
+        },
+        {
+          "title": "Project officers",
+          "description": "take care of project-based events related to teekkari culture such as annual celebrations, cap-lowering events, and baptism celebrations."
+        },
+        {
+          "title": "Education policy officer",
+          "description": "(kopo) ensures students' rights are respected and maintains relationships with the university."
+        },
+        {
+          "title": "Social policy officer",
+          "description": "(sopo) looks after students' rights, well-being and equality in the association."
+        },
+        {
+          "title": "Club officer",
+          "description": "is responsible for communication between clubs and the board."
+        },
+        {
+          "title": "Communications officer",
+          "description": "maintains the association's social media channels and informs members about events and other important matters."
+        }
+      ]
+    },
+    "rekisteriseloste": {
+      "title": "Member register privacy notice",
+      "sections": [
+        {
+          "title": "1. Controller",
+          "content": "Algo ry / Faculty of Information Technology\nPL 35 (Agora)\n40014 University of Jyväskylä"
+        },
+        {
+          "title": "2. Contact person responsible for the register",
+          "content": "Secretary of Algo ry (sihteeri@algojkl.com)"
+        },
+        {
+          "title": "3. Name of the register",
+          "content": "Association member register."
+        },
+        {
+          "title": "4. Legal basis and purpose of processing personal data",
+          "content": "The legal basis for processing personal data under the EU General Data Protection Regulation is the controller's legitimate interest (membership). The purpose of processing personal data is communicating with members as well as verifying membership when required (e.g. statutory meeting). The data is not used for automated decision-making or profiling. According to the Associations Act, the association board must keep a list of members."
+        },
+        {
+          "title": "5. Contents of the register",
+          "content": "Data stored in the register includes: person's name, contact details (email address), place of residence."
+        },
+        {
+          "title": "6. Regular sources of information",
+          "content": "Data stored in the register is obtained from messages sent by members through web forms or during meetings."
+        },
+        {
+          "title": "7. Regular transfers and transfer outside the EU or EEA",
+          "content": "Data is not regularly disclosed to third parties."
+        },
+        {
+          "title": "8. Principles of data protection",
+          "content": "Carefulness is exercised in the processing of the register, and data processed via information systems is appropriately protected. When register data is stored on internet servers, the physical and digital security of the equipment is handled appropriately. The controller ensures that stored data and server access rights and other critical information for the security of personal data are handled confidentially and only by those persons whose job description includes it."
+        },
+        {
+          "title": "9. Right of inspection and right to request correction",
+          "content": "Every person in the register has the right to check data stored in the register and request correction or completion of inaccurate or incomplete data. If a person wishes to check data stored about them or request correction, the request must be sent in writing to the controller. Where necessary, the controller may request the applicant to prove their identity. The controller will respond to the customer within the time prescribed by the EU Data Protection Regulation."
+        },
+        {
+          "title": "10. Other rights related to processing personal data",
+          "content": "A person in the register has the right to request the removal of their personal data from the register (the right to be forgotten). Likewise, registered persons have other rights under the EU General Data Protection Regulation, such as restricting the processing of personal data in certain situations. Requests must be sent in writing to the controller. Where necessary, the controller may request the applicant to prove their identity. The controller will respond to the customer within the time prescribed by the EU Data Protection Regulation."
+        }
+      ]
+    },
+    "toimari": {
+      "noImage": "No image"
+    },
+    "rekryt": {
+      "alt": "Recruitment",
+      "loading": "Loading job postings...",
+      "error": "Error loading job postings",
+      "title": "Open job postings will be published here!",
+      "moreInfo": "More information here!",
+      "empty": "There are no active job postings at the moment."
+    },
+    "prevHalli": {
+      "boardTitle": "Board {{year}}"
+    },
+    "salaisuudet": {
+      "prompt": "Enter the password to access the content:",
+      "placeholder": "Password",
+      "loginButton": "Log in",
+      "wrongPassword": "Incorrect password",
+      "serverError": "Server error: {{message}}",
+      "loading": "Loading content..."
+    },
+    "tapahtumat": {
+      "alt": "Events",
+      "title": "Upcoming events",
+      "description": "Event sign-ups and more details can be found on Algo ry's announcement channel on Telegram. You can join Algo's Telegram channels through member newsletters sent by email or by asking board members.",
+      "calendarTitle": "Google Calendar"
+    },
+    "yhteistyo": {
+      "alt": "Collaboration",
+      "title": "Hi! Interested in collaboration?",
+      "intro": "You can collaborate with Algo in all kinds of ways! Do you want an advertising spot on our overalls or want to sponsor our events? Or would you like to present your company to Jyväskylä's Master's students?",
+      "contactUs": "Get in touch!",
+      "corporate": "Corporate partnerships",
+      "events": "Events",
+      "external": "Guild external relations",
+      "otherIdeas": "Other ideas?",
+      "otherDescription": "You can always suggest new collaboration ideas to us!",
+      "otherContact": "For other collaboration inquiries, you can contact our chairperson:",
+      "partnersTitle": "In collaboration with"
+    },
+    "yhteydenotto": {
+      "alt": "Contact",
+      "general": {
+        "title": "General feedback form",
+        "description": "You can share feedback here — both positive and negative. About Algo's operations, websites, or anything related to our association.",
+        "linkLabel": "Feedback form"
+      },
+      "course": {
+        "title": "Course feedback",
+        "description": "One of Algo ry's most important tasks is advocacy, and the association aims to influence the development of teaching. With this form, you can give feedback on a specific course related to teaching, assessment, or anything else. This feedback does not replace the university's official or teacher-provided course feedback form!",
+        "warning": "This feedback does not replace the official university or teacher-provided course feedback form!",
+        "description2": "This feedback is collected and used by Algo's education policy officer and chairperson. You can give this feedback completely anonymously or provide your contact details if you want to be contacted. However, the feedback is still forwarded entirely anonymously.",
+        "linkLabel": "Course feedback form",
+        "linkPrefix": "Link to the form"
+      }
+    }
+  },
+  "footer": {
+    "sections": {
+      "navigation": "NAVIGATION",
+      "staff": "STAFF",
+      "officialDocuments": "OFFICIAL DOCUMENTS",
+      "members": "MEMBERS"
+    },
+    "contactTitle": "Contact information",
+    "addressLine1": "Mattilanniemi 2,",
+    "addressLine2": "40100 Jyväskylä",
+    "email": "pj@algojkl.com",
+    "vat": "Business ID: 3297709-4",
+    "feedbackTitle": "Would you like to give us feedback?",
+    "feedbackDescription": "You can do that by filling out the form below. Feedback is handled anonymously.",
+    "feedbackLink": "Feedback form"
+  }
+}

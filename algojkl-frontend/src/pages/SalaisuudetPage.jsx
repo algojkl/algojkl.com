@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import starterDesktop from '../images/Page_starters/21.jpg'
 import starterMobile from '../images/mobiili/21.png'
 import StarterImage from '../common/StarterImage'
@@ -11,6 +12,7 @@ import StarterImage from '../common/StarterImage'
  * 3. Lomakkeen salasanan syöttämistä varten ja virheilmoitukset väärästä salasanasta tai palvelinvirheistä.
  */
 const SalaisuudetPage = () => {
+  const { t } = useTranslation('common')
   const [password, setPassword] = useState('')
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [error, setError] = useState('')
@@ -34,10 +36,10 @@ const SalaisuudetPage = () => {
         setIsAuthenticated(true)
         setError('')
       } else {
-        setError(data.message || 'Väärä salasana')
+        setError(data.message || t('pages.salaisuudet.wrongPassword'))
       }
     } catch (err) {
-      setError('Palvelinvirhe: ' + err.message)
+      setError(t('pages.salaisuudet.serverError', { message: err.message }))
     }
   }
 
@@ -50,15 +52,15 @@ const SalaisuudetPage = () => {
           alt="Seloste"
         />
         <div className="login-container">
-          <h2>Syötä salasana päästäksesi sisältöön:</h2>
+          <h2>{t('pages.salaisuudet.prompt')}</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Salasana"
+              placeholder={t('pages.salaisuudet.placeholder')}
             />
-            <button type="submit">Kirjaudu</button>
+            <button type="submit">{t('pages.salaisuudet.loginButton')}</button>
           </form>
           {error && <p style={{ color: 'red' }}>{error}</p>}
         </div>
@@ -66,7 +68,7 @@ const SalaisuudetPage = () => {
     )
   }
 
-  if (!content) return <p>Ladataan sisältöä...</p>
+  if (!content) return <p>{t('pages.salaisuudet.loading')}</p>
 
   return (
     <div>

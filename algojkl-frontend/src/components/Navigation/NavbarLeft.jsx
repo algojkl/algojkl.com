@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import logo from './assets/algologo.jpeg'
 import discord from './assets/discord.png'
 import insta from './assets/instagram.png'
@@ -29,23 +30,27 @@ const socialLinks = [
  *
  * Näyttää logon, yhdistyksen nimen ja sosiaalisen median linkit.
  */
-const NavbarLeft = () => (
-  <div className="left-section">
-    <a href="/" className="logo-link">
-      <img src={logo} alt="Algo ry logo" className="logo" />
-    </a>
-    <a href="/" className="kilta">
-      Algo ry
-    </a>
+const NavbarLeft = () => {
+  const { t } = useTranslation('common')
 
-    <div className="social">
-      {socialLinks.map(({ href, icon, alt }, index) => (
-        <a key={index} href={href} target="_blank" rel="noopener noreferrer">
-          <img src={icon} alt={alt} />
-        </a>
-      ))}
+  return (
+    <div className="left-section">
+      <a href="/" className="logo-link">
+        <img src={logo} alt="Algo ry logo" className="logo" />
+      </a>
+      <a href="/" className="kilta">
+        {t('nav.brand')}
+      </a>
+
+      <div className="social">
+        {socialLinks.map(({ href, icon, alt }, index) => (
+          <a key={index} href={href} target="_blank" rel="noopener noreferrer">
+            <img src={icon} alt={alt} />
+          </a>
+        ))}
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default NavbarLeft

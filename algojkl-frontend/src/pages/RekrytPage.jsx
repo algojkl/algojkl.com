@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import starterDesktop from '../images/Page_starters/16.jpg'
 import starterMobile from '../images/mobiili/18.png'
 import { useContentfulData } from '../services/useContentfulData'
@@ -12,20 +13,21 @@ import StarterImage from '../common/StarterImage'
  * 3. Dynaamisen listan avoimista rekryilmoituksista, jotka haetaan Contentfulista.
  */
 const RekrytPage = () => {
+  const { t } = useTranslation('common')
   const { data, isLoading, error } = useContentfulData()
 
-  if (isLoading) return <p>Ladataan rekryjä...</p>
-  if (error) return <p>Virhe ladatessa rekryjä</p>
+  if (isLoading) return <p>{t('pages.rekryt.loading')}</p>
+  if (error) return <p>{t('pages.rekryt.error')}</p>
 
   return (
     <div>
       <StarterImage
         desktopImage={starterDesktop}
         mobileImage={starterMobile}
-        alt="Seloste"
+        alt={t('pages.rekryt.alt')}
       />
       <div className="rekryt-container">
-        <h1>Täällä julkaistaan avoimia rekryilmotuksia!</h1>
+        <h1>{t('pages.rekryt.title')}</h1>
         {data?.hiring && data.hiring.length > 0 ? (
           data.hiring.map((item, index) => {
             const kuvaUrl =
@@ -61,7 +63,7 @@ const RekrytPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Lisätietoja tästä!
+                    {t('pages.rekryt.moreInfo')}
                   </a>
                 ) : (
                   <p style={{ color: 'red' }}></p>
@@ -70,7 +72,7 @@ const RekrytPage = () => {
             )
           })
         ) : (
-          <p>Tällä hetkellä ei ole aktiivisia rekrytointeja.</p>
+          <p>{t('pages.rekryt.empty')}</p>
         )}
       </div>
     </div>

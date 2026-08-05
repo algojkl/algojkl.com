@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 /**
  * FooterFeedback
  *
@@ -11,20 +12,19 @@ import React from 'react'
  * - feedback: yksittäisen palautelomake-osan sisältö
  */
 const FooterFeedback = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div className="feedback-comms">
       <div className="feedback">
-        <h3>Haluatko antaa meille palautetta?</h3>
-        <p>
-          Se onnistuu, kun täytät alla olevan lomakkeen. Palautteet käsitellään
-          anonyymisti.
-        </p>
+        <h3>{t('footer.feedbackTitle')}</h3>
+        <p>{t('footer.feedbackDescription')}</p>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSd_uGBf6NpWvJi_v3o7w3iJ2flnCMrxnNWMi6hIgMhD3kPBAw/viewform"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Palautelomake
+          {t('footer.feedbackLink')}
         </a>
       </div>
     </div>

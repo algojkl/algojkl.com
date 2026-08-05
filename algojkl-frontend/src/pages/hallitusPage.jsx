@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 import starterDesktop from '../images/Page_starters/6.jpg'
 import starterMobile from '../images/mobiili/8.png'
@@ -25,9 +26,10 @@ import { hallitusOrder } from '../utils/hallitusOrder'
  */
 
 const HallitusPage = () => {
+  const { t } = useTranslation('common')
   const { data, isLoading, error } = useContentfulData()
-  if (isLoading) return <p>Ladataan...</p>
-  if (error) return <p>Virhe ladattaessa tietoja.</p>
+  if (isLoading) return <p>{t('pages.hallitus.loading')}</p>
+  if (error) return <p>{t('pages.hallitus.error')}</p>
 
   const sortedHallitus = [...data.hallitus].sort((a, b) => {
     const orderA = hallitusOrder[a.pesti] ?? 99
@@ -42,27 +44,31 @@ const HallitusPage = () => {
       <StarterImage
         desktopImage={starterDesktop}
         mobileImage={starterMobile}
-        alt="Hallitus"
+        alt={t('pages.hallitus.alt')}
       />
       <div className="hallitus">
-        <h1>Hallitus {date}</h1>
+        <h1>{t('pages.hallitus.title', { year: date })}</h1>
         <div className="hallitus-grid">
           {sortedHallitus.map((member) => (
             <HallitusCard key={member.id} member={member} />
           ))}
         </div>
-        <div className='hallitus-contact'>
-        <p>
-          Psst. mikäli haluat tavoittaa koko hallituksen yhdellä viestillä, voit lähettää sähköpostia osoitteeseen
-          <a href="mailto:hallitus@algojkl.com"> hallitus@algojkl.com</a>.
-          Yksittäisiin hallitusjäseniin saat yhteyden sähköpostitse osoitteilla
-          <a href="mailto:etunimi.sukunimi@algojkl.com"> etunimi.sukunimi@algojkl.com</a>.
-        </p>
+        <div className="hallitus-contact">
+          <p>
+            {t('pages.hallitus.contactIntro')}{' '}
+            <a href="mailto:hallitus@algojkl.com"> hallitus@algojkl.com</a>.
+            {' '}
+            {t('pages.hallitus.contactMembers')}{' '}
+            <a href="mailto:etunimi.sukunimi@algojkl.com">
+              {' '}
+              etunimi.sukunimi@algojkl.com
+            </a>.
+          </p>
         </div>
       </div>
       <PestitDescription />
       <div className="toimarit">
-        <h2>Toimihenkilöt {date}</h2>
+        <h2>{t('pages.hallitus.staffTitle', { year: date })}</h2>
         <div className="toimarit-grid">
           {data.toimarit.map((toimari) => (
             <Toimari key={toimari.id} member={toimari} />
