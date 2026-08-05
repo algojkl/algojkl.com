@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 /**
  * PersonCard
@@ -10,11 +11,13 @@ import React from 'react'
  * - image: kuvatiedosto (valinnainen)
  */
 const PersonCard = ({ name, year, image, list }) => {
+  const { t } = useTranslation('common')
+
   if (list) {
     return (
       <ul className="kunniajasenet">
         <li>
-          {name} {year && <i>(Nimetty {year})</i>}
+          {name} {year && <i>({t('pages.personCard.named', { year })})</i>}
         </li>
       </ul>
     )
@@ -24,8 +27,8 @@ const PersonCard = ({ name, year, image, list }) => {
     <div className="person-card">
       {image && <img src={image} alt={name} />}
       <div>
-        <p>{name}</p>
-        {year && <small>{year}</small>}
+        <p className="person-card-name">{name}</p>
+        {year && <small className="person-card-year">{year}</small>}
       </div>
     </div>
   )

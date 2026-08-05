@@ -1,0 +1,912 @@
+{
+  "nav": {
+    "brand": "Algo ry",
+    "menu": "KILTA",
+    "events": "TAPAHTUMAT",
+    "collaboration": "YHTEISTYÖ",
+    "fuksit": "FUKSIT",
+    "applicants": "HAKIJAT",
+    "sections": {
+      "staff": "TOIMIHENKILÖT",
+      "officialDocuments": "VIRALLISET DOKUMENTIT",
+      "members": "JÄSENILLE"
+    },
+    "links": {
+      "board": "HALLITUS",
+      "active": "AKTIIVIT",
+      "rules": "SÄÄNNÖT",
+      "guidelines": "OHJESÄÄNNÖT & ETIKETIT",
+      "vuju": "VUOSIJUHLAT",
+      "privacy": "REKISTERISELOSTE",
+      "honours": "KUNNIAGALLERIA",
+      "principles": "TOIMINNAN PERIAATTEET",
+      "benefits": "JÄSENEDUT",
+      "clubs": "KERHOTOIMINTA",
+      "recruitment": "REKRYT",
+      "forms": "YHTEYDENOTTOLOMAKKEET",
+      "international": "KANSAINVÄLISYYS",
+      "kattila": "KATTILAN KAHVIKAMERA",
+      "secrets": "SALAISUUDET",
+      "songbook": "LAULUKIRJA",
+      "home": "ETUSIVU",
+      "documents": "DOKUMENTIT",
+      "formsShort": "LOMAKKEET"
+    },
+    "language": {
+      "fi": "FI",
+      "en": "EN",
+      "toggle": "Valitse kieli"
+    },
+    "joinButton": "LIITY JÄSENEKSI"
+  },
+  "pages": {
+    "kansainvalisyys": {
+      "title": "Algolaisen vaihtovinkit ja linkit",
+      "alt": "Kansainvälisyys",
+      "yearClockTitle": "Vaihtoon lähtemisen vuosikello",
+      "months": {
+        "january": {
+          "title": "Tammikuu",
+          "intro": "Infotilaisuuksia järjestetään yleensä tammikuun puolivälin jälkeen, jolloin saat kattavan kuvan vaihto-ohjelmista ja -mahdollisuuksista.",
+          "searches": "Tammikuussa alkavat haut:",
+          "search1": "22.1. – 5.2. Haku Euroopan vaihtokohteisiin (Erasmus, Nordplus, Nordlys).",
+          "search2": "22.1. – 5.2. Lisähaku Euroopan ulkopuolisiin kohteisiin."
+        },
+        "febMarch": {
+          "title": "Helmi- ja Maaliskuu",
+          "body": "Näiden kuukausien aikana ei ole varsinaisia hakuaikoja, mutta voit käyttää aikaa hakemuksen valmisteluun ja vaihtokohteen suunnitteluun."
+        },
+        "april": {
+          "title": "Huhtikuu",
+          "body": "1.4. – 31.5. Täydennyshaku Erasmus-opiskelijavaihtoon. Hakemuksia käsitellään juoksevasti koko hakuajan ajan."
+        },
+        "september": {
+          "title": "Syyskuu",
+          "body": "2.9. – 30.9 Täydennyshaku Erasmus- ja Nordplus-vaihtoon kevätlukukaudeksi 2025."
+        },
+        "october": {
+          "title": "Lokakuu",
+          "body": "1.10. – 1.11. Haku Euroopan ulkopuolisiin vaihtokohteisiin, mukaan lukien ISEP-vaihto."
+        },
+        "mayDecember": {
+          "title": "Touko- ja joulukuu",
+          "body": "Hae matka-apurahaa, jos olet löytänyt harjoittelupaikan ulkomailta. Hakuajat vaihtelevat vuosittain."
+        },
+        "allYear": {
+          "title": "Ympäri vuoden",
+          "body": "Erasmus-harjoitteluapuraha on haettavissa koko vuoden ajan. Huomioi kuitenkin käsittelyajat."
+        }
+      },
+      "tips": {
+        "title": "Vaihtovinkit",
+        "creditsLabel": "Opintopistevaatimukset:",
+        "creditsText": "Suorita yleensä vähintään 20 op per lukukausi.",
+        "studyPlanLabel": "Kurssisuunnitelma:",
+        "studyPlanText": "Tee Learning Agreement ja hyväksytä se molemmissa yliopistoissa.",
+        "studyPlanPoint1": "Suunnitelma on alustava ja sitä voi muuttaa vaihdon aikana.",
+        "studyPlanPoint2": "Kurssit voivat muuttua ilmoittautumisen yhteydessä.",
+        "levelLabel": "Opintotasojen huomioiminen:",
+        "levelPoint1": "Valitse kurssitaso (kandi/maisteri) tavoitteidesi mukaan.",
+        "levelPoint2": "Kandikurssit usein paikallisella kielellä, maisterikurssit englanniksi.",
+        "levelPoint3": "Joissain tapauksissa tarvitaan todistus oikeudesta suorittaa maisteritason opintoja."
+      },
+      "sites": {
+        "title": "Sivustot",
+        "mobilityLabel": "Hakuprosessi Mobility Online -portaalissa:",
+        "mobilityLink": "Mobility Online -portaali",
+        "applicationLabel": "Ohjeita hakuvaiheeseen:",
+        "applicationLink": "Step by step -hakuohjeet",
+        "preparationLabel": "Valmistautuminen vaihtoon:",
+        "preparationLink": "Valmistautumisohjeet",
+        "fundingLabel": "Vaihdon rahoitus:",
+        "fundingLink": "Vaihdon rahoitus"
+      },
+      "languageCertificates": {
+        "title": "Kielitodistukset",
+        "body": "Monet vaihtokohteet saattavat vaatia kielitodistuksen. Kielitodistuksia voi hankkia Movilta. Lisätietoja saa ottamalla yhteyttä Niina Ormashawiin."
+      }
+    },
+    "notFound": {
+      "title": "Sivua ei löytynyt",
+      "description": "Etsimääsi sivua ei ole olemassa. Tarkista osoite tai palaa etusivulle.",
+      "backHome": "Palaa etusivulle"
+    },
+    "sopokopo": {
+      "title": "Sopo-Kopo Yhteydenottolomake",
+      "description": "Tällä lomakkeella voit ottaa yhteyttä jos olet kokenut asiatonta käytöstä, väärinkäytöksiä opetuksessa tai haluat muuten vain kertoa ongelmistasi. Voit halutessasi jättää yhteystietosi jos haluat että Algon hyvinvointivastaava/sopo/kopo on sinuun asian tiimoilta yhteydessä. Muutoin vastaukset tähän lomakkeeseen käsitellään luottamuksellisesti ja anonyymisti. Vaikka jättäisit yhteystietosi, asiasi käsitellään anonyymisti. Vain sopo/kopo näkee yhteystietosi.",
+      "formLinkLabel": "Linkki lomakkeeseen:",
+      "formLinkText": "SopoKopoLomake"
+    },
+    "perustajat": {
+      "title": "Perustajajäsenet & Hallitus {{year}}"
+    },
+    "personCard": {
+      "named": "Nimetty {{year}}"
+    },
+    "eventCards": {
+      "showLess": "NÄYTÄ VÄHEMMÄN",
+      "showLessAria": "Näytä vähemmän tapahtumia",
+      "showMore": "NÄYTÄ LISÄÄ TAPAHTUMIA",
+      "showMoreAria": "Näytä lisää tapahtumia"
+    },
+    "eventModal": {
+      "tickets": "Liput",
+      "dateLabel": "Päivämäärä"
+    },
+    "fuksit": {
+      "alt": "Fuksit",
+      "title": "Heippa teekkarifuksi!",
+      "subtitle": "Teekkarifuksi* ~: cd /fuksisyksy",
+      "typewriter": "*Teekkarifuksi on ensimmäistä vuotta opiskeleva henkilö, joka teekkarikasteen suoritettuuan voi kutsua itseään teekkariksi.",
+      "loading": "Ladataan...",
+      "error": "Virhe ladattaessa tietoja!",
+      "beforeStudiesTitle": "Ennen opiskeluiden alkua:",
+      "important": "Koko opiskeluajan tärkein asia: Seuraa sähköpostia!",
+      "studyStartTitle": "Opintojen alku",
+      "guildActivityTitle": "Kiltatoiminta",
+      "membershipTitle": "Jäsenyys",
+      "tutorTitle": "Tutorit 2026 esittäytyvät:",
+      "tutorNote": "Suomenkieliset tutorit esittäytyvät suomeksi ja englanninkieliset tutorit englanniksi.",
+      "beforeStudies": [
+        {
+          "title": "Ota opiskelupaikka vastaan",
+          "description": "Opiskelupaikka tulee olla vastaanotettu viimeistään 9.7.2026 klo 15.00. Opiskelupaikka vastaanotetaan Oma Opintopolku -palvelussa."
+        },
+        {
+          "title": "Ilmoittaudu läsnäolevaksi ja maksa ylioppilaskunnan jäsenmaksu",
+          "description": "Ilmoittautuminen lukuvuodelle läsnäolevaksi tapahtuu OILI-ilmoittautumispalvelussa. Samalla maksetaan ylioppilaskunnan jäsenmaksu.",
+          "link": {
+            "href": "https://oili.csc.fi/",
+            "text": "OILI-ilmoittautumispalvelu"
+          }
+        },
+        {
+          "title": "Korkeakouluopiskelijan terveydenhoitomaksu",
+          "description": "Muista maksaa korkeakouluopiskelijan terveydenhoitomaksu. Tämä maksu on pakollinen jokaiselle opiskelijalle riippumatta siitä, käyttääkö opiskelija terveydenhuoltopalveluita vai ei.",
+          "link": {
+            "href": "https://www.kela.fi/korkeakouluopiskelijan-terveydenhoitomaksu",
+            "text": "Lisätietoa"
+          }
+        },
+        {
+          "title": "Hae asuntoa",
+          "description": "Soihtu ja Koas tarjoavat sopuhintaisia opiskelija-asuntoja. Kannattaa tehdä asuntohakemukset laajilla hakukriteereillä, jotta asunnon saamiseen menisi vähemmän aikaa. Tarkempia ohjeita löydät JYY:n sivuilta.",
+          "links": [
+            { "href": "https://soihtu.fi/", "text": "Soihtu" },
+            { "href": "https://www.koas.fi/fi/", "text": "Koas" }
+          ]
+        },
+        {
+          "title": "Hae Kelalta tukia",
+          "description": "Muista hakea Kelalta opinto- ja asumistukea.",
+          "link": {
+            "href": "https://www.kela.fi/opiskelijat-pikaopas",
+            "text": "Kelan pikaopas"
+          }
+        },
+        {
+          "title": "Tilaa opiskelijakortti",
+          "description": "Opiskelijakortilla saat merkittäviä alennuksia jokapäiväisistä asioista. Esimerkiksi opiskeijaruokailun hinta on opiskelijakortilla 3.10€ (normaalisti 9,00€). Tällä hetkellä ylioppilaskunnan opiskelijakortteina toimivat Slice ja Frank. Slicen käyttöönotto onnistuu osoitteessa slice.fi/jyy, ja Frankin osoitteessa frank.fi/opiskelijakortti. Lisätietoa opiskelijakorteista löytyy JYY:n sivuilta.",
+          "links": [
+            { "href": "https://slice.fi/jyy", "text": "Slice" },
+            { "href": "https://frank.fi/opiskelijakortti", "text": "Frank" },
+            { "href": "https://jyy.fi/opiskelijalle/opiskelijakortti", "text": "JYY" }
+          ]
+        }
+      ],
+      "studyStart": [
+        "Orientaatioviikko tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen koulutusohjelmissa alkaa 24.8.2026 Jyväskylän yliopiston IT-tiedekunnassa Agoralla."
+      ],
+      "guildActivity": [
+        "Algo ry on Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen opiskelijoiden kilta. Killan tehtävänä on valvoa jäsentensä etuja, järjestää monipuolisia tapahtumia sekä tehdä yhteistyötä alan yritysten kanssa. Ennen kaikkea Algo on jäsenistölleen yhteisö opintojen ajalle."
+      ],
+      "membership": [
+        "Osta Algon jäsenyys \"Liity Jäseneksi\" - nappia painamalla. Seuraa Algoa Instagramissa sekä TikTokissa. Liity myös Algon Discordiin. Nauti Algon eduista ja pidä hauskaa tulevissa tapahtumissa :-). Algon Telegramin viestintäkanaviin liittyminen onnistuu sähköpostista löytyvistä jäsenkirjeistä tai kysymällä hallituslaisilta."
+      ]
+    },
+    "hakijat": {
+      "alt": "Hakijat",
+      "intro": "Hienoa, että olet kiinnostunut opiskelusta Jyväskylän Yliopistossa! Jyväskylän yliopisto tarjoaa kahta eri tutkintoa IT-opiskelijoille:",
+      "degreeProgrammes": "Tieto- ja ohjelmistotekniikka tai Teknologiajohtaminen.",
+      "moreInfoIntro": "Lisätietoja {{degree}} tutkinto-ohjelmasta löydät",
+      "moreInfoLink": "Jyväskylän yliopiston sivuilta.",
+      "aboutTitle": "Mikä ihmeen Algo ry?",
+      "aboutDescription": "Algo ry on Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen opiskelijoiden kilta. Killan tehtävänä on valvoa jäsentensä etuja, järjestää monipuolisia tapahtumia sekä tehdä yhteistyötä alan yritysten kanssa. Ennen kaikkea Algo on jäsenistölleen yhteisö opintojen ajalle.",
+      "tutkinnot": [
+        {
+          "title": "Tieto- ja ohjelmistotekniikka",
+          "ohjelmat": [
+            {
+              "name": "Tekniikan kandidaatti 180op",
+              "opinnot": [
+                "Tieto- ja ohjelmistotekniikan perus- ja aineopinnot 80 op (sis. kandidaatintutkielman)",
+                "Tekniikan alan matemaattiset perusopinnot 35 op",
+                "Toinen opintokokonaisuus (vähintään 25op) – Sivuaine yhdistää tietotekniikan itse valittavaan alaan Jyväskylän yliopiston lukuisista vaihtoehdoista. Voit valita esimerkiksi ihmistieteitä kuten psykologiaa, liikunta- ja terveystieteitä, kulttuuria ja taidetta tai pedagogiikkaa. Vaihtoehtoisesti voit keskittyä vaikkapa matematiikkaan tai luonnontieteisiin.",
+                "Viestintä- ja kieliopintoja vähintään 10 op",
+                "Vapaasti valittavia opintokokonaisuuksia ja moduuleja sekä muita opintoja"
+              ]
+            },
+            {
+              "name": "Diplomi-insinööri 120op",
+              "opinnot": [
+                "Tieto- ja ohjelmistotekniikan syventävät opinnot 80 op (sis. diplomityön)",
+                "Toinen opintokokonaisuus (vähintään 25op) – Sivuaine yhdistää tietotekniikan itse valittavaan alaan Jyväskylän yliopiston lukuisista vaihtoehdoista. Voit valita esimerkiksi ihmistieteitä kuten psykologiaa, liikunta- ja terveystieteitä, kulttuuria ja taidetta tai pedagogiikkaa. Vaihtoehtoisesti voit keskittyä vaikkapa matematiikkaan tai luonnontieteisiin.",
+                "Viestintä- ja kieliopintoja",
+                "Vapaasti valittavia opintokokonaisuuksia ja moduuleja sekä muita opintoja"
+              ]
+            }
+          ],
+          "link": "https://www.jyu.fi/fi/tule-opiskelemaan/tutustu-aloihimme/tekniikka/tieto-ja-ohjelmistotekniikan-opinnot"
+        },
+        {
+          "title": "Teknologiajohtaminen",
+          "ohjelmat": [
+            {
+              "name": "Tekniikan kandidaatti 180op",
+              "opinnot": [
+                "Tieto- ja ohjelmistotekniikan perus- ja aineopinnot 65 op (sis. kandidaatintutkielman)",
+                "Teknologiajohtamisen opintokokonaisuus 40 op",
+                "Tekniikan alan matemaattiset perusopinnot 35 op",
+                "Viestintä- ja kieliopintoja 10 op",
+                "Vapaasti valittavia opintokokonaisuuksia ja moduuleja sekä muita opintoja"
+              ]
+            },
+            {
+              "name": "Diplomi-insinööri 120op",
+              "opinnot": [
+                "Teknologiajohtamisen syventävät opinnot 80 op (sis. Diplomityön)",
+                "Teknologian kaupallistamisen opintoja 25 op",
+                "Viestintä- ja kieliopintoja",
+                "Vapaasti valittavia opintoja ja moduuleja sekä muita opintoja"
+              ]
+            }
+          ],
+          "link": "https://www.jyu.fi/fi/tule-opiskelemaan/tutustu-aloihimme/tekniikka/teknologiajohtamisen-opinnot"
+        }
+      ]
+    },
+    "hallihaku": {
+      "alt": "Board recruitment",
+      "title": "Board recruitment 2027",
+      "description": "Board recruitment for 2027 has started! Here you can get to know the applicants. Instructions for applying to the board can be found in Algo's announcement channel.",
+      "loading": "Ladataan hakemuksia...",
+      "error": "Virhe ladatessa hakemuksia",
+      "chair": "Puheenjohtajisto",
+      "other": "Muut hallituspestit",
+      "emptyChair": "Ei vielä hakemuksia puheenjohtajistoon.",
+      "emptyOther": "Ei vielä hakemuksia muihin hallituspesteihin."
+    },
+    "hallitus": {
+      "loading": "Ladataan...",
+      "error": "Virhe ladattaessa tietoja.",
+      "title": "Hallitus {{year}}",
+      "alt": "Hallitus",
+      "telegram": "Telegram:",
+      "noImage": "Ei kuvaa",
+      "contactIntro": "Psst. mikäli haluat tavoittaa koko hallituksen yhdellä viestillä, voit lähettää sähköpostia osoitteeseen",
+      "contactMembers": "Yksittäisiin hallitusjäseniin saat yhteyden sähköpostitse osoitteilla",
+      "staffTitle": "Toimihenkilöt {{year}}"
+    },
+    "jasenedut": {
+      "title": "Jäsenedut",
+      "intro": "Algo tarjoaa jäsenilleen hienoja etuja! Tsekkaa alta tarkemmin, mihin etuihin Algon jäsenyys sinut oikeuttaa. Jäsenyys todistetaan näyttämällä KideApp-sovelluksesta löytyvä Algon jäsenyys.",
+      "passwords": "Mikäli alennukseen tarvitaan alekoodi, löytyy ne Algon",
+      "secretsLink": "salaisuudet-sivulta",
+      "ask": "Salasanan sivuille voit kysyä hallituslaiselta.",
+      "empty": "Jäsenetuja lisätään pian!"
+    },
+    "international": {
+      "title": "Vaihto-ohjelmat",
+      "erasmusName": "Erasmus (Eurooppa)",
+      "erasmusDescription": "Erasmus tarjoaa 1–2 lukukauden vaihdon EU- ja ETA-maissa sekä Turkissa.",
+      "erasmusLink": "Erasmus-ohjelma",
+      "bilateralName": "Kahdenväliset kohteet",
+      "bilateralDescription": "Vaihdot Euroopan ulkopuolelle kuten Amerikkaan ja Aasiaan.",
+      "isepName": "ISEP",
+      "isepDescription": "Yksi hakemus useisiin yliopistoihin ympäri maailmaa.",
+      "northName": "Nordplus",
+      "northDescription": "Mahdollistaa vaihdon Pohjoismaihin ja Baltiaan.",
+      "forthemName": "FORTHEM",
+      "forthemDescription": "Tarjoaa lyhytliikkuvuuksia ja Erasmus-vaihtoja allianssin sisällä."
+    },
+    "events": {
+      "empty": "Tapahtumia lisätään pian!"
+    },
+    "home": {
+      "introText": "Algo ry on vuonna 2022 perustettu kilta, joka yhdistää Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä teknologiajohtamisen opiskelijat.",
+      "upcomingEvents": "TULEVAT TAPAHTUMAT",
+      "diamondPartners": "TIMANTTIKUMPPANIT"
+    },    "saannot": {
+      "title": "Algo ry:n säännöt",
+      "alt": "Säännöt",
+      "sections": [
+        {
+          "title": "1. Yhdistyksen nimi ja kotipaikka",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Yhdistyksen nimi on Algo ry ja sen kotipaikka on Jyväskylä."
+            }
+          ]
+        },
+        {
+          "title": "2. Tarkoitus ja toiminnan laatu",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Yhdistyksen tarkoituksena on toimia Jyväskylän yliopiston tieto- ja ohjelmistotekniikan ja teknologiajohtamisen opiskelijoiden yhdyssiteenä informaatioteknologian tiedekuntaan, edistää heidän opintojaan, harrastuksiaan ja yhteisiä etujaan sekä huolehtia jäsentensä oikeuksista opiskelijoina."
+            },
+            {
+              "type": "heading",
+              "text": "Tarkoituksensa toteuttamiseksi yhdistys:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "voi järjestää kursseja, harjoitus- ja opetustilaisuuksia sekä muuta vastaavaa toimintaa",
+                "voi järjestää kilpailuja, näytöksiä, retkiä, leirejä ja muita tapahtumia",
+                "voi järjestää juhlia, konsertteja, näyttelyitä tai muita tilaisuuksia",
+                "voi ylläpitää yhdistyksen sähköisiä viestintäkanavia",
+                "voi julkaista yhdistyksen tiedotteita ja muuta viestintää eri viestintäkanavissa",
+                "neuvoo ja ohjaa jäseniään",
+                "voi kerätä ja jakaa tietoa sekä harjoittaa tutkimustoimintaa",
+                "kokoaa jäsenet yhteiseen toimintaan ja ylläpitää yhteyksiä muihin alan yhdistyksiin",
+                "ylläpitää jäsenistään koostuvaa esiintyvää ryhmää",
+                "voi järjestää yhdistyksen tarkoitukseen liittyviä matkoja jäsenilleen",
+                "voi osallistua jäsentensä välittömiin kilpailukustannuksiin",
+                "voi hankkia tarvittavia aineistoja ja välineitä yhdistyksen käyttöön",
+                "pyrkii järjestämään käyttöönsä tilat, joita yhdistyksen jäsenet voivat käyttää",
+                "voi tehdä esityksiä ja aloitteita harrastusmahdollisuuksien lisäämiseksi",
+                "toimii yhteistyössä viranomaisten, järjestöjen, yritysten ja yksityishenkilöiden kanssa"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Toimintansa tukemiseksi yhdistys voi, hankittuaan tarvittaessa asianomaisen luvan:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "järjestää rahankeräyksiä ja arpajaisia",
+                "järjestää myyjäisiä, kirpputori- ja muita tapahtumia",
+                "järjestää maksullisia tilaisuuksia",
+                "ottaa vastaan avustuksia, lahjoituksia ja testamentteja",
+                "omistaa toimintansa kannalta tarpeellista irtainta ja kiinteää omaisuutta",
+                "harjoittaa kahvilatoimintaa",
+                "harjoittaa anniskelutoimintaa järjestämiensä tilaisuuksien yhteydessä",
+                "tehdä talkootyötä",
+                "myydä mainostilaa",
+                "solmia sponsorisopimuksia"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "3. Jäsenet",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Yhdistykseen varsinaiseksi jäseneksi voidaan hyväksyä henkilö, joka on Jyväskylän yliopistossa tieto- ja ohjelmistotekniikan tai teknologiajohtamisen opintoja suorittava perus- tai jatko-opiskelija tai henkilö, jonka yhdistyksen hallituksen kokous muuten hyväksyy jäseneksi. Kannattavaksi jäseneksi voidaan hyväksyä yksityinen henkilö tai oikeuskelpoinen yhteisö, joka haluaa tukea yhdistyksen tarkoitusta ja toimintaa. Varsinaiset jäsenet ja kannattavat jäsenet hyväksyy hakemuksesta yhdistyksen hallitus. Jäsenistä pidetään jäsenrekisteriä. Jäsen on velvollinen ilmoittamaan yhdistyksen hallitukselle, mikäli hänen yhteystietonsa muuttuvat. Kunniajäsenekseen yhdistys voi hallituksen esityksestä kutsua yhdistyksen toimintaa ansiokkaasti tukeneen henkilön, joka on antanut siihen suostumuksensa. Kunniajäsen voidaan nimittää joko hallituksen kokouksessa yksimielisellä äänestyksellä koko hallituksen ollessa paikalla tai yhdistyksen kokouksessa äänienemmistöllä. Kunniajäsenyys on elinikäinen. Saavutetut jäsenoikeudet säilyvät."
+            },
+            {
+              "type": "paragraph",
+              "text": "Varsinaisten jäsenten jäsenmaksu maksetaan kahdeksan (8) vuoden välein. Jäsenen tulee erota tai hänet voidaan hallituksen päätöksellä erottaa, kun hänen opintonsa IT-tiedekunnassa päättyvät. Jäsen voidaan katsoa eronneeksi, mikäli hän ei ole maksanut jäsenmaksuaan 1 kuukauden kuluessa uuden jäsenmaksukauden alkamisen jälkeen. Jäsen voidaan erottaa yhdistyksen jäsenyydestä, jos jäsen on laiminlyönyt jäsenmaksun maksamisen, jos jäsen ei ole enää jäsenyyskriteerien perusteella jäsenkelpoinen tai jos jäsen on toiminnallaan aiheuttanut merkittävää haittaa yhdistykselle tai sen maineelle. Jäsenen erottamisesta päättää yhdistyksen hallitus enemmistö äänillä. Jäsenellä on oikeus erota yhdistyksestä ilmoittamalla siitä kirjallisesti hallitukselle tai sen puheenjohtajalle tai ilmoittamalla erosta yhdistyksen kokouksessa merkittäväksi pöytäkirjaan."
+            }
+          ]
+        },
+        {
+          "title": "4. Liittymis- ja jäsenmaksu",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Varsinaisilta jäseniltä ja kannattavilta jäseniltä perittävän liittymismaksun ja vuotuisen jäsenmaksun suuruudesta erikseen kummallekin jäsenryhmälle päättää kevätkokous. Kunniajäsenet eivät suorita jäsenmaksuja."
+            },
+            {
+              "type": "paragraph",
+              "text": "Liittymis- ja jäsenmaksun keräämiskausi on 1.9.–31.8."
+            }
+          ]
+        },
+        {
+          "title": "5. Hallitus",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Yhdistyksen asioita hoitaa hallitus, johon kuuluu syyskokouksessa valittu puheenjohtaja, varapuheenjohtaja, sihteeri, rahastonhoitaja ja enintään kaksikymmentä (20) muuta varsinaista jäsentä. Puheenjohtaja, varapuheenjohtaja, sihteeri, rahastonhoitaja ja mahdolliset muut hallituksen jäsenet valitaan ehdottomalla äänten enemmistöllä. Jos ehdokkaita yhteen pestiin on useampi kuin kaksi (2), eikä kukaan saa ensimmäisellä kierroksella enempää kuin puolet annetuista äänistä, käydään toinen kierros ensimmäisellä kierroksella kahden eniten ääniä saaneen kesken. Lopullisessa äänestyksessä äänten mennessä tasan ratkaisee arpa."
+            },
+            {
+              "type": "paragraph",
+              "text": "Hallituksen toimikausi on kalenterivuosi. Hallitus kokoontuu puheenjohtajan tai hänen estyneenä ollessaan varapuheenjohtajan kutsusta, kun he katsovat siihen olevan aihetta tai kun vähintään puolet hallituksen jäsenistä sitä vaatii. Hallitus on päätösvaltainen, kun vähintään puolet sen jäsenistä, puheenjohtaja tai varapuheenjohtaja mukaan luettuna on läsnä. Äänestykset ratkaistaan ehdottomalla äänienemmistöllä. Äänten mennessä tasan ratkaisee kokouksen puheenjohtajan ääni, vaaleissa kuitenkin arpa."
+            },
+            {
+              "type": "paragraph",
+              "text": "Hallituksen jäsenen erotessa kesken toimikauden eronneen jäsenen tilalle voidaan valita uusi jäsen. Uuden jäsenen toimikausi kestää siihen asti kuin eronneen toimikausi olisi kestänyt."
+            },
+            {
+              "type": "paragraph",
+              "text": "Kaikilla jäsenillä on oikeus osallistua hallituksen kokouksiin ilman äänivaltaa."
+            }
+          ]
+        },
+        {
+          "title": "6. Yhdistyksen nimen kirjoittaminen",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Yhdistyksen nimen kirjoittavat hallituksen puheenjohtaja ja varapuheenjohtaja kaksin, tai yritysvastaava yhdessä puheenjohtajan tai varapuheenjohtajan kanssa."
+            }
+          ]
+        },
+        {
+          "title": "7. Tilikausi",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Yhdistyksen tilikausi on kalenterivuosi. Tilinpäätös tarvittavine asiakirjoineen ja hallituksen vuosikertomus on annettava toiminnantarkastajalle viimeistään kolme viikkoa ennen kevätkokousta. Toiminnantarkastajan tulee antaa kirjallinen lausuntonsa viimeistään viikko ennen kevätkokousta hallitukselle."
+            }
+          ]
+        },
+        {
+          "title": "8. Yhdistyksen kokoukset",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Yhdistys pitää vuosittain kaksi varsinaista kokousta. Yhdistyksen kevätkokous pidetään tammi-toukokuussa ja syyskokous syys-joulukuussa hallituksen määräämänä päivänä. Yhdistyksen kokouksissa jokaisella varsinaisella jäsenellä on yksi ääni. Kannattavalla jäsenellä ja kunniajäsenellä on kokouksessa läsnäolo- ja puheoikeus."
+            },
+            {
+              "type": "paragraph",
+              "text": "Yhdistyksen kokouksen päätökseksi tulee, ellei säännöissä ole toisin määrätty, se mielipide, jota on kannattanut yli puolet annetuista äänistä. Äänten mennessä tasan ratkaisee kokouksen puheenjohtajan ääni, vaaleissa kuitenkin arpa. Kokous on päätösvaltainen, kun se on laillisesti koolle kutsuttu. Yhdistyksen kokoukseen voidaan osallistua hallituksen tai yhdistyksen kokouksen niin päättäessä myös postitse, tietoliikenneyhteyden tai muun teknisen apuvälineen avulla kokouksen aikana tai ennen kokousta."
+            }
+          ]
+        },
+        {
+          "title": "9. Yhdistyksen kokousten koollekutsuminen",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Hallituksen on kutsuttava yhdistyksen kokoukset koolle vähintään seitsemän vuorokautta ennen kokousta sähköpostitse jäsenen ilmoittamaan osoitteeseen sekä jäsenille tarkoitetulla some-kanavalla."
+            }
+          ]
+        },
+        {
+          "title": "10. Varsinaiset kokoukset",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Yhdistyksen kevätkokouksessa käsitellään seuraavat asiat:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "esitetään tilinpäätös ja toiminnantarkastajien/tilintarkastajien lausunto",
+                "päätetään tilinpäätöksen vahvistamisesta ja vastuuvapauden myöntämisestä hallitukselle ja muille vastuuvelvollisille",
+                "vahvistetaan liittymis- ja jäsenmaksujen suuruudet seuraavalle keräämiskaudelle (määritelty sääntöjen kohdassa 4. “Liittymis- ja jäsenmaksu”)"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Yhdistyksen syyskokouksessa käsitellään seuraavat asiat:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "vahvistetaan toimintasuunnitelma, tulo- ja menoarvio",
+                "valitaan hallituksen puheenjohtaja ja muut jäsenet",
+                "valitaan yksi tai kaksi toiminnantarkastajaa ja varatoiminnantarkastajaa"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Mikäli yhdistyksen jäsen haluaa saada jonkin asian yhdistyksen kevät- tai syyskokouksen käsiteltäväksi, on hänen ilmoitettava siitä kirjallisesti hallitukselle niin hyvissä ajoin, että asia voidaan sisällyttää kokouskutsuun."
+            }
+          ]
+        },
+        {
+          "title": "11. Sääntöjen muuttaminen ja yhdistyksen purkaminen",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Päätös sääntöjen muuttamisesta ja yhdistyksen purkamisesta on tehtävä yhdistyksen kokouksessa vähintään kolmen neljäsosan (3/4) enemmistöllä annetuista äänistä. Kokouskutsussa on mainittava sääntöjen muuttamisesta tai yhdistyksen purkamisesta. Yhdistyksen purkautuessa annetaan yhdistyksen varat kokouksen päättämään hyväntekeväisyyskohteeseen. Yhdistyksen tullessa lakkautetuksi käytetään sen varat samaan tarkoitukseen."
+            }
+          ]
+        }
+      ]
+    },
+    "vuju": {
+      "title": "Vuosijuhlaetiketti",
+      "alt": "Vuosijuhlat",
+      "intro": "Algo täyttää virallisesti vuosia heinäkuun 4. päivä, mutta sen vuosijuhlaa juhlitaan perinteisesti syksyn puolella. Vuosijuhla on kiltamme arvokkain akateeminen tilaisuus, jossa käyttäydytään sen mukaisesti. Juhlaan ovat tervetulleita niin Algon jäsenet, kutsuvieraat kuin avecitkin. Tämä etiketti tutustuttaa juhlavieraat vuosijuhlien käytänteisiin, jotta itse juhlassa ei tarvitsisi hermoilla käytännön asioista.",
+      "sections": [
+        {
+          "heading": "Pukeutuminen",
+          "text": "Vuosijuhlilla pukeudutaan joko frakkiin, tummaan pukuun tai iltapukuun.\n\n**Frakkiin** kuuluu musta hännystakki ja housut, valkoinen frakkiliivi, valkoinen frakkipaita helmiäisnapeilla sekä valkoinen solmuke. Frakin kanssa käytetään mustia sukkia ja mustia kiiltonahkakenkiä. Rannekelloa ei suositella käytettäväksi frakin kanssa. Smokki tai muut variaatiot eivät ole etiketin mukainen vaihtoehto frakille.\n\n**Tumma puku** tarkoittaa tumman harmaata, tumman sinistä tai mustaa pukua. Puku voi olla yksivärinen tai hillitysti raidallinen, mutta ei liituraitaa. Tumman puvun kanssa käytetään valkoista tai vaaleanpunaista paitaa (muutkin vaaleat värit käyvät mainiosti), juhlavaa solmiota tai solmuketta, mustia kenkiä sekä tummia ja pitkävartisia sukkia.\n\n**Iltapuku** on juhlavasta materiaalista valmistettu nilkka- tai lattiapituinen il­ta­- tai juh­la­pu­ku. Iltapuku voi olla avonainen, umpinainen, olkaimeton tai pitkähihainen. Iltapuvun kanssa voi käyttää myös har­ti­a­hui­vi­a, kyynärmittaisia hansikkaita tai ol­kai­me­ton­ta lauk­ku­a. Ruokailun aikana ei ole soveliasta laskea käsilaukkua pöydälle tai pitää hanskoja käsissään.\n\nPukeutumista voi täydentää akateemisilla ansiomerkeillä ja juhlanauhalla. Juhlanauha- ja merkkiohjesääntöjen pykälän 10 mukaan:\n\n*“Juhlanauhaa sekä kunnia-, ansio- ja hallitusmerkkiä käytetään vain juhlapuvussa akateemisissa juhlatilaisuuksissa. Juhlanauhaa kannetaan siten, että se kulkee oikealta olkapäältä rinnan yli vasemmalle lantiolle, vaaleanpunainen väri yläpuolella. Juhlanauhaa kannetaan juhlapuvussa liivin alla ja tummassa puvussa liivin ja solmion päällä. Mekon kanssa juhlanauhaa voi kantaa taiteltuna ruusukkeena vasemmalla puolella rintaa, vaaleanpunainen väri päällimmäisenä, tai kuten juhlapuvussa. Juhlanauha ei saa koskettaa paljasta ihoa.”*\n\n*Algo ry:n omissa tilaisuuksissa juhlanauhaa kannetaan ylimpänä, jos kantajalla on myös muiden organisaatioiden nauhoja. Muissa tilaisuuksissa noudatetaan soveltuvia ohjesääntöjä.*\n\n*Kunnia-, ansio- ja hallitusmerkkejä voi käyttää samanaikaisesti juhlanauhan kanssa, eikä niiden asettelulla ole väliä.*"
+        },
+        {
+          "heading": "Arvokas juhlakäyttäytyminen",
+          "text": "Vuosijuhla on ennen kaikkea akateeminen pöytäjuhla, jossa kunnolliset pöytätavat ovat vaatimus. Juhlaan on tehty istumajärjestys eli jokaisen paikka on merkitty nimikortilla. Jos omassa pöydässä on ihmisiä, joita et tunne entuudestaan, on kohteliasta aluksi esittäytyä, ja pitää puhetta yllä myös muiden kuin tuttujen kanssa koko tilaisuuden ajan.\n\nJuhlan kulusta vastaavat seremoniamestarit, joita tulee kuunnella. Myös puheiden, laulujen ja muun ohjelman aikana on oltava hiljaa ja syömättä. Seurustelulle on varattu paljon aikaa, joten puhumaan kyllä ehtii. Kunnianosoitukset puheille ja muulle ohjelmalle esitetään taputtamalla käsiä.\n\nSkoolatessa eli lasia kohotettaessa katsotaan ensin pöydän toisella puolella vasemmalla istuvaa, sitten pöydän toisella puolella oikealla istuvaa ja viimeiseksi itseään vastapäätä istuvaa henkilöä. Kohotettaessa lasit eivät kosketa toisiaan vaan kilistelyn korvaa pieni nyökkäys.\n\nTauoille saa poistua vain ohjelmaan merkittyjen taukojen aikana. Jos omalta paikalta poistumiseen tulee kuitenkin pakottava tarve muulloin, on poistuminen tehtävä huomiota herättämättä ja pöytäseurueelle pahoitellen eikä missään nimessä puheiden tai esitysten aikana.\n\nJuhlasta ei ole soveliasta myöhästyä, joten saavuthan ajoissa juhlapaikalle."
+        },
+        {
+          "heading": "Juhlan kulku",
+          "text": "Juhla alkaa perinteisesti cocktail-tilaisuudella eli kokkareilla. Tähän tilaisuuteen osallistuvat vain kutsuvieraat eli vieraat, jotka ovat saaneet erillisen kutsun juhliin. Tällaisia vieraita ovat muun muassa killan kunniajäsenet, opettajat tai muiden kiltojen tai ainejärjestöjen edustajat. Kokkareilla kutsuvieraat pitävät vuorotellen onnittelupuheita vuosia täyttävälle Algolle ja antavat lahjoja. Tarjolla on yleensä kuohuvaa ja pientä purtavaa. Tilaisuus on yleensä seisomatilaisuus, ja se kestää noin pari tuntia.\n\nCocktail-tilaisuudesta siirrytään suoraan pääjuhlaan. Pääjuhlaan osallistuvat kaikki, jotka ovat ostaneet lipun vuosijuhliin. Juhla alkaa, kun lippuairue tuo Suomen lipun juhlasaliin. Tällöinjuhlavieraat nousevat seisomaan ja odottavat hiljaisuudessa lipun paikalleen viemistä, jonka jälkeen lauletaan yhteisesti Finlandia. Tässä vaiheessa seremoniamestarit esittäytyvät ja jakavat yleisiä ohjeita. Sen jälkeen lauletaan Helan Går, jonka yhteydessä nautitaan alkushotti. Laulujen jälkeen raikuvat tervetuliaissanat ja juhla voi alkaa.\n\nAlkupuheiden jälkeen aloitetaan seurustelu ja laulaminen. Lauluja jacpuheenvuoroja voi toivoa kilistämällä omaa lasiaan. Yleensä laulutctoivotaan omalle istumapaikalle jaetusta lauluvihosta. Pääruoan ajaksi julistetaan ruokarauha, jonka aikana lauluja saa kyllä toivoa, mutta poikkeuksellisesti saa myös syödä laulujen aikana. Ei ole kuitenkaan soveliasta laulaa ruoka suussa. Ruokailua ennen ja sen jälkeen on kaikennäköistä ohjelmaa: puheita palkitsemisia, esityksiä, laulamista. Juhlan loppupuolella syödään jälkiruokaa, jonka kanssa nautitaan kahvia yleensä avecin kera. Tässä yhteydessä avec voi tarkoittaa esim. konjakkia tai likööriä. Jälkiruoan aikana kohotetaan Jallu-shotti, ja lauletaan Jallutähden alla. Juhla päättyy puheenjohtajan sanoihin ja Suomen lipun uloskantoon.\n\nCocktail-tilaisuudessa ja pääjuhlassa on yleensä kuvaaja, joka ottaa kuvia niin kuvausseinän edessä kuin itse juhlassakin. Kuvat jaetaan vieraille jälkikäteen juhlien järjestäjien valitsemalla tavalla.\n\nPääjuhlan loppuessa meno ei lannistu, vaan juhlimista jatketaan virallisilla jatkoilla. Vuosijuhlilla saattaa olla tarjolla drinkkilippuja ja narikka on yleensä etukäteen maksettu, mikä sujuvoittaa jatkoille siirtymistä. Keskiyöllä juhlaväki kokoontuu pimennettyyn tilaan laulamaan teekkarihymnin."
+        },
+        {
+          "heading": "Akateeminen silliaamiainen",
+          "text": "Vuosijuhlista palautuminen tapahtuu silliaamiaisella eli silliksellä, joka järjestetään vuosijuhlien jälkeisenä päivänä. Se järjestetään jossain rennossa paikassa, kuten esimerkiksi Opinkiven saunalla. Silliksellä on yleensä tarjolla rasvaista ruokaa ja virvokkeita, ja pukukoodina toimivat haalarit."
+        }
+      ]
+    },
+    "kunniagalleria": {
+      "alt": "Kunniagalleria",
+      "honoraryTitle": "Algo ry:n kunniajäsenet",
+      "honoraryDescription": "Kunniajäsen on killan toimintaa erityisen ansiokkaasti tukenut henkilö. Kunniajäsenyys on Algon korkein kunnianosoitus.",
+      "yearlyTitle": "Vuoden Algolainen -palkinnon voittajat",
+      "yearlyDescription": "Vuoden algolainen on jäsenten äänestyksessä päättämä, joka on osoittanut merkittävää kiinnostusta yhdistyksen toimintaa kohtaan ja edistänyt jäsenten välistä yhteishenkeä.",
+      "previousBoards": "Muut edelliset hallitukset näet",
+      "here": "täältä"
+    },    "aktiivit": {
+      "alt": "Aktiivit",
+      "title": "MIKÄ IHMEEN AKTIIVI???",
+      "description": "Aktiivit koostuvat kiltamme jäsenistä, jotka haluavat auttaa ja vaikuttaa kiltamme toimintaan. Aktiivit auttavat hallituksemme jäseniä matalalla kynnyksellä.",
+      "rolesTitle": "AKTIIVIEN PESTIT",
+      "interestedTitle": "Kiinnostuitko?",
+      "interestedDescription": "Hae aktiiviksi täyttämällä alla olevan lomakkeen!",
+      "applyButton": "Hae Aktiiviksi",
+      "badgesTitle": "Aktiivimerkit",
+      "teams": [
+        {
+          "title": "Tapahtumatiimi",
+          "tasks": [
+            {
+              "title": "Tapahtumien suunnittelu ja järjestäminen",
+              "subTasks": [
+                "Sisältää esimerkiksi tapahtumapaikan varaamista ja järjestelemistä sekä yleistä tapahtuman suunnittelua"
+              ]
+            },
+            { "title": "Tapahtumamerkkien suunnittelu" },
+            { "title": "Liikuntatapahtumien järjestäminen" },
+            { "title": "Tapahtumatiimiä ylläpitää" }
+          ],
+          "responsibles": [
+            { "nimi": "Tapahtumavastaava(t)", "href": "/hallitus" }
+          ]
+        },
+        {
+          "title": "Yritysyhteistyötiimi",
+          "tasks": [
+            {
+              "title": "Yritysyhteistöiden kontaktointi ja hankinta",
+              "subTasks": [
+                "Myös esimerkiksi pienten kertaluontoisten sponsoreiden hankinta"
+              ]
+            },
+            { "title": "Yritysyhteistyötiimiä ylläpitää" }
+          ],
+          "responsibles": [
+            { "nimi": "Yrityssuhdevastaava", "href": "/hallitus" }
+          ]
+        },
+        {
+          "title": "Some- ja viestintätiimi",
+          "tasks": [
+            {
+              "title": "Somekanavien ylläpito",
+              "subTasks": ["Instagram & TikTok"]
+            },
+            { "title": "Tapahtumien kuvaaminen" },
+            { "title": "Killan mainostaminen" },
+            { "title": "Killan jäsenviestintä sähköpostitse" },
+            { "title": "Some- ja viestintätiimiä ylläpitää" }
+          ],
+          "responsibles": [
+            { "nimi": "Viestintävastaava", "href": "/hallitus" }
+          ]
+        }
+      ],
+      "other": [
+        { "title": "Yhdenvertaisuus-vastaava tapahtumissa" },
+        {
+          "title": "Juhlatiimi",
+          "subTasks": ["Vapun ja vuosijuhlien järjestäminen"]
+        },
+        {
+          "title": "Nettimestari",
+          "subTasks": [
+            "Nettisivujen päivitys ja ylläpito",
+            "Alidomainien sovellusten ylläpito",
+            "Palvelimen ylläpito"
+          ]
+        },
+        {
+          "title": "Lisätietoja eri aktiivitehtävistä voi kysyä hallituksen jäseneltä"
+        }
+      ]
+    },
+    "kerhotoiminta": {
+      "title": "Kerhotoiminta",
+      "intro": "Kerhotoiminta on jäsenistön itsensä organisoimaa tekemistä, joka voi liittyä esimerkiksi harrastuksiin, yhteisöllisyyteen tai opiskelun tukemiseen. Kaikki jäsenet voivat osallistua kerhoihin tai olla mukana niiden perustamisessa.",
+      "sectionTitle": "Algon kerhot",
+      "infoPrefix": "Lisätietoja kerhosta sekä peliaikatauluista saat liittymällä kerhon Telegram-ryhmään:",
+      "kerhot": {
+        "kyykkä": {
+          "name": "Kyykkäkerho",
+          "description": "Kyykkäkerho tarjoaa mahdollisuuden tutustua kyykkään hauskassa ja yhteisöllisessä hengessä. Toiminta on avointa kaikille jäsenille taitotasosta riippumatta.",
+          "linkText": "Kyykätään!",
+          "linkHref": "https://t.me/+0nivuYqDLzUxYjNk"
+        },
+        "futis": {
+          "name": "Futiskerho",
+          "description": "Algo FC tarjoaa mahdollisuuden pelata jalkapalloa rennossa ja yhteisöllisessä hengessä. Toiminta on avointa kaikille jäsenille taitotasosta riippumatta – mukaan voi tulla niin ensikertalainen kuin kokenutkin peluri. ⚽",
+          "linkText": "Pelaamaan!",
+          "linkHref": "https://t.me/+IhWC1RJ9ZGM0OGU0"
+        }
+      },
+      "newClub": {
+        "title": "Haluatko perustaa uuden kerhon?",
+        "description": "Uuden kerhon perustaminen onnistuu seuraavilla askelilla:",
+        "steps": [
+          {
+            "title": "Laadi alustava toimintasuunnitelma",
+            "points": [
+              "Mihin aiheeseen tai tekemiseen kerho liittyy",
+              "Kerhon tarkoitus ja kohderyhmä",
+              "Millaisia tapahtumia, tapaamisia tai muuta toimintaa on suunnitteilla",
+              "Millaisia hyötyjä kerho tuo jäsenistölle ja mitä tavoitteita sillä on"
+            ]
+          },
+          {
+            "title": "Ota yhteyttä hallituksen puheenjohtajaan ja sovi tapaaminen, jossa ideoita voidaan yhdessä tarkastella ja kehittää."
+          },
+          {
+            "title": "Jos kerholle nähdään selkeä tarve ja potentiaalia, valmistele täydennetty toimintasuunnitelma hallituksen kokousta varten."
+          },
+          {
+            "title": "Hallitus tekee päätöksen kerhon perustamisesta kokouksessaan."
+          }
+        ]
+      },
+      "support": {
+        "title": "Mitä tukea kerhot saavat?",
+        "description": "Hyväksytyt kerhot toimivat virallisesti yhdistyksen alaisuudessa ja voivat saada tukea esimerkiksi seuraavilla tavoilla:",
+        "points": [
+          "Toimintaan liittyvien kustannusten korvaaminen",
+          "Algon viestintäkanavien käyttö (esim. telegram ja uutiskirjeet)",
+          "Mahdollisuus pyytää muuta tukea tilanteen mukaan – ole rohkeasti yhteydessä kerhovastaavaan!"
+        ]
+      }
+    },
+    "ohjesaannot": {
+      "intro": "Tältä sivulta löydät tietoa teekkarilakista, haalarietiketistä sekä juhlanauha- ja merkkiohjesäännöstä.",
+      "title": "Juhlanauha- ja merkkiohjesääntö",
+      "rules": [
+        "1§ Algo ry:llä on kunnia-, ansio-, hallitus- ja vuoden algolainen -merkki sekä juhlanauha, joista jäljempänä lähemmin määrätään. Merkkien mallikappaleet säilytetään yhdistyksen arkistossa, ja myönnetyistä sekä ohjesäännön mukaan jaetuista merkeistä, niiden myöntämisperusteista ja päivämääristä pidetään luetteloa.",
+        "2§ Merkkien antamisesta päättää yhdistyksen hallitus. Hallitus voi jakaa useamman merkin kuin mitä tämän ohjesäännön enimmäismäärä sallii, mikäli hallitus päättää siitä yksimielisesti. Ellei päätösehdotusta hyväksytä, ei asian käsittelystä tehdä merkintää pöytäkirjaan.",
+        "3§ Kunniajäsenekseen yhdistys voi hallituksen esityksestä kutsua yhdistyksen toimintaa ansiokkaasti tukeneen henkilön, joka on antanut siihen suostumuksensa. Kunniajäsenelle myönnetään kunniakirja, joka on varustettu istuvan puheenjohtajan nimikirjoituksella, ja hänet kutsutaan yhdistyksen vuosijuhliin joka vuosi, mikäli sellaiset järjestetään. Kunniajäsenyys on elinikäinen.",
+        "4§ Kunniamerkki voidaan antaa henkilölle, joka pitkäaikaisella toiminnallaan tai erittäin merkittävällä teollaan on huomattavasti edistänyt yhdistyksen toimintaa. Kunniamerkki myönnetään myös jokaiselle kunniajäsenelle joko kunniajäseneksi myöntämisen yhteydessä tai takautuvasti. Kunniamerkkejä voidaan vuosittain myöntää enintään kolme (3) kappaletta. Kunniamerkki on väriltään kultainen ja kooltaan xx mm.",
+        "5§ Ansiomerkki voidaan antaa henkilölle, joka on viimeisen vuoden aikana edistänyt ansiokkaasti yhdistyksen toimintaa. Ansiomerkkejä voidaan vuosittain myöntää enintään viisi (5) kappaletta. Ansiomerkki on väriltään hopeinen ja kooltaan xx mm.",
+        "6§ Hallitusmerkki myönnetään yhdistyksen istuvan hallituksen jäsenille. Hallitusmerkki voidaan myöntää myös yhdistyksen hallituksen entiselle jäsenelle. Hallitusmerkki on väriltään hopeinen ja kooltaan 16 mm.",
+        "7§ Vuoden algolainen -merkki myönnetään Algo ry:n jäsenelle, joka on osoittanut merkittävää kiinnostusta yhdistyksen toimintaa kohtaan ja edistänyt jäsenten välistä yhteishenkeä. Jäsen valitaan vuosittain järjestettävällä äänestyksellä, jossa jokaisella Algo ry:n jäsenellä on äänioikeus. Äänestyksestä tiedotetaan yhdistyksen virallisilla viestintäkanavilla viimeistään 2 viikkoa ennen merkinjakotilaisuutta. Yksittäinen henkilö voi saada merkin vain kerran. Vuoden algolainen -merkki on haalarimerkki, joka on halkaisijaltaan 80 mm ja väriltään violetti keltaisella pokaalilla.",
+        "8§ Myönnetyt merkit ja kunniakirjat luovutetaan saajilleen seuraavissa yhdistyksen vuosijuhlissa, vuosijuhlasitseillä tai muussa hallituksen sopivaksi katsomassa arvokkaassa tilaisuudessa. Kaikkien Algo ry:n myöntämien merkkien käyttöoikeus on elinikäinen.",
+        "9§ Juhlanauha on 35 mm leveä ja väriltään vaaleapuna-valkoinen. Jokaisella yhdistyksen varsinaisella jäsenellä on nauhan käyttöoikeus, ja nauhan voi ostaa suoraan yhdistykseltä. Juhlanauha myönnetään ansiomerkin mukana ilmaiseksi, mikäli ansioituvalla henkilöllä ei sellaista vielä ole. Juhlanauhan käyttöoikeus säilyy yhdistyksestä eroamisen jälkeen.",
+        "10§ Juhlanauhaa sekä kunnia-, ansio- ja hallitusmerkkiä käytetään vain juhlapuvussa akateemisissa juhlatilaisuuksissa.",
+        "11§ Tämä ohjesääntö on hyväksytty yhdistyksen kokouksessa 26.5.2023. Se on voimassa toistaiseksi. Tämän ohjesäännön muuttamisesta päättää yhdistyksen kokous ehdottomalla äänienemmistöllä."
+      ],
+      "haalarietiketti": {
+        "title": "Haalarietiketti",
+        "paragraphs": [
+          "Haalareita suositellaan pidettävän ylhäällä eli kokonaan päällä. Niitä käytetään kaikissa opiskelijatapahtumissa, ellei tapahtuman pukeutumisesta erikseen toisin mainita. Kun haalareita pidetään vyötäröllä, selkäosa taitetaan siten, että killan logo näkyy. Haalareita saa ja tulee muokata oman näköisiksi.",
+          "Haalarimerkit tulee ommella käsin. Niitä ei saa liimata eikä ommella ompelukoneella. Lisäksi haalarimerkkejä ei tule ommella sponsoreiden logojen päälle, mikäli tilaa on.",
+          "Haalareita ei saa pestä pesukoneessa tai muulla vastaavalla tavoin. Haalareita pestään siten, että olet itse niiden sisällä, esimerkiksi järvessä tai suihkussa."
+        ]
+      },
+      "teekkari": {
+        "title": "Teekkarilakki",
+        "imageAlt": "Jyväskylän 8-kulmainen teekkarilakki",
+        "description": "Jyväskylän teekkarilakki on kahdeksankulmainen, Jyväskylän kävelykadun Kompassin muodon mukaan. Lakin sisäpuoli on Jyväskylän yliopiston värien mukainen sini-oranssi. Lakin kokardissa yhdistyy Jyväskylä sekä tekniikka, kun kokardista löytyy JYY:n soihtu, jota ympäröi tekniikan ratas. Ensimmäisen vuoden diplomi-insinööriopiskelijoista eli fukseista tulee teekkareita vappuna, jolloin kasteen jälkeen lakin saa painaa päähänsä. Lakin kantoaika alkaa siis vapun kasteesta ja päättyy syyskuun viimeisenä päivänä pidettäviin lakinlaskijaisiin.",
+        "linkText": "Jyväskylän teekkariyhdistys",
+        "linkText2": "lakinkäyttölupaa"
+      }
+    },
+    "periaatteet": {
+      "title": "Toiminnasta",
+      "intro": "Algon killan sisällä apua voi hakea sopolta/kopolta (sopo@algojkl.com & kopo@algojkl.com) tai anonyymisti lomakkeella, jonka löydät",
+      "formLink": "täältä",
+      "support": "Lomakkeen vastaukset näkyvät vain sopolle/kopolle.",
+      "summaryTitle": "Toiminnasta:",
+      "summary": "Algo ei hyväksy minkäänlaista syrjintää tai häirintää omassa toiminnassaan ja pyrimme rakentamaan kannustavaa ilmapiiriä. Jos kohtaat väärinkäytöksiä, häirintää, syrjintää tai koet olosi turvattomaksi, kerro asiasta ja pyydä apua. Tukea ja apua on aina saatavilla jos koet sitä tarvitsevasi.",
+      "valuesTitle": "Algo ja sen jäsenet sitoutuvat noudattamaan seuraavia arvoja:",
+      "values": [
+        "Kaikki ihmiset ovat samanarvoisia riippumatta heidän sukupuolestaan, iästään, etnisestä tai kansallisesta alkuperästään, kansalaisuudestaan, kielestään, uskonnostaan, seksuaalisesta suuntautumisestaan tai muusta henkilöön liittyvästä syystä",
+        "Ei painostateta päihteiden käyttöön.",
+        "Noudatetaan hyviä käytöstapoja ja käyttäydytään asiallisesti.",
+        "Ymmärretään ja kunnioitetaan erilaisia näkökulmia.",
+        "Ylläpidetään, luodaan ja kehitetään tervettä Teekkarihenkeä.",
+        "Jokainen nauttii opiskeluajastansa omilla ehdoillaan sekä edellä mainittujen periaatteiden ja Suomen lakien mukaisesti.",
+        "Noudatetaan turvallisen tilan periaatteita (alla)."
+      ],
+      "safetyTitle": "Algo ry:n turvallisemman tilan periaatteet:",
+      "safety": [
+        "Lopeta häiritsevä käytös ja pyydä välittömästi anteeksi.",
+        "Huolehdi, että kaikki pääsevät halutessaan osalliseksi ja tulevat kuulluiksi.",
+        "Älä häiritse ketään sanallisesti, koskettamalla tai tuijottamalla.",
+        "Jokainen saa osallistua ja jakaa asioita haluamassaan laajuudessa.",
+        "Anna tilaa ja käsittele arkoja asioita kunnioittavasti.",
+        "Älä tee oletuksia ihmisten ulkoisista ominaisuuksista.",
+        "Vältä syrjiviä stereotypioita puheessasi ja toiminnassasi.",
+        "Kunnioita henkilökohtaista tilaa ja muiden rajoja.",
+        "Puutumme asiattomaan ja häiritsevään käytökseen."
+      ],
+      "equalityTitle": "Yhdenvertaisuus:",
+      "equality": "Algo pyrkii luomaan jäsenilleen mahdollisimman turvallisen, luotettavan sekä yhdenvertaisen ympäristön jokaiselle jäsenelleen. Yliopistolakiin on kirjattu, että yliopiston tulee tarjota turvallinen opiskeluympäristö, jossa jokaisella on oikeus opiskella kokematta häirintää, kiusaamista ja syrjintää (Yliopistolaki 41§). Algo ry ei suvaitse tapahtumissaan kiusaamista, syrjimistä, häirintää tai muuta epäasiallista käytöstä missään muodossa. Haluamme olla edistämässä kaikille turvallista ja viihtyisää korkeakouluyhteisöä. Kiusaamiselta tai häirinnältä ei aina voi välttyä. Täten on ehdottoman tärkeää reagoida kiusaamistilanteisiin. Jyväskylän yliopistossa voit hakea apua esimerkiksi Hyviksiltä, jotka tarjoavat keskusteluapua ja ohjaavat tarvittaessa eteenpäin. Apua tarjoavat myös JYY:n häirintäyhteyshenkilöt tai sopo. Kaikki jaettu tieto on luottamuksellista, eikä siitä puhuta kenellekään ilman asianomaisen lupaa."
+    },
+    "pestit": {
+      "title": "Lyhyet kuvaukset hallituspesteistä",
+      "ps": "ps: Hallituksessa tehdään yhteistyössä muitakin kuin vain oman vastuualueen tehtäviä.",
+      "previous": "Aiemmat hallitukset näet",
+      "here": "täältä",
+      "roles": [
+        {
+          "title": "Puheenjohtaja",
+          "description": "on vastuussa hallituksen toiminnasta, johtaa hallituksen kokouksia sekä edustaa yleisesti kiltaa."
+        },
+        {
+          "title": "Varapuheenjohtaja",
+          "description": "sijaistaa puheenjohtajaa kokouksissa tämän estyessä, ja toimii tiiviissä yhteistyössä puheenjohtajan kanssa."
+        },
+        {
+          "title": "Sihteeri",
+          "description": "kirjoittaa kokouksissa pöytäkirjan (virallinen dokumentti kokouksissa läpikäytävistä asioista)."
+        },
+        {
+          "title": "Rahastonhoitaja",
+          "description": "maksaa laskuja, huolehtii kirjanpidosta ja vastaa killan pankkitilistä."
+        },
+        {
+          "title": "Yritysvastaava",
+          "description": "solmii ja ylläpitää yhteistyösopimuksia yritysten kanssa sekä vastaa yritystiimin toiminnasta."
+        },
+        {
+          "title": "Tapahtumavastaava",
+          "description": "ideoi ja järjestää tapahtumia sekä vastaa tapahtumatiimin toiminnasta."
+        },
+        {
+          "title": "Projektivastaavat",
+          "description": "vastaavat teekkariuteen liittyvistä projektiluontoisista tapahtumista kuten vuosijuhlista, lakinlaskijaisista ja kastajaisista."
+        },
+        {
+          "title": "Koulutuspoliittinen vastaava",
+          "description": "(kopo) huolehtii opiskelijoiden oikeuksien toteutumisesta ja ylläpitää suhteita yliopistoon."
+        },
+        {
+          "title": "Sosiaalipoliittinen vastaava",
+          "description": "(sopo) huolehtii opiskelijoiden edunvalvonnasta, hyvinvoinnista ja yhdenvertaisuudesta killan toiminnassa."
+        },
+        {
+          "title": "Kerhovastaava",
+          "description": "vastaa kommunikaatiosta kerhojen ja hallituksen välillä."
+        },
+        {
+          "title": "Viestintävastaava",
+          "description": "ylläpitää killan sosiaalisen median tilejä ja tiedottaa jäsenille tapahtumista ja muista tärkeistä asioista."
+        }
+      ]
+    },
+    "rekisteriseloste": {
+      "title": "Jäsenrekisteriseloste",
+      "sections": [
+        {
+          "title": "1. Rekisterinpitäjä",
+          "content": "Algo ry / IT-Tiedekunta\nPL 35 (Agora)\n40014 Jyväskylän yliopisto"
+        },
+        {
+          "title": "2. Rekisteristä vastaava yhteyshenkilö",
+          "content": "Algo ry:n sihteeri (sihteeri@algojkl.com)"
+        },
+        {
+          "title": "3. Rekisterin nimi",
+          "content": "Yhdistyksen jäsenrekisteri."
+        },
+        {
+          "title": "4. Oikeusperuste ja henkilötietojen käsittelyn tarkoitus",
+          "content": "EU:n yleisen tietosuoja-asetuksen mukainen oikeusperuste henkilötietojen käsittelylle on rekisterinpitäjän oikeutettu etu (jäsenyys). Henkilötietojen käsittelyn tarkoitus on yhteydenpito jäseniin, sekä jäsenyyden tarkistaminen, silloin kun sitä vaaditaan (esim. Sääntömääräinen kokous). Tietoja ei käytetä automatisoituun päätöksentekoon tai profilointiin. Yhdistyslain mukaan yhdistyksen hallituksen on pidettävä jäsenistä luetteloa."
+        },
+        {
+          "title": "5. Rekisterin tietosisältö",
+          "content": "Rekisteriin tallennettavia tietoja ovat: henkilön nimi, yhteystiedot (sähköpostiosoite), kotipaikkakunta."
+        },
+        {
+          "title": "6. Säännönmukaiset tietolähteet",
+          "content": "Rekisteriin tallennettavat tiedot saadaan jäseneltä www-lomakkeilla lähetetyistä viesteistä tai tapaamisessa."
+        },
+        {
+          "title": "7. Tietojen säännönmukaiset luovutukset ja tietojen siirto EU:n tai ETA:n ulkopuolelle",
+          "content": "Tietoja ei luovuteta säännönmukaisesti muille tahoille."
+        },
+        {
+          "title": "8. Rekisterin suojauksen periaatteet",
+          "content": "Rekisterin käsittelyssä noudatetaan huolellisuutta ja tietojärjestelmien avulla käsiteltävät tiedot suojataan asianmukaisesti. Kun rekisteritietoja säilytetään Internet-palvelimilla, niiden laitteiston fyysisestä ja digitaalisesta tietoturvasta huolehditaan asiaankuuluvasti. Rekisterinpitäjä huolehtii siitä, että tallennettuja tietoja sekä palvelimien käyttöoikeuksia ja muita henkilötietojen turvallisuuden kannalta kriittisiä tietoja käsitellään luottamuksellisesti ja vain niiden henkilöiden toimesta, joiden työnkuvaan se kuuluu."
+        },
+        {
+          "title": "9. Tarkastusoikeus ja oikeus vaatia tiedon korjaamista",
+          "content": "Jokaisella rekisterissä olevalla henkilöllä on oikeus tarkistaa rekisteriin tallennetut tietonsa ja vaatia mahdollisen virheellisen tiedon korjaamista tai puutteellisen tiedon täydentämistä. Mikäli henkilö haluaa tarkistaa hänestä tallennetut tiedot tai vaatia niihin oikaisua, pyyntö tulee lähettää kirjallisesti rekisterinpitäjälle. Rekisterinpitäjä voi pyytää tarvittaessa pyynnön esittäjää todistamaan henkilöllisyytensä. Rekisterinpitäjä vastaa asiakkaalle EU:n tietosuoja-asetuksessa säädetyssä ajassa."
+        },
+        {
+          "title": "10. Muut henkilötietojen käsittelyyn liittyvät oikeudet",
+          "content": "Rekisterissä olevalla henkilöllä on oikeus pyytää häntä koskevien henkilötietojen poistamiseen rekisteristä (”oikeus tulla unohdetuksi”). Niin ikään rekisteröidyillä on muut EU:n yleisen tietosuoja-asetuksen mukaiset oikeudet kuten henkilötietojen käsittelyn rajoittaminen tietyissä tilanteissa. Pyynnöt tulee lähettää kirjallisesti rekisterinpitäjälle. Rekisterinpitäjä voi pyytää tarvittaessa pyynnön esittäjää todistamaan henkilöllisyytensä. Rekisterinpitäjä vastaa asiakkaalle EU:n tietosuoja-asetuksessa säädetyssä ajassa"
+        }
+      ]
+    },
+    "toimari": {
+      "noImage": "Ei kuvaa"
+    },
+    "rekryt": {
+      "alt": "Rekryt",
+      "loading": "Ladataan rekryjä...",
+      "error": "Virhe ladatessa rekryjä",
+      "title": "Täällä julkaistaan avoimia rekryilmoituksia!",
+      "moreInfo": "Lisätietoja tästä!",
+      "empty": "Tällä hetkellä ei ole aktiivisia rekrytointeja."
+    },
+    "prevHalli": {
+      "boardTitle": "Hallitus {{year}}"
+    },
+    "salaisuudet": {
+      "prompt": "Syötä salasana päästäksesi sisältöön:",
+      "placeholder": "Salasana",
+      "loginButton": "Kirjaudu",
+      "wrongPassword": "Väärä salasana",
+      "serverError": "Palvelinvirhe: {{message}}",
+      "loading": "Ladataan sisältöä..."
+    },
+    "tapahtumat": {
+      "alt": "Tapahtumat",
+      "title": "Tulevat tapahtumat",
+      "description": "Tapahtumien ilmoittautumiset ja tarkemmat tiedot löytyvät Algo ry:n ilmoituskanavalta Telegramista. Algon Telegramin viestintäkanaviin liittyminen onnistuu sähköpostista löytyvistä jäsenkirjeistä tai kysymällä hallituslaisilta.",
+      "calendarTitle": "Google-kalenteri"
+    },
+    "yhteistyo": {
+      "alt": "Yhteistyö",
+      "title": "Hei! Kiinnostaako yhteistyö?",
+      "intro": "Algon kanssa voi tehdä yhteistyötä laidasta laitaan! Haluatko mainospaikan haalareista tai tukea tapahtumiamme? Vai kiinnostaisiko esitellä yritystäsi Jyväskylän DI-opiskelijoille?",
+      "contactUs": "Ota yhteyttä!",
+      "corporate": "Yritysyhteistyöt",
+      "events": "Tapahtumat",
+      "external": "Killan ulkosuhteet",
+      "otherIdeas": "Muita ideoita?",
+      "otherDescription": "Meille voi aina ehdottaa uusia yhteistyökuvioita!",
+      "otherContact": "Muista yhteistyökuvioista voi ottaa yhteyttä puheenjohtajaamme:",
+      "partnersTitle": "Yhteistyössä"
+    },
+    "yhteydenotto": {
+      "alt": "Yhteydenotto",
+      "general": {
+        "title": "Yleinen palautelomake",
+        "description": "Tänne saat kertoa palautetta - niin positiivista kuin negatiivistakin. Algon toiminnasta, nettisivuista tai mistä tahansa kiltaamme liittyvästä.",
+        "linkLabel": "Palautelomake"
+      },
+      "course": {
+        "title": "Kurssipalaute",
+        "description": "Algo ry:n yksi tärkeimpiä tehtäviä on edunvalvonta ja kilta pyrkii vaikuttamaan opetuksen kehittämiseen. Tällä lomakkeella voit antaa palautetta tietystä kurssista liittyen opetukseen, arviointiin tai mihin vaan. Tämä palaute ei korvaa yliopiston virallista tai opettajan antamaa kurssipalautelomaketta!",
+        "warning": "Tämä palaute ei korvaa yliopiston virallista tai opettajan antamaa kurssipalautelomaketta!",
+        "description2": "Tätä palautetta kerää ja käyttää Algon kopo ja puheenjohtaja. Tämän palautteen voit antaa täysin anonyymisti tai antaa yhteystietosi jos haluat että sinuun ollaan yhteydessä. Palautteet viedään kuitenkin eteenpäin täysin anonyymeinä.",
+        "linkLabel": "Kurssipalautelomake",
+        "linkPrefix": "Linkki lomakkeeseen"
+      }
+    }
+  },
+  "footer": {
+    "sections": {
+      "navigation": "NAVIGAATIO",
+      "staff": "TOIMIHENKILÖT",
+      "officialDocuments": "VIRALLISET DOKUMENTIT",
+      "members": "JÄSENILLE"
+    },
+    "contactTitle": "Yhteystiedot",
+    "addressLine1": "Mattilanniemi 2,",
+    "addressLine2": "40100 Jyväskylä",
+    "email": "pj@algojkl.com",
+    "vat": "Y-tunnus: 3297709-4",
+    "feedbackTitle": "Haluatko antaa meille palautetta?",
+    "feedbackDescription": "Se onnistuu, kun täytät alla olevan lomakkeen. Palautteet käsitellään anonyymisti.",
+    "feedbackLink": "Palautelomake"
+  }
+}

@@ -4,6 +4,7 @@ const Typewriter = ({ text = '', speed = 45 }) => {
   const [displayedText, setDisplayedText] = useState('')
 
   useEffect(() => {
+    setDisplayedText('')
     if (!text) return
     let index = 0
     const interval = setInterval(() => {

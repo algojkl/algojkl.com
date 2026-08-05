@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import NavbarLeft from './NavbarLeft'
 import NavbarRight from './NavbarRight'
 import NavbarMobile from './NavbarMobile'
-import dropdownLinks from './NavbarLinks'
+import getDropdownLinks from './NavbarLinks'
 
 /**
  * NavBar
@@ -17,6 +18,8 @@ import dropdownLinks from './NavbarLinks'
  */
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { t } = useTranslation('common')
+  const dropdownLinks = getDropdownLinks(t)
 
   return (
     <>

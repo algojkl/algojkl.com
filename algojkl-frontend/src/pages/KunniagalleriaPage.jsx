@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
 import halli2022 from '../images/halli_2022.png'
 
@@ -22,21 +23,20 @@ import starterMobile from '../images/mobiili/14.png'
  * ja perustajajäsenet/hallituksen 2022 kuvan kanssa.
  */
 const KunniagalleriaPage = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div>
       <StarterImage
         desktopImage={starterDesktop}
         mobileImage={starterMobile}
-        alt="Kunniagalleria"
+        alt={t('pages.kunniagalleria.alt')}
       />
 
       <div className="kunnia-container">
-        <h2>Algo ry:n kunniajäsenet</h2>
+        <h2>{t('pages.kunniagalleria.honoraryTitle')}</h2>
         <p>
-          <i>
-            Kunniajäsen on killan toimintaa erityisen ansiokkaasti tukenut
-            henkilö. Kunniajäsenyys on Algon korkein kunnianosoitus.
-          </i>
+          <i>{t('pages.kunniagalleria.honoraryDescription')}</i>
         </p>
         <div className="kunniajasenet">
           {kunniajasenet.map((p, idx) => (
@@ -46,21 +46,17 @@ const KunniagalleriaPage = () => {
       </div>
 
       <div className="kunnia-container">
-        <h2>Vuoden Algolainen - palkinnon voittajat</h2>
+        <h2>{t('pages.kunniagalleria.yearlyTitle')}</h2>
         <p>
-          <i>
-            Vuoden algolainen on jäsenten äänestyksessä päättämä, joka on
-            osoittanut merkittävää kiinnostusta yhdistyksen toimintaa kohtaan ja
-            edistänyt jäsenten välistä yhteishenkeä.
-          </i>
+          <i>{t('pages.kunniagalleria.yearlyDescription')}</i>
         </p>
         <VuodenAlgolaiset people={vuodenAlgolaiset} />
       </div>
       <Perustajat image={halli2022} members={perustajat2022} year={2022} />
       <div className="kunnia-container">
         <p>
-          Muut edelliset hallitukset näet{' '}
-          <a href="/entiset-hallitukset">täältä</a>
+          {t('pages.kunniagalleria.previousBoards')}{' '}
+          <a href="/entiset-hallitukset">{t('pages.kunniagalleria.here')}</a>
         </p>
       </div>
     </div>

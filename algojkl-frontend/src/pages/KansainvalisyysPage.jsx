@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
 import Vaihtovuosi from '../components/kansainvalisyys/Vaihtovuosi'
 import Vaihtovinkit from '../components/kansainvalisyys/Vaihtovinkit'
@@ -21,15 +22,17 @@ import starterMobile from '../images/mobiili/20.png'
  */
 
 const KansainvalisyysPage = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div>
       <StarterImage
         desktopImage={starterDesktop}
         mobileImage={starterMobile}
-        alt="Kansainvälisyys"
+        alt={t('pages.kansainvalisyys.alt')}
       />
       <div className="kansainvalisyys-container">
-        <h1>Algolaisen vaihtovinkit ja linkit</h1>
+        <h1>{t('pages.kansainvalisyys.title')}</h1>
         <Vaihtovuosi />
         <Vaihtovinkit />
         <VaihtoOhjelmat />

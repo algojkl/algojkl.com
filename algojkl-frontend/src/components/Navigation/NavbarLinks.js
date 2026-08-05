@@ -5,38 +5,38 @@
  * desktop- että mobiiliversioissa Navbarissa.
  */
 
-const dropdownLinks = [
+const getDropdownLinks = (t) => [
   {
-    section: 'TOIMIHENKILÖT',
+    section: t('nav.sections.staff'),
     items: [
-      { label: 'HALLITUS', path: '/hallitus' },
-      { label: 'AKTIIVIT', path: '/aktiivit' },
+      { label: t('nav.links.board'), path: '/hallitus' },
+      { label: t('nav.links.active'), path: '/aktiivit' },
     ],
   },
   {
-    section: 'VIRALLISET DOKUMENTIT',
+    section: t('nav.sections.officialDocuments'),
     items: [
-      { label: 'SÄÄNNÖT', path: '/saannot' },
-      { label: 'OHJESÄÄNNÖT & ETIKETIT', path: '/ohjesaannot' },
-      { label: 'VUOSIJUHLAT', path: '/vujuetiketti' },
-      { label: 'REKISTERISELOSTE', path: '/seloste' },
-      { label: 'KUNNIAGALLERIA', path: '/kunniagalleria' },
-      { label: 'TOIMINNAN PERIAATTEET', path: '/periaatteet' },
+      { label: t('nav.links.rules'), path: '/saannot' },
+      { label: t('nav.links.guidelines'), path: '/ohjesaannot' },
+      { label: t('nav.links.vuju'), path: '/vujuetiketti' },
+      { label: t('nav.links.privacy'), path: '/seloste' },
+      { label: t('nav.links.honours'), path: '/kunniagalleria' },
+      { label: t('nav.links.principles'), path: '/periaatteet' },
     ],
   },
   {
-    section: 'JÄSENILLE',
+    section: t('nav.sections.members'),
     items: [
-      { label: 'JÄSENEDUT', path: '/jasenedut' },
-      { label: 'KERHOTOIMINTA', path: '/kerhotoiminta' },
-      { label: 'REKRYT', path: '/rekryt' },
-      { label: 'YHTEYDENOTTOLOMAKKEET', path: '/lomakkeet' },
-      { label: 'KANSAINVÄLISYYS', path: '/kansainvalisyys' },
-      { label: 'KATTILAN KAHVIKAMERA', path: 'https://kattila.linkkijkl.fi/' },
-      { label: 'SALAISUUDET', path: '/salaisuudet' },
-      { label: 'LAULUKIRJA', path: 'https://ritmi.algojkl.com/' },
+      { label: t('nav.links.benefits'), path: '/jasenedut' },
+      { label: t('nav.links.clubs'), path: '/kerhotoiminta' },
+      { label: t('nav.links.recruitment'), path: '/rekryt' },
+      { label: t('nav.links.forms'), path: '/lomakkeet' },
+      { label: t('nav.links.international'), path: '/kansainvalisyys' },
+      { label: t('nav.links.kattila'), path: 'https://kattila.linkkijkl.fi/' },
+      { label: t('nav.links.secrets'), path: '/salaisuudet' },
+      { label: t('nav.links.songbook'), path: 'https://ritmi.algojkl.com/' },
     ],
   },
 ]
 
-export default dropdownLinks
+export default getDropdownLinks

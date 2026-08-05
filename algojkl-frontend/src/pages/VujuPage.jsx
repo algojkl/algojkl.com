@@ -1,9 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
 import StarterImage from '../common/StarterImage'
 import starterDesktop from '../images/Page_starters/vujut.jpg'
 import starterMobile from '../images/mobiili/vujut_m.jpg'
-import { vujuContent } from '../PageData/vujuData'
 /**
  *  Vujut-sivu
  * Tämä komponentti renderöi Vujut-sivun sisällön.
@@ -11,16 +11,22 @@ import { vujuContent } from '../PageData/vujuData'
  * 1. Starter-kuva (desktop ja mobiili)
  * 2. Vuosijuhlaetiketti-osio, joka kertoo vuosijuhlien käytänteistä, pukeutumisesta,
  *    arvokkaasta juhlakäyttäytymisestä, juhlan kulusta sekä akateemisesta silliaamiaisesta.
- * refraktorointi kesken
  */
 
 const Vujut = () => {
+  const { t } = useTranslation('common')
+  const vujuContent = {
+    title: t('pages.vuju.title'),
+    intro: t('pages.vuju.intro'),
+    sections: t('pages.vuju.sections', { returnObjects: true }),
+  }
+
   return (
     <div>
       <StarterImage
         desktopImage={starterDesktop}
         mobileImage={starterMobile}
-        alt="Events"
+        alt={t('pages.vuju.alt')}
       />
       <div className="vuju-container-start">
         <h1>{vujuContent.title}</h1>

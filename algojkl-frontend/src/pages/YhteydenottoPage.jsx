@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import starterDesktop from '../images/Page_starters/17.jpg'
 import starterMobile from '../images/mobiili/19.png'
 import StarterImage from '../common/StarterImage'
@@ -17,12 +18,14 @@ import YleinenPalaute from '../components/yhteydenotto/YleinenPalaute'
  * 4. Yleinen palautelomake-osio, jossa on linkki yleiseen palautelomakkeeseen
  */
 const YhteydenottoPage = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div>
       <StarterImage
         desktopImage={starterDesktop}
         mobileImage={starterMobile}
-        alt="Yhteydenotto"
+        alt={t('pages.yhteydenotto.alt')}
       />
       <div className="yhteydenotto-container">
         <Kurssipalaute />

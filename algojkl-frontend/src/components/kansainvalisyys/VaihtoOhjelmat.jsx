@@ -1,43 +1,43 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Section from '../../common/Section'
 
-const VaihtoOhjelmat = () => (
-  <Section title="Vaihto-ohjelmat">
-    <ul>
-      <li>
-        <strong>Erasmus (Eurooppa)</strong>
-        <p>
-          Erasmus tarjoaa 1–2 lukukauden vaihdon EU- ja ETA-maissa sekä
-          Turkissa.
-        </p>
-        <ul>
-          <li>
-            <a href="https://www.jyu.fi/fi/opiskelijalle/.../erasmus">
-              Erasmus-ohjelma
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <strong>Kahdenväliset kohteet</strong>
-        <p>Vaihdot Euroopan ulkopuolelle kuten Amerikkaan ja Aasiaan.</p>
-      </li>
-      <li>
-        <strong>ISEP</strong>
-        <p>Yksi hakemus useisiin yliopistoihin ympäri maailmaa.</p>
-      </li>
-      <li>
-        <strong>Nordplus</strong>
-        <p>Mahdollistaa vaihdon Pohjoismaihin ja Baltiaan.</p>
-      </li>
-      <li>
-        <strong>FORTHEM</strong>
-        <p>
-          Tarjoaa lyhytliikkuvuuksia ja Erasmus-vaihtoja allianssin sisällä.
-        </p>
-      </li>
-    </ul>
-  </Section>
-)
+const VaihtoOhjelmat = () => {
+  const { t } = useTranslation('common')
+
+  return (
+    <Section title={t('pages.international.title')}>
+      <ul>
+        <li>
+          <strong>{t('pages.international.erasmusName')}</strong>
+          <p>{t('pages.international.erasmusDescription')}</p>
+          <ul>
+            <li>
+              <a href="https://www.jyu.fi/fi/opiskelijalle/.../erasmus">
+                {t('pages.international.erasmusLink')}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>{t('pages.international.bilateralName')}</strong>
+          <p>{t('pages.international.bilateralDescription')}</p>
+        </li>
+        <li>
+          <strong>{t('pages.international.isepName')}</strong>
+          <p>{t('pages.international.isepDescription')}</p>
+        </li>
+        <li>
+          <strong>{t('pages.international.northName')}</strong>
+          <p>{t('pages.international.northDescription')}</p>
+        </li>
+        <li>
+          <strong>{t('pages.international.forthemName')}</strong>
+          <p>{t('pages.international.forthemDescription')}</p>
+        </li>
+      </ul>
+    </Section>
+  )
+}
 
 export default VaihtoOhjelmat

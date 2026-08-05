@@ -1,16 +1,19 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
-const JasenEdutIntro = () => (
-  <p className="jasenedut-text">
-    Algo tarjoaa jäsenilleen hienoja etuja! Tsekkaa alta tarkemmin, mihin
-    etuihin Algon jäsenyys sinut oikeuttaa. Jäsenyys todistetaan näyttämällä
-    KideApp-sovelluksesta löytyvä Algon jäsenyys.{' '}
-    <strong>
-      Mikäli alennukseen tarvitaan alekoodi, löytyy ne Algon{' '}
-      <a href="/salaisuudet">salaisuudet-sivulta</a>.
-    </strong>{' '}
-    Salasanan sivuille voit kysyä hallituslaiselta.
-  </p>
-)
+const JasenEdutIntro = () => {
+  const { t } = useTranslation('common')
+
+  return (
+    <p className="jasenedut-text">
+      {t('pages.jasenedut.intro')}{' '}
+      <strong>
+        {t('pages.jasenedut.passwords')}{' '}
+        <a href="/salaisuudet">{t('pages.jasenedut.secretsLink')}</a>.
+      </strong>{' '}
+      {t('pages.jasenedut.ask')}
+    </p>
+  )
+}
 
 export default JasenEdutIntro

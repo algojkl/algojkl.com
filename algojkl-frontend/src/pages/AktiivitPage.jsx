@@ -1,11 +1,7 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
-import {
-  starterImages,
-  tiimit,
-  muutAktiivit,
-  aktiivimerkit,
-} from '../PageData/aktiivitData'
+import { starterImages, aktiivimerkit } from '../PageData/aktiivitData'
 
 /**
  * AktiiviPage-komponentti
@@ -30,27 +26,27 @@ import {
  * se onnistuu muokkaamalla kyseistä tiedostoa.
  */
 const AktiiviPage = () => {
+  const { t } = useTranslation('common')
+  const teams = t('pages.aktiivit.teams', { returnObjects: true })
+  const otherRoles = t('pages.aktiivit.other', { returnObjects: true })
+
   return (
     <div className="aktiivi">
       <StarterImage
         desktopImage={starterImages.desktop}
         mobileImage={starterImages.mobile}
-        alt="Aktiivit"
+        alt={t('pages.aktiivit.alt')}
       />
       <div className="aktiivi-container">
         <div className="aktiivi-start">
-          <h1>MIKÄ IHMEEN AKTIIVI???</h1>
-          <p>
-            Aktiivit koostuvat kiltamme jäsenistä, jotka haluavat auttaa ja
-            vaikuttaa kiltamme toimintaan. Aktiivit auttavat hallituksemme
-            jäseniä matalalla kynnyksellä.
-          </p>
+          <h1>{t('pages.aktiivit.title')}</h1>
+          <p>{t('pages.aktiivit.description')}</p>
         </div>
 
         <div className="aktiivi-pestit">
-          <h2>AKTIIVIEN PESTIT</h2>
+          <h2>{t('pages.aktiivit.rolesTitle')}</h2>
           <ul>
-            {tiimit.map((tiimi, idx) => (
+            {teams.map((tiimi, idx) => (
               <li key={idx}>
                 <strong>{tiimi.title}</strong>
                 <ul>
@@ -75,7 +71,7 @@ const AktiiviPage = () => {
               </li>
             ))}
 
-            {muutAktiivit.map((m, idx) => (
+            {otherRoles.map((m, idx) => (
               <li key={idx}>
                 <strong>{m.title}</strong>
                 {m.subTasks && (
@@ -92,15 +88,17 @@ const AktiiviPage = () => {
         <br />
 
         <div className="aktiivi-consent">
-          <h3>Kiinnostuitko?</h3>
-          <p>Hae aktiiviksi täyttämällä alla olevan lomakkeen!</p>
+          <h3>{t('pages.aktiivit.interestedTitle')}</h3>
+          <p>{t('pages.aktiivit.interestedDescription')}</p>
           <button className="aktiivit-button">
-            <a href="https://forms.gle/iwLcCpC3bscAhbhN8">Hae Aktiiviksi</a>
+            <a href="https://forms.gle/iwLcCpC3bscAhbhN8">
+              {t('pages.aktiivit.applyButton')}
+            </a>
           </button>
         </div>
 
         <div className="aktiivi-container-merkit">
-          <h2>Aktiivimerkit</h2>
+          <h2>{t('pages.aktiivit.badgesTitle')}</h2>
           <div className="aktiivit-container-merkit-background">
             {aktiivimerkit.map((src, idx) => (
               <img key={idx} src={src} alt={`aktiivi_${idx}`} />

@@ -91,6 +91,7 @@ const fetchContentfulData = async () => {
       pesti: item.fields.pesti || null,
       telegram: item.fields.telegram || null,
       kuva: item.fields.kuva?.fields?.file?.url || null,
+      email: item.fields.email || null,
     })),
   }
 }

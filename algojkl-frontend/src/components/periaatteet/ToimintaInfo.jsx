@@ -1,24 +1,24 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const ToimintaInfo = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div>
-      <h1>Toiminnasta</h1>
+      <h1>{t('pages.periaatteet.title')}</h1>
       <p>
-        Algon killan sisällä apua voi hakea sopolta/kopolta (sopo@algojkl.com &
-        kopo@algojkl.com) tai anonyymisti lomakkeella, jonka löydät{' '}
+        {t('pages.periaatteet.intro')}{' '}
         <strong>
-          <a href="https://forms.gle/zEB8omZsu8MbgTK38">täältä</a>
+          <a href="https://forms.gle/zEB8omZsu8MbgTK38">
+            {t('pages.periaatteet.formLink')}
+          </a>
         </strong>
-        . Lomakkeen vastaukset näkyvät vain sopolle/kopolle.
+        . {t('pages.periaatteet.support')}
       </p>
       <p>
-        <strong>Toiminnasta:</strong> <br />
-        Algo ei hyväksy minkäänlaista syrjintää tai häirintää omassa
-        toiminnassaan ja pyrimme rakentamaan kannustavaa ilmapiiriä. Jos kohtaat
-        väärinkäytöksiä, häirintää, syrjintää tai koet olosi turvattomaksi,
-        kerro asiasta ja pyydä apua. Tukea ja apua on aina saatavilla jos koet
-        sitä tarvitsevasi.
+        <strong>{t('pages.periaatteet.summaryTitle')}</strong> <br />
+        {t('pages.periaatteet.summary')}
       </p>
     </div>
   )

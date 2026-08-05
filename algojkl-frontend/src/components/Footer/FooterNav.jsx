@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import FooterNavSection from './FooterNavSection1'
 /**
  * FooterNav
@@ -16,61 +17,65 @@ import FooterNavSection from './FooterNavSection1'
  * Mikäli halutaan lisätä linkkejä, niin lisää vain uusia to ja label osioita samaan tyyliin oikean titlen alle.
  *
  */
-const FooterNav = () => (
-  <nav className="footer-nav">
-    <ul>
-      <FooterNavSection
-        title="NAVIGAATIO"
-        links={[
-          { to: '/', label: 'ETUSIVU' },
-          { to: '/tapahtumat', label: 'TAPAHTUMAT' },
-          { to: '/yhteistyot', label: 'YHTEISTYÖT' },
-          { to: '/fuksit', label: 'FUKSIT' },
-          { to: '/hakijalle', label: 'HAKIJAT' },
-        ]}
-      />
-    </ul>
-    <ul>
-      <FooterNavSection
-        title="TOIMIHENKILÖT"
-        links={[
-          { to: '/hallitus', label: 'HALLITUS' },
-          { to: '/aktiivit', label: 'AKTIIVIT' },
-        ]}
-      />
-    </ul>
-    <ul>
-      <FooterNavSection
-        title="VIRALLISET DOKUMENTIT"
-        links={[
-          { to: '/saannot', label: 'SÄÄNNÖT' },
-          { to: '/ohjesaannot', label: 'OHJESÄÄNNÖT' },
-          { to: '/seloste', label: 'REKISTERISELOSTE' },
-          { to: '/dokumentit', label: 'DOKUMENTIT' },
-          { to: '/kunniagalleria', label: 'KUNNIAGALLERIA' },
-          { to: '/periaatteet', label: 'TOIMINNAN PERIAATTEET' },
-        ]}
-      />
-    </ul>
-    <ul>
-      <FooterNavSection
-        title="JÄSENILLE"
-        links={[
-          { to: '/jasenedut', label: 'JÄSENEDUT' },
-          { to: '/kerhotoiminta', label: 'KERHOTOIMINTA' },
-          { to: '/rekryt', label: 'REKRYT' },
-          { to: '/lomakkeet', label: 'LOMAKKEET' },
-          { to: '/kansainvalisyys', label: 'KANSAINVÄLISYYS' },
-          {
-            to: 'https://kattila.linkkijkl.fi/',
-            label: 'KATTILAN KAHVIKAMERA',
-          },
-          { to: '/salaisuudet', label: 'SALAISUUDET' },
-          { to: 'https://ritmi.algojkl.com/', label: 'LAULUKIRJA' },
-        ]}
-      />
-    </ul>
-  </nav>
-)
+const FooterNav = () => {
+  const { t } = useTranslation('common')
+
+  return (
+    <nav className="footer-nav">
+      <ul>
+        <FooterNavSection
+          title={t('nav.menu')}
+          links={[
+            { to: '/', label: t('nav.links.home') },
+            { to: '/tapahtumat', label: t('nav.events') },
+            { to: '/yhteistyot', label: t('nav.collaboration') },
+            { to: '/fuksit', label: t('nav.fuksit') },
+            { to: '/hakijalle', label: t('nav.applicants') },
+          ]}
+        />
+      </ul>
+      <ul>
+        <FooterNavSection
+          title={t('nav.sections.staff')}
+          links={[
+            { to: '/hallitus', label: t('nav.links.board') },
+            { to: '/aktiivit', label: t('nav.links.active') },
+          ]}
+        />
+      </ul>
+      <ul>
+        <FooterNavSection
+          title={t('nav.sections.officialDocuments')}
+          links={[
+            { to: '/saannot', label: t('nav.links.rules') },
+            { to: '/ohjesaannot', label: t('nav.links.guidelines') },
+            { to: '/seloste', label: t('nav.links.privacy') },
+            { to: '/dokumentit', label: t('nav.links.documents') },
+            { to: '/kunniagalleria', label: t('nav.links.honours') },
+            { to: '/periaatteet', label: t('nav.links.principles') },
+          ]}
+        />
+      </ul>
+      <ul>
+        <FooterNavSection
+          title={t('nav.sections.members')}
+          links={[
+            { to: '/jasenedut', label: t('nav.links.benefits') },
+            { to: '/kerhotoiminta', label: t('nav.links.clubs') },
+            { to: '/rekryt', label: t('nav.links.recruitment') },
+            { to: '/lomakkeet', label: t('nav.links.formsShort') },
+            { to: '/kansainvalisyys', label: t('nav.links.international') },
+            {
+              to: 'https://kattila.linkkijkl.fi/',
+              label: t('nav.links.kattila'),
+            },
+            { to: '/salaisuudet', label: t('nav.links.secrets') },
+            { to: 'https://ritmi.algojkl.com/', label: t('nav.links.songbook') },
+          ]}
+        />
+      </ul>
+    </nav>
+  )
+}
 
 export default FooterNav

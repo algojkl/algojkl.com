@@ -1,6 +1,7 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
-import { starterImages, tutkinnot } from '../PageData/hakijatData'
+import { starterImages } from '../PageData/hakijatData'
 
 /**
  * HakijatPage-komponentti
@@ -19,21 +20,20 @@ import { starterImages, tutkinnot } from '../PageData/hakijatData'
  * voidaan lisätä tarvittaessa hakijatData.js-tiedostoon.
  */
 const HakijatPage = () => {
+  const { t } = useTranslation('common')
+  const tutkinnot = t('pages.hakijat.tutkinnot', { returnObjects: true })
+
   return (
     <div>
       <StarterImage
         desktopImage={starterImages.desktop}
         mobileImage={starterImages.mobile}
-        alt="Hakijat"
+        alt={t('pages.hakijat.alt')}
       />
       <div className="hakijalle-container">
         <p>
-          Hienoa, että olet kiinnostunut opiskelusta Jyväskylän Yliopistossa!
-          Jyväskylän yliopisto tarjoaa kahta eri Diplomi-insinööri tutkintoa
-          IT-opiskelijoille:{' '}
-          <strong>
-            Tieto- ja ohjelmistotekniikka tai Teknologiajohtaminen.
-          </strong>
+          {t('pages.hakijat.intro')}{' '}
+          <strong>{t('pages.hakijat.degreeProgrammes')}</strong>
         </p>
 
         {tutkinnot.map((tutkinto, idx) => (
@@ -54,20 +54,16 @@ const HakijatPage = () => {
               ))}
             </ul>
             <p>
-              Lisätietoja {tutkinto.title.toLowerCase()} tutkinto-ohjelmasta
-              löydät <a href={tutkinto.link}>Jyväskylän yliopiston sivuilta.</a>
+              {t('pages.hakijat.moreInfoIntro', {
+                degree: tutkinto.title.toLowerCase(),
+              })}{' '}
+              <a href={tutkinto.link}>{t('pages.hakijat.moreInfoLink')}</a>
             </p>
           </div>
         ))}
 
-        <h3>Mikä ihmeen Algo ry?</h3>
-        <p>
-          Algo ry on Jyväskylän yliopiston tieto- ja ohjelmistotekniikan sekä
-          teknologiajohtamisen opiskelijoiden kilta. Killan tehtävänä on valvoa
-          jäsentensä etuja, järjestää monipuolisia tapahtumia sekä tehdä
-          yhteistyötä alan yritysten kanssa. Ennen kaikkea Algo on
-          jäsenistölleen yhteisö opintojen ajalle.
-        </p>
+        <h3>{t('pages.hakijat.aboutTitle')}</h3>
+        <p>{t('pages.hakijat.aboutDescription')}</p>
       </div>
     </div>
   )
