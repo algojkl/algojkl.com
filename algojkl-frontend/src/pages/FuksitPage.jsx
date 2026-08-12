@@ -5,8 +5,7 @@ import Panu from '../components/simple'
 import TutorList from '../components/Tutorlist'
 import Typewriter from '../components/Typewriter'
 import { useContentfulData } from '../services/useContentfulData'
-
-import { starterImages } from '../PageData/fuksitData'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * Fuksit-komponentti
@@ -28,6 +27,7 @@ import { starterImages } from '../PageData/fuksitData'
 
 const Fuksit = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('fuksit')
   const { data, isLoading, error } = useContentfulData()
   const beforeStudies = t('pages.fuksit.beforeStudies', { returnObjects: true })
   const studyStart = t('pages.fuksit.studyStart', { returnObjects: true })

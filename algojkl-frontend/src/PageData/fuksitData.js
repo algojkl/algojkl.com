@@ -1,8 +1,3 @@
-import starterDesktop from '../images/Page_starters/4.jpg'
-import starterMobile from '../images/mobiili/6.png'
-
-export const starterImages = { desktop: starterDesktop, mobile: starterMobile }
-
 export const ennenOpiskelua = [
   {
     title: 'Ota opiskelupaikka vastaan',

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import starterDesktop from '../images/Page_starters/21.jpg'
-import starterMobile from '../images/mobiili/21.png'
 import StarterImage from '../common/StarterImage'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * SalaisuudetPage-komponentti
@@ -13,6 +12,7 @@ import StarterImage from '../common/StarterImage'
  */
 const SalaisuudetPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('salaisuudet')
   const [password, setPassword] = useState('')
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [error, setError] = useState('')
@@ -47,8 +47,8 @@ const SalaisuudetPage = () => {
     return (
       <div>
         <StarterImage
-          desktopImage={starterDesktop}
-          mobileImage={starterMobile}
+          desktopImage={starterImages.desktop}
+          mobileImage={starterImages.mobile}
           alt="Seloste"
         />
         <div className="login-container">
@@ -73,8 +73,8 @@ const SalaisuudetPage = () => {
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt="Seloste"
       />
       <div className="salaisuudet-page-content">

@@ -2,8 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
 import StarterImage from '../common/StarterImage'
-import starterDesktop from '../images/Page_starters/vujut.jpg'
-import starterMobile from '../images/mobiili/vujut_m.jpg'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 /**
  *  Vujut-sivu
  * Tämä komponentti renderöi Vujut-sivun sisällön.
@@ -15,6 +14,7 @@ import starterMobile from '../images/mobiili/vujut_m.jpg'
 
 const Vujut = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('vuju')
   const vujuContent = {
     title: t('pages.vuju.title'),
     intro: t('pages.vuju.intro'),
@@ -24,8 +24,8 @@ const Vujut = () => {
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.vuju.alt')}
       />
       <div className="vuju-container-start">

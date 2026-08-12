@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
-import { starterImages } from '../PageData/hakijatData'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * HakijatPage-komponentti
@@ -21,6 +21,7 @@ import { starterImages } from '../PageData/hakijatData'
  */
 const HakijatPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('hakijat')
   const tutkinnot = t('pages.hakijat.tutkinnot', { returnObjects: true })
 
   return (

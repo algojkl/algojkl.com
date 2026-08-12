@@ -4,7 +4,7 @@
     "menu": "GUILD",
     "events": "EVENTS",
     "collaboration": "COLLABORATION",
-    "fuksit": "FUKSIT",
+    "fuksit": "FRESHMEN",
     "applicants": "APPLICANTS",
     "sections": {
       "staff": "STAFF MEMBERS",
@@ -24,7 +24,7 @@
       "clubs": "CLUBS",
       "recruitment": "RECRUITMENT",
       "forms": "CONTACT FORMS",
-      "international": "INTERNATIONAL",
+      "international": "INTERNATIONALITY",
       "kattila": "KATTILA COFFEE CAMERA",
       "secrets": "SECRETS",
       "songbook": "SONGBOOK",
@@ -37,7 +37,7 @@
       "en": "EN",
       "toggle": "Choose language"
     },
-    "joinButton": "JOIN AS A MEMBER"
+    "joinButton": "BECOME A MEMBER"
   },
   "pages": {
     "kansainvalisyys": {
@@ -893,6 +893,30 @@
         "linkLabel": "Course feedback form",
         "linkPrefix": "Link to the form"
       }
+    }
+  },
+  "media": {
+    "pageStarters": {
+      "aktiivit": { "desktop": "8.png", "mobile": "9.png" },
+      "dokumentit": { "desktop": "12.png", "mobile": "13.png" },
+      "fuksit": { "desktop": "5.png", "mobile": "6.png" },
+      "hakijat": { "desktop": "6.png", "mobile": "7.png" },
+      "hallihaku": { "desktop": "16.png", "mobile": "18.png" },
+      "hallitus": { "desktop": "7.png", "mobile": "8.png" },
+      "jasenedut": { "desktop": "15.png", "mobile": "16.png" },
+      "kansainvalisyys": { "desktop": "19.png", "mobile": "20.png" },
+      "kerhotoiminta": { "desktop": "16.png", "mobile": "17.png" },
+      "kunniagalleria": { "desktop": "13.png", "mobile": "14.png" },
+      "ohjesaannot": { "desktop": "10.png", "mobile": "11.png" },
+      "periaatteet": { "desktop": "14.png", "mobile": "15.png" },
+      "rekisteriseloste": { "desktop": "11.png", "mobile": "12.png" },
+      "rekryt": { "desktop": "17.png", "mobile": "18.png" },
+      "saannot": { "desktop": "9.png", "mobile": "10.png" },
+      "salaisuudet": { "desktop": "22.png", "mobile": "21.png" },
+      "tapahtumat": { "desktop": "4.png", "mobile": "4.png" },
+      "vuju": { "desktop": "3.png", "mobile": "4.png" },
+      "yhteistyo": { "desktop": "21.png", "mobile": "5.png" },
+      "yhteydenotto": { "desktop": "18.png", "mobile": "19.png" }
     }
   },
   "footer": {

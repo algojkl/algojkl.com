@@ -1,8 +1,7 @@
 import React from 'react'
 import StarterImage from '../common/StarterImage'
-import starterDesktop from '../images/Page_starters/11.jpg'
-import starterMobile from '../images/mobiili/13.png'
 import PytKirja from '../components/pytKirjaFetch'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * Documents-komponentti
@@ -11,11 +10,13 @@ import PytKirja from '../components/pytKirjaFetch'
  * dokumenttien hakemisesta ja esittämisestä.
  */
 const Documents = () => {
+  const starterImages = usePageStarterImages('dokumentit')
+
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt="Dokumentit"
       />
       <div>
