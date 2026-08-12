@@ -1,8 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
-import starterDesktop from '../images/Page_starters/10.jpg'
-import starterMobile from '../images/mobiili/12.png'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * Yksittäinen osio rekisteriselosteesta
@@ -25,13 +24,14 @@ const Section = ({ title, content }) => (
  */
 const RekisteriselostePage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('rekisteriseloste')
   const sections = t('pages.rekisteriseloste.sections', { returnObjects: true })
 
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.rekisteriseloste.title')}
       />
       <div className="seloste-container">

@@ -1,9 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import starterDesktop from '../images/Page_starters/16.jpg'
-import starterMobile from '../images/mobiili/18.png'
 import { useContentfulData } from '../services/useContentfulData'
 import StarterImage from '../common/StarterImage'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * RekrytPage-komponentti
@@ -14,6 +13,7 @@ import StarterImage from '../common/StarterImage'
  */
 const RekrytPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('rekryt')
   const { data, isLoading, error } = useContentfulData()
 
   if (isLoading) return <p>{t('pages.rekryt.loading')}</p>
@@ -22,8 +22,8 @@ const RekrytPage = () => {
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.rekryt.alt')}
       />
       <div className="rekryt-container">

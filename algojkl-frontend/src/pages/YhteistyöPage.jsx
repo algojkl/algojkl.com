@@ -2,13 +2,12 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import CollabCards from '../components/collabLogos'
 
-import starterDesktop from '../images/Page_starters/2.jpg'
-import starterMobile from '../images/mobiili/5.png'
 import collab_icon from '../images/collab_icon.png'
 import event_icon from '../images/event_icon.png'
 import ulkosuhteet_icon from '../images/people_icon.png'
 import lamppu_icon from '../images/lamppu.png'
 import StarterImage from '../common/StarterImage'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  *  Collab-sivu
@@ -20,12 +19,13 @@ import StarterImage from '../common/StarterImage'
  */
 const Collab = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('yhteistyo')
 
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.yhteistyo.alt')}
       />
       <div className="collab-container">

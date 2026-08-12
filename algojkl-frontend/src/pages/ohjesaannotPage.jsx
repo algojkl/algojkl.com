@@ -1,10 +1,9 @@
 import React from 'react'
 import StarterImage from '../common/StarterImage'
-import starterDesktop from '../images/Page_starters/9.jpg'
-import starterMobile from '../images/mobiili/11.png'
 import JuhlanauhaMerkit from '../components/ohjesäännöt/JuhlanauhaMerkit'
 import Haalarietiketti from '../components/ohjesäännöt/Haalarietiketti'
 import Teekkari from '../components/ohjesäännöt/Teekkari'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * Merkit-sivu
@@ -18,11 +17,13 @@ import Teekkari from '../components/ohjesäännöt/Teekkari'
  *
  */
 const Merkit = () => {
+  const starterImages = usePageStarterImages('ohjesaannot')
+
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt="Kerhotoiminta"
       />
       <div className="Lakki-container">

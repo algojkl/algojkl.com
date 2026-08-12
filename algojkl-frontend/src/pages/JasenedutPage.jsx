@@ -1,8 +1,7 @@
 import React from 'react'
-import starterDesktop from '../images/Page_starters/14.jpg'
-import starterMobile from '../images/mobiili/16.png'
 import JasenEdut from '../components/JasenEdutContent/JasenEdut'
 import StarterImage from '../common/StarterImage'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * JasenEdutPage-komponentti
@@ -12,11 +11,13 @@ import StarterImage from '../common/StarterImage'
  */
 
 const JasenEdutPage = () => {
+  const starterImages = usePageStarterImages('jasenedut')
+
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt="Jedut"
       />
       <div>

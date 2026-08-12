@@ -1,8 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import starterDesktop from '../images/Page_starters/3.jpg'
-import starterMobile from '../images/mobiili/4.png'
 import StarterImage from '../common/StarterImage'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 const Calendar_key = import.meta.env.VITE_CALENDAR_API
 
@@ -14,12 +13,13 @@ const Calendar_key = import.meta.env.VITE_CALENDAR_API
  */
 const Events = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('tapahtumat')
 
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.tapahtumat.alt')}
       />
       <div className="event-container">

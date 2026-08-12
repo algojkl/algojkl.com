@@ -1,9 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
-import starterDesktop from '../images/Page_starters/8.jpg'
-import starterMobile from '../images/mobiili/10.png'
 import Section from '../components/Saannot/Section'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * SäännötPage-komponentti
@@ -11,13 +10,14 @@ import Section from '../components/Saannot/Section'
  */
 const RulePage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('saannot')
   const saannotSections = t('pages.saannot.sections', { returnObjects: true })
 
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.saannot.alt')}
       />
       <div className="saannot-container">

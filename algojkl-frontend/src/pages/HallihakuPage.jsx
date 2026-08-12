@@ -1,9 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import starterDesktop from '../images/Page_starters/16.jpg'
-import starterMobile from '../images/mobiili/18.png'
 import StarterImage from '../common/StarterImage'
 import HallitusHaku from '../components/Hallihaku/HallitusHaku.jsx'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * HallihakuPage-komponentti
@@ -14,12 +13,13 @@ import HallitusHaku from '../components/Hallihaku/HallitusHaku.jsx'
  */
 const HallihakuPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('hallihaku')
 
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.hallihaku.alt')}
       />
       <div className="hallihaku-container-start">
