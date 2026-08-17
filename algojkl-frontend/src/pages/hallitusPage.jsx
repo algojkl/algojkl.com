@@ -1,9 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-
-import starterDesktop from '../images/Page_starters/6.jpg'
-import starterMobile from '../images/mobiili/8.png'
 import StarterImage from '../common/StarterImage'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 import { useContentfulData } from '../services/useContentfulData'
 
@@ -27,6 +25,7 @@ import { hallitusOrder } from '../utils/hallitusOrder'
 
 const HallitusPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('hallitus')
   const { data, isLoading, error } = useContentfulData()
   if (isLoading) return <p>{t('pages.hallitus.loading')}</p>
   if (error) return <p>{t('pages.hallitus.error')}</p>
@@ -42,8 +41,8 @@ const HallitusPage = () => {
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.hallitus.alt')}
       />
       <div className="hallitus">

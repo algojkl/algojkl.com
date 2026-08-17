@@ -1,8 +1,3 @@
-import starterDesktop from '../images/Page_starters/5.jpg'
-import starterMobile from '../images/mobiili/7.png'
-
-export const starterImages = { desktop: starterDesktop, mobile: starterMobile }
-
 export const tutkinnot = [
   {
     title: 'Tieto- ja ohjelmistotekniikka',

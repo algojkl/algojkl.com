@@ -12,9 +12,7 @@ import {
   kunniajasenet,
   perustajat2022,
 } from '../PageData/kunniaData'
-
-import starterDesktop from '../images/Page_starters/12.jpg'
-import starterMobile from '../images/mobiili/14.png'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * KunniagalleriaPage
@@ -24,12 +22,13 @@ import starterMobile from '../images/mobiili/14.png'
  */
 const KunniagalleriaPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('kunniagalleria')
 
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.kunniagalleria.alt')}
       />
 

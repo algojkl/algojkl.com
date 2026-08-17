@@ -1,8 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import starterDesktop from '../images/Page_starters/15.jpg'
-import starterMobile from '../images/mobiili/17.png'
 import StarterImage from '../common/StarterImage'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 import KerhotSection from '../components/Kerhotoiminta/KerhotSection'
 import NewClubSection from '../components/Kerhotoiminta/NewClubSection'
@@ -20,6 +19,7 @@ import SupportSection from '../components/Kerhotoiminta/SupportSection'
  */
 const KerhotoimintaPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('kerhotoiminta')
   const kerhot = Object.values(
     t('pages.kerhotoiminta.kerhot', { returnObjects: true }),
   )
@@ -29,8 +29,8 @@ const KerhotoimintaPage = () => {
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.kerhotoiminta.title')}
       />
       <div className="kerhotoiminta-container">

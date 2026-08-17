@@ -6,8 +6,7 @@ import Vaihtovinkit from '../components/kansainvalisyys/Vaihtovinkit'
 import VaihtoOhjelmat from '../components/kansainvalisyys/VaihtoOhjelmat'
 import Sivustot from '../components/kansainvalisyys/Sivustot'
 import Kielitodistukset from '../components/kansainvalisyys/Kielitodistukset'
-import starterDesktop from '../images/Page_starters/18.jpg'
-import starterMobile from '../images/mobiili/20.png'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * KansainvalisyysPage-komponentti
@@ -23,12 +22,13 @@ import starterMobile from '../images/mobiili/20.png'
 
 const KansainvalisyysPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('kansainvalisyys')
 
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.kansainvalisyys.alt')}
       />
       <div className="kansainvalisyys-container">

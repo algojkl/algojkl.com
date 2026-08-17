@@ -1,9 +1,3 @@
-// vujuData.js
-export const starterImages = {
-  desktop: '../images/Page_starters/vujut.jpg',
-  mobile: '../images/mobiili/vujut_m.jpg',
-}
-
 export const vujuContent = {
   title: 'Vuosijuhlaetiketti',
   intro: `

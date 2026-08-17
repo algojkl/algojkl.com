@@ -893,6 +893,30 @@
       }
     }
   },
+  "media": {
+    "pageStarters": {
+      "aktiivit": { "desktop": "7.jpg", "mobile": "9.png" },
+      "dokumentit": { "desktop": "11.jpg", "mobile": "13.png" },
+      "fuksit": { "desktop": "4.jpg", "mobile": "6.png" },
+      "hakijat": { "desktop": "5.jpg", "mobile": "7.png" },
+      "hallihaku": { "desktop": "16.jpg", "mobile": "18.png" },
+      "hallitus": { "desktop": "6.jpg", "mobile": "8.png" },
+      "jasenedut": { "desktop": "14.jpg", "mobile": "16.png" },
+      "kansainvalisyys": { "desktop": "18.jpg", "mobile": "20.png" },
+      "kerhotoiminta": { "desktop": "15.jpg", "mobile": "17.png" },
+      "kunniagalleria": { "desktop": "12.jpg", "mobile": "14.png" },
+      "ohjesaannot": { "desktop": "9.jpg", "mobile": "11.png" },
+      "periaatteet": { "desktop": "13.jpg", "mobile": "15.png" },
+      "rekisteriseloste": { "desktop": "10.jpg", "mobile": "12.png" },
+      "rekryt": { "desktop": "16.jpg", "mobile": "18.png" },
+      "saannot": { "desktop": "8.jpg", "mobile": "10.png" },
+      "salaisuudet": { "desktop": "21.jpg", "mobile": "21.png" },
+      "tapahtumat": { "desktop": "3.jpg", "mobile": "4.png" },
+      "vuju": { "desktop": "vujut.jpg", "mobile": "vujut_m.jpg" },
+      "yhteistyo": { "desktop": "2.jpg", "mobile": "5.png" },
+      "yhteydenotto": { "desktop": "17.jpg", "mobile": "19.png" }
+    }
+  },
   "footer": {
     "sections": {
       "navigation": "NAVIGAATIO",

@@ -1,7 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import StarterImage from '../common/StarterImage'
-import { starterImages, aktiivimerkit } from '../PageData/aktiivitData'
+import { aktiivimerkit } from '../PageData/aktiivitData'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * AktiiviPage-komponentti
@@ -27,6 +28,7 @@ import { starterImages, aktiivimerkit } from '../PageData/aktiivitData'
  */
 const AktiiviPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('aktiivit')
   const teams = t('pages.aktiivit.teams', { returnObjects: true })
   const otherRoles = t('pages.aktiivit.other', { returnObjects: true })
 

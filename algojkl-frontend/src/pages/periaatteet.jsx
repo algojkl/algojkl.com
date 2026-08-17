@@ -1,10 +1,9 @@
 import React from 'react'
 import StarterImage from '../common/StarterImage'
-import starterDesktop from '../images/Page_starters/13.jpg'
-import starterMobile from '../images/mobiili/15.png'
 import ToimintaInfo from '../components/periaatteet/ToimintaInfo'
 import TurvallisemmanTilanPeriaatteet from '../components/periaatteet/TTPeriaatteet'
 import Yhdenvertaisuus from '../components/periaatteet/Yhdenvertaisuus'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  * PeriaatteetPage-komponentti
@@ -17,11 +16,13 @@ import Yhdenvertaisuus from '../components/periaatteet/Yhdenvertaisuus'
  */
 
 const PeriaatteetPage = () => {
+  const starterImages = usePageStarterImages('periaatteet')
+
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt="Periaatteet"
       />
       <div className="periaate-container">

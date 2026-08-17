@@ -1,12 +1,11 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import starterDesktop from '../images/Page_starters/17.jpg'
-import starterMobile from '../images/mobiili/19.png'
 import StarterImage from '../common/StarterImage'
 import YhteydenottoSection from '../components/yhteydenotto/YhteydenottoSection'
 import Kurssipalaute from '../components/yhteydenotto/Kurssipalaute'
 import SopoKopoLomake from '../components/yhteydenotto/SopoKopo'
 import YleinenPalaute from '../components/yhteydenotto/YleinenPalaute'
+import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
  *  YhteydenottoPage-komponentti
@@ -19,12 +18,13 @@ import YleinenPalaute from '../components/yhteydenotto/YleinenPalaute'
  */
 const YhteydenottoPage = () => {
   const { t } = useTranslation('common')
+  const starterImages = usePageStarterImages('yhteydenotto')
 
   return (
     <div>
       <StarterImage
-        desktopImage={starterDesktop}
-        mobileImage={starterMobile}
+        desktopImage={starterImages.desktop}
+        mobileImage={starterImages.mobile}
         alt={t('pages.yhteydenotto.alt')}
       />
       <div className="yhteydenotto-container">
