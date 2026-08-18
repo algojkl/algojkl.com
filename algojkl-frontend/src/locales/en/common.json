@@ -154,7 +154,7 @@
         },
         {
           "title": "Register as present and pay the student union membership fee",
-          "description": "Registration for the academic year as present takes place in the OILI registration service. At the same time, the student union membership fee is paid.",
+          "description": "Registration for the academic year as present takes place in the OILI registration service. At the same time the student union membership fee is paid.",
           "link": {
             "href": "https://oili.csc.fi/",
             "text": "OILI registration service"
@@ -162,7 +162,7 @@
         },
         {
           "title": "Student health care fee",
-          "description": "Remember to pay the student health care fee. This fee is mandatory for every student, regardless of whether they use health care services or not.",
+          "description": "Remember to pay the student health care fee. This fee is mandatory for every student regardless of whether they use health care services or not.",
           "link": {
             "href": "https://www.kela.fi/korkeakouluopiskelijan-terveydenhoitomaksu",
             "text": "More information"
@@ -195,7 +195,7 @@
         }
       ],
       "studyStart": [
-        "The orientation week for the information and software engineering and technology management programmes begins on 24 August 2026 at the University of Jyväskylä's Faculty of Information Technology in Agora."
+        "The orientation week for the information and software engineering and technology management programmes begins on 24 August 2026 at the University of Jyväskylä's Faculty of Information Technology, Agora."
       ],
       "guildActivity": [
         "Algo ry is the guild for students of information and software engineering and technology management at the University of Jyväskylä. The guild's role is to protect the interests of its members, organise diverse events and cooperate with companies in the field. Above all, Algo is a community for its members throughout their studies."
@@ -326,7 +326,7 @@
           "content": [
             {
               "type": "paragraph",
-              "text": "The association's name is Algo ry and its registered office is Jyväskylä."
+              "text": "The association's name is Algo ry and its registered office is in Jyväskylä."
             }
           ]
         },
@@ -387,7 +387,7 @@
           "content": [
             {
               "type": "paragraph",
-              "text": "A natural person who is studying basic or postgraduate studies in information and software engineering or technology management at the University of Jyväskylä, or a person otherwise approved by the board of the association as a member, can be accepted as a regular member. A private person or a competent legal entity that wishes to support the purpose and activities of the association can be accepted as a supporting member. Regular members and supporting members are accepted on application by the association's board. The members are kept in a member register. A member is obliged to notify the board of any changes to their contact information. The association may, upon the proposal of the board, invite a person who has supported the association's activities in an outstanding manner to become an honorary member, provided that the person consents. Honorary membership is lifelong. Acquired membership rights remain."
+              "text": "A person who is studying basic or postgraduate studies in information and software engineering or technology management at the University of Jyväskylä, or a person otherwise approved by the board of the association as a member, can be accepted as a regular member. A private person or a competent legal entity that wishes to support the purpose and activities of the association can be accepted as a supporting member. Regular members and supporting members are accepted on application by the association's board. The members are kept in a member register. A member is obliged to notify the board of any changes to their contact information. The association may, upon the proposal of the board, invite a person who has supported the association's activities in an outstanding manner to become an honorary member, provided that the person consents. Honorary membership is lifelong. Acquired membership rights remain."
             },
             {
               "type": "paragraph",
@@ -417,7 +417,7 @@
             },
             {
               "type": "paragraph",
-              "text": "The board's term of office is the calendar year. The board meets at the invitation of the chairperson or, if they are prevented from attending, the vice chairperson, whenever they consider there is reason to do so or when at least half of the board members demand it. The board is quorate when at least half of its members, including the chairperson or vice chairperson, are present. Votes are resolved by an absolute majority. If the votes are tied, the chairperson of the meeting decides, except in elections where lots are drawn."
+              "text": "The board's term of office is one calendar year. The board meets at the invitation of the chairperson or, if they are prevented from attending, the vice chairperson, whenever they consider there is reason to do so or when at least half of the board members demand it. The board is quorate when at least half of its members, including the chairperson or vice chairperson, are present. Votes are resolved by an absolute majority. If the votes are tied, the chairperson of the meeting decides, except in elections where lots are drawn."
             },
             {
               "type": "paragraph",
@@ -434,7 +434,7 @@
           "content": [
             {
               "type": "paragraph",
-              "text": "The association's name is signed by the chairperson and vice chairperson of the board jointly, or by the corporate relations officer together with the chairperson or vice chairperson."
+              "text": "The association's name is signed by the chairperson and vice chairperson of the board jointly, or by the corporate relations management together with the chairperson or vice chairperson."
             }
           ]
         },
@@ -443,7 +443,7 @@
           "content": [
             {
               "type": "paragraph",
-              "text": "The association's financial year is the calendar year. The annual accounts, together with the necessary documents and the board's annual report, must be submitted to the auditor no later than three weeks before the spring meeting. The auditor must provide their written statement to the board no later than one week before the spring meeting."
+              "text": "The association's financial year is one calendar year. The annual accounts, together with the necessary documents and the board's annual report, must be submitted to the auditor no later than three weeks before the spring meeting. The auditor must provide their written statement to the board no later than one week before the spring meeting."
             }
           ]
         },
@@ -516,7 +516,7 @@
     "vuju": {
       "title": "Annual celebration etiquette",
       "alt": "Annual celebrations",
-      "intro": "Algo officially turns a year older on 4 July, but its annual celebration is traditionally celebrated in the autumn. The annual celebration is our guild's most valuable academic event, and it is attended accordingly. The celebrations are open to both Algo members, invited guests and avecs. This etiquette introduces the guests to the practices of the annual celebrations so that there is no need to worry about practical matters during the celebration itself.",
+      "intro": "Algo officially turns a year older on 4th of July, but its annual celebration is traditionally celebrated in the autumn. The annual celebration is our guild's most valuable academic event, and it is attended accordingly. The celebrations are open to both Algo members, invited guests and avecs. This etiquette introduces the guests to the practices of the annual celebrations so that there is no need to worry about practical matters during the celebration itself.",
       "sections": [
         {
           "heading": "Dress code",
@@ -528,7 +528,7 @@
         },
         {
           "heading": "The course of the celebration",
-          "text": "The celebration traditionally begins with a cocktail reception, i.e. a cocktail party. Only invited guests are invited to this event, meaning guests who have received a separate invitation to the celebration. Such guests include, for example, honorary members of the guild, teachers and representatives of other guilds or student organizations. At the cocktail reception, invited guests take turns giving congratulatory speeches to Algo on its birthday and presenting gifts. Usually sparkling wine and small snacks are served. The event is usually a standing event and lasts about two hours.\n\nFrom the cocktail reception, one moves directly to the main celebration. Everyone who has bought a ticket to the annual celebration is invited to the main celebration. The celebration begins when the flag party brings the Finnish flag into the celebration hall. At this point, the guests rise and wait in silence for the flag to be placed, after which the song Finlandia is sung together. At this stage, the ceremony masters introduce themselves and give general instructions. After that, Helan Går is sung, and the opening shot is enjoyed. After the songs, welcome speeches are heard and the celebration can begin.\n\nAfter the opening speeches, socializing and singing begin. Songs and speech requests can be made by clinking your own glass. Usually the songs are requested from the songbook distributed at your seating place. For the main course, a meal break is declared, during which songs may still be requested, but eating during songs is allowed as an exception. However, it is not appropriate to sing with food in your mouth. Before and after the meal, there is all kinds of programme: speeches, awards, performances and singing. In the latter part of the celebration, dessert is eaten and coffee is usually enjoyed with an avec. In this context, avec can mean something like cognac or liqueur. During dessert, the Jallu shot is raised and the song Jallutähden alla is sung. The celebration ends with the chairperson's words and the carrying out of the Finnish flag.\n\nAt the cocktail reception and the main celebration, there is usually a photographer who takes pictures in front of the photo wall as well as during the celebration itself. The pictures are delivered to the guests afterwards in the way chosen by the event organizers.\n\nWhen the main celebration ends, the fun does not diminish; rather, the celebration continues at the official afterparties. At the annual celebration, there may be drink tickets available and the cloakroom is usually paid in advance, which makes the move to the after-parties smoother. At midnight, the celebration crowd gathers in a dimmed room to sing the teekkari hymn."
+          "text": "The celebration traditionally begins with a cocktail reception, i.e. a cocktail party. Only invited guests are invited to this event, meaning guests who have received a separate invitation to the celebration. Such guests include, for example, honorary members of the guild, teachers and representatives of other guilds or student organizations. At the cocktail reception, invited guests take turns giving congratulatory speeches to Algo on its birthday and presenting gifts. Usually sparkling wine and small snacks are served. The event is usually a standing event and lasts about two hours.\n\nFrom the cocktail reception, one moves directly to the main celebration. Everyone who has bought a ticket to the annual celebration is invited to the main celebration. The celebration begins when the flag party brings the Finnish flag into the celebration hall. At this point, the guests rise and wait in silence for the flag to be placed, after which the song Finlandia is sung together. At this stage, the ceremony masters introduce themselves and give general instructions. After that, Helan Går is sung, and the opening shot is enjoyed. After the songs, welcome speeches are heard and the celebration can begin.\n\nAfter the opening speeches, socializing and singing begin. Songs and speech requests can be made by clinking your own glass. Usually the songs are requested from the songbook distributed at your seating place. For the main course, a meal break is declared, during which songs may still be requested, but eating during songs is allowed as an exception. However, it is not appropriate to sing with food in your mouth. Before and after the meal, there is all kinds of programme: speeches, awards, performances and singing. In the latter part of the celebration, dessert is eaten and coffee is usually enjoyed with an avec. In this context, avec can mean something like cognac or liqueur. During dessert, a Jallu shot is raised and the song Jallutähden alla is sung. The celebration ends with the chairperson's words and the carrying out of the Finnish flag.\n\nAt the cocktail reception and the main celebration, there is usually a photographer who takes pictures in front of the photo wall as well as during the celebration itself. The pictures are delivered to the guests afterwards in the way chosen by the event organizers.\n\nWhen the main celebration ends, the fun does not diminish; rather, the celebration continues at the official afterparties. At the annual celebration, there may be drink tickets available and the cloakroom is usually paid in advance, which makes the move to the after-parties smoother. At midnight, the celebration crowd gathers in a dimmed room to sing the teekkari hymn."
         },
         {
           "heading": "Academic silliaamiainen",
@@ -539,7 +539,7 @@
     "kunniagalleria": {
       "alt": "Hall of fame",
       "honoraryTitle": "Algo ry honorary members",
-      "honoraryDescription": "An honorary member is a person who has supported the guild's activities in an especially meritorious way. Honorary membership is Algo's highest honour.",
+      "honoraryDescription": "An honorary member is a person who has supported the guild's activities in an especially praiseworthy way. Honorary membership is Algo's highest honour.",
       "yearlyTitle": "Winners of the Year Algolainen award",
       "yearlyDescription": "Year Algolainen is chosen by vote among the members and is a person who has shown significant interest in the association's activities and promoted cohesion among members.",
       "previousBoards": "You can see previous boards",
@@ -584,7 +584,7 @@
             { "title": "Maintains the corporate collaboration team" }
           ],
           "responsibles": [
-            { "nimi": "Corporate relations officer", "href": "/hallitus" }
+            { "nimi": "Corporate relations management", "href": "/hallitus" }
           ]
         },
         {
@@ -600,7 +600,7 @@
             { "title": "Maintains the social media and communication team" }
           ],
           "responsibles": [
-            { "nimi": "Communications officer", "href": "/hallitus" }
+            { "nimi": "Communications management", "href": "/hallitus" }
           ]
         }
       ],
@@ -697,13 +697,13 @@
         "paragraphs": [
           "Overalls are recommended to be worn up, fully worn. They are used at all student events unless otherwise stated in the dress code. When overalls are worn at the waist, the back part is folded so that the association logo is visible. Overalls can and should be customized to one's liking.",
           "Overalls patches should be sewn by hand. They should not be glued or sewn with a sewing machine. In addition, patches should not be sewn over sponsors' logos when space is available.",
-          "Overalls should not be washed in a washing machine or in any similar way. Overalls are washed by being inside you, for example in a lake or shower."
+          "Overalls should not be washed in a washing machine or in any similar way. Overalls are washed while wearing them, for example in a lake or shower."
         ]
       },
       "teekkari": {
         "title": "Teekkari cap",
         "imageAlt": "Eight-sided Jyväskylä teekkari cap",
-        "description": "The Jyväskylä teekkari cap is eight-sided, following the shape of the Kompass building on Jyväskylä's walking street. The inside of the cap is blue-orange matching the colors of the University of Jyväskylä. The rosette of the cap combines Jyväskylä and technology, as the rosette features the JYY torch surrounded by the technology ring. First-year engineering students, i.e. freshmen, become teekkaris in spring when, after the baptism, they may wear the cap. The wearing period begins with the spring baptism and ends on the last day of September at the cap-lowering event.",
+        "description": "The Jyväskylä teekkari cap is eight-sided, following the shape of the Kompass building on Jyväskylä's walking street. The inside of the cap is blue-orange matching the colors of the University of Jyväskylä. The rosette of the cap combines Jyväskylä and technology, as the rosette features the JYY torch surrounded by the technology ring. First-year engineering students, i.e. freshmen, become teekkaris in the spring when after the teekkari dipping they may wear the cap. The wearing period begins with the spring dipping and ends on the last day of September at the cap-lowering event.",
         "linkText": "Jyväskylä teekkari association",
         "linkText2": "cap use permit"
       }
@@ -738,7 +738,7 @@
         "We intervene in inappropriate and disruptive behaviour."
       ],
       "equalityTitle": "Equality:",
-      "equality": "Algo strives to create the safest, most reliable, and most equal environment possible for every member. The Universities Act states that universities must provide a safe study environment where everyone has the right to study without experiencing harassment, bullying, or discrimination (Universities Act 41§). Algo ry does not tolerate bullying, discrimination, harassment, or any other improper behaviour at its events in any form. We want to promote a safe and pleasant higher education community for everyone. It is not always possible to avoid bullying or harassment. Therefore, it is absolutely essential to react to bullying situations. At the University of Jyväskylä, you can seek help from Hyvikset, for example, who provide discussion support and guide you forward if needed. Help is also available from JYY's harassment contact persons or from the social policy contact. All information shared is confidential and will not be discussed with anyone without the individual's permission."
+      "equality": "Algo strives to create the safest, most reliable, and most equal environment possible for every member. The Universities Act states that universities must provide a safe study environment where everyone has the right to study without experiencing harassment, bullying, or discrimination (Universities Act 41§). Algo ry does not tolerate bullying, discrimination, harassment, or any other improper behaviour at its events in any form. We want to promote a safe and pleasant higher education community for everyone. It is not always possible to avoid bullying or harassment. Therefore, it is absolutely essential to react to bullying situations. At the University of Jyväskylä, you can seek help from Hyvikset, who for example, provide discussion support and guide you forward if needed. Help is also available from JYY's harassment contact persons or from the social policy contact. All information shared is confidential and will not be discussed with anyone without the individual's permission."
     },
     "pestit": {
       "title": "Short descriptions of board roles",
@@ -763,31 +763,31 @@
           "description": "pays invoices, takes care of accounting and is responsible for the association's bank account."
         },
         {
-          "title": "Corporate relations officer",
+          "title": "Corporate relations management",
           "description": "establishes and maintains cooperation agreements with companies and is responsible for the business team."
         },
         {
-          "title": "Events officer",
+          "title": "Events organiser",
           "description": "plans and organizes events and is responsible for the event team."
         },
         {
-          "title": "Project officers",
+          "title": "Project management",
           "description": "take care of project-based events related to teekkari culture such as annual celebrations, cap-lowering events, and baptism celebrations."
         },
         {
-          "title": "Education policy officer",
+          "title": "Head of educational politics",
           "description": "(kopo) ensures students' rights are respected and maintains relationships with the university."
         },
         {
-          "title": "Social policy officer",
+          "title": "Head of social affairs",
           "description": "(sopo) looks after students' rights, well-being and equality in the association."
         },
         {
-          "title": "Club officer",
+          "title": "Club management",
           "description": "is responsible for communication between clubs and the board."
         },
         {
-          "title": "Communications officer",
+          "title": "Communications management",
           "description": "maintains the association's social media channels and informs members about events and other important matters."
         }
       ]
