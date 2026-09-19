@@ -366,13 +366,37 @@ h3 {
   text-decoration: none;
 }
 
-.liityjaseneksiAnim {
-  width: 15em;
-  right: 100px;
-  display: inline-block;
-  height: 5em;
-  flex: 2;
+.join-button-cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14rem;
+  min-height: 3.2rem;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #000000;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #fbbebd 0%, #f6c3c1 100%);
+  color: #322c2b;
+  font-size: 0.8rem;
+  font-weight: 1000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 18px rgba(50, 44, 43, 0.12);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.join-button-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(50, 44, 43, 0.18);
+}
+
+.join-button-cta:focus-visible {
+  outline: 2px solid #322c2b;
+  outline-offset: 3px;
+}
+
 .nav-diamond-collabs {
   text-align: center;
 }
