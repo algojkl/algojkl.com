@@ -1,7 +1,30 @@
+:root {
+  --color-background: #ffffff;
+  --color-surface: #faf6ed;
+  --color-surface-strong: #322c2b;
+  --color-primary: #fbbebd;
+  --color-primary-strong: #f6c3c1;
+  --color-text: #000000;
+  --color-text-strong: #322c2b;
+  --color-muted: #767373;
+  --color-border: #000000;
+  --color-shadow: rgba(50, 44, 43, 0.12);
+  --shadow-soft: 0 8px 18px var(--color-shadow);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --font-body: 'Fira Code', monospace;
+}
+
+/* Base layout */
 body {
-  font-family: 'Fira Code', monospace;
-  background-color: #ffffff;
-  color: #000000;
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
   margin: 0;
   padding: 0;
 }
@@ -9,6 +32,7 @@ body {
 #root {
   width: 100%;
 }
+
 .starter {
   width: 100% !important;
 }
@@ -83,9 +107,6 @@ body {
   font-size: 1.3rem;
   margin: 15px 0;
   color: #333;
-}
-
-h3 {
 }
 
 .vuju-container,
@@ -195,8 +216,9 @@ h3 {
   background-color: red;
 }
 
+/* Navigation */
 .navigation {
-  background-color: #faf6ed;
+  background-color: var(--color-surface);
   width: 100%;
 }
 
@@ -240,22 +262,23 @@ h3 {
   padding-right: 1%;
 }
 
+/* Language toggle */
 .language-toggle {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background-color: #faf6ed;
-  border: 2px solid #322c2b;
-  border-radius: 999px;
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-text-strong);
+  border-radius: var(--radius-pill);
   padding: 3px;
 }
 
 .language-toggle button {
   border: 0;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   padding: 5px 10px;
   background: transparent;
-  color: #322c2b;
+  color: var(--color-text-strong);
   font-weight: 700;
   font-size: 0.85rem;
   cursor: pointer;
@@ -263,18 +286,18 @@ h3 {
 }
 
 .language-toggle button:hover {
-  background-color: #fbbebd;
-  color: #000000;
+  background-color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .language-toggle button.active {
-  background-color: #fbbebd;
-  color: #000000;
-  box-shadow: 1px 1px 0 #322c2b;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  box-shadow: 1px 1px 0 var(--color-text-strong);
 }
 
 .language-toggle button:focus-visible {
-  outline: 2px solid #322c2b;
+  outline: 2px solid var(--color-text-strong);
   outline-offset: 1px;
 }
 
@@ -302,8 +325,9 @@ h3 {
   color: #fbbebd;
 }
 
+/* Buttons */
 .jasen_nappi {
-  background-color: #fbbebd;
+  background-color: var(--color-primary);
   padding: 8px 12px;
   border-radius: 5px;
   border: none;
@@ -366,13 +390,37 @@ h3 {
   text-decoration: none;
 }
 
-.liityjaseneksiAnim {
-  width: 15em;
-  right: 100px;
-  display: inline-block;
-  height: 5em;
-  flex: 2;
+.join-button-cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14rem;
+  min-height: 3.2rem;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-strong) 100%);
+  color: var(--color-text-strong);
+  font-size: 0.8rem;
+  font-weight: 1000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.join-button-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(50, 44, 43, 0.18);
+}
+
+.join-button-cta:focus-visible {
+  outline: 2px solid var(--color-text-strong);
+  outline-offset: 3px;
+}
+
 .nav-diamond-collabs {
   text-align: center;
 }
