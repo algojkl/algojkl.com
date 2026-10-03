@@ -35,11 +35,12 @@ const NavbarLeft = () => {
 
   return (
     <div className="left-section">
-      <a href="/" className="logo-link">
-        <img src={logo} alt="Algo ry logo" className="logo" />
-      </a>
-      <a href="/" className="kilta">
-        {t('nav.brand')}
+      <a href="/" className="logo-link kilta" aria-label={t('nav.brand')}>
+        <img src={logo} alt="" aria-hidden="true" className="logo" />
+        <span className="kilta-wordmark">
+          <span className="kilta-wordmark-suffix">Algo</span>
+          <span className="kilta-wordmark-suffix">// ry</span>
+        </span>
       </a>
 
       <div className="social">

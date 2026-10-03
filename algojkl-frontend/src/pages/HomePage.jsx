@@ -26,7 +26,9 @@ const HomePage = () => {
       <div className="container">
         <div className="container-info">
           <div>
-            <p className="terminal">AlgoWeb$: cat Algo.ry </p>
+            <p className="terminal">
+              <span className="terminal-prompt">AlgoWeb$</span>: cat Algo.ry
+            </p>
             <Typewriter text={t('pages.home.introText')} prefix="$ " />
           </div>
         </div>

@@ -52,14 +52,12 @@ const HallitusPage = () => {
             <HallitusCard key={member.id} member={member} />
           ))}
         </div>
-        <div className="hallitus-contact">
+        <div className="hallitus-page-contact">
           <p>
             {t('pages.hallitus.contactIntro')}{' '}
-            <a href="mailto:hallitus@algojkl.com"> hallitus@algojkl.com</a>.
-            {' '}
+            <a href="mailto:hallitus@algojkl.com">hallitus@algojkl.com</a>.{' '}
             {t('pages.hallitus.contactMembers')}{' '}
             <a href="mailto:etunimi.sukunimi@algojkl.com">
-              {' '}
               etunimi.sukunimi@algojkl.com
             </a>.
           </p>

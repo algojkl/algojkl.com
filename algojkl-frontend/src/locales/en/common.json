@@ -2,6 +2,12 @@
   "nav": {
     "brand": "Algo ry",
     "menu": "GUILD",
+    "chooseSection": "CHOOSE A SECTION",
+    "back": "Back",
+    "backToSections": "Back to sections",
+    "mobileNavigation": "Mobile navigation",
+    "openMenu": "Open navigation",
+    "closeMenu": "Close navigation",
     "events": "EVENTS",
     "collaboration": "COLLABORATION",
     "fuksit": "FRESHMEN",
@@ -38,6 +44,37 @@
       "toggle": "Choose language"
     },
     "joinButton": "BECOME A MEMBER"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  },
+  "seo": {
+    "defaultTitle": "Algo ry | Computer science student association in Jyväskylä",
+    "defaultDescription": "Algo is the computer science student association at the University of Jyväskylä. Find events, community activities, student information and association resources.",
+    "pages": {
+      "home": { "title": "Algo ry | Computer science students in Jyväskylä", "description": "Algo is the computer science student association at the University of Jyväskylä. Explore our community, events and student activities." },
+      "events": { "title": "Events | Algo ry", "description": "Discover upcoming events and activities organised by Algo, the computer science student association at the University of Jyväskylä." },
+      "collaboration": { "title": "Partners and collaboration | Algo ry", "description": "Meet Algo's partners and learn about collaboration with the computer science student community in Jyväskylä." },
+      "freshmen": { "title": "New students | Algo ry", "description": "Starting computer science studies at the University of Jyväskylä? Find information and guidance for new students from Algo." },
+      "board": { "title": "Board | Algo ry", "description": "Meet the board of Algo, the computer science student association at the University of Jyväskylä." },
+      "guidelines": { "title": "Guidelines and etiquette | Algo ry", "description": "Read Algo's association guidelines, event etiquette and practical instructions for members." },
+      "activeMembers": { "title": "Active members | Algo ry", "description": "Meet the active members and volunteers who make Algo's student community and activities happen." },
+      "principles": { "title": "Equality and operating principles | Algo ry", "description": "Learn about Algo's values, safer-space principles and commitment to an inclusive community." },
+      "annualFestivities": { "title": "Annual celebrations etiquette | Algo ry", "description": "Find practical etiquette and information for Algo's annual celebrations and formal events." },
+      "documents": { "title": "Documents | Algo ry", "description": "Access official documents and resources published by Algo, the computer science student association in Jyväskylä." },
+      "international": { "title": "International exchange | Algo ry", "description": "Explore exchange tips, application timelines and useful links for international studies." },
+      "hallOfFame": { "title": "Hall of Fame | Algo ry", "description": "Explore the people and history celebrated in Algo's Hall of Fame." },
+      "secrets": { "title": "Secrets | Algo ry", "description": "Discover the hidden surprises and secret content on Algo's website." },
+      "rules": { "title": "Association rules | Algo ry", "description": "Read the rules governing Algo, the computer science student association at the University of Jyväskylä." },
+      "privacy": { "title": "Privacy notice | Algo ry", "description": "Read how Algo processes personal data and protects the privacy of its members and website visitors." },
+      "forms": { "title": "Contact and forms | Algo ry", "description": "Find contact information and forms for getting in touch with Algo." },
+      "memberBenefits": { "title": "Member benefits | Algo ry", "description": "Browse the benefits and partner offers available to Algo members." },
+      "recruitment": { "title": "Recruitment | Algo ry", "description": "Find current volunteer and recruitment opportunities within Algo's student community." },
+      "clubs": { "title": "Clubs and activities | Algo ry", "description": "Explore clubs, hobbies and activities organised by the Algo student community." },
+      "applicants": { "title": "Applicants | Algo ry", "description": "Information for applicants interested in studying computer science at the University of Jyväskylä." },
+      "formerBoards": { "title": "Previous boards | Algo ry", "description": "Browse the history of Algo's previous boards and the people who have served the association." },
+      "notFound": { "title": "Page not found | Algo ry", "description": "The page you requested could not be found on Algo's website." }
+    }
   },
   "pages": {
     "kansainvalisyys": {
@@ -124,6 +161,9 @@
       "named": "Named {{year}}"
     },
     "eventCards": {
+      "loading": "Loading upcoming events",
+      "error": "Events could not be loaded. Please try again later.",
+      "viewDetails": "View details",
       "showLess": "SHOW LESS",
       "showLessAria": "Show fewer events",
       "showMore": "SHOW MORE EVENTS",
@@ -131,7 +171,8 @@
     },
     "eventModal": {
       "tickets": "Tickets",
-      "dateLabel": "Date"
+      "dateLabel": "Date",
+      "close": "Close event details"
     },
     "fuksit": {
       "alt": "Freshmen",
@@ -282,6 +323,31 @@
       "title": "Board {{year}}",
       "alt": "Board",
       "telegram": "Telegram:",
+      "positions": {
+        "chair": "Chairperson",
+        "viceChair": "Vice-chairperson",
+        "treasurer": "Treasurer",
+        "secretary": "Secretary",
+        "educationPolicy": "Head of Education Policy",
+        "socialAffairs": "Head of Social Affairs",
+        "corporateRelations": "Corporate Relations Officer",
+        "events": "Events Coordinator",
+        "projects": "Project Coordinator",
+        "clubs": "Club Coordinator",
+        "communications": "Communications Officer",
+        "externalRelations": "External Relations Officer",
+        "internationalRelations": "International Relations Officer",
+        "memberRegistry": "Membership Register Officer",
+        "websites": "Website Coordinator",
+        "tutorsAndFreshmen": "Tutor and Freshmen Coordinator",
+        "wellbeing": "Wellbeing Officer",
+        "freshmenAndSocialAffairs": "Freshmen and Social Policy Representative",
+        "freshmen": "Freshmen Representative",
+        "eventsAndSocialMedia": "Events and Social Media Coordinator",
+        "wellbeingAndSocialAffairs": "Wellbeing and Social Policy Representative",
+        "socialMedia": "Social Media Coordinator",
+        "excursions": "Excursion Coordinator"
+      },
       "noImage": "No image",
       "contactIntro": "Psst. if you want to reach the whole board in one message, you can send an email to",
       "contactMembers": "You can contact individual board members by email at",
