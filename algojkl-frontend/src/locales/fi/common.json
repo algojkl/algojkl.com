@@ -2,6 +2,11 @@
   "nav": {
     "brand": "Algo ry",
     "menu": "KILTA",
+    "back": "Takaisin",
+    "backToSections": "Takaisin osioihin",
+    "mobileNavigation": "Mobiilinavigaatio",
+    "openMenu": "Avaa navigaatio",
+    "closeMenu": "Sulje navigaatio",
     "events": "TAPAHTUMAT",
     "collaboration": "YHTEISTYÖ",
     "fuksit": "FUKSIT",
@@ -38,6 +43,37 @@
       "toggle": "Valitse kieli"
     },
     "joinButton": "LIITY JÄSENEKSI"
+  },
+  "a11y": {
+    "skipToContent": "Siirry pääsisältöön"
+  },
+  "seo": {
+    "defaultTitle": "Algo ry | Tietotekniikan opiskelijat Jyväskylässä",
+    "defaultDescription": "Algo on Jyväskylän yliopiston tietotekniikan opiskelijoiden ainejärjestö. Tutustu tapahtumiin, opiskelijayhteisöön ja jäsenille tarkoitettuihin palveluihin.",
+    "pages": {
+      "home": { "title": "Algo ry | Tietotekniikan opiskelijat Jyväskylässä", "description": "Algo on Jyväskylän yliopiston tietotekniikan opiskelijoiden ainejärjestö. Tutustu yhteisöömme, tapahtumiin ja opiskelijaelämään." },
+      "events": { "title": "Tapahtumat | Algo ry", "description": "Tutustu Algon tuleviin tapahtumiin ja toimintaan Jyväskylän yliopiston tietotekniikan opiskelijoille." },
+      "collaboration": { "title": "Yhteistyökumppanit | Algo ry", "description": "Tutustu Algon yhteistyökumppaneihin ja mahdollisuuksiin tehdä yhteistyötä Jyväskylän tietotekniikan opiskelijayhteisön kanssa." },
+      "freshmen": { "title": "Uusille opiskelijoille | Algo ry", "description": "Aloitatko tietotekniikan opinnot Jyväskylän yliopistossa? Algon sivuilta löydät tietoa ja neuvoja uusille opiskelijoille." },
+      "board": { "title": "Hallitus | Algo ry", "description": "Tutustu Jyväskylän yliopiston tietotekniikan opiskelijoiden ainejärjestön, Algon, hallitukseen." },
+      "guidelines": { "title": "Ohjesäännöt ja etiketti | Algo ry", "description": "Lue Algon ohjesäännöt, tapahtumaetiketti ja jäsenille tarkoitetut käytännön ohjeet." },
+      "activeMembers": { "title": "Aktiivit | Algo ry", "description": "Tutustu aktiiveihin ja vapaaehtoisiin, jotka rakentavat Algon opiskelijayhteisöä ja järjestävät toimintaa." },
+      "principles": { "title": "Yhdenvertaisuus ja toimintaperiaatteet | Algo ry", "description": "Tutustu Algon arvoihin, turvallisemman tilan periaatteisiin ja sitoutumiseen yhdenvertaiseen yhteisöön." },
+      "annualFestivities": { "title": "Vuosijuhlaetiketti | Algo ry", "description": "Lue käytännön ohjeet ja etiketti Algon vuosijuhliin ja muihin akateemisiin juhlatilaisuuksiin." },
+      "documents": { "title": "Dokumentit | Algo ry", "description": "Tutustu Algon virallisiin dokumentteihin ja aineistoihin." },
+      "international": { "title": "Kansainvälisyys ja vaihto-opiskelu | Algo ry", "description": "Löydä vinkkejä, hakuaikatauluja ja hyödyllisiä linkkejä vaihto-opiskeluun." },
+      "hallOfFame": { "title": "Kunniagalleria | Algo ry", "description": "Tutustu Algon kunniagallerian ihmisiin ja opiskelijajärjestön historiaan." },
+      "secrets": { "title": "Salaisuudet | Algo ry", "description": "Löydä Algon verkkosivujen piilotetut yllätykset ja salainen sisältö." },
+      "rules": { "title": "Säännöt | Algo ry", "description": "Lue Jyväskylän yliopiston tietotekniikan opiskelijoiden ainejärjestö Algon säännöt." },
+      "privacy": { "title": "Rekisteriseloste | Algo ry", "description": "Lue, miten Algo käsittelee henkilötietoja ja suojaa jäsentensä sekä verkkosivujen kävijöiden yksityisyyttä." },
+      "forms": { "title": "Yhteystiedot ja lomakkeet | Algo ry", "description": "Löydä Algon yhteystiedot ja lomakkeet yhteydenottoa varten." },
+      "memberBenefits": { "title": "Jäsenedut | Algo ry", "description": "Tutustu Algon jäsenille tarjottuihin etuihin ja yhteistyökumppaneiden tarjouksiin." },
+      "recruitment": { "title": "Rekrytointi | Algo ry", "description": "Tutustu Algon vapaaehtoistehtäviin ja ajankohtaisiin rekrytointimahdollisuuksiin." },
+      "clubs": { "title": "Kerhot ja toiminta | Algo ry", "description": "Tutustu Algon opiskelijayhteisön kerhoihin, harrastuksiin ja muuhun toimintaan." },
+      "applicants": { "title": "Hakijalle | Algo ry", "description": "Tietoa hakijoille, joita kiinnostavat tietotekniikan opinnot Jyväskylän yliopistossa." },
+      "formerBoards": { "title": "Entiset hallitukset | Algo ry", "description": "Tutustu Algon entisiin hallituksiin ja järjestön toiminnassa mukana olleisiin henkilöihin." },
+      "notFound": { "title": "Sivua ei löytynyt | Algo ry", "description": "Etsimääsi sivua ei löytynyt Algon verkkosivuilta." }
+    }
   },
   "pages": {
     "kansainvalisyys": {
@@ -124,6 +160,9 @@
       "named": "Nimetty {{year}}"
     },
     "eventCards": {
+      "loading": "Ladataan tulevia tapahtumia",
+      "error": "Tapahtumien lataaminen epäonnistui. Yritä myöhemmin uudelleen.",
+      "viewDetails": "Katso tiedot",
       "showLess": "NÄYTÄ VÄHEMMÄN",
       "showLessAria": "Näytä vähemmän tapahtumia",
       "showMore": "NÄYTÄ LISÄÄ TAPAHTUMIA",
@@ -131,7 +170,8 @@
     },
     "eventModal": {
       "tickets": "Liput",
-      "dateLabel": "Päivämäärä"
+      "dateLabel": "Päivämäärä",
+      "close": "Sulje tapahtuman tiedot"
     },
     "fuksit": {
       "alt": "Fuksit",
@@ -282,6 +322,31 @@
       "title": "Hallitus {{year}}",
       "alt": "Hallitus",
       "telegram": "Telegram:",
+      "positions": {
+        "chair": "Puheenjohtaja",
+        "viceChair": "Varapuheenjohtaja",
+        "treasurer": "Rahastonhoitaja",
+        "secretary": "Sihteeri",
+        "educationPolicy": "Koulutuspoliittinen vastaava",
+        "socialAffairs": "Sosiaalipoliittinen vastaava",
+        "corporateRelations": "Yrityssuhdevastaava",
+        "events": "Tapahtumavastaava",
+        "projects": "Projektivastaava",
+        "clubs": "Kerhovastaava",
+        "communications": "Viestintävastaava",
+        "externalRelations": "Ulkosuhdevastaava",
+        "internationalRelations": "KV-vastaava",
+        "memberRegistry": "Jäsenrekisterivastaava",
+        "websites": "nettisivut",
+        "tutorsAndFreshmen": "Tutor- ja fuksivastaava",
+        "wellbeing": "Hyvinvointivastaava",
+        "freshmenAndSocialAffairs": "Fuksi- ja sosiaalipoliittinen vastaava",
+        "freshmen": "Fuksivastaava",
+        "eventsAndSocialMedia": "Tapahtuma- ja somevastaava",
+        "wellbeingAndSocialAffairs": "Hyvinvointi- ja sosiaalipoliittinen vastaava",
+        "socialMedia": "Somevastaava",
+        "excursions": "Excursiovastaava"
+      },
       "noImage": "Ei kuvaa",
       "contactIntro": "Psst. mikäli haluat tavoittaa koko hallituksen yhdellä viestillä, voit lähettää sähköpostia osoitteeseen",
       "contactMembers": "Yksittäisiin hallitusjäseniin saat yhteyden sähköpostitse osoitteilla",

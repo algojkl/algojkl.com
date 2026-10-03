@@ -17,7 +17,9 @@ const EventList = ({ events, onEventClick }) => {
           <EventCard key={event.id} event={event} onClick={onEventClick} />
         ))
       ) : (
-        <p>{t('pages.events.empty')}</p>
+        <p className="event-empty" role="status">
+          {t('pages.events.empty')}
+        </p>
       )}
     </>
   )

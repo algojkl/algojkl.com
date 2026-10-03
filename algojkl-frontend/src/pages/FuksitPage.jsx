@@ -50,12 +50,10 @@ const Fuksit = () => {
           <div className="header">
             <div className="container-info">
               <h1>{t('pages.fuksit.subtitle')}</h1>
-              <div className="typewrite">
-                <Typewriter
-                  text={t('pages.fuksit.typewriter')}
-                  prefix="$ "
-                />
-              </div>
+              <Typewriter
+                text={t('pages.fuksit.typewriter')}
+                prefix="$ "
+              />
             </div>
             <Panu />
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import HallitusImage from './HallitusImage'
 import HallitusInfo from './HallitusInfo'
 import { memberPropType } from './HallitusPropTypes'
@@ -10,22 +10,13 @@ import { memberPropType } from './HallitusPropTypes'
  *  - kuvasta (HallitusImage)
  *  - tiedoista (HallitusInfo)
  *
- * Kortin kuva on klikattava: sitä painamalla kuva muuttuu pyöreäksi
- * tai suorakulmaiseksi (`rounded`-tila vaihtuu).
  */
 const HallitusCard = ({ member }) => {
-  const [rounded, setRounded] = useState(false)
-
   return (
-    <div className="hallitus-card">
-      <HallitusImage
-        src={member.kuva}
-        alt={member.nimi}
-        rounded={rounded}
-        onToggle={() => setRounded(!rounded)}
-      />
+    <article className="hallitus-card">
+      <HallitusImage src={member.kuva} alt={member.nimi} />
       <HallitusInfo member={member} />
-    </div>
+    </article>
   )
 }
 

@@ -19,9 +19,14 @@ const NavbarMobileLinks = ({ onClick }) => {
   return (
     <>
       {links.map(({ path, label }) => (
-        <li key={path} className="bm-li" onClick={onClick}>
-          <Link to={path}>{label}</Link>
-        </li>
+        <Link
+          key={path}
+          className="mobile-nav-row"
+          to={path}
+          onClick={onClick}
+        >
+          {label}
+        </Link>
       ))}
     </>
   )

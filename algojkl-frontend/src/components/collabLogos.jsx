@@ -21,6 +21,8 @@ const CollabCards = () => {
               src={collab.logo.fields.file.url}
               alt={`Logo of ${collab.url}`}
               className="collab-logo"
+              loading="lazy"
+              decoding="async"
             />
           )}
         </a>

@@ -17,6 +17,8 @@ const DiamondCollabs = () => {
                 src={collab.logo.fields.file.url}
                 alt={`Logo of ${collab.diamondCollabTitle}`}
                 className="collab-logo"
+                loading="lazy"
+                decoding="async"
               />
             )}
           </a>

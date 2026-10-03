@@ -1,63 +1,27 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import {
-  HomePage,
-  CollabPage,
-  Ohjesaannot,
-  EventPage,
-  Fuksit,
-  HallitusPage,
-  AktiiviPage,
-  PeriaatteetPage,
-  DokumenttiPage,
-  KansainvalisyysPage,
-  KunniagalleriaPage,
-  SalaisuudetPage,
-  SaannotPage,
-  RekisteriselostePage,
-  YhteydenottoPage,
-  JasenEdutPage,
-  RekrytPage,
-  KerhotoimintaPage,
-  HakijatPage,
-  PrevHalli,
-  VujuPage,
-  NotFound,
-} from './pages'
+import { useTranslation } from 'react-i18next'
 import { NavBar, Footer } from './components'
+import PageMetadata from './components/PageMetadata'
+import { pageRoutes } from './pageRoutes'
 import './App.css'
 
 function App() {
+  const { t } = useTranslation('common')
+
   return (
     <Router>
+      <a className="skip-link" href="#main-content">
+        {t('a11y.skipToContent')}
+      </a>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/tapahtumat" element={<EventPage />} />
-        <Route path="/yhteistyot" element={<CollabPage />} />
-        <Route path="/fuksit" element={<Fuksit />} />
-        <Route path="/hallitus" element={<HallitusPage />} />
-        <Route path="/ohjesaannot" element={<Ohjesaannot />} />
-        <Route path="/aktiivit" element={<AktiiviPage />} />
-        <Route path="/periaatteet" element={<PeriaatteetPage />} />
-        <Route
-          path="/yhdenvertaisuus"
-          element={<PeriaatteetPage to="/periaatteet" replace />}
-        />
-        <Route path="/vujuetiketti" element={<VujuPage />} />
-        <Route path="/dokumentit" element={<DokumenttiPage />} />
-        <Route path="/kansainvalisyys" element={<KansainvalisyysPage />} />
-        <Route path="/kunniagalleria" element={<KunniagalleriaPage />} />
-        <Route path="/salaisuudet" element={<SalaisuudetPage />} />
-        <Route path="/saannot" element={<SaannotPage />} />
-        <Route path="/seloste" element={<RekisteriselostePage />} />
-        <Route path="/lomakkeet" element={<YhteydenottoPage />} />
-        <Route path="/jasenedut" element={<JasenEdutPage />} />
-        <Route path="/rekryt" element={<RekrytPage />} />
-        <Route path="/kerhotoiminta" element={<KerhotoimintaPage />} />
-        <Route path="/hakijalle" element={<HakijatPage />} />
-        <Route path="/entiset-hallitukset" element={<PrevHalli />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <PageMetadata />
+      <main id="main-content" tabIndex="-1">
+        <Routes>
+          {pageRoutes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
+        </Routes>
+      </main>
       <Footer />
     </Router>
   )
