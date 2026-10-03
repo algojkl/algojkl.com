@@ -1747,7 +1747,6 @@ body.modal-open {
   justify-self: center;
   overflow: hidden;
   border: 1px solid rgba(50, 44, 43, 0.14);
-  border-top: 3px solid var(--color-primary);
   border-radius: 8px;
   background: var(--color-background);
   text-align: left;
