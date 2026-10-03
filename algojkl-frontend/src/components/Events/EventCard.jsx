@@ -15,10 +15,7 @@ const EventCard = ({ event, onClick }) => {
   const pictureUrl = event.picture?.fields?.file?.url
 
   const fullDate = hasValidDate
-    ? new Intl.DateTimeFormat(locale, {
-        dateStyle: 'full',
-        timeStyle: 'short',
-      }).format(eventDate)
+    ? new Intl.DateTimeFormat(locale, { dateStyle: 'full' }).format(eventDate)
     : ''
 
   const day = hasValidDate
@@ -29,13 +26,6 @@ const EventCard = ({ event, onClick }) => {
         .format(eventDate)
         .replace(/\.$/, '')
     : ''
-  const time = hasValidDate
-    ? new Intl.DateTimeFormat(locale, {
-        hour: '2-digit',
-        minute: '2-digit',
-      }).format(eventDate)
-    : ''
-
   return (
     <button
       type="button"
@@ -67,9 +57,6 @@ const EventCard = ({ event, onClick }) => {
             </span>
             <span className="event-card-month" aria-hidden="true">
               {month}
-            </span>
-            <span className="event-card-time" aria-hidden="true">
-              {time}
             </span>
           </time>
         )}
