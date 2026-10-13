@@ -1764,6 +1764,12 @@ body.modal-open {
   margin-top: 20px;
 }
 
+@media (min-width: 1501px) {
+  .toimarit-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
 .hallitus-card {
   display: flex;
   width: 100%;
@@ -1906,8 +1912,6 @@ body.modal-open {
   gap: 0.3rem;
   box-sizing: border-box;
   padding: 0.35rem 0.55rem;
-  border-left: 3px solid var(--color-primary);
-  border-radius: 4px;
   color: var(--color-text-strong);
   font-size: 0.8rem;
   line-height: 1.35;
@@ -1936,8 +1940,6 @@ body.modal-open {
   box-sizing: border-box;
   overflow: hidden;
   padding: 0.35rem 0.55rem;
-  border-left: 3px solid var(--color-primary);
-  border-radius: 4px;
   color: var(--color-text-strong);
   font-size: 0.84rem;
   line-height: 1.4;
