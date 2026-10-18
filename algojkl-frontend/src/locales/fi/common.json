@@ -18,6 +18,7 @@
     },
     "links": {
       "board": "HALLITUS",
+      "hallihaku": "HALLITUSHAKU",
       "active": "AKTIIVIT",
       "rules": "SÄÄNNÖT",
       "guidelines": "OHJESÄÄNNÖT & ETIKETIT",
@@ -56,6 +57,7 @@
       "collaboration": { "title": "Yhteistyökumppanit | Algo ry", "description": "Tutustu Algon yhteistyökumppaneihin ja mahdollisuuksiin tehdä yhteistyötä Jyväskylän tietotekniikan opiskelijayhteisön kanssa." },
       "freshmen": { "title": "Uusille opiskelijoille | Algo ry", "description": "Aloitatko tietotekniikan opinnot Jyväskylän yliopistossa? Algon sivuilta löydät tietoa ja neuvoja uusille opiskelijoille." },
       "board": { "title": "Hallitus | Algo ry", "description": "Tutustu Jyväskylän yliopiston tietotekniikan opiskelijoiden ainejärjestön, Algon, hallitukseen." },
+      "hallihaku": { "title": "Hallitushaku | Algo ry", "description": "Tutustu Algon hallitushakuun ja tarjolla oleviin hallituspesteihin." },
       "guidelines": { "title": "Ohjesäännöt ja etiketti | Algo ry", "description": "Lue Algon ohjesäännöt, tapahtumaetiketti ja jäsenille tarkoitetut käytännön ohjeet." },
       "activeMembers": { "title": "Aktiivit | Algo ry", "description": "Tutustu aktiiveihin ja vapaaehtoisiin, jotka rakentavat Algon opiskelijayhteisöä ja järjestävät toimintaa." },
       "principles": { "title": "Yhdenvertaisuus ja toimintaperiaatteet | Algo ry", "description": "Tutustu Algon arvoihin, turvallisemman tilan periaatteisiin ja sitoutumiseen yhdenvertaiseen yhteisöön." },

@@ -19,6 +19,7 @@
     },
     "links": {
       "board": "BOARD",
+      "hallihaku": "BOARD APPLICATIONS",
       "active": "ACTIVE MEMBERS",
       "rules": "RULES",
       "guidelines": "GUIDELINES & ETIQUETTE",
@@ -57,6 +58,7 @@
       "collaboration": { "title": "Partners and collaboration | Algo ry", "description": "Meet Algo's partners and learn about collaboration with the computer science student community in Jyväskylä." },
       "freshmen": { "title": "New students | Algo ry", "description": "Starting computer science studies at the University of Jyväskylä? Find information and guidance for new students from Algo." },
       "board": { "title": "Board | Algo ry", "description": "Meet the board of Algo, the computer science student association at the University of Jyväskylä." },
+      "hallihaku": { "title": "Board applications | Algo ry", "description": "Explore Algo's board application and the available board positions." },
       "guidelines": { "title": "Guidelines and etiquette | Algo ry", "description": "Read Algo's association guidelines, event etiquette and practical instructions for members." },
       "activeMembers": { "title": "Active members | Algo ry", "description": "Meet the active members and volunteers who make Algo's student community and activities happen." },
       "principles": { "title": "Equality and operating principles | Algo ry", "description": "Learn about Algo's values, safer-space principles and commitment to an inclusive community." },

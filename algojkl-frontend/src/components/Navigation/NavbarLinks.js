@@ -10,6 +10,7 @@ const getDropdownLinks = (t) => [
     section: t('nav.sections.staff'),
     items: [
       { label: t('nav.links.board'), path: '/hallitus' },
+      { label: t('nav.links.hallihaku'), path: '/hallitushaku' },
       { label: t('nav.links.active'), path: '/aktiivit' },
     ],
   },

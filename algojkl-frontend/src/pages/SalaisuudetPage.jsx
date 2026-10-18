@@ -4,7 +4,7 @@ import StarterImage from '../common/StarterImage'
 import usePageStarterImages from '../hooks/usePageStarterImages'
 
 /**
- * SalaisuudetPage-komponentti
+ * SalaisuudetPage-komponentti  
  * Tämä komponentti renderöi salaisuudet-sivun, joka sisältää:
  * 1. StarterImage-komponentin pääbannerin kuvan renderöintiin (desktop ja mobile).
  * 2. Salasanasuojatun sisällön, johon pääsee käsiksi syöttämällä oikean salasanan.
