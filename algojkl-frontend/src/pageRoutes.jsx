@@ -30,7 +30,7 @@ export const pageRoutes = [
   { path: '/yhteistyot', element: <CollabPage />, seoKey: 'collaboration' },
   { path: '/fuksit', element: <Fuksit />, seoKey: 'freshmen' },
   { path: '/hallitus', element: <HallitusPage />, seoKey: 'board' },
-  { path: '/hallitushaku', element: <HallihakuPage />, seoKey: 'hallihaku' },
+  // { path: '/hallitushaku', element: <HallihakuPage />, seoKey: 'hallihaku' },
   { path: '/ohjesaannot', element: <Ohjesaannot />, seoKey: 'guidelines' },
   { path: '/aktiivit', element: <AktiiviPage />, seoKey: 'activeMembers' },
   { path: '/periaatteet', element: <PeriaatteetPage />, seoKey: 'principles' },
