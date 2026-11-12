@@ -10,7 +10,7 @@ const getDropdownLinks = (t) => [
     section: t('nav.sections.staff'),
     items: [
       { label: t('nav.links.board'), path: '/hallitus' },
-      { label: t('nav.links.hallihaku'), path: '/hallitushaku' },
+      // { label: t('nav.links.hallihaku'), path: '/hallitushaku' },
       { label: t('nav.links.active'), path: '/aktiivit' },
     ],
   },
@@ -23,6 +23,7 @@ const getDropdownLinks = (t) => [
       { label: t('nav.links.privacy'), path: '/seloste' },
       { label: t('nav.links.honours'), path: '/kunniagalleria' },
       { label: t('nav.links.principles'), path: '/periaatteet' },
+      { label: t('nav.links.poytakirjat'), path: '/dokumentit' }
     ],
   },
   {
