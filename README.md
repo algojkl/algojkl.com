@@ -1,50 +1,97 @@
 # Repository of Algojkl.com
+
 [Algo ry](https://algojkl.com)
 
-## Running with Docker
+## Project overview
 
-Install Docker Engine and Docker Compose, and make sure Docker is running. The
-frontend and backend are built as separate images. MongoDB is not included;
-provide a MongoDB instance that the backend can reach.
+This repository contains the Algo ry website:
 
-1. Copy `algojkl-backend/.env.example` to `algojkl-backend/.env` and set
-   `MONGO_URI` and `SECRET_PASSWORD`. If MongoDB runs on the Docker host,
-   use `host.docker.internal` instead of `localhost` in its URI. The database
-   must contain the existing `Salaisuudet` collection for the secrets page.
-2. Copy `algojkl-frontend/.env.example` to `algojkl-frontend/.env` and set the
-   Contentful space ID, content delivery token and calendar embed URL.
-3. From the repository root, run:
+- `algojkl-frontend/` — React and Vite frontend.
+- `algojkl-backend/` — Express API. MongoDB is provided separately and is not
+  included in the Docker setup.
+- `compose.yaml` — runs the frontend and backend as separate containers.
 
-   ```sh
-   docker compose --env-file algojkl-frontend/.env up --build -d
-   ```
+## Local development
 
-Open <http://localhost:8080>. Set `FRONTEND_PORT` in the frontend `.env` file
-to use another host port. The frontend server proxies `/login` to the backend;
-the backend is not published directly to the host.
+Use Node.js 22 or later. Install and start each service in a separate terminal:
 
-Frontend `VITE_` values are embedded in the browser bundle at build time and
-are public: use a Contentful delivery token, never a management token or other
-secret. Rebuild the frontend after changing these values. Backend environment
-variables are read at container startup; recreate the containers after changing
-them:
+```sh
+cd algojkl-backend
+npm ci
+npm start
+```
+
+```sh
+cd algojkl-frontend
+npm ci
+npm run dev
+```
+
+The backend needs `MONGO_URI` and `SECRET_PASSWORD` in
+`algojkl-backend/.env`. The frontend needs the Vite settings described below.
+The Vite development server does not proxy the login request; use Docker
+Compose to test the frontend and login API together.
+
+Useful frontend checks:
+
+```sh
+cd algojkl-frontend
+npm run lint
+npm run build
+```
+
+## Docker
+
+Install Docker Engine and **Docker Compose V2** (`docker compose`). The legacy
+`docker-compose` V1 is not supported.
+
+Create the environment files from the examples and modify the secrets:
+
+```sh
+cp algojkl-backend/.env.example algojkl-backend/.env
+cp algojkl-frontend/.env.example algojkl-frontend/.env
+```
+
+From the repository root, build and start both containers:
 
 ```sh
 docker compose --env-file algojkl-frontend/.env up --build -d
+```
+
+Open <http://localhost:8080>. The frontend container serves the website and
+proxies `/login` requests to the backend. The backend port is not published
+directly. The frontend is bound to the host's loopback interface, so a server
+Nginx can proxy to `http://127.0.0.1:8080` without exposing the container port
+to the public internet.
+
+Common operations (run from the repository root):
+
+```sh
+docker compose --env-file algojkl-frontend/.env ps
 docker compose --env-file algojkl-frontend/.env logs -f
+docker compose --env-file algojkl-frontend/.env up --build -d
 docker compose --env-file algojkl-frontend/.env down
 ```
 
-The backend's event archival script also needs its Contentful management
-credentials when run separately; do not put those credentials in the frontend.
+```sh
+git pull --ff-only
+docker compose --env-file algojkl-frontend/.env up --build -d
+```
+
+The frontend environment is compiled into the image, so rebuild it after
+changing frontend values. Recreate the backend after changing backend values.
+Do not commit real `.env` files or credentials.
 
 ## FAQ
 
 ### How do I can contribute
+
 Ask help from quild's webmaster. Webmaster will help you start your commit journey.
 
 ### I spotted an error, Can I report it?
+
 Yes, make a new issue detailing the problem in issues site.
 
 ### How do I submit changes I want to contribute
+
 Make a pull request with your changes and tag algojkl in pr reviewer, so we can get changes online.
