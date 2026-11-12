@@ -7,7 +7,7 @@ export const tutkinnot = [
         opinnot: [
           'Tieto- ja ohjelmistotekniikan perus- ja aineopinnot 80 op (sis. kandidaatintutkielman)',
           'Tekniikan alan matemaattiset perusopinnot 35 op',
-          'Toinen opintokokonaisuus (vähintään 25op) – Sivuaine yhdistää tietotekniikan itse valittavaan alaan Jyväskylän yliopiston lukuisista vaihtoehdoista. Voit valita esimerkiksi ihmistieteitä kuten psykologiaa, liikunta- ja terveystieteitä, kulttuuria ja taidetta tai pedagogiikkaa. Vaihtoehtoisesti voit keskittyä vaikkapa matematiikkaan tai luonnontieteisiin.',
+          'Toinen opintokokonaisuus (vähintään 25op) – Sivuaine yhdistää tietotekniikan opinnot itse valittavaan alaan Jyväskylän yliopiston lukuisista vaihtoehdoista. Voit valita esimerkiksi ihmistieteitä kuten psykologiaa, liikunta- ja terveystieteitä, kulttuuria ja taidetta tai pedagogiikkaa. Vaihtoehtoisesti voit keskittyä vaikkapa matematiikkaan tai luonnontieteisiin.',
           'Viestintä- ja kieliopintoja vähintään 10 op',
           'Vapaasti valittavia opintokokonaisuuksia ja moduuleja sekä muita opintoja',
         ],
@@ -16,7 +16,7 @@ export const tutkinnot = [
         name: 'Diplomi-insinööri 120op',
         opinnot: [
           'Tieto- ja ohjelmistotekniikan syventävät opinnot 80 op (sis. diplomityön)',
-          'Toinen opintokokonaisuus (vähintään 25op) – Sivuaine yhdistää tietotekniikan itse valittavaan alaan Jyväskylän yliopiston lukuisista vaihtoehdoista. Voit valita esimerkiksi ihmistieteitä kuten psykologiaa, liikunta- ja terveystieteitä, kulttuuria ja taidetta tai pedagogiikkaa. Vaihtoehtoisesti voit keskittyä vaikkapa matematiikkaan tai luonnontieteisiin.',
+          'Toinen opintokokonaisuus (vähintään 25op) – Sivuaine yhdistää tietotekniikan opinnot itse valittavaan alaan Jyväskylän yliopiston lukuisista vaihtoehdoista. Voit valita esimerkiksi ihmistieteitä kuten psykologiaa, liikunta- ja terveystieteitä, kulttuuria ja taidetta tai pedagogiikkaa. Vaihtoehtoisesti voit keskittyä vaikkapa matematiikkaan tai luonnontieteisiin.',
           'Viestintä- ja kieliopintoja',
           'Vapaasti valittavia opintokokonaisuuksia ja moduuleja sekä muita opintoja',
         ],
